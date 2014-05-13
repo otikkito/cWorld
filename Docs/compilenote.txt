@@ -1,0 +1,3 @@
+to compile a simple c program
+gcc -Wall -pedantic -g soucefile -o savedfilename
+
