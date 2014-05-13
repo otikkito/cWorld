@@ -2,6 +2,9 @@
 #include <string.h>
 #include "crefresh.h"
 
+//This program is tryin to use all the functionality of c basicly go through all the keywords in c
+ //auto break case char const continue default do double else enum extern float for goto if int long register return
+//short signed sizeof static struct switch typedef union unsigned void volatile while 
 
 //function prototype are in the header file
 
@@ -38,6 +41,17 @@ int main(){
 	
 	//run a function
 	 rv = myfunction(ds1,ds2);
+	int j;  //just have to decrare variables before you use them
+	for(j=0; j<10; j=j+2){
+		printf("the index is: %d\n",j);
+	}
+
+	int k;
+	k=0;
+	while(k <20){
+		printf("current value of k is: %d\n",k);
+		k+=5;	
+	}
 	return 0;
 }
 
