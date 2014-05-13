@@ -1,0 +1,16 @@
+This is a list of projects that I want to have in my cWorld library. I will use this document as a notepad for 
+projects I want to develop and for normal use or as an exercise
+
+-Simple database
+-Linked list
+-Hash table
+-lookup table
+-stack
+-test unit for the c standard library
+-test suite for kernel
+-stack
+-networking tutorial basically sending network information from machine to machine
+-Somethings that will help with bit manipulation and low level bit problems
+-Timer high resolution 
+-Operating system
+
