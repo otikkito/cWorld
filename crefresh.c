@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <assert.h>
 #include "crefresh.h"
 
 //This program is tryin to use all the functionality of c basicly go through all the keywords in c
@@ -52,11 +53,19 @@ int main(){
 		printf("current value of k is: %d\n",k);
 		k+=5;	
 	}
+
+	simpleFunction(&ds1,&ds2);
+	printf("Location of ds1: %p\n",&ds1);
+	printf("Location of ds2: %p\n",&ds2);
 	return 0;
 }
 
+//Pass by value
 int myfunction(struct datastruct a, struct datastruct b){
 	int ret;
+	
+	assert(&a != NULL);
+	assert(&b != NULL);
 	
 	ret = strcmp(a.name,b.name);
 	if(ret == 0){
@@ -70,4 +79,11 @@ int myfunction(struct datastruct a, struct datastruct b){
 	}
 
 	return 0; //for now
+}
+
+//function that will pass by refrence 
+int simpleFunction(struct datastruct *a, struct datastruct *b){
+	printf("Function:The location of a is: %p\n",a);
+	printf("Function:The location of b is: %p\n",b); 
+	return 0;
 }

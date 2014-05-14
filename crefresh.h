@@ -14,3 +14,5 @@ struct datastruct{
 
 //Test that that two struct datastruct have the same name
 int myfunction(struct datastruct a, struct datastruct b);
+int simpleFunction(struct datastruct *a, struct datastruct *b);
+

@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <assert.h>
+#include <limits.h>
+#include <math.h>
+#include <stdlib.h>
+
+void printGreating();
+void testAssert(int x);
+void testComplex();
+void testCtype();
+void testErrno();
+void testFenv();
+void testFloat();
+void testInttypes();
+void testIsio646();
+void testLimit();
+void testLocale();
+void testMath();
+void testSetjmp();
+void testSignal();
+void testStdalign();
+void testStdarg();
+void testStatomic();
+void testStdbool();
+void testStddef();
+void testStdint();
+void testStdio();
+void testStdlib();
+void testStdnoreturn();
+void testString();
+void testTgmath();
+void testThreads();
+void testTime();
+void testUchar();
+void testWchar();
+void testWctype();
