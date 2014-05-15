@@ -5,3 +5,33 @@ Requirments
 -Read in all transactions
 -Display top catagories (if that is include in report)
 -
+xmlwf  -> is a application that is include to test if xml is well formed
+xmllint  -> Command line xml tool
+* found out that the file is not in xml format
+
+************************ The ofx format does not include memo that coastal provide or the budget
+	categorie needed. So this would have to be done again which is
+	redundant. Coastal provides a report so I will be kind of abandoning 
+	this project till the budget categories are included into one of the
+	downloadable file formats.
+
+
+5/15/14 I found a tool that is called ofxdump which prints the ofx file. 
+	While trying to install the libofx-devel yum says that it requires opensp-dev
+	but I can not find the package. So will continue to work on it.
+5/15/14 Found the package it was on customer portal but not in yum repos
+5/15/14 Finally got installed had to add a channel to subscription 
+	package name libofx-devel.x86_64
+	path /usr/share/doc/libofx-devel-0.9.4
+	path of header /usr/include/libofx/libofx.h
+
+
+
+-----------------------------------------------------------------
+
+Notes from the header file
+* all ofx_proc_* functtions are callbacks (Except ofx_proc_file which is the
+	entry point) tutorial on callbacks
+	http://en.wikipedia.org/wiki/Callback_%28computer_programming%29
+
+
