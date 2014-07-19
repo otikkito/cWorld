@@ -49,6 +49,10 @@ real	0m0.001s
 user	0m0.001s
 sys	0m0.000s
 
+size ./a.out 
+   text	   data	    bss	    dec	    hex	filename
+   1588	    508	     16	   2112	    840	./a.out
+
 valgrind --tool=memcheck ./a.out
 ==2791== Memcheck, a memory error detector
 ==2791== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
