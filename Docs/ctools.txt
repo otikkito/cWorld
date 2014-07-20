@@ -7,4 +7,4 @@ whitespaces
 -git - version control
 -/usr/bin/time -v <program>  -> will give a lot usfull information like time
 elapsed
-
+-DDD - Data display debugger
