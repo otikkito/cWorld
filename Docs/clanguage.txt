@@ -1,0 +1,46 @@
+c keywords
+------------
+auto |Defines a local variable as having a local lifetime. Storage class
+break | Passes control out of the compound statement.
+case | Branches control.
+char | Basic data types (integer and character).
+const | Makes variable value or pointer parameter unmodifiable.
+continue | Passes control to the begining of the loop.
+default | Branches control.
+do | Do-while loop.
+double |Floating point data types.
+else | Conditional statement.
+enum | Defines a set of constants of type int.
+extern | Indicates that an identifier is defined elsewhere.
+float | Floating point data types.
+for | For loop.
+goto | Unconditionally transfer control.
+if | Conditional statement.
+int | Basic data types (integer and character).
+long | Type modifiers.
+register | Tells the compiler to store the variable being declared in a CPU register.
+return | Exits the function.
+short | Type modifiers.
+signed | Type modifiers.
+sizeof | Returns the size of the expression or type. Returns the size in bytes.
+static | Preserves variable value to survive after its scope ends. Can be used for both data and functions
+struct | Groups variables into a single record.
+switch | Branches control.
+typedef | Creates a new type.q
+union | Groups variables which share the same storage space.
+unsigned | Type modifiers.
+void | Empty data type.
+volatile | Indicates that a variable can be changed by a background routine
+while | Repeats execution while the condition is true.
+
+c program basically consists of the following parts:
+-Preprocessor Commands
+-Functions
+-Variables
+-Statements
+-Expressions 
+-Comments
+
+Good break down of keywords: http://tigcc.ticalc.org/doc/keywords.html
+Data types: http://www.tutorialspoint.com/cprogramming/c_data_types.htm
+Common c errors: http://www.drpaulcarter.com/cs/common-c-errors.php
