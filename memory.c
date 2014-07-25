@@ -5,6 +5,7 @@
 #include <sys/types.h> //defines pid_t
 
 
+//Good tutorial on unserstanding process memory --> https://techtalk.intersec.com/2013/07/memory-part-2-understanding-process-memory/
 //Use pmap in conjection with running this program to get a better understand of whats going on
 //ex.  pmap
 //Tutorial about the buffers http://wr.informatik.uni-hamburg.de/_media/teaching/wintersemester_2012_2013/epc-1213-brauer-buffer-praesentation.pdf
