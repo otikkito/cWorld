@@ -4,4 +4,5 @@ Design considerations:
 1) Error handling
 2) Signal handling
 3) Performance issues
-4)
+4) Logging of code, errors, and events within the application.
+5) Memory Leaks
