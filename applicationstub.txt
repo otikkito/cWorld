@@ -1,0 +1,7 @@
+The purpose of this application is to form a rebost application that standardize the the application development processing and show best programs of application design.
+
+Design considerations:
+1) Error handling
+2) Signal handling
+3) Performance issues
+4)
