@@ -3,6 +3,8 @@
 #include <signal.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <sys/types.h>
+
 
 //Function prototype
 void PrintApplicationHeader();
@@ -19,6 +21,7 @@ int main(){
     .sa_flags = SA_SIGINFO,
     .sa_restorer = NULL
   };
+    
     
     sigaction(SIGTERM, &action, NULL);
     
@@ -41,6 +44,9 @@ int main(){
 //Function declarations
 void PrintApplicationHeader(){
     
+    pid_t processid;
+    processid = getpid();
+    printf("The process id of this application is: %d\n",processid);
     printf("Welcome to the application stub.\nThe  purpose of this program");
     printf("is to build a solid framework \nfor the application development");
     printf("process.\n");
