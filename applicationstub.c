@@ -34,8 +34,12 @@ int main(){
 
     
     PrintApplicationHeader();
-    PrintLogFile(fp,"This is the first line that is printed to the log file");
-    sleep(60);
+    PrintLogFile(fp,"Application started.");
+    
+    /*Starting place of the application. Add code below and remember to do 
+    proper logging
+    */
+    
     return 0;
 }
 
