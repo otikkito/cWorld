@@ -8,7 +8,7 @@
 
 //Function prototype
 void PrintApplicationHeader();
-void PrintLogfile();
+void PrintLogFile();
 void SigtermHandler();
 
 
