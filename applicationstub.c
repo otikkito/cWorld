@@ -52,16 +52,16 @@ void PrintApplicationHeader(){
     printf("process.\n");
 }
 
-int PrintLogFile(FILE *f, char *string){
+void PrintLogFile(FILE *f, char *string){
     char timestring[100];
     time_t currenttime = time(0);
     strftime(timestring,sizeof(timestring),"%c",localtime(&currenttime));
     fprintf(f,"%s %s \n",timestring,string);	
-    return 0;
 }
 
 void SigtermHandler(int signal, siginfo_t *info, void *_unused)
 {
+  //To terminate kill -s 15 <pid>
   fprintf(stderr, "Received SIGTERM from process with pid = %u\n",info->si_pid);
   exit(0);
 }
