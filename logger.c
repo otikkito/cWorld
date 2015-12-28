@@ -44,6 +44,7 @@ int print_logfile(FILE *f, char *string){
 	fprintf(f,"%s %s \n",timestring,string);	
 	return 0;
 }
+
 int main(){
 	
 	char logfile[]= "./text-data-files/logfile.txt";
