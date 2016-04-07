@@ -1,5 +1,5 @@
 The purpose of this application is to form a rebost application that standardize
-the the application development processing and show best programs of 
+the the application development processing and show best process of 
 application design.
 
 Design considerations:
