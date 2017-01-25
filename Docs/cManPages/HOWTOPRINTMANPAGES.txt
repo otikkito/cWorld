@@ -1,0 +1,1 @@
+man -t stdio.h | ps2pdf - stdio-h.pdf
