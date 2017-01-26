@@ -10,6 +10,7 @@
 void PrintApplicationHeader();
 void PrintLogFile();
 void SigtermHandler();
+const char* get_process_name_by_pid(pid_t pid);
 
 
 int main(){
@@ -55,7 +56,7 @@ void PrintApplicationHeader(){
     printf("is to build a solid framework \nfor the application development ");
     printf("process.\n");
     printf("----------------------------------------------------------------\n");
-    printf("The process name of this process is: %s \n",get_process_name_by_pid(processid);
+    printf("The process name of this process is: %s \n",get_process_name_by_pid(processid));
 }
 
 void PrintLogFile(FILE *f, char *string){
@@ -73,7 +74,7 @@ void SigtermHandler(int signal, siginfo_t *info, void *_unused)
 }
 
 
-const char* get_process_name_by_pid(const int pid)
+const char* get_process_name_by_pid(pid_t pid)
 {
     char* name = (char*)calloc(1024,sizeof(char));
     if(name){
@@ -92,5 +93,25 @@ const char* get_process_name_by_pid(const int pid)
     return name;
 }
 
+/*
+const char* get_process_name_by_pid(const int pid)
+{
+    char* name = (char*)calloc(1024,sizeof(char));
+    if(name){
+        sprintf(name, "/proc/%d/cmdline",pid);
+        FILE* f = fopen(name,"r");
+        if(f){
+            size_t size;
+            size = fread(name, sizeof(char), 1024, f);
+            if(size>0){
+                if('\n'==name[size-1])
+                    name[size-1]='\0';
+            }
+            fclose(f);
+        }
+    }
+    return name;
+}
+*/
 
 
