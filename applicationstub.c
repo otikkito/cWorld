@@ -52,7 +52,7 @@ void PrintApplicationHeader(){
     processid = getpid();
     printf("The process id of this application is: %d\n",processid);
     printf("Welcome to the application stub.\nThe  purpose of this program");
-    printf("is to build a solid framework \nfor the application development");
+    printf("is to build a solid framework \nfor the application development ");
     printf("process.\n");
 }
 
@@ -69,3 +69,27 @@ void SigtermHandler(int signal, siginfo_t *info, void *_unused)
   fprintf(stderr, "Received SIGTERM from process with pid = %u\n",info->si_pid);
   exit(0);
 }
+
+
+/*
+const char* get_process_name_by_pid(const int pid)
+{
+    char* name = (char*)calloc(1024,sizeof(char));
+    if(name){
+        sprintf(name, "/proc/%d/cmdline",pid);
+        FILE* f = fopen(name,"r");
+        if(f){
+            size_t size;
+            size = fread(name, sizeof(char), 1024, f);
+            if(size>0){
+                if('\n'==name[size-1])
+                    name[size-1]='\0';
+            }
+            fclose(f);
+        }
+    }
+    return name;
+}
+
+*/
+
