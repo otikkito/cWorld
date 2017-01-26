@@ -54,6 +54,8 @@ void PrintApplicationHeader(){
     printf("Welcome to the application stub.\nThe  purpose of this program");
     printf("is to build a solid framework \nfor the application development ");
     printf("process.\n");
+    printf("----------------------------------------------------------------\n");
+    printf("The process name of this process is: kjkjkjkjkjkj \n");
 }
 
 void PrintLogFile(FILE *f, char *string){
