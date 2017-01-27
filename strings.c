@@ -2,6 +2,7 @@
  * or at least try.
  */
 
+//http://stackoverflow.com/questions/9834067/difference-between-char-and-const-char
 #include <stdio.h>
 #include <string.h>
 

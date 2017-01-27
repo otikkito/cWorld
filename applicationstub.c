@@ -14,6 +14,8 @@ const char* get_process_name_by_pid(pid_t pid);
 
 char logfile[]= "./text-data-files/logfile.txt";
 FILE *fp;
+pid_t processid;
+
 
 int main(){
     
@@ -27,8 +29,8 @@ int main(){
     
     
     sigaction(SIGTERM, &action, NULL);
-    
-        
+    processid = getpid();
+            
     fp = fopen(logfile,"a+");   //initially caused a segfault because no error checking
     if(fp == NULL){
 	perror("Error with fopen");
@@ -37,6 +39,7 @@ int main(){
     
     PrintApplicationHeader();
     PrintLogFile(fp,"Application started.");
+
     /*Starting place of the application. Add code below and remember to do 
     proper logging!
     */
@@ -48,9 +51,6 @@ int main(){
 
 //Function declarations
 void PrintApplicationHeader(){
-    pid_t processid;
-    processid = getpid();
-    
     printf("The process id of this application is: %d\n",processid);
     printf("Welcome to the application stub.\nThe  purpose of this program");
     printf("is to build a solid framework \nfor the application development ");
