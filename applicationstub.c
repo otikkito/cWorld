@@ -12,6 +12,8 @@ void PrintLogFile(FILE *f, char *string);
 void SigtermHandler();
 const char* get_process_name_by_pid(pid_t pid);
 
+char logfile[]= "./text-data-files/logfile.txt";
+FILE *fp;
 
 int main(){
     
@@ -26,9 +28,7 @@ int main(){
     
     sigaction(SIGTERM, &action, NULL);
     
-    char logfile[]= "./text-data-files/logfile.txt";
-    
-    FILE *fp;
+        
     fp = fopen(logfile,"a+");   //initially caused a segfault because no error checking
     if(fp == NULL){
 	perror("Error with fopen");
