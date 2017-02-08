@@ -43,8 +43,10 @@ int main(){
     /*Starting place of the application. Add code below and remember to do 
     proper logging!
     */
-    
+
+    sleep(300);    
     return 0;
+
 }
 
 
