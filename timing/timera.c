@@ -3,6 +3,8 @@
 
 //Apllication to timing anyalysis
 //https://www.tutorialspoint.com/c_standard_library/time_h.htm
+//http://www.geeksforgeeks.org/how-to-measure-time-taken-by-a-program-in-c/
+
 void delay(unsigned int d);
 
 
@@ -18,11 +20,15 @@ int main(){
 	printf("seconds: %d miliseconds: %d \n",msec/1000,msec%1000);
 	*/
 	clock_t start,end;
+	double cpu_time_used;
 	printf("CLOCKS_PER_SEC: %ld\n",CLOCKS_PER_SEC);
 	start = clock();
 	printf("start: %d\n",start);
 	end = clock();
 	printf("end: %d\n",end);
+	cpu_time_used = (((double) (end-start))/ CLOCKS_PER_SEC);
+
+	printf("The time elapsed was : %e\n",cpu_time_used);
 	return 0;
 }
 

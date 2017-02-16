@@ -13,5 +13,5 @@ projects I want to develop and for normal use or as an exercise
 -Somethings that will help with bit manipulation and low level bit problems
 -Timer high resolution 
 -Operating system
--Test what is the fastes form of interprocess communications and trade offs
+-Test what is the fastest form of interprocess communications and trade offs
 
