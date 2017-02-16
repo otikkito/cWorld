@@ -1,0 +1,12 @@
+//http://tldp.org/LDP/lpg/node7.html
+//https://en.wikipedia.org/wiki/Inter-process_communication
+
+The linux Inter process communications provide multiple methods for process to communicate with each other. 
+a) Half-duplex UNIX pipes
+b) FIFOs (named pipes)
+c) message queues
+d) semaphore sets
+e) shared memory segments
+f) Network sockets
+g) full duplex pipes (STREAMS)
+

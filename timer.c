@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 //Apllication to timing anyalysis
-
+//https://www.tutorialspoint.com/c_standard_library/time_h.htm
 void delay(unsigned int d);
 
 
@@ -21,6 +21,8 @@ int main(){
 	printf("CLOCKS_PER_SEC: %ld\n",CLOCKS_PER_SEC);
 	start = clock();
 	printf("start: %d\n",start);
+	end = clock();
+	printf("end: %d\n",end);
 	return 0;
 }
 

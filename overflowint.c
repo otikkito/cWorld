@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <unistd.h>
 
+functionA();
+functionB();
+functionC();
+increment(int *i);
+decrement(int *i);
+
 int main(){
 	int i=0;
 	printf("The size of a int is: %ld bytes\n",sizeof(i));
@@ -16,6 +22,20 @@ int main(){
 	}
 	return 0;
 }
+
+
+/*
+This function will do the same as what the main function but will indicate if overflow
+occurred.
+Indication that overflow occured happens when goes from positive to negative
+Return 0 if no over flow occurred and return 1 if overflow occurred
+*/
+functionA(){
+ printf("Now in function A where we will expore option 1\n");
+	for(i=0;;i++){
+
+}
+
 //Conclusion overflow happens and does not give a runtime error. In code I will have to check for overflow.
 //TODO Find solutions and best practice for overflow protection
 

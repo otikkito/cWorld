@@ -18,7 +18,8 @@ pid_t processid;
 
 
 int main(){
-    
+    //I need to find a better way to handle signals and find out what important
+    //signals that I need to look out for.
     struct sigaction action = {
     .sa_handler = NULL,
     .sa_sigaction = SigtermHandler,
@@ -97,6 +98,7 @@ const char* get_process_name_by_pid(pid_t pid)
 
 /*signals that should handle 
 kill -l
+http://man7.org/linux/man-pages/man7/signal.7.html
  1) SIGHUP	 2) SIGINT	 3) SIGQUIT	 4) SIGILL	 5) SIGTRAP
  6) SIGABRT	 7) SIGBUS	 8) SIGFPE	 9) SIGKILL	10) SIGUSR1
 11) SIGSEGV	12) SIGUSR2	13) SIGPIPE	14) SIGALRM	15) SIGTERM
