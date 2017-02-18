@@ -13,8 +13,9 @@ int main(void){
     int i;
 
      start=time(NULL);
-     for(i=0;i<89789;i++){
-          ; 
+     for(i=0;i<7899999;i++){
+          i++; 
+	printf("i= %d\n",i);
      }
      end = time(NULL);
      printf("The loop used %f seconds.\n", difftime(end,start));

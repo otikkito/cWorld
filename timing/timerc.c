@@ -4,7 +4,7 @@
 	void wait ( int sec )
 	{
 		clock_t end_wait;
-		end_wait = clock () + sec * CLK_TCK ;
+		end_wait = clock () + sec * CLOCKS_PER_SEC ;
 
 		while (clock() < end_wait) {}
 	}
