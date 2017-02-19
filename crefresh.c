@@ -7,7 +7,8 @@
  //auto break case char const continue default do double else enum extern float for goto if int long register return
 //short signed sizeof static struct switch typedef union unsigned void volatile while 
 
-//function prototype are in the header file
+
+//function prototypes are in the header file http://www.cs.utah.edu/~germain/PPS/Topics/C_Language/c_functions.html
 
 int main(){
 	//variable declaration	
