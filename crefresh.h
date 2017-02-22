@@ -1,8 +1,8 @@
 /*
-*Hear is the header for the c refresher. I need to find documentation on what the header file is used for.
+*Here is the header for the c refresher. I need to find documentation on what the header file is used for.
 */
 
-//Some of the stuff that I think goes in a header. Data types that will be used in the implementation,
+//Some of the stuff that I think goes in a header: Data types that will be used in the implementation,
 //function prototypes...
 
 struct datastruct{
