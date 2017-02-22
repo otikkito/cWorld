@@ -1,6 +1,8 @@
 /****************************************************************
 *FILE NAME:applicationstub.c
 *https://github.com/otikkito/cWorld/blob/master/nasa-c-style.pdf
+*https://en.wikipedia.org/wiki/Application_security
+*
 *PURPOSE: To design an application stub to begin devloping applications on the
 * linux/unix platform
 *
