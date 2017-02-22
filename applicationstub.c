@@ -1,7 +1,8 @@
 /****************************************************************
-*FILE NAME:
+*FILE NAME:applicationstub.c
 *https://github.com/otikkito/cWorld/blob/master/nasa-c-style.pdf
-*PURPOSE
+*PURPOSE: To design an application stub to begin devloping applications on the
+* linux/unix platform
 *
 *FILE REFERENCES:
 *
@@ -88,7 +89,7 @@ int main(){
 
 }
 
-
+/*********************************************************************/
 
 //Function declarations
 void PrintApplicationHeader(){
@@ -100,12 +101,15 @@ void PrintApplicationHeader(){
     printf("The process name of this process is: %s \n",get_process_name_by_pid(processid));
 }
 
+/*********************************************************************/
 void PrintLogFile(FILE *f, char *string){
     char timestring[100];
     time_t currenttime = time(0);
     strftime(timestring,sizeof(timestring),"%c",localtime(&currenttime));
     fprintf(f,"%s %s \n",timestring,string);	
 }
+
+/*********************************************************************/
 
 void SigtermHandler(int signal, siginfo_t *info, void *_unused)
 {
@@ -114,6 +118,7 @@ void SigtermHandler(int signal, siginfo_t *info, void *_unused)
   exit(0);
 }
 
+/*********************************************************************/
 
 const char* get_process_name_by_pid(pid_t pid)
 {
@@ -133,6 +138,7 @@ const char* get_process_name_by_pid(pid_t pid)
     }
     return name;
 }
+/*********************************************************************/
 
 /*signals that should handle 
 kill -l
