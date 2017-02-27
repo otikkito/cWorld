@@ -2,6 +2,7 @@
 *FILE NAME:signal-1.c
 *https://github.com/otikkito/cWorld/blob/master/Docs/cManPages/signal.pdf
 *http://www.thegeekstuff.com/2012/03/catch-signals-sample-c-code
+*https://users.cs.cf.ac.uk/Dave.Marshall/C/node24.html
 *
 *PURPOSE: To find the best design practice to handle signals
 * 
