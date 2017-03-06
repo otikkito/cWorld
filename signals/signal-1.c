@@ -1,6 +1,7 @@
 /****************************************************************
 *FILE NAME:signal-1.c
 *https://github.com/otikkito/cWorld/blob/master/Docs/cManPages/signal.pdf
+*http://www.csl.mtu.edu/cs4411.choi/www/Resource/signal.pdf
 *http://www.thegeekstuff.com/2012/03/catch-signals-sample-c-code
 *https://users.cs.cf.ac.uk/Dave.Marshall/C/node24.html
 *
@@ -40,9 +41,23 @@
 */
 
 #include <signal.h>
-#include
-//function proto
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
 int main(){
 
+struct sigaction action = {
+    .sa_handler = NULL,
+    .sa_sigaction = SigtermHandler,
+    .sa_mask = 0,
+    .sa_flags = SA_SIGINFO,
+    .sa_restorer = NULL
+  };
+
+sigaction(SIGTERM, &action, NULL);
+
+	return EXIT_SUCCESS
 }
 

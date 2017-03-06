@@ -2,6 +2,7 @@
 *FILE NAME:applicationstub.c
 *https://github.com/otikkito/cWorld/blob/master/nasa-c-style.pdf
 *https://en.wikipedia.org/wiki/Application_security
+*https://www.tutorialspoint.com/c_standard_library/index.htm
 *
 *PURPOSE: To design an application stub to begin devloping applications on the
 * linux/unix platform
@@ -59,7 +60,7 @@ pid_t processid;
 
 
 int main(){
-    //I need to find a better way to handle signals and find out what important
+    //I need to find a better way to handle signals and find out what are the important
     //signals that I need to look out for.
     struct sigaction action = {
     .sa_handler = NULL,
@@ -96,7 +97,7 @@ int main(){
 //Function declarations
 void PrintApplicationHeader(){
     printf("The process id of this application is: %d\n",processid);
-    printf("Welcome to the application stub.\nThe  purpose of this program");
+    printf("Welcome to the application stub.\nThe  purpose of this program ");
     printf("is to build a solid framework \nfor the application development ");
     printf("process.\n");
     printf("----------------------------------------------------------------\n");
