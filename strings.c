@@ -18,7 +18,7 @@ int main(){
 
 	struct 	Person a;
 	
-	strcpy(a.name,"John mf Doe"); //copies string an null terminates the string
+	strcpy(a.name,"John mf Doe"); //copies string and null terminates the string
 	a.age= 45;
 
 
