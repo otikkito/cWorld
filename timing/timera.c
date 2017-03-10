@@ -1,4 +1,4 @@
-#include <time.h>
+#include <time.h> //https://github.com/otikkito/cWorld/blob/master/Docs/cManPages/time.pdf
 #include <stdio.h>
 #include <unistd.h>
 
