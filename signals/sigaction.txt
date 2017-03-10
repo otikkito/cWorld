@@ -1,0 +1,10 @@
+Reference:
+----------------
+http://pubs.opengroup.org/onlinepubs/009695399/functions/sigaction.html  ->signal.h
+
+
+
+int sigaction(int sig, const struct sigaction *restrict act, struct sigaction *restrict oact);
+sigaction(SIGTERM, &action, NULL);
+void SigtermHandler(int signal, siginfo_t *info, void *_unused)
+

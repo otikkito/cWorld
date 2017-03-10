@@ -61,8 +61,8 @@ pid_t processid;
 
 
 int main(){
-    //I need to find a better way to handle signals and find out what are the important
-    //signals that I need to look out for.
+    //I need to find a better way to handle signals and find out what are important
+    //signals that I need to handle.
     struct sigaction action = {
     .sa_handler = NULL,
     .sa_sigaction = SigtermHandler,

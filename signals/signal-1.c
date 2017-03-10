@@ -44,11 +44,14 @@
 #include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <errno.h>
 
-
+//Function prototype
+void SigtermHandler();
 
 int main(){
 
+int sa_return;
 struct sigaction action = {
     .sa_handler = NULL,
     .sa_sigaction = SigtermHandler,
@@ -57,8 +60,22 @@ struct sigaction action = {
     .sa_restorer = NULL
   };
 
-sigaction(SIGTERM, &action, NULL);
+	sa_return = sigaction(SIGTERM, &action, NULL);
+	if(sa_return == -1){
+		perror("Error with sigaction");
+	}
 
-	return EXIT_SUCCESS
+
+	for(;;){
+		//wait for the cows to come home    
+	}
+	return EXIT_SUCCESS;
+}
+
+void SigtermHandler(int signal, siginfo_t *info, void *_unused)
+{
+  //To terminate kill -s 15 <pid>
+  fprintf(stderr, "Received SIGTERM from process with pid = %u\n",info>si_pid);
+  exit(0);
 }
 
