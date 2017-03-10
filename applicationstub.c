@@ -54,6 +54,7 @@ void PrintLogFile(FILE *f, char *string);
 void SigtermHandler();
 const char* get_process_name_by_pid(pid_t pid);
 
+//Global variables
 char logfile[]= "./text-data-files/logfile.txt";
 FILE *fp;
 pid_t processid;
