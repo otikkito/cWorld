@@ -45,24 +45,27 @@
 #include <signal.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <errno.h>
 #include <sys/types.h>
+#include "applicationstub.h"
 
+/*Global variables*/
+char logfile[]= "./text-data-files/logfile.txt";
+FILE *fp;
+pid_t processid;
 
-//Function prototype
+/*Function prototype*/
 void PrintApplicationHeader();
 void PrintLogFile(FILE *f, char *string);
 void SigtermHandler();
 const char* get_process_name_by_pid(pid_t pid);
 
-//Global variables
-char logfile[]= "./text-data-files/logfile.txt";
-FILE *fp;
-pid_t processid;
+
 
 
 int main(){
-    //I need to find a better way to handle signals and find out what are important
-    //signals that I need to handle.
+    /*I need to find a better way to handle signals and find out what are important
+    signals that I need to handle.*/
     struct sigaction action = {
     .sa_handler = NULL,
     .sa_sigaction = SigtermHandler,
@@ -75,9 +78,10 @@ int main(){
     sigaction(SIGTERM, &action, NULL);
     processid = getpid();
             
-    fp = fopen(logfile,"a+");   //initially caused a segfault because no error checking
+    fp = fopen(logfile,"a+");   /*initially caused a segfault because no error checking*/
     if(fp == NULL){
-	perror("Error with fopen");
+	perror("Error with fopen. I am trying to open a logfile");
+	exit(EXIT_FAILURE);
     }
 
     
@@ -95,7 +99,7 @@ int main(){
 
 /*********************************************************************/
 
-//Function declarations
+/*Function declarations*/
 void PrintApplicationHeader(){
     printf("The process id of this application is: %d\n",processid);
     printf("Welcome to the application stub.\nThe  purpose of this program ");
@@ -117,7 +121,7 @@ void PrintLogFile(FILE *f, char *string){
 
 void SigtermHandler(int signal, siginfo_t *info, void *_unused)
 {
-  //To terminate kill -s 15 <pid>
+  /*To terminate kill -s 15 <pid>*/
   fprintf(stderr, "Received SIGTERM from process with pid = %u\n",info->si_pid);
   exit(0);
 }
@@ -129,7 +133,7 @@ const char* get_process_name_by_pid(pid_t pid)
     char* name = (char*)calloc(1024,sizeof(char));
     if(name){
         sprintf(name, "/proc/%d/cmdline",pid);
-        FILE* f = fopen(name,"r");
+        FILE *f = fopen(name,"r");
         if(f){
             size_t size;
             size = fread(name, sizeof(char), 1024, f);
