@@ -1,0 +1,19 @@
+Error Functions
+-many of the functions in the library set status indicators when error
+or end of file occur.
+The integer expressiono "errno" declared in <errno.h> may contain an error
+number that gives further information about the most recent error
+------
+void clearerr(FILE *stream)
+int feof(FILE *stream)
+int ferror(FILE *stream)
+void perror(const char *s)
+------
+use
+void abort(void)
+void exit(int status)
+      |->EXIT_SUCCESS
+        >EXIT_FAILURE
+
+------
+int atexit(void (*fcn)(void))
