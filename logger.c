@@ -8,7 +8,7 @@
 //and if this code is executing on linux we will log stuff to the syslog
 
 /* Todo need to create a macro of print_log 
- Also could do some measure ments as far as which one is quicker
+ Also could do some measurements as far as which one is quicker
 */
 
 /*

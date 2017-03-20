@@ -55,9 +55,10 @@ FILE *fp;
 pid_t processid;
 
 /*Function prototype*/
-void PrintApplicationHeader();
-void PrintLogFile(FILE *f, char *string);
+void print_application_header();
+void print_log_file(FILE *f, char *string);
 void SigtermHandler();
+void bye(void);
 const char* get_process_name_by_pid(pid_t pid);
 
 
@@ -74,8 +75,13 @@ int main(){
     .sa_flags = SA_SIGINFO,
     .sa_restorer = NULL
   };
+    int i;
     
-    
+    i=atexit(bye);
+    if(i!=0){
+        perror("Unable to set atexit");
+        exit(EXIT_FAILURE);
+    }
     sigaction(SIGTERM, &action, NULL);
     processid = getpid();
             
@@ -122,7 +128,7 @@ int main(){
 *
 *
 *********************************************************/
-void PrintApplicationHeader(){
+void print_application_header(){
     printf("The process id of this application is: %d\n",processid);
     printf("Welcome to the application stub.\nThe  purpose of this program ");
     printf("is to build a solid framework \nfor the application development ");
@@ -153,11 +159,11 @@ void PrintApplicationHeader(){
 *
 *
 *********************************************************/
-void PrintLogFile(FILE *f, char *string){
+void print_log_file(FILE *f, char *string){
     char timestring[100];
     time_t currenttime = time(0);
     strftime(timestring,sizeof(timestring),"%c",localtime(&currenttime));
-    fprintf(f,"%s %s \n",timestring,string);	
+    fprintf(f,"%s %s \n",timestring,string);
 }
 
 /*********************************************************************/
@@ -193,11 +199,12 @@ void SigtermHandler(int signal, siginfo_t *info, void *_unused)
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: get_process_name_by_pid
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: pid_t which is defined in <sys/types.h>
+*
 *
 *
 *
@@ -231,7 +238,30 @@ const char* get_process_name_by_pid(pid_t pid)
     return name;
 }
 /*********************************************************************/
-
+/********************************************************
+*
+*
+* FUNCTION NAME: bye - it performs cleanup at exit of the application.
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
+void bye(void){
+    fclose(fp);
+}
 /*signals that should handle 
 kill -l
 https://github.com/otikkito/cWorld/blob/master/Docs/cManPages/signal.pdf
