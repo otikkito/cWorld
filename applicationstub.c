@@ -4,8 +4,8 @@
 *https://en.wikipedia.org/wiki/Application_security
 *https://www.tutorialspoint.com/c_standard_library/index.htm
 *
-*PURPOSE: To design an application stub to begin devloping applications on the
-* linux/unix platform
+*PURPOSE: To design an application stub to begin developing applications on the
+* Linux/Unix platform
 *
 *FILE REFERENCES:
 *

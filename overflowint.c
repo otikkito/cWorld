@@ -27,11 +27,11 @@ int main(){
 /*
 This function will do the same as what the main function but will indicate if overflow
 occurred.
-Indication that overflow occured happens when goes from positive to negative
+Indication that overflow occurred happens when goes from positive to negative
 Return 0 if no over flow occurred and return 1 if overflow occurred
 */
 functionA(){
- printf("Now in function A where we will expore option 1\n");
+ printf("Now in function A where we will explore option 1\n");
 	for(i=0;;i++){
 
 }
