@@ -50,15 +50,8 @@
 *
 *
 *
-* ARGUMENT
-TYPE
-I/O
-DESCRIPTION
-*
-* --------
-----
----
------------
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
 *
 *
 *

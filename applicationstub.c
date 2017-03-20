@@ -112,15 +112,8 @@ int main(){
 *
 *
 *
-* ARGUMENT
-TYPE
-I/O
-DESCRIPTION
-*
-* --------
-----
----
------------
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
 *
 *
 *
@@ -150,15 +143,8 @@ void PrintApplicationHeader(){
 *
 *
 *
-* ARGUMENT
-TYPE
-I/O
-DESCRIPTION
-*
-* --------
-----
----
------------
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
 *
 *
 *
@@ -186,15 +172,8 @@ void PrintLogFile(FILE *f, char *string){
 *
 *
 *
-* ARGUMENT
-TYPE
-I/O
-DESCRIPTION
-*
-* --------
-----
----
------------
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
 *
 *
 *
@@ -222,15 +201,8 @@ void SigtermHandler(int signal, siginfo_t *info, void *_unused)
 *
 *
 *
-* ARGUMENT
-TYPE
-I/O
-DESCRIPTION
-*
-* --------
-----
----
------------
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
 *
 *
 *
