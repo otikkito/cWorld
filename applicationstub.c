@@ -128,6 +128,34 @@ void SigtermHandler(int signal, siginfo_t *info, void *_unused)
 }
 
 /*********************************************************************/
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT
+TYPE
+I/O
+DESCRIPTION
+*
+* --------
+----
+---
+-----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 /* can also be done be running ps -p PID -i comm= */
 const char* get_process_name_by_pid(pid_t pid)
 {
