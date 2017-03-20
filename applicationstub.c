@@ -101,6 +101,34 @@ int main(){
 /*********************************************************************/
 
 /*Function declarations*/
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT
+TYPE
+I/O
+DESCRIPTION
+*
+* --------
+----
+---
+-----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 void PrintApplicationHeader(){
     printf("The process id of this application is: %d\n",processid);
     printf("Welcome to the application stub.\nThe  purpose of this program ");
@@ -111,6 +139,34 @@ void PrintApplicationHeader(){
 }
 
 /*********************************************************************/
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT
+TYPE
+I/O
+DESCRIPTION
+*
+* --------
+----
+---
+-----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 void PrintLogFile(FILE *f, char *string){
     char timestring[100];
     time_t currenttime = time(0);
@@ -119,7 +175,34 @@ void PrintLogFile(FILE *f, char *string){
 }
 
 /*********************************************************************/
-
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT
+TYPE
+I/O
+DESCRIPTION
+*
+* --------
+----
+---
+-----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 void SigtermHandler(int signal, siginfo_t *info, void *_unused)
 {
   /*To terminate kill -s 15 <pid>*/
