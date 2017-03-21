@@ -213,7 +213,7 @@ void SigtermHandler(int signal, siginfo_t *info, void *_unused)
 *
 *
 *
-* RETURNS:
+* RETURNS: A pointer to a constant char
 *
 *
 *
