@@ -3,6 +3,7 @@
 #include <stdio.h>
 /*
  * http://stackoverflow.com/questions/2509679/how-to-generate-a-random-number-from-within-a-range
+ * https://en.wikipedia.org/wiki/Pseudorandom_number_generator
  */
 
 
