@@ -92,8 +92,8 @@ int main(){
     }
 
     
-    PrintApplicationHeader();
-    PrintLogFile(fp,"Application started.");
+    print_application_header();
+    print_log_file(fp,"Application started.");
 
     /*Starting place of the application. Add code below and remember to do 
     proper logging!

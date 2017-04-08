@@ -2,6 +2,7 @@ Reference:
 ----------------
 http://pubs.opengroup.org/onlinepubs/009695399/functions/sigaction.html  ->signal.h
 
+How to handle multiple signal: http://www.csl.mtu.edu/cs4411.ck/www/NOTES/signal/two-signals.html
 
 
 int sigaction(int sig, const struct sigaction *restrict act, struct sigaction *restrict oact);

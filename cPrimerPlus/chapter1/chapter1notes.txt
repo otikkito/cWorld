@@ -1,0 +1,17 @@
+Notes from C primer plus by Stephen Prata
+
+Prata, Stephen. C Primer Plus. Person Education Inc.
+	2014
+
+1. Define the program objectives
+2. Design the program
+3. Write the code
+4. Compile
+5. Run the program
+6. Test and debug the program
+7. Maintain and modify the program
+
+
+*I need to document my work while developing code. The simpleist way the book advise to do is the right comments to provide explanation into what you are doing.
+*Some times you find that the design is not fesable so you have to go back to the design stages again to get everthing in order.
+*"The compiler converts your source code to an intermendiate code, and the linker combines this with other code to produce the executable file.

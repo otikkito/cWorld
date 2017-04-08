@@ -14,7 +14,11 @@ int main(){
     srand(time(NULL));   // should only be called once
     int r = rand();      // returns a pseudo-random integer between 0 and RAND_MAX
     printf("The value of RAND_MAX = %d and the random number generated is: %d\n",RAND_MAX, r);
-    printf("The value of the random integer in the range of 0 and 30 is: %ld\n",random_at_most(30));
+    int j;
+    for( j=0; j<100 ;j++){
+        printf("The value of the random integer in the range of 0 and 30 is: %ld\n",random_at_most(30));
+    }
+    
     
 }
 
