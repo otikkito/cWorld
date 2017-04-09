@@ -5,7 +5,7 @@ break | Passes control out of the compound statement.
 case | Branches control.
 char | Basic data types (integer and character).
 const | Makes variable value or pointer parameter unmodifiable.
-continue | Passes control to the begining of the loop.
+continue | Passes control to the beginning of the loop.
 default | Branches control.
 do | Do-while loop.
 double |Floating point data types.
@@ -49,3 +49,4 @@ The c library reference http://www.acm.uiuc.edu/webmonkeys/book/c_guide/
 
 
 #TODO ADD examples of all the keywords
+http://tigcc.ticalc.org/doc/keywords.html
