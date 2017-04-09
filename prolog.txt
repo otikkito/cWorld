@@ -60,3 +60,36 @@
 *
 *
 *********************************************************/
+
+
+To cite either a computer program or piece of source code you will need the following information:
+
+- Author(s) name (Individual or corporation)
+- Date
+- Title of program/source code
+- Code version
+- Type (e.g. computer program, source code)
+- Availability (e.g. program publisher, URL)
+
+When citing within the code, the citation information could be placed as a comment above the reused code, as shows below:
+
+/***************************************************************************************
+*    Title: <title of program/source code>
+*    Author: <author(s) names>
+*    Date: <date>
+*    Code version: <code version>
+*    Availability: <where it's located>
+*
+***************************************************************************************/
+
+e.g.
+
+***************************************************************************************/
+*    Title: GraphicsDrawer source code
+*    Author: Smith, J
+*    Date: 2011
+*    Code version: 2.0
+*    Availability: http://www.graphicsdrawer.com
+*
+***************************************************************************************/
+(Version 2.0) [Source code]. http://www.graphicsdrawer.com
