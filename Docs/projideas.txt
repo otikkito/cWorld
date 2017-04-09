@@ -8,10 +8,9 @@ projects I want to develop and for normal use or as an exercise
 -stack
 -test unit for the c standard library
 -test suite for kernel
--stack
 -networking tutorial basically sending network information from machine to machine
 -Somethings that will help with bit manipulation and low level bit problems
 -Timer high resolution 
--Operating system
+-Operating systems
 -Test what is the fastest form of interprocess communications and trade offs
 
