@@ -1,5 +1,6 @@
 /****************************************************************
 *FILE NAME:applicationstub.c
+*www.kjoseph-it.com 
 *https://github.com/otikkito/cWorld/blob/master/nasa-c-style.pdf
 *https://en.wikipedia.org/wiki/Application_security
 *https://www.tutorialspoint.com/c_standard_library/index.htm
