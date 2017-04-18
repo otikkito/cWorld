@@ -2,12 +2,12 @@
 #include <time.h>
 #include <syslog.h>
 
+//www.kjoseph-it.com
 
+//I will basically log a couple of things to the application log 
+//and if this code is executing on Linux we will log stuff to the syslog
 
-//Will basiclly log a couple of things to the application log 
-//and if this code is executing on linux we will log stuff to the syslog
-
-/* Todo need to create a macro of print_log 
+/* TODO need to create a macro of print_log 
  Also could do some measurements as far as which one is quicker
 */
 

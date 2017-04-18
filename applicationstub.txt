@@ -1,4 +1,4 @@
-The purpose of this application is to form a rebost application that standardize
+The purpose of this application is to form a robust application that standardize
 the the application development processing and show best process of 
 application design.
 
