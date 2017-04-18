@@ -82,7 +82,7 @@ int myfunction(struct datastruct a, struct datastruct b){
 	return 0; //for now
 }
 
-//function that will pass by refrence 
+//function that will pass by reference 
 int simpleFunction(struct datastruct *a, struct datastruct *b){
 	printf("Function:The location of a is: %p\n",a);
 	printf("Function:The location of b is: %p\n",b); 

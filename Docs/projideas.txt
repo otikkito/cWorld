@@ -9,7 +9,7 @@ projects I want to develop and for normal use or as an exercise
 -test unit for the c standard library
 -test suite for kernel
 -networking tutorial basically sending network information from machine to machine
--Somethings that will help with bit manipulation and low level bit problems
+-Something that will help with bit manipulation and low level bit problems
 -Timer high resolution 
 -Operating systems
 -Test what is the fastest form of interprocess communications and trade offs
