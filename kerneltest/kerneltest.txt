@@ -1,7 +1,7 @@
 Will test some of the functionity of the kernel from scheduling,memory
 managment, process managment, stress testing , etc...
 
-We will be dliberately trying to break the kerenl an monitor system
+We will be dliberately trying to break the kerenl and monitor system
 performance.
 -stressing individual system calls
 -ensuring resources are low
