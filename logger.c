@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <syslog.h>
+#include <stdarg.h>
 
 //www.kjoseph-it.com
 
@@ -25,7 +26,8 @@
 int print_log(char *string);
 int print_syslog(char *string);
 int print_logfile(FILE *f, char *string);
-int print_logfile_va(FILE *f, ...);
+int print_logfile_va(FILE *f, ...);//poc
+int print_logfile_s(FILE *f, char *string,...);//poc
 
 
 int print_log(char *string){
@@ -54,7 +56,8 @@ int print_logfile(FILE *f, char *string){
 
 
 /*
- * Doing this will make it non portable or a good idea
+ * Doing this will make it non portable or a good idea another way is to try with sprintf
+ * int sprintf(char *str, const char *format, ...);
  man stdarg.h
  https://linux.die.net/man/3/va_arg
  */
