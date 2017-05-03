@@ -100,7 +100,7 @@ int main(){
     proper logging!
     */
 
-    sleep(300);    
+    sleep(3);    
     return 0;
 
 }
@@ -160,6 +160,9 @@ void print_application_header(){
 *
 *
 *********************************************************/
+/*TODO print a variable argument list log file 
+ https://github.com/otikkito/cWorld/blob/master/logger.c
+ */
 void print_log_file(FILE *f, char *string){
     char timestring[100];
     time_t currenttime = time(0);

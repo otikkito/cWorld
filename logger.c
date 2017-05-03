@@ -21,6 +21,13 @@
 
 */
 
+/*function prototype*/
+int print_log(char *string);
+int print_syslog(char *string);
+int print_logfile(FILE *f, char *string);
+int print_logfile_va(FILE *f, ...);
+
+
 int print_log(char *string){
 
 	char timestring[100];
@@ -45,13 +52,22 @@ int print_logfile(FILE *f, char *string){
 	return 0;
 }
 
+
+/*
+ * Doing this will make it non portable or a good idea
+ man stdarg.h
+ https://linux.die.net/man/3/va_arg
+ */
+int print_logfile_va(FILE *f, ...){
+    
+}
 int main(){
 	
 	char logfile[]= "./text-data-files/logfile.txt";
 	
 	FILE *fp;
 	
-	fp = fopen(logfile,"a+");   //Initiall caused a segfault because no error checking
+	fp = fopen(logfile,"a+");   //Initially caused a segfault because no error checking
 	
 	if(fp == NULL){
 		perror("Errror with fopen");
