@@ -31,6 +31,7 @@ int print_logfile(FILE *fp, char *string);
 int print_logfile_va(FILE *fp, ...);//proof of concept
 int print_logfile_s(FILE *fp, char *string,...);//proof of concept
 int print_logfile_pid(FILE *fp, char *string, pid_t pid);
+const char* get_process_name_by_pid(pid_t pid);
 
 /*Global Variables*/
 FILE *fp;
@@ -83,7 +84,7 @@ int print_logfile_pid(FILE *fp, char *string, pid_t pid){
         char timestring[100];
 	time_t currenttime = time(0);
 	strftime(timestring,sizeof(timestring),"%c",localtime(&currenttime));
-	fprintf(fp,"%s %s %d\n",timestring,string,pid);
+	fprintf(fp,"%s %s %d %s\n",timestring,string,pid,get_process_name_by_pid(pid));
     return 0;   
 }
 
@@ -96,3 +97,46 @@ int print_logfile_pid(FILE *fp, char *string, pid_t pid){
 int print_logfile_va(FILE *f, ...){
     
 }
+
+/********************************************************
+*
+*
+* FUNCTION NAME: get_process_name_by_pid
+*
+*
+*
+* ARGUMENTS: pid_t which is defined in <sys/types.h>
+*
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS: A pointer to a constant char
+*
+*
+*
+*********************************************************/
+/* can also be done be running ps -p PID -i comm= */
+const char* get_process_name_by_pid(pid_t pid)
+{
+    char* name = (char*)calloc(1024,sizeof(char));
+    if(name){
+        sprintf(name, "/proc/%d/cmdline",pid);
+        FILE *f = fopen(name,"r");
+        if(f){
+            size_t size;
+            size = fread(name, sizeof(char), 1024, f);
+            if(size>0){
+                if('\n'==name[size-1])
+                    name[size-1]='\0';
+            }
+            fclose(f);
+        }
+    }
+    return name;
+}
+/*********************************************************************/
