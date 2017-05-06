@@ -5,6 +5,7 @@
 //Apllication to do timing anyalysis
 //https://www.tutorialspoint.com/c_standard_library/time_h.htm
 //http://www.geeksforgeeks.org/how-to-measure-time-taken-by-a-program-in-c/
+//https://www.cs.rutgers.edu/~pxk/416/notes/c-tutorials/gettime.html
 
 void delay(unsigned int d);
 

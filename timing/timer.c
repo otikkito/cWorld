@@ -5,6 +5,7 @@
 
 /*Function prototype*/
 void print_time();
+
 int main(){
     
 }
