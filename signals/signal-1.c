@@ -5,6 +5,7 @@
 *http://www.thegeekstuff.com/2012/03/catch-signals-sample-c-code
 *https://users.cs.cf.ac.uk/Dave.Marshall/C/node24.html
 *https://en.wikipedia.org/wiki/C_signal_handling
+*http://www.linuxprogrammingblog.com/all-about-linux-signals?page=show
 *
 *PURPOSE: To find the best design practice to handle signals
 * 
