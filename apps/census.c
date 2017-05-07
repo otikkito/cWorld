@@ -10,6 +10,7 @@
  *
  * Created on May 6, 2017, 5:31 PM
  * 
+ * http://stackoverflow.com/questions/11280523/c-reading-from-file-into-structure
  * https://docs.python.org/2/library/os.html  ->converting file to a easy format
  */
 
@@ -17,6 +18,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <errno.h>
+#include <strings.h>
 
 #define MAXLINESIZE 1000
 
@@ -38,12 +40,20 @@ int main(int argc, char** argv) {
        perror("getcwd() error");
     
     fp=fopen("../text-data-files/census-dist-male-first.txt","r");
+    
     if (fp == NULL){
         perror("Unable to open:../text-data-files/census-dis-male-first.txt");
         exit(EXIT_FAILURE);
     }
+    
     while(fgets(line,MAXLINESIZE,fp)){
         printf("%s",line);
+        char *tokens;
+        tokens = strtok(line," ");
+        while(tokens != NULL){
+            printf("%s\n",tokens);
+        }
+        
     }
     fclose(fp);
     return (EXIT_SUCCESS);
