@@ -60,3 +60,6 @@ int main(int argc, char** argv) {
     return (EXIT_SUCCESS);
 }
 
+
+/*TODO design a function that takes a string separated by a undefined number of 
+ * of spaces and returns a token for each of the space delimited words
