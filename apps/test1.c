@@ -33,7 +33,8 @@ tokenizestring(char * string){
     int j;
     //temp1[WORDSIZE];
     for(i=0; i <strlen(string);i++){
-        j=isblank(string[i]);
+        j=isblank(string[i]);  //isblank is returning the wrong return codes need to check into that
+        printf("%c \n",string[i]);
         if(isblank(string[i]) != 0){
             printf("%c \n",string[i]);
         }
