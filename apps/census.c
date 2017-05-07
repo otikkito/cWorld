@@ -51,7 +51,8 @@ int main(int argc, char** argv) {
         char *tokens;
         tokens = strtok(line," ");
         while(tokens != NULL){
-            printf("%s\n",tokens);
+            printf("%s \n",tokens);
+            tokens = strtok(NULL, " ");
         }
         
     }
