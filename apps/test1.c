@@ -45,9 +45,7 @@ void tokenizestring(char * string){
     char c;
     char word[WORDSIZE];
     
-    for(count=0; count < strlen(word); count++){
-        word[i]= '\0';
-    }
+    memset(&word[0],0, strlen(word))
     for(i=0; i < strlen(string);i++){  //need to fix strlen it returns size_t
         if(isblank_k(string[i]) == 0){  
             printf("%c \n",string[i]);
@@ -71,10 +69,10 @@ void tokenizestring(char * string){
             membernum++;
             
         }
-        printf("word: %s",word);
+        
     }
     
-    
+    printf("word: %s",word);
 }
 /*
  blanks that are in c:
