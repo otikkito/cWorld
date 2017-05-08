@@ -40,6 +40,7 @@ void tokenizestring(char * string){
     int i;
     int membernum=1;
     int j;
+    char c;
     
     for(i=0; i < strlen(string);i++){  //need to fix strlen it returns size_t
         if(isblank_k(string[i]) == 0){  
@@ -52,13 +53,13 @@ void tokenizestring(char * string){
                     string.string1[i] = c;
                     break;
                 case 2://need to modify to read in a float
-                    string.float1[i] = c;
+                    //string.float1[i] = c;
                     break;
                 case 3: //need to modify to read in a float
-                    string.float2[i] = c;
+                    //string.float2[i] = c;
                     break;
                 case 4: //need to modify to read in a integer
-                    string.int[i] = c;
+                    //string.int[i] = c;
                     break;
             }
             membernum++;
