@@ -28,7 +28,7 @@ extern "C" {
 #endif
 
 #endif /* CENSUS_H */
-//1219
+//Number of entries in the file 1219
 struct datastruct{
 
 	char name[50];
