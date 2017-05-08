@@ -4,6 +4,7 @@
 
 /*Function prototype*/
 tokenizestring(char * string);
+isblank_k(int c);
 
 
 struct strings{
@@ -49,5 +50,9 @@ tokenizestring(char * string){
         
     }
     
+    
+}
+
+isblank_k(int c){
     
 }
