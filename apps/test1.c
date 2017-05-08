@@ -28,6 +28,7 @@ int main(){
 /*
  char string[] = "JAMES          3.318  3.318      1\n";
  * man isblank
+ * TODO Need to modify or create another function that can have variable word sizes
  * RETURN VALUE
        The  values returned are nonzero if the character c falls into the tested class, and
        a zero value if not.
@@ -39,10 +40,8 @@ void tokenizestring(char * string){
     int i;
     int membernum=1;
     int j;
-    //temp1[WORDSIZE];
-    for(i=0; i < strlen(string);i++){
-        //j=isblank_k(string[i]);  //isblank is returning the wrong return codes need to check into that
-        //printf("%c \n",string[i]);
+    
+    for(i=0; i < strlen(string);i++){  //need to fix strlen it returns size_t
         if(isblank_k(string[i]) == 0){  
             printf("%c \n",string[i]);
             
