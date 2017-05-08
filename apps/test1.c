@@ -52,7 +52,10 @@ tokenizestring(char * string){
     
     
 }
-
+/*
+ blanks that are in c:
+ * man ascii
+ */
 isblank_k(int c){
     
 }
