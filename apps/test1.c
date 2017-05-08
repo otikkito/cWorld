@@ -57,7 +57,7 @@ void tokenizestring(char * string){
             switch(membernum){
                 case 1:
                     word[i] = c;
-                    break;
+                    continue;
                 case 2://need to modify to read in a float
                     //string.float1[i] = c;
                     break;
