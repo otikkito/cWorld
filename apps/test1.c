@@ -52,13 +52,13 @@ void tokenizestring(char * string){
                 case membernum 1:
                     string.string1[i] = c;
                     break;
-                case membernum 2:
+                case membernum 2://need to modify to read in a float
                     string.float1[i] = c;
                     break;
-                case membernum 3:
+                case membernum 3: //need to modify to read in a float
                     string.float2[i] = c;
                     break;
-                case membernum 4:
+                case membernum 4: //need to modify to read in a integer
                     string.int[i] = c;
                     break;
             }
