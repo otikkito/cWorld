@@ -34,4 +34,5 @@ struct datastruct{
 	char name[50];
 	float df1;
         float df2;
+        int   number;
 };
