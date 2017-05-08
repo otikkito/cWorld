@@ -3,6 +3,7 @@
 #include <ctype.h>
 #include <stdlib.h>
 
+#define WORDSIZE 50
 
 /*Function prototype*/
 void tokenizestring(char * string);
@@ -40,8 +41,13 @@ void tokenizestring(char * string){
     int i;
     int membernum=1;
     int j;
+    int count;
     char c;
+    char word[WORDSIZE];
     
+    for(count=0; count < strlen(word); count++){
+        word[i]="\0";
+    }
     for(i=0; i < strlen(string);i++){  //need to fix strlen it returns size_t
         if(isblank_k(string[i]) == 0){  
             printf("%c \n",string[i]);
@@ -50,7 +56,7 @@ void tokenizestring(char * string){
         if(isblank_k(string[i])){//if it is a character print it to the console and put it in the structure
             switch(membernum){
                 case 1:
-                    string.string1[i] = c;
+                    word[i]= c;
                     break;
                 case 2://need to modify to read in a float
                     //string.float1[i] = c;
