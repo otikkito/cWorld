@@ -53,7 +53,7 @@ void tokenizestring(char * string){
             printf("%c \n",string[i]);
             
         }
-        if((isblank_k(string[i])) != 0){//if it is a character print it to the console and put it in the structure
+        if((isblank_k(string[i])) == 0){//if it is a character print it to the console and put it in the structure
             switch(membernum){
                 case 1:
                     word[i] = c;
