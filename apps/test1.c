@@ -25,6 +25,7 @@ int main(){
 
 /*
  char string[] = "JAMES          3.318  3.318      1\n";
+ * man isblank
  * RETURN VALUE
        The  values returned are nonzero if the character c falls into the tested class, and
        a zero value if not.
