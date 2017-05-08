@@ -49,16 +49,16 @@ void tokenizestring(char * string){
         }
         if(isblank_k(string[i])){//if it is a character print it to the console and put it in the structure
             switch(membernum){
-                case membernum 1:
+                case 1:
                     string.string1[i] = c;
                     break;
-                case membernum 2://need to modify to read in a float
+                case 2://need to modify to read in a float
                     string.float1[i] = c;
                     break;
-                case membernum 3: //need to modify to read in a float
+                case 3: //need to modify to read in a float
                     string.float2[i] = c;
                     break;
-                case membernum 4: //need to modify to read in a integer
+                case 4: //need to modify to read in a integer
                     string.int[i] = c;
                     break;
             }
