@@ -5,6 +5,7 @@
 *https://en.wikipedia.org/wiki/Application_security
 *https://www.tutorialspoint.com/c_standard_library/index.htm
 *https://en.wikipedia.org/wiki/MIL-STD-498 
+*https://www.ece.ncsu.edu/people/gbyrd 
 *
 *PURPOSE: To design an application stub to begin developing applications on the
 * Linux/Unix platform
