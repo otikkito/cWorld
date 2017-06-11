@@ -1,5 +1,5 @@
-Will test some of the functionity of the kernel from scheduling,memory
-managment, process managment, stress testing , etc...
+I will be testing some of the functionity of the kernel from scheduling,memory
+managment, process managment, stress testing, etc...
 
 We will be dliberately trying to break the kerenl and monitor system
 performance.
