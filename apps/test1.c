@@ -15,8 +15,8 @@ int isblank_k(int c);
 
 struct strings{
     char string1[50];
-    float float1[50];
-    float float2[50];
+    float float1;
+    float float2;
     int   integer;
 }string;
 
