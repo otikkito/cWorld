@@ -57,7 +57,7 @@ void tokenizestring(char * string){
         if((isblank_k(string[i])) == 0){//if it is a character print it to the console and put it in the structure
             switch(membernum){
                 case 1:
-                    word[i] = 'c';
+                    word[i] = c;
                     continue;
                 case 2://need to modify to read in a float
                     //string.float1[i] = c;
