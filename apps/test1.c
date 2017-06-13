@@ -7,6 +7,7 @@
 
 
 //https://sourceware.org/bugzilla/buglist.cgi?bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=SUSPENDED&bug_status=WAITING&bug_status=REOPENED&list_id=33073&product=glibc&query_format=advanced
+//https://www.merriam-webster.com/dictionary/double%20entendre
 
 /*Function prototype*/
 void tokenizestring(char * string);
