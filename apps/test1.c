@@ -53,6 +53,7 @@ void tokenizestring(char * string){
     
     memset(&word[0],0, strlen(word));
     for(i=0; i < strlen(string);i++){  //need to fix strlen it returns size_t
+        c = string[i];
         if(isblank(string[i]) == 0){  
             printf("%c \n",string[i]);
             
