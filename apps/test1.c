@@ -75,7 +75,7 @@ void tokenizestring(char * string){
         
     }
     
-    printf("word: %s",word);
+    printf("word: %s \n",word);
 }
 /*
  blanks that are in c:
