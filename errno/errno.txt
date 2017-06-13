@@ -13,7 +13,7 @@ use
 void abort(void)
 void exit(int status)
       |->EXIT_SUCCESS
-        >EXIT_FAILURE
+      |->EXIT_FAILURE
 
 ------
 int atexit(void (*fcn)(void))
