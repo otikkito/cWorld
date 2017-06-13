@@ -50,11 +50,12 @@ void tokenizestring(char * string){
     
     memset(&word[0],0, strlen(word));
     for(i=0; i < strlen(string);i++){  //need to fix strlen it returns size_t
-        if(isblank_k(string[i]) == 0){  
+        if(isblank(string[i]) == 0){  
             printf("%c \n",string[i]);
             
         }
-        if((isblank_k(string[i])) == 0){//if it is a character print it to the console and put it in the structure
+        //char string[] = "JAMES          3.318  3.318      1\n";
+        if((isblank(string[i])) == 0){//if it is a character print it to the console and put it in one of the member of the structure
             switch(membernum){
                 case 1:
                     word[i] = c;
