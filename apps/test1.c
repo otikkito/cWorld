@@ -77,8 +77,8 @@ void tokenizestring(char * string){
                     ///https://www.tutorialspoint.com/c_standard_library/c_function_atof.htm
                     //string.float1[i] = c;
                     break;
-                casmodify to read in a integer
-                   e 3: //need to modify to read in a float
+                
+                case 3: //need to modify to read in a float
                     //string.float2[i] = c;
                     break;
                 case 4: //need to  //string.int[i] = c;
