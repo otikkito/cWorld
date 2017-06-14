@@ -10,6 +10,12 @@
 //https://en.wikipedia.org/wiki/Natural_language_processing
 //https://www.coursera.org/learn/natural-language-processing
 
+
+/*
+ * Some of the issues that I have seen thus far is that to my knowledge there
+ * is some issues with mixed type (i.e. strings and floats between a character string)
+ * 
+ */
 /*Function prototype*/
 void tokenizestring(char * string);
 int isblank_k(int c);
@@ -68,13 +74,14 @@ void tokenizestring(char * string){
                     continue;
                 case 2://need to modify to read in a float
                     //man atof
+                    ///https://www.tutorialspoint.com/c_standard_library/c_function_atof.htm
                     //string.float1[i] = c;
                     break;
-                case 3: //need to modify to read in a float
+                casmodify to read in a integer
+                   e 3: //need to modify to read in a float
                     //string.float2[i] = c;
                     break;
-                case 4: //need to modify to read in a integer
-                    //string.int[i] = c;
+                case 4: //need to  //string.int[i] = c;
                     break;
             }
             membernum++;
