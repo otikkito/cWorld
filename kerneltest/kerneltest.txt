@@ -1,6 +1,9 @@
 I will be testing some of the functionity of the kernel from scheduling,memory
 managment, process managment, stress testing, etc...
 
+
+https://www.kernel.org/
+
 We will be dliberately trying to break the kerenl and monitor system
 performance.
 -stressing individual system calls
