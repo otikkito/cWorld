@@ -8,5 +8,5 @@ performance.
 -supplying random input data
 -applying random changes to valid input
 -startup delay
--resource hoggin program (cpu/memory)
+-resource hogging program (cpu/memory)
 
