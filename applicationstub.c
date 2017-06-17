@@ -96,13 +96,13 @@ int main(){
 
     
     print_application_header();
-    print_log_file(fp,"Application started.");
+    print_log_file(fp,"Application started.\n");
 
     /*Starting place of the application. Add code below and remember to do 
     proper logging!
     */
-
-    sleep(3);    
+    print_log_file(fp,"The application will now sleep for 1 minute\n");
+    sleep(60);    
     return 0;
 
 }

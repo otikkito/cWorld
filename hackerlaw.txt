@@ -1,6 +1,6 @@
 http://www.hackerlaw.org/?page_id=55
     
-
+The new linux firewall is firewalld.
 
     wiretap Act a/k/a as “Title III”, which prohibits “any person,” including law enforcement, from making an illegal interception or disclosing or using illegally intercepted material. 18 U.S.C. § 2511(1).
     Unlawful Access to Stored Communications: 18 U.S.C. § 2701. Section 2701 focuses on protecting email and voicemail from unauthorized access.

@@ -1,7 +1,8 @@
 This will be the starting point of networking refresher and programming emulation.
 
-https://tools.ietf.org/html/rfc791
-http://beej.us/guide/bgnet/
+https://www.ietf.org/rfc.html  ---> Complete RFC
+https://tools.ietf.org/html/rfc791  ---> Internet Protocol
+http://beej.us/guide/bgnet/  ---> Network programming (windows/linux)
 
 2/27/17 Get the documentation and study material that I need to master and put
 the directory structure in place to help with the project and referencing material to aid in the development.
