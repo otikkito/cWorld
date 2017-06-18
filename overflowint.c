@@ -4,8 +4,8 @@
 functionA();
 functionB();
 functionC();
-increment(int *i);
-decrement(int *i);
+int increment(int *i);
+int decrement(int *i);
 
 //https://software.intel.com/sites/default/files/managed/39/c5/325462-sdm-vol-1-2abcd-3abcd.pdf
 
