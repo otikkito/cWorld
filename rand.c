@@ -11,7 +11,7 @@
 long random_at_most(long max);
 
 int main(){
-    srand(time(NULL));   // should only be called once
+    srand(time(NULL));   // should only be called once to set the seed
     int r = rand();      // returns a pseudo-random integer between 0 and RAND_MAX
     printf("The value of RAND_MAX = %d and the random number generated is: %d\n",RAND_MAX, r);
     int j;
