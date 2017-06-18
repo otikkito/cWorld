@@ -22,6 +22,8 @@
  * "If you want to compute the elapsed time between two events observed on the 
  * one machine without an intervening reboot, CLOCK_MONOTONIC is the best option." 
  */
+
+/*TODO need to break it down to seconds, milli seconds and nano seconds*/
 int main(int argc, char** argv) {
     
     int i;
@@ -34,8 +36,16 @@ int main(int argc, char** argv) {
     if(i == -1){
         perror("clock_gettime");
     }
+    
+    /*Do something in the interim while time has elapsed*/
     sleep(3);
+    
+    
+    
     i = clock_gettime( CLOCK_MONOTONIC,&end);
+    if(i == -1){
+        perror("clock_gettime");
+    }
     
     diff.tv_sec = (end.tv_sec - start.tv_sec);
     diff.tv_nsec = (end.tv_nsec - start.tv_nsec);
