@@ -94,15 +94,13 @@ int main(){
 	exit(EXIT_FAILURE);
     }
 
-    
     print_application_header();
     print_log_file(fp,"Application started.\n");
 
     /*Starting place of the application. Add code below and remember to do 
     proper logging!
     */
-    print_log_file(fp,"The application will now sleep for 1 minute\n");
-    sleep(60);    
+    
     return 0;
 
 }
