@@ -17,7 +17,7 @@ int main(){
 	
 	start=clock();
 	delay(3);
-	diff = clock() -start;
+	diff = clock() - start;
 	msec = diff *1000 / CLOCKS_PER_SEC; 
 	printf("seconds: %d miliseconds: %d \n",msec/1000,msec%1000);
 	
