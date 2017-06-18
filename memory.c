@@ -32,7 +32,7 @@ int main(){
 	printf("The address of i is %p \n",&i);
 	
 	while(true){
-		sleep(1);
+		sleep(100);
 	}
 	return 0;
 }
