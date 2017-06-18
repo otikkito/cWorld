@@ -8,4 +8,4 @@ Design considerations:
 3) Performance issues
 4) Logging of code, errors, and events within the application.
 5) Memory Leaks
-6) Application security from know flaws within the operating system
+6) Application security from known flaws within the operating system and IPC

@@ -13,6 +13,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <signal.h>
 
 /*
  * http://www.csl.mtu.edu/cs4411.ck/www/NOTES/signal/two-signals.html

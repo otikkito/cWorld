@@ -39,7 +39,7 @@ int printFileToConsole(char *fn){
 }
 
 /*post analysis
--not sure if the buffered approched is quick 
+-not sure if the buffered approach is quicker 
 -not sure how to determine the line size I guess you could check to see the max size of a line
 When ranned with the printf
 real	0m1.249s

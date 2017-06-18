@@ -1,10 +1,17 @@
 Reference:
 ----------------
 http://pubs.opengroup.org/onlinepubs/009695399/functions/sigaction.html  ->signal.h
-
+http://man7.org/linux/man-pages/man2/sigaction.2.html --> sigaction
 
 How to handle multiple signal: http://www.csl.mtu.edu/cs4411.ck/www/NOTES/signal/two-signals.html
 
+//https://web.mst.edu/~ercal/284/SignalExamples/sigaction-EX1.c
+
+/*To terminate kill -s 15 <pid>*/
+
+"The SIGKILL or SIGSTOP signals cannot be caught or ignored." -->  https://www.systutorials.com/5510/catching-the-signal-sent-by-kill-in-c-on-linux/
+
+man sigaction
 
 int sigaction(int sig, const struct sigaction *restrict act, struct sigaction *restrict oact);
 sigaction(SIGTERM, &action, NULL);
