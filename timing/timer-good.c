@@ -35,12 +35,19 @@ long    tv_nsec   Nanoseconds.
 //time_t  tv_sec    Seconds.
 //long    tv_nsec   Nanoseconds.
 // time_t and clock_t shall be integer or real-floating types (man type.h)
-
-struct timestruct{
+/*
+ 
+ struct timestruct{
     time_t seconds;
     time_t milliseconds;
-    timer_t nanoseconds;
-};
+    long nanoseconds;
+  };
+ 
+ */
+
+  
+  //Function prototype
+  //struct timerstruc convert_timespect(struct timestruc temp)
 
 /*TODO need to break it down to seconds, milli seconds and nano seconds*/
 int main(int argc, char** argv) {
@@ -58,6 +65,7 @@ int main(int argc, char** argv) {
     
     /*Do something in the interim while time has elapsed*/
     sleep(3);
+    //usleep(34);
     
     
     
@@ -71,5 +79,5 @@ int main(int argc, char** argv) {
     
     printf("It took a total of %d sec. and %ld nanosecs \n",diff.tv_sec,diff.tv_nsec);
     return (EXIT_SUCCESS);
-}
+}   
 
