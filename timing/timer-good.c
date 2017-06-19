@@ -22,7 +22,19 @@
  * "If you want to compute the elapsed time between two events observed on the 
  * one machine without an intervening reboot, CLOCK_MONOTONIC is the best option." 
  */
+/*
+ struct timespec
+time_t  tv_sec    Seconds.
+long    tv_nsec   Nanoseconds.
+ * 
+ */
 
+//milliseconds = nanoseconds ÷ 1,000,000
+//nanoseconds = milliseconds x 1,000,000
+
+struct timestruct{
+    
+};
 
 /*TODO need to break it down to seconds, milli seconds and nano seconds*/
 int main(int argc, char** argv) {
