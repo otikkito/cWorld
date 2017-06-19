@@ -34,10 +34,12 @@ long    tv_nsec   Nanoseconds.
 //stuct timespec
 //time_t  tv_sec    Seconds.
 //long    tv_nsec   Nanoseconds.
-* time_t and clock_t shall be integer or real-floating types (man type.h)
+// time_t and clock_t shall be integer or real-floating types (man type.h)
 
 struct timestruct{
-    
+    time_t seconds;
+    time_t milliseconds;
+    timer_t nanoseconds;
 };
 
 /*TODO need to break it down to seconds, milli seconds and nano seconds*/
