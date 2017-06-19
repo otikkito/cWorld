@@ -31,6 +31,10 @@ long    tv_nsec   Nanoseconds.
 
 //milliseconds = nanoseconds ÷ 1,000,000
 //nanoseconds = milliseconds x 1,000,000
+//stuct timespec
+//time_t  tv_sec    Seconds.
+//long    tv_nsec   Nanoseconds.
+* time_t and clock_t shall be integer or real-floating types (man type.h)
 
 struct timestruct{
     
