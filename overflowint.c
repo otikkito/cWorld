@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
+#include <assert.h>
 
 functionA();
 functionB();
@@ -32,10 +33,11 @@ occurred.
 Indication that overflow occurred happens when goes from positive to negative
 Return 0 if no over flow occurred and return 1 if overflow occurred
 */
-functionA(){
+functionA(int *i){
  printf("Now in function A where we will explore option 1\n");
 	for(i=0;;i++){
-
+        
+        }
 }
 
 //Conclusion overflow happens and does not give a runtime error. In code I will have to check for overflow.

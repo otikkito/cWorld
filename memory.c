@@ -22,7 +22,7 @@
 	|
     flexibility                  allocation cost
 */
-//static declarition of memory is quicker than dynamic allocation
+//static declaration of memory is quicker than dynamic allocation
 int main(){
 	int i;
 	char string[] = "string that is a string in memory.c";
