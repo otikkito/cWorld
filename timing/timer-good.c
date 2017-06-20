@@ -17,10 +17,12 @@
 #include <unistd.h>
 
 
-/* man clock_gettime
+/* https://en.wikipedia.org/wiki/Time
+ * man clock_gettime
  * https://stackoverflow.com/questions/6749621/how-to-create-a-high-resolution-timer-in-linux-to-measure-program-performance
  * "If you want to compute the elapsed time between two events observed on the 
  * one machine without an intervening reboot, CLOCK_MONOTONIC is the best option." 
+ * 
  */
 /*
  struct timespec
@@ -28,9 +30,10 @@ time_t  tv_sec    Seconds.
 long    tv_nsec   Nanoseconds.
  * 
  */
-
+//POSIX.1b
 //milliseconds = nanoseconds ÷ 1,000,000
 //nanoseconds = milliseconds x 1,000,000
+//A microsecond is equal to 1000 nanoseconds
 //stuct timespec
 //time_t  tv_sec    Seconds.
 //long    tv_nsec   Nanoseconds.
@@ -42,9 +45,10 @@ long    tv_nsec   Nanoseconds.
 /*
  
  struct timestruct{
-    time_t seconds;
+    time_t seconds;  //included in struct timespec
     time_t milliseconds;
-    long nanoseconds;
+ *  long microseconds
+    long nanoseconds;  //included in struct timespec
   };
  
  */
