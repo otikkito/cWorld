@@ -35,6 +35,10 @@ long    tv_nsec   Nanoseconds.
 //time_t  tv_sec    Seconds.
 //long    tv_nsec   Nanoseconds.
 // time_t and clock_t shall be integer or real-floating types (man type.h)
+//man clock_nanosleep
+//man nanosleep
+//
+
 /*
  
  struct timestruct{
@@ -64,7 +68,7 @@ int main(int argc, char** argv) {
     }
     
     /*Do something in the interim while time has elapsed*/
-    sleep(3);
+    //sleep(3);
     //usleep(34);
     
     
@@ -77,7 +81,7 @@ int main(int argc, char** argv) {
     diff.tv_sec = (end.tv_sec - start.tv_sec);
     diff.tv_nsec = (end.tv_nsec - start.tv_nsec);
     
-    printf("It took a total of %d sec. and %ld nanosecs \n",diff.tv_sec,diff.tv_nsec);
+    printf("It took a total of %d sec. and %ld nanosecs. \n",diff.tv_sec,diff.tv_nsec);
     return (EXIT_SUCCESS);
 }   
 
