@@ -54,12 +54,12 @@ long    tv_nsec   Nanoseconds.
   };
  
 //Function prototype
-struct timestruct diff_timespec(struct timespec *start,struct timespec *end);
+void diff_timespec(struct timespec *start,struct timespec *end);
 
  struct timespec start;
  struct timespec end;
  struct timespec diff1;
- struct timepsec diff2;
+ struct timespec diff2;
  struct timestruct t;
 
  
@@ -95,7 +95,7 @@ int main(int argc, char** argv) {
     
     printf("It took a total of %d sec. and %ld nanosecs. \n",diff1.tv_sec,diff1.tv_nsec);
     
-    t = diff_timespec(&start,&end);
+    diff_timespec(&start,&end);
     
     printf("Using the new function the total seconds is %d sec and %ld nanosecs. \n",t.seconds,t.nanoseconds);
     return (EXIT_SUCCESS);
@@ -107,9 +107,9 @@ int main(int argc, char** argv) {
  error: return type is an incomplete type
  struct timestruc diff_timespec(struct timespec *start,struct timespec *end){
  */
-struct timestruct diff_timespec(struct timespec *start,struct timespec *end){
-    struct timestruct a;
-    a.seconds = ((end->seconds)-(start->seconds));
-    a.nanoseconds = ((end->nanoseconds)-(start->nanoseconds));
+void diff_timespec(struct timespec *start,struct timespec *end){
+    
+    t.seconds = ((end->tv_sec)-(start->tv_sec));
+    t.nanoseconds = ((end->tv_nsec)-(start->tv_nsec));
     
 }
