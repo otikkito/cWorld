@@ -46,17 +46,19 @@ long    tv_nsec   Nanoseconds.
  * 
  */
 
-
-/*
- 
  struct timestruct{
     time_t seconds;  //included in struct timespec
     time_t milliseconds;
- *  long microseconds
+    long microseconds
     long nanoseconds;  //included in struct timespec
   };
  
- */
+//Function prototype
+struct timestruc diff_timespec(struct timespec *start,struct timespec *end);
+
+ 
+
+ 
 
   
   //Function prototype
@@ -68,8 +70,9 @@ int main(int argc, char** argv) {
     int i;
     struct timespec start;
     struct timespec end;
-    struct timespec diff;
-    
+    struct timespec diff1;
+    struct timepsec diff2;
+    struct timestruct t;
     
     i = clock_gettime( CLOCK_MONOTONIC,&start);
     if(i == -1){
@@ -87,10 +90,20 @@ int main(int argc, char** argv) {
         perror("clock_gettime");
     }
     
-    diff.tv_sec = (end.tv_sec - start.tv_sec);
-    diff.tv_nsec = (end.tv_nsec - start.tv_nsec);
+    diff1.tv_sec = (end.tv_sec - start.tv_sec);
+    diff1.tv_nsec = (end.tv_nsec - start.tv_nsec);
     
     printf("It took a total of %d sec. and %ld nanosecs. \n",diff.tv_sec,diff.tv_nsec);
+    
+    t = diff_timespec(&start,&end);
+    
+    printf("Using the new function the total seconds is %d sec and %ld nanosecs. \n",a.seconds,a.nanoseconds);
     return (EXIT_SUCCESS);
 }   
 
+struct timestruc diff_timespec(struct timespec *start,struct timespec *end){
+    struct timestruct a;
+    a.seconds = ((end->seconds)-(start->seconds));
+    a.nanoseconds = ((end->nanoseconds)-(start->nanoseconds));
+    
+}

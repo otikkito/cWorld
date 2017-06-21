@@ -53,8 +53,6 @@
 #include "applicationstub.h"
 
 
-//# define sa_handler     __sigaction_handler.sa_handler
-
 /*Global variables*/
 char logfile[]= "./text-data-files/logfile.txt";
 FILE *fp;
