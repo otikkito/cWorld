@@ -7,7 +7,7 @@
 
 void sigterm_handler(int signal, siginfo_t *info, void *_unused)
 {
-  fprintf(stderr, "Received SIGTERM from process with pid = %u\n",info->si_pid);
+  fprintf(stdout, "Received SIGTERM from process with pid = %u\n",info->si_pid);
   exit(0);
 }
 
@@ -21,7 +21,7 @@ int main (void)
     .sa_restorer = NULL
   };
 
-  sigaction(SIGTERM, &action, NULL);
+  sigaction(SIGINT, &action, NULL);
   sleep(60);
 
   return 0;

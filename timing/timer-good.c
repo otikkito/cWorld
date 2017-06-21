@@ -38,9 +38,14 @@ long    tv_nsec   Nanoseconds.
 //time_t  tv_sec    Seconds.
 //long    tv_nsec   Nanoseconds.
 // time_t and clock_t shall be integer or real-floating types (man type.h)
-//man clock_nanosleep
-//man nanosleep
-//
+
+/*the different resolution for sleep are listed below:
+ man clock_nanosleep
+ man nanosleep
+ 
+ * 
+ */
+
 
 /*
  

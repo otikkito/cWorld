@@ -72,6 +72,7 @@ int main(){
     /*I need to find a better way to handle signals and find out what are important
     signals that I need to handle.
      man sigaction
+     *man 7 signal 
      */
     struct sigaction action = {
     .sa_handler = NULL,
