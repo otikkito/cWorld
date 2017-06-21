@@ -1,3 +1,5 @@
 text-data-files/logfile.txt
 a.out
 app
+*.xml
+*.ofx

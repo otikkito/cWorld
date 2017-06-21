@@ -82,7 +82,6 @@ int main(){
     //https://netbeans.org/bugzilla/show_bug.cgi?id=191390
     struct sigaction action;
     action.sa_handler = signal_handler;
-    //action.__sigaction_handler = signal_handler;
     sigaction(SIGINT, &action, NULL);
     
     
