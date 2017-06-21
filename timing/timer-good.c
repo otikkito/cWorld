@@ -109,7 +109,12 @@ int main(int argc, char** argv) {
  */
 void diff_timespec(struct timespec *start,struct timespec *end){
     
+    //milliseconds = nanoseconds ÷ 1,000,000
+    //nanoseconds = milliseconds x 1,000,000
+    //A microsecond is equal to 1000 nanoseconds
     t.seconds = ((end->tv_sec)-(start->tv_sec));
+    //t.microseconds
+    //t.milliseconds
     t.nanoseconds = ((end->tv_nsec)-(start->tv_nsec));
     
 }
