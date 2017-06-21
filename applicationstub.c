@@ -60,7 +60,7 @@ pid_t processid;
 /*Function prototype*/
 void print_application_header();
 void print_log_file(FILE *f, char *string);
-void SigtermHandler();
+void signal_handler();
 void bye(void);
 const char* get_process_name_by_pid(pid_t pid);
 
@@ -74,13 +74,13 @@ int main(){
      man sigaction
      *man 7 signal 
      */
-    struct sigaction action = {
-    .sa_handler = NULL,
-    .sa_sigaction = SigtermHandler,
-    .sa_mask = 0,
-    .sa_flags = SA_SIGINFO,
-    .sa_restorer = NULL
-  };
+   //handling of the signals 
+    //https://netbeans.org/bugzilla/show_bug.cgi?id=191390
+    struct sigaction action;
+    action.__sigaction_handler = signal_handler;
+    sigaction(SIGINT, &action, NULL);
+    
+    
     int i;
     
     i=atexit(bye);
@@ -195,7 +195,7 @@ void print_log_file(FILE *f, char *string){
 *
 *
 *********************************************************/
-void SigtermHandler(int signal, siginfo_t *info, void *_unused)
+void signal_handler(int signal, siginfo_t *info, void *_unused)
 {
   /*To terminate kill -s 15 <pid>*/
   fprintf(stderr, "Received SIGTERM from process with pid = %u\n",info->si_pid);
