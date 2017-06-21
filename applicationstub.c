@@ -52,6 +52,9 @@
 #include <sys/types.h>
 #include "applicationstub.h"
 
+
+//# define sa_handler     __sigaction_handler.sa_handler
+
 /*Global variables*/
 char logfile[]= "./text-data-files/logfile.txt";
 FILE *fp;
@@ -75,9 +78,11 @@ int main(){
      *man 7 signal 
      */
    //handling of the signals 
+    //https://gcc.gnu.org/bugzilla/show_bug.cgi?id=56018
     //https://netbeans.org/bugzilla/show_bug.cgi?id=191390
     struct sigaction action;
-    action.__sigaction_handler = signal_handler;
+    action.sa_handler = signal_handler;
+    //action.__sigaction_handler = signal_handler;
     sigaction(SIGINT, &action, NULL);
     
     
@@ -103,7 +108,7 @@ int main(){
     /*Starting place of the application. Add code below and remember to do 
     proper logging!
     */
-    
+    sleep(60);
     return 0;
 
 }
@@ -198,8 +203,12 @@ void print_log_file(FILE *f, char *string){
 void signal_handler(int signal, siginfo_t *info, void *_unused)
 {
   /*To terminate kill -s 15 <pid>*/
-  fprintf(stderr, "Received SIGTERM from process with pid = %u\n",info->si_pid);
-  exit(0);
+  switch(signal){
+        case SIGINT:
+            fprintf(stdout, "Received SIGINT from process with pid = %u\n",info->si_pid);
+            exit(0);
+            break;
+    }
 }
 
 /*********************************************************************/
