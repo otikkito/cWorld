@@ -73,7 +73,7 @@ int main(int argc, char** argv) {
     
     /*Do something in the interim while time has elapsed*/
     //sleep(3);
-    //usleep(34);
+    usleep(340);
     
     
     
