@@ -24,6 +24,22 @@
  * one machine without an intervening reboot, CLOCK_MONOTONIC is the best option." 
  * 
  */
+
+/*
+ 
+	
+https://stackoverflow.com/questions/16740014/computing-time-in-linux-granularity-and-precision
+
+On Linux, the available timers with increasing granularity are:
+
+    clock() from <time.h> (20ms or 10ms resolution?)
+
+    gettimeofday() from Posix <sys/time.h> (microseconds)
+
+    clock_gettime() on Posix (nanoseconds?)
+
+
+ */
 /*
  struct timespec
 time_t  tv_sec    Seconds.
@@ -77,6 +93,7 @@ int main(int argc, char** argv) {
     i = clock_gettime( CLOCK_MONOTONIC,&start);
     if(i == -1){
         perror("clock_gettime");
+        exit(EXIT_FAILURE);
     }
     
     /*Do something in the interim while time has elapsed*/
