@@ -4,4 +4,4 @@
 -security threats
 -current location
 -qos
--
+-self healing network
