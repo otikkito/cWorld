@@ -1,4 +1,5 @@
 -software firewall
+-firewalld
 -site hit
 -network traffic logging
 -security threats
@@ -7,3 +8,4 @@
 -self healing network
 -cyber security techniques
 -Read up on cyber attacks : https://en.wikipedia.org/wiki/Cyberattack
+-VPN
