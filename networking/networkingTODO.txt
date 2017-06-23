@@ -5,3 +5,5 @@
 -current location
 -qos
 -self healing network
+-cyber security techniques
+-Read up on cyber attacks : https://en.wikipedia.org/wiki/Cyberattack
