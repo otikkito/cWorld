@@ -43,3 +43,17 @@ links:
 https://www.tomsguide.com/us/darpa-self-healing-software,news-17761.html
 https://www.tutorialspoint.com/cprogramming/c_error_handling.htm
 
+
+Program correctness
+-the proof of correctness of programs, use the rules of inference and proof techniques including mathematical unduction
+-A program is said to be correct if itt produces the correct output for every possible input.
+
+A proof that a programs in correct consits of two parts.
+1)show that the correct answer is obtained if the program terminates.
+2)That the program always termintes
+
+--intial assertion
+--final assertion
+
+Check for blocking and nonblocking system calls
+
