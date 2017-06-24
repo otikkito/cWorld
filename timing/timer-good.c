@@ -70,7 +70,7 @@ long    tv_nsec   Nanoseconds.
   };
  
 //Function prototype
-void diff_timespec(struct timespec *start,struct timespec *end);
+void diff_timespec(struct timespec *start,struct timespec *end); //need to make this an inline function
 
  struct timespec start;
  struct timespec end;
@@ -125,7 +125,7 @@ int main(int argc, char** argv) {
  struct timestruc diff_timespec(struct timespec *start,struct timespec *end){
  */
 void diff_timespec(struct timespec *start,struct timespec *end){
-    
+    //https://en.wikipedia.org/wiki/Inline_function
     //milliseconds = nanoseconds ÷ 1,000,000
     //nanoseconds = milliseconds x 1,000,000
     //A microsecond is equal to 1000 nanoseconds
