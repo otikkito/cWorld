@@ -1,4 +1,4 @@
--software firewall
+-software firewall (at the kernel level)
 -firewalld
 -site hit
 -network traffic logging
