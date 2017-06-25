@@ -1,6 +1,6 @@
 Computational complexity
 |->time complexity
-|-> space complexity
+|->space complexity
 
 -Worst-case complexity
 -Average-case comlexity
