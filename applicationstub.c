@@ -50,6 +50,7 @@
 #include <stdlib.h>
 #include <errno.h>
 #include <sys/types.h>
+#include <syslog.h>
 #include "applicationstub.h"
 
 
@@ -201,6 +202,7 @@ void signal_handler(int signal, siginfo_t *info, void *_unused) {
     switch (signal) {
         case SIGINT:
             fprintf(stdout, "Received SIGINT from process with pid = %u\n", info->si_pid);
+            syslog(LOG_ERR,"Received signal SIGINT and will be shutting done application.c ");
             exit(0);
             break;
     }
