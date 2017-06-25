@@ -124,7 +124,7 @@ int main(int argc, char** argv) {
  error: return type is an incomplete type
  struct timestruc diff_timespec(struct timespec *start,struct timespec *end){
  */
-void diff_timespec(struct timespec *start,struct timespec *end){
+inline void diff_timespec(struct timespec *start,struct timespec *end){
     //https://en.wikipedia.org/wiki/Inline_function
     //milliseconds = nanoseconds ÷ 1,000,000
     //nanoseconds = milliseconds x 1,000,000

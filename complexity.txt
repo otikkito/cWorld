@@ -1,0 +1,8 @@
+Computational complexit
+|->time complexity
+|-> space complexity
+
+-Worst-case complexity
+-Average-case comlexity
+
+Understanding the complexity of Algorithms
