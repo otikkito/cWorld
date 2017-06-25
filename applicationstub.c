@@ -78,7 +78,8 @@ int main() {
     struct sigaction action;
     action.sa_handler = signal_handler;
     sigaction(SIGINT, &action, NULL);
-
+    sigaction(SIGTERM, &action, NULL);
+    sigaction(SIGSEGV, &action, NULL);
 
     int i;
 
@@ -87,8 +88,7 @@ int main() {
         perror("Unable to set atexit");
         exit(EXIT_FAILURE);
     }
-    sigaction(SIGTERM, &action, NULL);
-    sigaction(SIGSEGV, &action, NULL);
+    
     processid = getpid();
 
     fp = fopen(logfile, "a+"); /*initially caused a segfault because no error checking*/
@@ -100,9 +100,13 @@ int main() {
     print_application_header();
     print_log_file(fp, "Application started.\n");
 
-    /*Starting place of the application. Add code below and remember to do 
-    proper logging!
+    /*
+     * Starting place of the application. Add code below and remember to do 
+    proper logging and handling of errors by checking return codes!
      */
+    
+    
+    
     sleep(60);
     return 0;
 
@@ -211,6 +215,10 @@ void signal_handler(int signal, siginfo_t *info, void *_unused) {
             syslog(LOG_ERR,"Received signal SIGSEGV and will be shutting done application.c ");
             exit(EXIT_FAILURE);
             break;
+        case SIGTERM:
+            fprintf(stdout, "Received SIGTERM from process with pid = %u\n", info->si_pid);
+            syslog(LOG_ERR,"Received signal SIGTERM and will be shutting done application.c");
+            exit(EXIT_FAILURE);
     }
 }
 
