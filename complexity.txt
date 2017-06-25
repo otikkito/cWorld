@@ -1,4 +1,4 @@
-Computational complexit
+Computational complexity
 |->time complexity
 |-> space complexity
 

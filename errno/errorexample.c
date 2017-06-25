@@ -15,16 +15,16 @@ int main(){
 	if(i!=0){
 		perror("Cannot set exit function");
 		exit(EXIT_FAILURE);
-     }
+        }
 
 	fp=fopen("errno1.txt","r");
 	if(fp==NULL){
 	perror("There was a problem opening the file errno1.txt");
 	system("ls");
 	exit(EXIT_FAILURE); 
-//Unsuccessful  termination  for  exit();  evaluates to a non-zero value.
+        //Unsuccessful  termination  for  exit();  evaluates to a non-zero value.
 
-    }
+         }
 	
 	return EXIT_SUCCESS;
 //Successful termination for exit(); evaluates to 0

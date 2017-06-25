@@ -1,46 +1,46 @@
 /****************************************************************
-*FILE NAME:applicationstub.c
-*www.kjoseph-it.com 
-*https://github.com/otikkito/cWorld/blob/master/nasa-c-style.pdf
-*https://en.wikipedia.org/wiki/Application_security
-*https://www.tutorialspoint.com/c_standard_library/index.htm
-*https://en.wikipedia.org/wiki/MIL-STD-498 
-*https://www.ece.ncsu.edu/people/gbyrd 
-*
-*PURPOSE: To design an application stub to begin developing applications on the
-* Linux/Unix platform
-*
-*FILE REFERENCES:
-*
-*NAME		I/O		Description
-*----           ---             -----------
-*
-*EXTERNAL VARIABLE:
-*SOURCE: <         >
-*
-*NAME	  TYPE    	I/O		Description
-*----     ----          ---             -----------
-*
-*EXTERNAL REFERENCES:
-*
-*Name		Description
-*----   	-----------
-*
-*ABNORMAL TERMINATION CONDITIONS, ERROR AND WARINGING MESSAGES:
-*
-*ASSUMPTIONS, CONSTRAINTS, RESTRICTIONS
-*
-*NOTES:
-*
-*REQUIREMENTS/FUNCTIONAL SPECIFICATIONS REFERENCES:
-*
-*DEVELOPMENT HISTORY:
-*
-*Date		Author		Change ID	Release		Description of Change
-*----   	------  	---------       -------         ---------------------
-*2/22/2017      Kito Joseph					Added a prolog 
-*ALGORITHM (PDL)
-*/
+ *FILE NAME:applicationstub.c
+ *www.kjoseph-it.com 
+ *https://github.com/otikkito/cWorld/blob/master/nasa-c-style.pdf
+ *https://en.wikipedia.org/wiki/Application_security
+ *https://www.tutorialspoint.com/c_standard_library/index.htm
+ *https://en.wikipedia.org/wiki/MIL-STD-498 
+ *https://www.ece.ncsu.edu/people/gbyrd 
+ *
+ *PURPOSE: To design an application stub to begin developing applications on the
+ * Linux/Unix platform
+ *
+ *FILE REFERENCES:
+ *
+ *NAME		I/O		Description
+ *----           ---             -----------
+ *
+ *EXTERNAL VARIABLE:
+ *SOURCE: <         >
+ *
+ *NAME	  TYPE    	I/O		Description
+ *----     ----          ---             -----------
+ *
+ *EXTERNAL REFERENCES:
+ *
+ *Name		Description
+ *----   	-----------
+ *
+ *ABNORMAL TERMINATION CONDITIONS, ERROR AND WARINGING MESSAGES:
+ *
+ *ASSUMPTIONS, CONSTRAINTS, RESTRICTIONS
+ *
+ *NOTES:
+ *
+ *REQUIREMENTS/FUNCTIONAL SPECIFICATIONS REFERENCES:
+ *
+ *DEVELOPMENT HISTORY:
+ *
+ *Date		Author		Change ID	Release		Description of Change
+ *----   	------  	---------       -------         ---------------------
+ *2/22/2017      Kito Joseph					Added a prolog 
+ *ALGORITHM (PDL)
+ */
 
 
 #include <stdio.h>
@@ -54,7 +54,7 @@
 
 
 /*Global variables*/
-char logfile[]= "./text-data-files/logfile.txt";
+char logfile[] = "./text-data-files/logfile.txt";
 FILE *fp;
 pid_t processid;
 
@@ -65,46 +65,42 @@ void signal_handler();
 void bye(void);
 const char* get_process_name_by_pid(pid_t pid);
 
-
-
-
-
-int main(){
+int main() {
     /*I need to find a better way to handle signals and find out what are important
     signals that I need to handle.
      man sigaction
      *man 7 signal 
      */
-   //handling of the signals 
+    //handling of the signals 
     //https://gcc.gnu.org/bugzilla/show_bug.cgi?id=56018
     //https://netbeans.org/bugzilla/show_bug.cgi?id=191390
     struct sigaction action;
     action.sa_handler = signal_handler;
     sigaction(SIGINT, &action, NULL);
-    
-    
+
+
     int i;
-    
-    i=atexit(bye);
-    if(i!=0){
+
+    i = atexit(bye);
+    if (i != 0) {
         perror("Unable to set atexit");
         exit(EXIT_FAILURE);
     }
     sigaction(SIGTERM, &action, NULL);
     processid = getpid();
-            
-    fp = fopen(logfile,"a+");   /*initially caused a segfault because no error checking*/
-    if(fp == NULL){
-	perror("Error with fopen. I am trying to open a logfile");
-	exit(EXIT_FAILURE);
+
+    fp = fopen(logfile, "a+"); /*initially caused a segfault because no error checking*/
+    if (fp == NULL) {
+        perror("Error with fopen. I am trying to open a logfile");
+        exit(EXIT_FAILURE);
     }
 
     print_application_header();
-    print_log_file(fp,"Application started.\n");
+    print_log_file(fp, "Application started.\n");
 
     /*Starting place of the application. Add code below and remember to do 
     proper logging!
-    */
+     */
     sleep(60);
     return 0;
 
@@ -113,96 +109,98 @@ int main(){
 /*********************************************************************/
 
 /*Function declarations*/
+
 /********************************************************
-*
-*
-* FUNCTION NAME:
-*
-*
-*
-* ARGUMENTS:
-*
-*
-*
-* ARGUMENT     TYPE I/O DESCRIPTION
-* --------     ---- --- -----------
-*
-*
-*
-* RETURNS:
-*
-*
-*
-*********************************************************/
-void print_application_header(){
-    printf("The process id of this application is: %d\n",processid);
+ *
+ *
+ * FUNCTION NAME: print_application_header
+ *
+ *
+ *
+ * ARGUMENTS: none
+ *
+ *
+ *
+ * ARGUMENT     TYPE I/O DESCRIPTION
+ * --------     ---- --- -----------
+ *
+ *
+ *
+ * RETURNS:
+ *
+ *
+ *
+ *********************************************************/
+void print_application_header() {
+    printf("The process id of this application is: %d\n", processid);
     printf("Welcome to the application stub.\nThe  purpose of this program ");
     printf("is to build a solid framework \nfor the application development ");
     printf("process.\n");
     printf("----------------------------------------------------------------\n");
-    printf("The process name of this process is: %s \n",get_process_name_by_pid(processid));
+    printf("The process name of this process is: %s \n", get_process_name_by_pid(processid));
 }
 
 /*********************************************************************/
 /********************************************************
-*
-*
-* FUNCTION NAME:
-*
-*
-*
-* ARGUMENTS:
-*
-*
-*
-* ARGUMENT     TYPE I/O DESCRIPTION
-* --------     ---- --- -----------
-*
-*
-*
-* RETURNS:
-*
-*
-*
-*********************************************************/
+ *
+ *
+ * FUNCTION NAME: print_log_file
+ *
+ *
+ *
+ * ARGUMENTS: A pointer to a file and a pointer to a string
+ *
+ *
+ *
+ * ARGUMENT     TYPE I/O DESCRIPTION
+ * --------     ---- --- -----------
+ *
+ *
+ *
+ * RETURNS:
+ *Returns void
+ *
+ *
+ *********************************************************/
+
 /*TODO print a variable argument list log file 
  https://github.com/otikkito/cWorld/blob/master/logger.c
  */
-void print_log_file(FILE *f, char *string){
+void print_log_file(FILE *f, char *string) {
     char timestring[100];
     time_t currenttime = time(0);
-    strftime(timestring,sizeof(timestring),"%c",localtime(&currenttime));
-    fprintf(f,"%s %s \n",timestring,string);
+    strftime(timestring, sizeof (timestring), "%c", localtime(&currenttime));
+    fprintf(f, "%s %s \n", timestring, string);
 }
 
 /*********************************************************************/
+
 /********************************************************
-*
-*
-* FUNCTION NAME:
-*
-*
-*
-* ARGUMENTS:
-*
-*
-*
-* ARGUMENT     TYPE I/O DESCRIPTION
-* --------     ---- --- -----------
-*
-*
-*
-* RETURNS:
-*
-*
-*
-*********************************************************/
-void signal_handler(int signal, siginfo_t *info, void *_unused)
-{
-  /*To terminate kill -s 15 <pid>*/
-  switch(signal){
+ *
+ *
+ * FUNCTION NAME:
+ *
+ *
+ *
+ * ARGUMENTS:
+ *
+ *
+ *
+ * ARGUMENT     TYPE I/O DESCRIPTION
+ * --------     ---- --- -----------
+ *
+ *
+ *
+ * RETURNS:
+ *
+ *
+ *
+ *********************************************************/
+void signal_handler(int signal, siginfo_t *info, void *_unused) {
+    /*To terminate kill -s 15 <pid>*/
+    switch (signal) {
         case SIGINT:
-            fprintf(stdout, "Received SIGINT from process with pid = %u\n",info->si_pid);
+            fprintf(stdout, "Received SIGINT from process with pid = %u\n", info->si_pid);
             exit(0);
             break;
     }
@@ -210,40 +208,40 @@ void signal_handler(int signal, siginfo_t *info, void *_unused)
 
 /*********************************************************************/
 /********************************************************
-*
-*
-* FUNCTION NAME: get_process_name_by_pid
-*
-*
-*
-* ARGUMENTS: pid_t which is defined in <sys/types.h>
-*
-*
-*
-*
-* ARGUMENT     TYPE I/O DESCRIPTION
-* --------     ---- --- -----------
-*
-*
-*
-* RETURNS: A pointer to a constant char
-*
-*
-*
-*********************************************************/
+ *
+ *
+ * FUNCTION NAME: get_process_name_by_pid
+ *
+ *
+ *
+ * ARGUMENTS: pid_t which is defined in <sys/types.h>
+ *
+ *
+ *
+ *
+ * ARGUMENT     TYPE I/O DESCRIPTION
+ * --------     ---- --- -----------
+ *
+ *
+ *
+ * RETURNS: A pointer to a constant char
+ *
+ *
+ *
+ *********************************************************/
+
 /* can also be done be running ps -p PID -i comm= */
-const char* get_process_name_by_pid(pid_t pid)
-{
-    char* name = (char*)calloc(1024,sizeof(char));
-    if(name){
-        sprintf(name, "/proc/%d/cmdline",pid);
-        FILE *f = fopen(name,"r");
-        if(f){
+const char* get_process_name_by_pid(pid_t pid) {
+    char* name = (char*) calloc(1024, sizeof (char));
+    if (name) {
+        sprintf(name, "/proc/%d/cmdline", pid);
+        FILE *f = fopen(name, "r");
+        if (f) {
             size_t size;
-            size = fread(name, sizeof(char), 1024, f);
-            if(size>0){
-                if('\n'==name[size-1])
-                    name[size-1]='\0';
+            size = fread(name, sizeof (char), 1024, f);
+            if (size > 0) {
+                if ('\n' == name[size - 1])
+                    name[size - 1] = '\0';
             }
             fclose(f);
         }
@@ -251,28 +249,29 @@ const char* get_process_name_by_pid(pid_t pid)
     return name;
 }
 /*********************************************************************/
+
 /********************************************************
-*
-*
-* FUNCTION NAME: bye - it performs cleanup at exit of the application.
-*
-*
-*
-* ARGUMENTS:
-*
-*
-*
-* ARGUMENT     TYPE I/O DESCRIPTION
-* --------     ---- --- -----------
-*
-*
-*
-* RETURNS:
-*
-*
-*
-*********************************************************/
-void bye(void){
+ *
+ *
+ * FUNCTION NAME: bye - it performs cleanup at exit of the application.
+ *
+ *
+ *
+ * ARGUMENTS:
+ *
+ *
+ *
+ * ARGUMENT     TYPE I/O DESCRIPTION
+ * --------     ---- --- -----------
+ *
+ *
+ *
+ * RETURNS:
+ *
+ *
+ *
+ *********************************************************/
+void bye(void) {
     printf("We will be closing the program down now.\n");
     fclose(fp);
 }
@@ -293,5 +292,5 @@ http://man7.org/linux/man-pages/man7/signal.7.html
 53) SIGRTMAX-11	54) SIGRTMAX-10	55) SIGRTMAX-9	56) SIGRTMAX-8	57) SIGRTMAX-7
 58) SIGRTMAX-6	59) SIGRTMAX-5	60) SIGRTMAX-4	61) SIGRTMAX-3	62) SIGRTMAX-2
 63) SIGRTMAX-1	64) SIGRTMAX	
-*/
+ */
 
