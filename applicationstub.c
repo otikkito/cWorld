@@ -204,6 +204,7 @@ void print_log_file(FILE *f, char *string) {
  *********************************************************/
 void signal_handler(int signal, siginfo_t *info, void *_unused) {
     /*To terminate kill -s 15 <pid>*/
+    /*https://github.com/otikkito/cWorld/blob/master/Docs/cManPages/signal.pdf*/
     switch (signal) {
         case SIGINT:
             fprintf(stdout, "Received SIGINT from process with pid = %u\n", info->si_pid);
