@@ -15,7 +15,8 @@ man sigaction
 
 **I am having some troubles with the implementation of sigaction. Netbeans is showing
 **different function names for the signal action.
-
+** The ISO C standard only requires the signal names SIGABRT,  SIGFPE, SIGILL, SIGINT, SIGSEGV,and
+SIGTERM to be defined.
 int sigaction(int sig, const struct sigaction *restrict act, struct sigaction *restrict oact);
 sigaction(SIGTERM, &action, NULL);
 void SigtermHandler(int signal, siginfo_t *info, void *_unused)
