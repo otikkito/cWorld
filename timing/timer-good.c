@@ -70,7 +70,7 @@ long    tv_nsec   Nanoseconds.
   };
  
 //Function prototype
-inline void diff_timespec(struct timespec *start,struct timespec *end); //need to make this an inline function
+inline void diff_timespec(struct timespec *start,struct timespec *end); 
 
  struct timespec start;
  struct timespec end;
