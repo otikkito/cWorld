@@ -59,7 +59,7 @@ char logfile[] = "./text-data-files/logfile.txt";
 FILE *fp;
 pid_t processid;
 
-/*Function prototype*/
+/*Function prototypes*/
 void print_application_header();
 void print_log_file(FILE *f, char *string);
 void signal_handler();
@@ -289,7 +289,7 @@ const char* get_process_name_by_pid(pid_t pid) {
  *
  *********************************************************/
 void bye(void) {
-    printf("We will be closing the program down now.\n");
+    printf("The program is not shutting done.\n");
     fclose(fp);
 }
 /*signals that should handle 
