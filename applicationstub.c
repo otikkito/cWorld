@@ -69,7 +69,7 @@ const char* get_process_name_by_pid(pid_t pid);
 
 
 /*
- This is the entry point of program execution from the operating system.
+ This is the entry point of program execution from the operating system and shell.
  */
 int main(int argc, char** argv) {
     /*I need to find a better way to handle signals and find out what are important

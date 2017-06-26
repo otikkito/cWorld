@@ -4,21 +4,23 @@
 
 
 /*Fucntion prototype*/
-functionA();
-functionB();
-functionC();
+void functionA();
+void functionB();
+void functionC();
 int increment(int *i);
 int decrement(int *i);
 void incr_a();
 
 //https://software.intel.com/sites/default/files/managed/39/c5/325462-sdm-vol-1-2abcd-3abcd.pdf
 //https://en.wikipedia.org/wiki/Integer_overflow
+
 int main() {
 
     
     //incr_a();
-    functionA();
+    //functionA();
     //functionB();
+    functionC();
     return 0;
 }
 
@@ -46,6 +48,17 @@ functionB(){
         assert(i >= 0);
     }
 }
+
+void functionC(){
+    int i;
+    for(i =0;;i++){
+        if(i < 0){
+            printf("Overflow has occured: i = %d \n",i);
+            assert(i >= 0);
+        }
+    }
+}
+
 void incr_a() {
     int i = 0;
     printf("The size of a int is: %ld bytes\n", sizeof (i));
@@ -54,7 +67,7 @@ void incr_a() {
             printf("i= %d ", i);
             if (i < 0 && i != -2147483648) {
                 printf("\n");
-                return 0;
+                
             }
 
         }
