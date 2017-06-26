@@ -51,12 +51,14 @@ functionB(){
     }
 }
 
+//I am trying to generate a trap for integer overflow but it seems to not be working
+//gcc (GCC) 4.8.5 20150623 (Red Hat 4.8.5-11)
 void functionC(){
     int i;
     for(i =0;;i++){
         if(i < 0){
             printf("Overflow has occured: i = %d \n",i);
-            assert(i >= 0);
+            //assert(i >= 0);
         }
     }
 }
