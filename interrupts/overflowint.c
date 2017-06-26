@@ -53,6 +53,7 @@ functionB(){
 
 //I am trying to generate a trap for integer overflow but it seems to not be working
 //gcc (GCC) 4.8.5 20150623 (Red Hat 4.8.5-11)
+//https://gcc.gnu.org/bugs/#known
 void functionC(){
     int i;
     for(i =0;;i++){
