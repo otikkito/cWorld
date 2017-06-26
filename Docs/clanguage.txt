@@ -1,7 +1,7 @@
 c keywords
 ------------
 auto |Defines a local variable as having a local lifetime. Storage class
-break | Passes control out of the compound statement.
+break | Passes control out of the compound statement. https://www.tutorialspoint.com/cprogramming/c_break_statement.htm
 case | Branches control.
 char | Basic data types (integer and character).
 const | Makes variable value or pointer parameter unmodifiable.
