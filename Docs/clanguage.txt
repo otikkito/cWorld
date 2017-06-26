@@ -35,11 +35,11 @@ while | Repeats execution while the condition is true.
 
 c program basically consists of the following parts:
 -Preprocessor commands/directives :https://en.wikipedia.org/wiki/C_preprocessor
--Functions
+-Functions : https://github.com/otikkito/cWorld/blob/master/functions.c
 -Variables
 -Statements
 -Expressions 
--Comments
+-Comments 
 
 Good break down of keywords: http://tigcc.ticalc.org/doc/keywords.html
 Data types: http://www.tutorialspoint.com/cprogramming/c_data_types.htm
