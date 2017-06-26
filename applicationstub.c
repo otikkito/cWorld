@@ -59,6 +59,7 @@ char logfile[] = "./text-data-files/logfile.txt";
 FILE *fp;
 pid_t processid;
 
+
 /*Function prototypes*/
 void print_application_header();
 void print_log_file(FILE *f, char *string);
@@ -66,7 +67,11 @@ void signal_handler();
 void bye(void);
 const char* get_process_name_by_pid(pid_t pid);
 
-int main() {
+
+/*
+ This is the entry point of program execution from the operating system.
+ */
+int main(int argc, char** argv) {
     /*I need to find a better way to handle signals and find out what are important
     signals that I need to handle.
      man sigaction
