@@ -23,6 +23,8 @@
  * "If you want to compute the elapsed time between two events observed on the 
  * one machine without an intervening reboot, CLOCK_MONOTONIC is the best option." 
  * 
+ * 
+ * http://www.catb.org/esr/time-programming/
  */
 
 /*
@@ -123,6 +125,8 @@ int main(int argc, char** argv) {
  the compiler is giving errors for this as well
  error: return type is an incomplete type
  struct timestruc diff_timespec(struct timespec *start,struct timespec *end){
+ * 
+ * To convert between types: https://stackoverflow.com/questions/15024623/convert-milliseconds-to-timespec-gnu-porting
  */
 inline void diff_timespec(struct timespec *start,struct timespec *end){
     //https://en.wikipedia.org/wiki/Inline_function
