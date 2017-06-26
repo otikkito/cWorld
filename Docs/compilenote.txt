@@ -3,3 +3,4 @@ gcc -Wall -pedantic -g soucefile -o savedfilename
 
 gcc thread.c -lpthread
 
+-ftapv  comiler option for integer overflow
