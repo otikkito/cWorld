@@ -34,7 +34,7 @@ volatile | Indicates that a variable can be changed by a background routine
 while | Repeats execution while the condition is true.
 
 c program basically consists of the following parts:
--Preprocessor Commands
+-Preprocessor commands/directives :https://en.wikipedia.org/wiki/C_preprocessor
 -Functions
 -Variables
 -Statements
