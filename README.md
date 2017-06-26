@@ -5,7 +5,7 @@ http://www.iso-9899.info/wiki/The_Standard  --> C language standard
 
 http://www.cprogramming.com/ ---> C programming tutorial
 
-http://ctl.yale.edu/writing/using-sources/citing-internet-sources
+http://ctl.yale.edu/writing/using-sources/citing-internet-sources  ---> Citing internet sources
 
 A collection of c code from the basic refresher to some abstract data type implementations
 
