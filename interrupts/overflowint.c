@@ -2,6 +2,8 @@
 #include <unistd.h>
 #include <assert.h>
 
+
+/*Fucntion prototype*/
 functionA();
 functionB();
 functionC();
@@ -10,7 +12,7 @@ int decrement(int *i);
 void incr_a();
 
 //https://software.intel.com/sites/default/files/managed/39/c5/325462-sdm-vol-1-2abcd-3abcd.pdf
-
+//https://en.wikipedia.org/wiki/Integer_overflow
 int main() {
 
     
