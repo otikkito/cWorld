@@ -21,19 +21,19 @@ int atexit(void (*fcn)(void))
 Test - reduce erros and increase accuracy
 -Test for accuracy
 -Test for repeatability of a function
--texxt for maximizing uptime through proper handling of erros
+-text for maximizing uptime through proper handling of erros
 -positive and negative test for return codes
--logging of retun codes
+-logging of return codes
 -logging of how long an application has been running
 --logging of signals of an application
 -test for code path
 -complete halt of a program once an error has occured duringg the intial ddesign stage and the line number where the error occured.
--for saefty
--test for non loss of data and non curruption
+-for safety
+-test for non loss of data and non corruption
 -test for invalid inputs and logging of such inputs and the values
--make sure you have all warnings and pendantic error checking
--maximizeTime and code coverage
--when creating function ensure that there is dicatomy between return type or ensure that each different return type maps to one return condition
+-make sure you have all warnings and pedantic error checking
+-maximize up time and code coverage
+-when creating function ensure that there is dichotomy between return type or ensure that each different return type maps to one return condition
 -"quick test on these return values are easily done with for instance an ‘if statement’" ref: http://www.geeksforgeeks.org/error-handling-c-programs/
 
 Self healing software notes:
