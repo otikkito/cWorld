@@ -293,7 +293,7 @@ const char* get_process_name_by_pid(pid_t pid) {
  *
  *********************************************************/
 void bye(void) {
-    printf("The program is not shutting done.\n");
+    printf("The program is now shutting done.\n");
     fclose(fp);
 }
 /*signals that should handle 
