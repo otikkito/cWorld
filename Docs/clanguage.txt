@@ -39,7 +39,7 @@ c program basically consists of the following parts:
 -Variables
 -Statements
 -Expressions 
--Comments 
+-Comments : Use the /**/ comment style do to comiler warning which we are trying to minimize
 
 Good break down of keywords: http://tigcc.ticalc.org/doc/keywords.html
 Data types: http://www.tutorialspoint.com/cprogramming/c_data_types.htm
