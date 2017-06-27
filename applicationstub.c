@@ -44,7 +44,7 @@
 
 /*
  *Global TODO
- * 1)Find a way to create a file template in the IDE
+ * 1)Find a way to create a file template in the IDE for c files (This can be done by using tools->Template)
  * 2)Highlight TODO Tools/Options/Team/Action Items
  */
  
