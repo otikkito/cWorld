@@ -3,6 +3,6 @@ Computational complexity
 |->space complexity
 
 -Worst-case complexity
--Average-case comlexity
+-Average-case complexity
 
 Understanding the complexity of Algorithms
