@@ -94,8 +94,10 @@ int main(int argc, char** argv) {
         exit(EXIT_FAILURE);
     }
     
+    /*The current pig of the process*/
     processid = getpid();
 
+    /*Open the logfile to begin logging*/
     fp = fopen(logfile, "a+"); /*initially caused a segfault because no error checking*/
     if (fp == NULL) {
         perror("Error with fopen. I am trying to open a logfile");
@@ -114,7 +116,8 @@ int main(int argc, char** argv) {
     
     
     sleep(60);
-    return 0;
+    
+    return 0; //return 0 indication successful completion of the application
 
 }
 
