@@ -12,6 +12,8 @@
  */
 
 #include <cstdlib>
+#include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -20,6 +22,10 @@ using namespace std;
  */
 int main(int argc, char** argv) {
 
+    string mystring = "This is a string\n";
+    cout << "Hello, World!\n" ;
+    cout  << mystring << endl;
+    cout << mystring.size() << "\n";
     return 0;
 }
 
