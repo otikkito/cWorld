@@ -15,6 +15,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
+#include <sys/types.h>
 
 
 /* https://en.wikipedia.org/wiki/Time
@@ -111,7 +112,12 @@ int main(int argc, char** argv) {
     diff1.tv_sec = (end.tv_sec - start.tv_sec);
     diff1.tv_nsec = (end.tv_nsec - start.tv_nsec);
     
-    printf("It took a total of %d sec. and %ld nanosecs. \n",diff1.tv_sec,diff1.tv_nsec);
+    /*TODO 
+     timer-good.c:115:5: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘__time_t’ [-Wformat=]
+     printf("It took a total of %d sec. and %d nanosecs. \n",diff1.tv_sec,(double)diff1.tv_nsec);
+
+     */
+    printf("It took a total of %d sec. and %d nanosecs. \n",diff1.tv_sec,(double)diff1.tv_nsec);
     
     diff_timespec(&start,&end);
     
