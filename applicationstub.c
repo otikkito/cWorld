@@ -104,6 +104,7 @@ int main(int argc, char** argv) {
 
     print_application_header();
     print_log_file(fp, "Application started.\n");
+    fflush(fp);
 
     /*
      * Starting place of the application. Add code below and remember to do 
@@ -294,10 +295,10 @@ const char* get_process_name_by_pid(pid_t pid) {
  *********************************************************/
 void bye(void) {
     printf("The program is now shutting done.\n");
-    fprintf(fp,"The application has ended now");
+    fprintf(fp,"The application has ended now \n");
     fclose(fp);
 }
-/*signals that should handle 
+/*signals that should be handle 
 kill -l
 https://github.com/otikkito/cWorld/blob/master/Docs/cManPages/signal.pdf
 http://man7.org/linux/man-pages/man7/signal.7.html
