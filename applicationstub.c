@@ -42,6 +42,12 @@
  *ALGORITHM (PDL)
  */
 
+/*
+ *Global TODO
+ * 1)Find a way to create a file template in the IDE
+ * 2)Highlight TODO Tools/Options/Team/Action Items
+ */
+ 
 
 #include <stdio.h>
 #include <time.h>
@@ -80,13 +86,15 @@ int main(int argc, char** argv) {
      *https://gcc.gnu.org/bugzilla/show_bug.cgi?id=56018
      *https://netbeans.org/bugzilla/show_bug.cgi?id=191390
      */
+    
+    int i;
     struct sigaction action;
     action.sa_handler = signal_handler;
     sigaction(SIGINT, &action, NULL);
     sigaction(SIGTERM, &action, NULL);
     sigaction(SIGSEGV, &action, NULL);
 
-    int i;
+    
 
     i = atexit(bye);
     if (i != 0) {
@@ -100,7 +108,7 @@ int main(int argc, char** argv) {
     /*Open the logfile to begin logging*/
     fp = fopen(logfile, "a+");
     if(fp == NULL){
-        perror("Error with fopen(). Unable to open the application log);
+        perror("Error with fopen(). Unable to open the application log");
         exit(EXIT_FAILURE);
     }
 
@@ -116,7 +124,7 @@ int main(int argc, char** argv) {
 
     sleep(60);
 
-    return 0; //return 0 indication successful completion of the application
+    return 0; /*return 0 indication successful completion of the application*/
 
 }
 
@@ -217,6 +225,7 @@ void signal_handler(int signal, siginfo_t *info, void *_unused) {
     /*https://github.com/otikkito/cWorld/blob/master/Docs/cManPages/signal.pdf*/
     switch (signal) {
         case SIGINT:
+            /*TODO need to find a way to print to the logfile with multiple arguments*/
             fprintf(stdout, "Received SIGINT from process with pid = %u\n", info->si_pid);
             syslog(LOG_ERR, "Received signal SIGINT and will be shutting done application.c ");
             exit(EXIT_FAILURE);
@@ -258,10 +267,11 @@ void signal_handler(int signal, siginfo_t *info, void *_unused) {
 
 /* can also be done be running ps -p PID -i comm= */
 const char* get_process_name_by_pid(pid_t pid) {
+    FILE *f;
     char* name = (char*) calloc(1024, sizeof (char));
     if (name) {
         sprintf(name, "/proc/%d/cmdline", pid);
-        FILE *f = fopen(name, "r");
+        f = fopen(name, "r");
         if (f) {
             size_t size;
             size = fread(name, sizeof (char), 1024, f);
@@ -298,7 +308,7 @@ const char* get_process_name_by_pid(pid_t pid) {
  *
  *********************************************************/
 void bye(void) {
-    printf("The program is now shutting done.\n");
+    printf("The program is now shutting down.\n");
     fprintf(fp, "The application has ended now \n");
     fclose(fp);
 }
