@@ -67,19 +67,19 @@ void signal_handler();
 void bye(void);
 const char* get_process_name_by_pid(pid_t pid);
 
-
 /*
  This is the entry point of program execution from the operating system and shell.
  */
 int main(int argc, char** argv) {
-    /*I need to find a better way to handle signals and find out what are important
-    signals that I need to handle.
-     man sigaction
-     *man 7 signal 
+    /*
+     * I need to find a better way to handle signals and find out what are 
+     * important signals that I need to handle.
+     * man sigaction
+     * man 7 signal
+     *handling of the signals
+     *https://gcc.gnu.org/bugzilla/show_bug.cgi?id=56018
+     *https://netbeans.org/bugzilla/show_bug.cgi?id=191390
      */
-    //handling of the signals 
-    //https://gcc.gnu.org/bugzilla/show_bug.cgi?id=56018
-    //https://netbeans.org/bugzilla/show_bug.cgi?id=191390
     struct sigaction action;
     action.sa_handler = signal_handler;
     sigaction(SIGINT, &action, NULL);
@@ -93,14 +93,14 @@ int main(int argc, char** argv) {
         perror("Unable to set atexit()");
         exit(EXIT_FAILURE);
     }
-    
-    /*The current pig of the process*/
+
+    /*The current pid of the process*/
     processid = getpid();
 
     /*Open the logfile to begin logging*/
-    fp = fopen(logfile, "a+"); /*initially caused a segfault because no error checking*/
-    if (fp == NULL) {
-        perror("Error with fopen. I am trying to open a logfile");
+    fp = fopen(logfile, "a+");
+    if(fp == NULL){
+        perror("Error with fopen(). Unable to open the application log);
         exit(EXIT_FAILURE);
     }
 
@@ -110,13 +110,12 @@ int main(int argc, char** argv) {
 
     /*
      * Starting place of the application. Add code below and remember to do 
-    proper logging and handling of errors by checking return codes!
+     *proper logging and handling of errors by checking return codes!
+     * https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
      */
-    
-    
-    
+
     sleep(60);
-    
+
     return 0; //return 0 indication successful completion of the application
 
 }
@@ -156,6 +155,7 @@ void print_application_header() {
 }
 
 /*********************************************************************/
+
 /********************************************************
  *
  *
@@ -218,17 +218,17 @@ void signal_handler(int signal, siginfo_t *info, void *_unused) {
     switch (signal) {
         case SIGINT:
             fprintf(stdout, "Received SIGINT from process with pid = %u\n", info->si_pid);
-            syslog(LOG_ERR,"Received signal SIGINT and will be shutting done application.c ");
+            syslog(LOG_ERR, "Received signal SIGINT and will be shutting done application.c ");
             exit(EXIT_FAILURE);
         case SIGSEGV:
             fprintf(stdout, "Received SIGSEGV from process with pid = %u\n", info->si_pid);
-            syslog(LOG_ERR,"Received signal SIGSEGV and will be shutting done application.c ");
+            syslog(LOG_ERR, "Received signal SIGSEGV and will be shutting done application.c ");
             exit(EXIT_FAILURE);
         case SIGTERM:
             fprintf(stdout, "Received SIGTERM from process with pid = %u\n", info->si_pid);
-            syslog(LOG_ERR,"Received signal SIGTERM and will be shutting done application.c");
+            syslog(LOG_ERR, "Received signal SIGTERM and will be shutting done application.c");
             exit(EXIT_FAILURE);
-        
+
     }
 }
 
@@ -299,7 +299,7 @@ const char* get_process_name_by_pid(pid_t pid) {
  *********************************************************/
 void bye(void) {
     printf("The program is now shutting done.\n");
-    fprintf(fp,"The application has ended now \n");
+    fprintf(fp, "The application has ended now \n");
     fclose(fp);
 }
 /*signals that should be handle 
