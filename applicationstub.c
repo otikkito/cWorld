@@ -57,7 +57,7 @@
 #include <errno.h>
 #include <sys/types.h>
 #include <syslog.h>
-#include "applicationstub.h"
+#include "applicationstub.h" //In the template don't include this
 
 
 /*Global variables*/
