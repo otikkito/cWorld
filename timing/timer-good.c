@@ -47,16 +47,15 @@ On Linux, the available timers with increasing granularity are:
 time_t  tv_sec    Seconds.
 long    tv_nsec   Nanoseconds.
  * 
- */
-//POSIX.1b
-//milliseconds = nanoseconds ÷ 1,000,000
-//nanoseconds = milliseconds x 1,000,000
-//A microsecond is equal to 1000 nanoseconds
-//stuct timespec
-//time_t  tv_sec    Seconds.
-//long    tv_nsec   Nanoseconds.
-// time_t and clock_t shall be integer or real-floating types (man type.h)
-
+ *POSIX.1b
+ *milliseconds = nanoseconds ÷ 1,000,000
+*nanoseconds = milliseconds x 1,000,000
+*A microsecond is equal to 1000 nanoseconds
+*stuct timespec
+ *time_t  tv_sec    Seconds.
+ *long    tv_nsec   Nanoseconds.
+ *time_t and clock_t shall be integer or real-floating types (man type.h)
+*/
 /*the different resolution for sleep are listed below:
  man clock_nanosleep
  man nanosleep
@@ -65,13 +64,13 @@ long    tv_nsec   Nanoseconds.
  */
 
  struct timestruct{
-    time_t seconds;  //included in struct timespec
+    time_t seconds;  /*included in struct timespec*/
     time_t milliseconds;
     long microseconds;
-    long nanoseconds;  //included in struct timespec
+    long nanoseconds;  /*included in struct timespec*/
   };
  
-//Function prototype
+/*Function prototype*/
 inline void diff_timespec(struct timespec *start,struct timespec *end); 
 
  struct timespec start;
@@ -83,8 +82,8 @@ inline void diff_timespec(struct timespec *start,struct timespec *end);
  
 
   
-  //Function prototype
-  //struct timerstruc convert_timespect(struct timestruc temp)
+  /*Function prototype*/
+  /*struct timerstruc convert_timespect(struct timestruc temp)*/
 
 /*TODO need to break it down to seconds, milli seconds and nano seconds*/
 int main(int argc, char** argv) {
@@ -99,7 +98,7 @@ int main(int argc, char** argv) {
     }
     
     /*Do something in the interim while time has elapsed*/
-    //sleep(3);
+    /*sleep(3);*/
     usleep(340);
     
     
@@ -120,7 +119,10 @@ int main(int argc, char** argv) {
     return (EXIT_SUCCESS);
 }   
 
-//https://stackoverflow.com/questions/10540826/netbeans-does-not-show-functions-list-defined-in-the-currently-opened-php-file
+/*
+ * https://stackoverflow.com/questions/10540826/netbeans-does-not-show-functions-list-defined-in-the-currently-opened-php-file
+ */
+
 /*This fixed does not work for me so I might have to open up a new bug. Also
  the compiler is giving errors for this as well
  error: return type is an incomplete type
@@ -129,13 +131,17 @@ int main(int argc, char** argv) {
  * To convert between types: https://stackoverflow.com/questions/15024623/convert-milliseconds-to-timespec-gnu-porting
  */
 inline void diff_timespec(struct timespec *start,struct timespec *end){
-    //https://en.wikipedia.org/wiki/Inline_function
-    //milliseconds = nanoseconds ÷ 1,000,000
-    //nanoseconds = milliseconds x 1,000,000
-    //A microsecond is equal to 1000 nanoseconds
+    /*
+     * https://en.wikipedia.org/wiki/Inline_function
+    milliseconds = nanoseconds ÷ 1,000,000
+    nanoseconds = milliseconds x 1,000,000
+    A microsecond is equal to 1000 nanoseconds
+     */ 
     t.seconds = ((end->tv_sec)-(start->tv_sec));
-    //t.microseconds
-    //t.milliseconds
+    /*
+     * t.microseconds
+    t.milliseconds
+     */
     t.nanoseconds = ((end->tv_nsec)-(start->tv_nsec));
     
 }
