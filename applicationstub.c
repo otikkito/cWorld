@@ -114,7 +114,7 @@ int main(int argc, char** argv) {
 
     print_application_header();
     print_log_file(fp, "Application started.\n");
-    fflush(fp);
+   
 
     /*
      * Starting place of the application. Add code below and remember to do 
