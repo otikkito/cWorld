@@ -177,6 +177,7 @@ void print_application_header() {
 
 /*TODO print a variable argument list log file 
  https://github.com/otikkito/cWorld/blob/master/logger.c
+ * ===Rember to flush the buffer with fflush() when logging===
  */
 void print_log_file(FILE *f, char *string) {
     char timestring[100];
