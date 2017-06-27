@@ -195,6 +195,7 @@ void print_log_file(FILE *f, char *string) {
     time_t currenttime = time(0);
     strftime(timestring, sizeof (timestring), "%c", localtime(&currenttime));
     fprintf(f, "%s %s \n", timestring, string);
+    fflush(f);
 }
 
 /*********************************************************************/
