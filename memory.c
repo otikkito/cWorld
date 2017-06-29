@@ -19,7 +19,7 @@
 	^     heap allocation    |
 	|     stack allocation   |
 	|     static allocation  |
-	|
+	|                        V
     flexibility                  allocation cost
 */
 //static declaration of memory is quicker than dynamic allocation
