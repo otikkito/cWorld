@@ -99,6 +99,7 @@ int main(int argc, char** argv) {
     i = atexit(bye);
     if (i != 0) {
         perror("Unable to set atexit()");
+        print_log_file(fp,"Unable to set atexit()\n");
         exit(EXIT_FAILURE);
     }
 
