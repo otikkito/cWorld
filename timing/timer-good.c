@@ -102,7 +102,7 @@ int main(int argc, char** argv) {
     /*sleep(3);*/
     usleep(340);
     
-    
+    printf("The size of time_t is : %d \n",sizeof(time_t));
     
     i = clock_gettime( CLOCK_MONOTONIC,&end);
     if(i == -1){
@@ -117,6 +117,8 @@ int main(int argc, char** argv) {
      timer-good.c:115:5: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘__time_t’ [-Wformat=]
      printf("It took a total of %d sec. and %d nanosecs. \n",diff1.tv_sec,(double)diff1.tv_nsec);
 
+     * 
+     *@@@ https://stackoverflow.com/questions/471248/what-is-ultimately-a-time-t-typedef-to
      */
     printf("It took a total of %d sec. and %d nanosecs. \n",diff1.tv_sec,diff1.tv_nsec);
     
