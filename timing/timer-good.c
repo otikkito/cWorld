@@ -113,6 +113,7 @@ int main(int argc, char** argv) {
     diff1.tv_nsec = (end.tv_nsec - start.tv_nsec);
     
     /*TODO 
+     * gcc (GCC) 4.8.5 20150623 (Red Hat 4.8.5-11)
      timer-good.c:115:5: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘__time_t’ [-Wformat=]
      printf("It took a total of %d sec. and %d nanosecs. \n",diff1.tv_sec,(double)diff1.tv_nsec);
 
