@@ -145,8 +145,8 @@ inline void diff_timespec(struct timespec *start,struct timespec *end){
      */ 
     t.seconds = ((end->tv_sec)-(start->tv_sec));
     /*
+     * t.milliseconds
      * t.microseconds
-    t.milliseconds
      */
     t.nanoseconds = ((end->tv_nsec)-(start->tv_nsec));
     
