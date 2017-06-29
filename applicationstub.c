@@ -124,7 +124,7 @@ int main(int argc, char** argv) {
 
     sleep(60);
 
-    return 0; /*return 0 indication successful completion of the application*/
+    return EXIT_SUCCESS; /*return 0 indication successful completion of the application*/
 
 }
 

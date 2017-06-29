@@ -138,6 +138,7 @@ int main(int argc, char** argv) {
  struct timestruc diff_timespec(struct timespec *start,struct timespec *end){
  * 
  * To convert between types: https://stackoverflow.com/questions/15024623/convert-milliseconds-to-timespec-gnu-porting
+ * Preemption and context switching: http://www.informit.com/articles/article.aspx?p=101760&seqNum=3
  */
 inline void diff_timespec(struct timespec *start,struct timespec *end){
     /*
