@@ -38,5 +38,6 @@ int FunctionA(int argument_count,...){
     
     printf("Log string: %s \n",log_string);
     va_end(ap);
-    return 0;
+    
+    return EXIT_SUCCESS;
 }
