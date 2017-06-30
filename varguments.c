@@ -17,8 +17,10 @@ char log_string[300];
 
 /*man stdarg.h*/
 int main(){
+    
     memset(log_string,'\0',sizeof(char *));
     FunctionA(3,"It is working","Hello world", "This is argument 3");
+    
     return EXIT_SUCCESS;
 }
 
@@ -39,5 +41,5 @@ int FunctionA(int argument_count,...){
     printf("Log string: %s \n",log_string);
     va_end(ap);
     
-    return EXIT_SUCCESS;
+    return 0;
 }
