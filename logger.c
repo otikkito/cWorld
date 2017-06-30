@@ -195,6 +195,8 @@ int print_logfile_pid(FILE *fp, char *string, pid_t pid){
  * int sprintf(char *str, const char *format, ...);
  man stdarg.h
  https://linux.die.net/man/3/va_arg
+ *
+ * https://github.com/otikkito/cWorld/blob/master/varguments.c
  */
 int print_logfile_va(FILE *f, ...){
     
