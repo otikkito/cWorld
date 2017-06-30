@@ -32,13 +32,13 @@ int main(int argc, char** argv) {
     i=alarm(5);
     printf("The value of i is %d \n",i);
     while(true){
-        
+        sleep(100);
     }
     return (EXIT_SUCCESS);
 }
 
 void signal_handler(int signal){
     if(signal == SIGALRM){
-        printf("Recieved signal sigalarm");
+        printf("Recieved signal sigalarm \n");
     }
 }
