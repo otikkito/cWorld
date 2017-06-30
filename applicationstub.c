@@ -86,15 +86,12 @@ int main(int argc, char** argv) {
      *https://gcc.gnu.org/bugzilla/show_bug.cgi?id=56018
      *https://netbeans.org/bugzilla/show_bug.cgi?id=191390
      */
-    
     int i;
     struct sigaction action;
     action.sa_handler = signal_handler;
     sigaction(SIGINT, &action, NULL);
     sigaction(SIGTERM, &action, NULL);
     sigaction(SIGSEGV, &action, NULL);
-
-    
 
     i = atexit(bye);
     if (i != 0) {
@@ -120,15 +117,14 @@ int main(int argc, char** argv) {
     /*
      * Starting place of the application. Add code below and remember to do 
      * proper logging and handling of errors by checking return codes! The main
-     * function will return EXIT_SUCCESS or EXIT_FAILURE depending on if it any
-     * errors in the application.
+     * function will return EXIT_SUCCESS or EXIT_FAILURE depending on if there are
+     * any errors in the application.
      * https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
      */
 
     sleep(60);
 
     return EXIT_SUCCESS; /*return EXIT_SUCCESS indication successful completion of the application*/
-
 }
 
 /*********************************************************************/
