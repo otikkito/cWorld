@@ -119,7 +119,9 @@ int main(int argc, char** argv) {
 
     /*
      * Starting place of the application. Add code below and remember to do 
-     * proper logging and handling of errors by checking return codes!
+     * proper logging and handling of errors by checking return codes! The main
+     * function will return EXIT_SUCCESS or EXIT_FAILURE depending on if it any
+     * errors in the application.
      * https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
      */
 
