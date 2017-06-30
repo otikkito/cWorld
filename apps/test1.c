@@ -6,10 +6,11 @@
 #define WORDSIZE 50
 
 
-//https://sourceware.org/bugzilla/buglist.cgi?bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=SUSPENDED&bug_status=WAITING&bug_status=REOPENED&list_id=33073&product=glibc&query_format=advanced
-//https://en.wikipedia.org/wiki/Natural_language_processing
-//https://www.coursera.org/learn/natural-language-processing
-
+/*https://sourceware.org/bugzilla/buglist.cgi?bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=SUSPENDED&bug_status=WAITING&bug_status=REOPENED&list_id=33073&product=glibc&query_format=advanced
+  https://en.wikipedia.org/wiki/Natural_language_processing
+  https://www.coursera.org/learn/natural-language-processing
+  http://opennlp.apache.org/
+*/
 
 /*
  * Some of the issues that I have seen thus far is that to my knowledge there
@@ -61,22 +62,20 @@ void tokenizestring(char * string){
         c = string[i];
         if(isblank(string[i]) == 0){  
             printf("%c \n",string[i]);
-            
+            word[i]= c;
         }
         //char string[] = "JAMES          3.318  3.318      1\n";
         if((isblank(string[i])) == 0){//if it is a character print it to the console and put it in one of the member of the structure
             switch(membernum){
                 case 1:
-                    word[i] = c;
-                    if( (word[i] == ' ') || (word[i]=='\t')){
-                        membernum++;
-                    }
+                    mebernum++;
                     continue;
                 case 2://need to modify to read in a float
                     //man atof
                     ///https://www.tutorialspoint.com/c_standard_library/c_function_atof.htm
                     //string.float1[i] = c;
-                    break;
+                    printf("Now on member 2");
+                    continue;
                 
                 case 3: //need to modify to read in a float
                     //string.float2[i] = c;
