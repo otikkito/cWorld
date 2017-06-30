@@ -13,7 +13,7 @@ int FunctionA(int argument_count,...);
 /*man stdarg.h*/
 int main(){
     
-    FunctionA("Hello world");
+    FunctionA(1,"Hello world","It is working");
     return EXIT_SUCCESS;
 }
 
@@ -23,8 +23,8 @@ int main(){
  */
 int FunctionA(int argument_count,...){
     va_list ap;
-    va_start(ap,count);
+    va_start(ap,argument_count);
     
-    printf("String: %s \n",string);
+    printf("Count: %d %s %s\n",argument_count,va_arg(ap, char *), va_arg(ap,char *));
     return 0;
 }
