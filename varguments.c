@@ -17,8 +17,9 @@ int main(){
     return EXIT_SUCCESS;
 }
 
-/*This is a variadic function
- man stdarg.h
+/* This is a variadic function
+ * man stdarg.h
+ * Also check out vprintf()
  */
 int FunctionA(int argument_count,...){
     va_list ap;
