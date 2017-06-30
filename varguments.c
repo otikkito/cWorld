@@ -8,7 +8,7 @@
 #include <stdio.h>
 
 /*Funciton prototypes*/
-int FunctionA(int arg_count,...);
+int FunctionA(int argument_count,...);
 
 /*man stdarg.h*/
 int main(){
@@ -17,7 +17,13 @@ int main(){
     return EXIT_SUCCESS;
 }
 
-int FunctionA(int arg_count,...){
+/*This is a variadic function
+ man stdarg.h
+ */
+int FunctionA(int argument_count,...){
+    va_list ap;
+    va_start(ap,count);
+    
     printf("String: %s \n",string);
     return 0;
 }
