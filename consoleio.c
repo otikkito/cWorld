@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-//Do a little console io and printing
+/*
+ Do a little console io and printing
+ */
 
 
 
@@ -12,7 +14,7 @@ int main(){
 
 	printf("Please enter in 3 integers to be added\n");
 	scanf("%d%d%d",&a,&b,&c);
-	printf("Please enter you name: Firstname Lastname\n");
+	printf("Please enter you name: First name Last name\n");
 	scanf("%s%s",fname,lname);
 	sum = a + b + c;
 	printf("Hello %s %s. The sum of these integers are: %d \n",fname,lname,sum);

@@ -3,15 +3,17 @@
 #include <assert.h>
 #include "crefresh.h"
 
-//This program is tryin to use all the functionality of c basicly go through all the keywords in c
- //auto break case char const continue default do double else enum extern float for goto if int long register return
-//short signed sizeof static struct switch typedef union unsigned void volatile while 
-
-
-//function prototypes are in the header file http://www.cs.utah.edu/~germain/PPS/Topics/C_Language/c_functions.html
+/*This program is try to use all the functionality of c basically I will go 
+ * through all the keywords in c:
+ * auto break case char const continue default do double else enum extern float 
+ * for goto if int long register return short signed sizeof static struct switch
+ * typedef union unsigned void volatile while 
+ *function prototypes are in the header file http://www.cs.utah.edu/~germain/PPS/Topics/C_Language/c_functions.html
+*/
 
 int main(){
-	//variable declaration	
+    
+	/*variable declaration*/	
 	int i;
 	float f;
 	double d;
@@ -21,7 +23,7 @@ int main(){
 	struct datastruct ds1;
 	struct datastruct ds2;
 
-	//initialization	
+	/*initialization*/	
 	i=2+3;
 	f=3.14159;
 	d=3.14159;
@@ -41,8 +43,7 @@ int main(){
 	printf("structure name: %s\n",ds1.name);
 	printf("structure c: %c\n",ds1.c);
 	
-	//run a function
-	 rv = myfunction(ds1,ds2);
+	rv = myfunction(ds1,ds2);
 	int j;  //just have to decrare variables before you use them
 	for(j=0; j<10; j=j+2){
 		printf("the index is: %d\n",j);
@@ -61,7 +62,7 @@ int main(){
 	return 0;
 }
 
-//Pass by value
+/*Pass by value*/
 int myfunction(struct datastruct a, struct datastruct b){
 	int ret;
 	
@@ -82,7 +83,7 @@ int myfunction(struct datastruct a, struct datastruct b){
 	return 0; //for now
 }
 
-//function that will pass by reference 
+/*function that will pass by reference*/
 int simpleFunction(struct datastruct *a, struct datastruct *b){
 	printf("Function:The location of a is: %p\n",a);
 	printf("Function:The location of b is: %p\n",b); 
