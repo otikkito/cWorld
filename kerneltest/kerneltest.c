@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
     
     /*https://www.mkssoftware.com/docs/man3/getpriority.3.asp*/
     i = getpriority(PRIO_PROCESS, getpid());
-    printf("The priority of this application is %d \n",i);
+    printf("The priority of this application is %d and the pid is %d\n",i, getpid());
     while(true){
         sleep(1);
     }
