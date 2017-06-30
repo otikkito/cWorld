@@ -8,12 +8,14 @@
 #include <stdio.h>
 #include <strings.h>
 
+/*Preprocessor directives*/
+#define MAXLOGSTRING 300
 
 /*Funciton prototypes*/
 int FunctionA(int argument_count,...);
 
 /*Global functions*/
-char log_string[300];
+char log_string[MAXLOGSTRING];
 
 /*man stdarg.h*/
 int main(){
