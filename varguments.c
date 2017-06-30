@@ -6,18 +6,19 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <stdio.h>
+#include <strings.h>
 
 
 /*Funciton prototypes*/
 int FunctionA(int argument_count,...);
 
 /*Global functions*/
-
+char log_string[300];
 
 /*man stdarg.h*/
 int main(){
-    
-    FunctionA(1,"It is working","Hello world", "This is argument 3");
+    memset(log_string,'\0',sizeof(char *));
+    FunctionA(3,"It is working","Hello world", "This is argument 3");
     return EXIT_SUCCESS;
 }
 
@@ -29,9 +30,13 @@ int FunctionA(int argument_count,...){
        
     va_list ap;
     va_start(ap,argument_count);
-    /*TODO I need to fixed the order at which this is displayed*/
-    printf("Count: %d %s %s %s\n",argument_count,va_arg(ap, char *), va_arg(ap,char *), va_arg(ap, char *));
     
+    while(argument_count--){
+        strcat(log_string,va_arg(ap,char *));
+        strcat(log_string," ");
+    }
+    
+    printf("Log string: %s \n",log_string);
     va_end(ap);
     return 0;
 }
