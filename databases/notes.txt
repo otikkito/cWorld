@@ -1,0 +1,15 @@
+The database that comes in RHEL/CENTOS 7 is Mariadb
+
+Maria database:
+user:root
+password:redhat
+
+user: testuser
+password: redhat
+
+root login
+mysql -u root -p
+
+http://www.tutorialspoint.com/mariadb/
+https://www.linode.com/docs/databases/mariadb/how-to-install-mariadb-on-centos-7
+http://www.htmlgoodies.com/primers/database/article.php/3478121/To-Use-or-Not-to-Use-a-Database-That-is-the-Question.htm

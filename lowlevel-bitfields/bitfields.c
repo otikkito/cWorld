@@ -62,6 +62,6 @@ int main(int argc, char** argv) {
 }
 
 void Ex_12507(unsigned char a){
-    
+    /*Convert integer to binary*/
    
 }
