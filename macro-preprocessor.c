@@ -36,7 +36,8 @@ int main(int argc, char** argv){
     FILE *fp;
  /* #line 37 */
     printf("Working with macros and preprocessor directives %s %d\n",__FILE__, __LINE__);
-    
+    printf("The current time and date is %s %s \n", __DATE__,__TIME__);
+//#error Error test
     return (EXIT_SUCCESS);
 }
 
