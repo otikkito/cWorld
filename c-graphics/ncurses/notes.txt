@@ -3,3 +3,4 @@ sudo yum install ncurses.x86_64 ncurses-devel.x86_64
 gcc <program file> -lncurses    
 
 http://www.tldp.org/HOWTO/NCURSES-Programming-HOWTO/helloworld.html
+http://tldp.org/HOWTO/NCURSES-Programming-HOWTO/
