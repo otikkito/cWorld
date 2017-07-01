@@ -63,17 +63,5 @@ int main(int argc, char** argv) {
 
 void Ex_12507(unsigned char a){
     
-    struct u8{
-        unsigned int bit1:1;
-        unsigned int bit2:1;
-        unsigned int bit3:1;
-        unsigned int bit4:1;
-        unsigned int bit5:1;
-        unsigned int bit6:1;
-        unsigned int bit7:1;
-        unsigned int bit8:1;
-        
-    };
-    struct u8 temp;
-    temp = a;
+   
 }
