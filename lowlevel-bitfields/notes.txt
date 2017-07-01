@@ -1,0 +1,20 @@
+Referance:
+1) https://users.cs.cf.ac.uk/Dave.Marshall/C/node13.html
+
+List of bitwise operators:
+& bitwise and (&& is logical and)
+| bitwise or  (|| is logical or)
+^ bitwise xor
+~ one's complement
+<< left shift
+>> right shift
+
+" Therefore a shift left is equivalent to a multiplication by 2.
+   Similarly a shift right is equal to division by 2"
+
+"Shifting is much faster than actual multiplication (*) or division (/) by 2"
+--------------------------------------------------------------------------------
+"Bit Fields allow the packing of data in a structure." 
+-"This should be used when memory and data storage is a premium"
+
+-There are issues with portability in bit codes.
