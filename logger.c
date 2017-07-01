@@ -2,8 +2,9 @@
 #include <time.h>
 #include <syslog.h>
 #include <stdarg.h>
-#include <sys/types.h>
+#include <syslog.h>
 #include <unistd.h>
+#include <sys/types.h>
 
 //www.kjoseph-it.com
 
@@ -46,7 +47,7 @@ int main(){
 	}
 	print_logfile(fp,"And we printing to the log file");
 	print_log("Error you machine is going down");
-	print_syslog("Holy moly you got another error");
+	print_syslog();
         print_logfile_pid(fp,"The pid of this process is: ",getpid());
         
 	fclose(fp);
@@ -108,8 +109,10 @@ int print_log(char *string){
 *********************************************************/
 /* More information can be found man 3 syslog */
 int print_syslog(char *string){
-	syslog(LOG_ERR,"Just playing");
-	return 0;
+    openlog(NULL,LOG_PID,LOG_SYSLOG);
+    syslog(LOG_ERR,"Just playing",);
+    
+    return 0;
 }
 /********************************************************
 *
