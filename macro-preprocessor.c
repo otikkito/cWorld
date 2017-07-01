@@ -11,6 +11,8 @@
  * Created on July 1, 2017, 9:57 AM
  */
 
+/* Reference: https://www-s.acm.illinois.edu/webmonkeys/book/c_guide/1.7.html */
+
 #include <stdio.h>
 #include <stdlib.h>
 
