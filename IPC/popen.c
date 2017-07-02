@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 /*http://pubs.opengroup.org/onlinepubs/009695399/functions/popen.html*/
 
 int main(){
