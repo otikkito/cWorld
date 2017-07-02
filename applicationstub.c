@@ -223,6 +223,7 @@ void print_log_file(FILE *f, char *string) {
  *********************************************************/
 void signal_handler(int signal, siginfo_t *info, void *_unused) {
     /*To terminate kill -s 15 <pid>*/
+    /*TODO need to log the process name as well*/
     /*https://github.com/otikkito/cWorld/blob/master/Docs/cManPages/signal.pdf*/
     switch (signal) {
         case SIGINT:

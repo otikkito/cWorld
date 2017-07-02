@@ -18,3 +18,5 @@ List of bitwise operators:
 -"This should be used when memory and data storage is a premium"
 
 -There are issues with portability in bit codes.
+
+Bit mask: https://stackoverflow.com/questions/10493411/what-is-bit-masking
