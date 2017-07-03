@@ -122,7 +122,7 @@ int main(int argc, char** argv) {
      * https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
      */
 
-    sleep(60);
+     sleep(60000);
 
     return EXIT_SUCCESS; /*return EXIT_SUCCESS indication successful completion of the application*/
 }
