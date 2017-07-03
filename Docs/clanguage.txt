@@ -63,3 +63,10 @@ procedure: A set of instructions that perform a specific task; a subroutine or f
 https://en.wikipedia.org/wiki/Abstraction_(software_engineering)
 "Abstracts one or more actions to a procedure, which can be called as a single command."
 http://people.cs.aau.dk/~normark/prog3-03/html/notes/paradigms_themes-paradigm-overview-section.html
+
+TODO
+1) explain structures and type definition
+2) math behind looping and asymptotic complexity
+3) preprocessor commands and compiler options
+4) Type up and summarize key concepts that I don't unnderstand
+5) 
