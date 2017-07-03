@@ -51,6 +51,7 @@ Standard definitions: https://stackoverflow.com/questions/81656/where-do-i-find-
 Function library: https://www.gnu.org/software/libc/manual/html_node/Function-Index.html
 Type casting: https://www.tutorialspoint.com/cprogramming/c_type_casting.htm
 Course that I would like to take: https://engineeringonline.ncsu.edu/onlinecourses/coursemarketing/FALL-2017/CSC230.html
+The ten commandments of c programming: http://www.lysator.liu.se/c/ten-commandments.html
 
 #TODO ADD examples of all the keywords
 http://tigcc.ticalc.org/doc/keywords.html

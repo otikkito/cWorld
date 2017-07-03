@@ -8,3 +8,5 @@ whitespaces
 -/usr/bin/time -v <program>  -> will give a lot usfull information like time
 elapsed
 -DDD - Data display debugger
+-Lint 
+-splint http://www.splint.org/
