@@ -4,5 +4,8 @@ Computational complexity
 
 -Worst-case complexity
 -Average-case complexity
+-Memory utilization
+-Computational speed
+-Accuracy of computation 
 
 Understanding the complexity of Algorithms
