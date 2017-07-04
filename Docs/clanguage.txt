@@ -69,5 +69,6 @@ TODO
 1) explain structures and type definition
 2) math behind looping and asymptotic complexity
 3) preprocessor commands and compiler options
-4) Type up and summarize key concepts that I don't unnderstand
-5) 
+4) Type up and summarize key concepts that I don't understand in this language.
+5) Compiler design
+6) Runtime error handling and code regeneration within process allocated memory if possible.
