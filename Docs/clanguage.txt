@@ -36,9 +36,9 @@ while | Repeats execution while the condition is true.
 c program basically consists of the following parts:
 -Preprocessor commands/directives :https://en.wikipedia.org/wiki/C_preprocessor
 -Functions : https://github.com/otikkito/cWorld/blob/master/functions.c
--Variables
--Statements
--Expressions 
+-Variables -"A structure that holds data and is uniquely named by the programmer" www.yourdictionary .com
+-Statements - https://en.wikipedia.org/wiki/Statement_(computer_science)
+-Expressions https://en.wikipedia.org/wiki/Expression_(computer_science)
 -Comments : Use the /**/ comment style to prevent compiler warnings which we are trying to minimize
 
 Good break down of keywords: http://tigcc.ticalc.org/doc/keywords.html
