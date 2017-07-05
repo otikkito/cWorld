@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <errno.h>
 
+//http://www.thegeekstuff.com/2010/10/linux-error-codes
 //function prototype
 void shutdown(void);
 
