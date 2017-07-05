@@ -22,6 +22,15 @@ int main(){
     
 }
 
+
+***************************************************************************************/
+*    Title: Random at most
+*    Author: Ryan Reich
+*    Date: July 27,2011
+*    Code version: unknown
+*    Availability: https://stackoverflow.com/questions/2509679/how-to-generate-a-random-number-from-within-a-range
+*
+***************************************************************************************/
 // Assumes 0 <= max <= RAND_MAX
 // Returns in the closed interval [0, max]
 long random_at_most(long max) {
