@@ -10,3 +10,4 @@ Design considerations:
 5) Memory Leaks
 6) Application security from known flaws within the operating system and IPC
 7) Communication from machine to machine 
+8) Communication from processor to processor
