@@ -9,3 +9,4 @@ Design considerations:
 4) Logging of code, errors, and events within the application.
 5) Memory Leaks
 6) Application security from known flaws within the operating system and IPC
+7) Communication from machine to machine 
