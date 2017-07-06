@@ -1,11 +1,8 @@
 /****************************************************************
  *FILE NAME:applicationstub.c
- *www.kjoseph-it.com 
- *https://github.com/otikkito/cWorld/blob/master/nasa-c-style.pdf
- *https://en.wikipedia.org/wiki/Application_security
- *https://www.tutorialspoint.com/c_standard_library/index.htm
- *https://en.wikipedia.org/wiki/MIL-STD-498 
- *https://www.ece.ncsu.edu/people/gbyrd 
+ *Please see end of file for references
+ * www.kjoseph-it.com 
+ *
  *
  *PURPOSE: To design an application stub to begin developing applications on the
  * Linux/Unix platform
@@ -44,8 +41,11 @@
 
 /*
  *Global TODO
- * 1)Find a way to create a file template in the IDE for c files (This can be done by using tools->Template)
- * 2)Highlight TODO Tools/Options/Team/Action Items
+ * 1) Find a way to create a file template in the IDE for c files (This can be done by using tools->Template)
+ * 2) Highlight TODO Tools/Options/Team/Action Items
+ * 3) Continue to clean up code and correct typos
+ * 4) Remove some of the notes
+ * 5) Add to the applicationstub.txt notes on what to do and remove from code
  */
  
 
@@ -314,22 +314,13 @@ void bye(void) {
     fprintf(fp, "The application has ended now \n");
     fclose(fp);
 }
-/*signals that should be handle 
-kill -l
-https://github.com/otikkito/cWorld/blob/master/Docs/cManPages/signal.pdf
-http://man7.org/linux/man-pages/man7/signal.7.html
- 1) SIGHUP	 2) SIGINT	 3) SIGQUIT	 4) SIGILL	 5) SIGTRAP
- 6) SIGABRT	 7) SIGBUS	 8) SIGFPE	 9) SIGKILL	10) SIGUSR1
-11) SIGSEGV	12) SIGUSR2	13) SIGPIPE	14) SIGALRM	15) SIGTERM
-16) SIGSTKFLT	17) SIGCHLD	18) SIGCONT	19) SIGSTOP	20) SIGTSTP
-21) SIGTTIN	22) SIGTTOU	23) SIGURG	24) SIGXCPU	25) SIGXFSZ
-26) SIGVTALRM	27) SIGPROF	28) SIGWINCH	29) SIGIO	30) SIGPWR
-31) SIGSYS	34) SIGRTMIN	35) SIGRTMIN+1	36) SIGRTMIN+2	37) SIGRTMIN+3
-38) SIGRTMIN+4	39) SIGRTMIN+5	40) SIGRTMIN+6	41) SIGRTMIN+7	42) SIGRTMIN+8
-43) SIGRTMIN+9	44) SIGRTMIN+10	45) SIGRTMIN+11	46) SIGRTMIN+12	47) SIGRTMIN+13
-48) SIGRTMIN+14	49) SIGRTMIN+15	50) SIGRTMAX-14	51) SIGRTMAX-13	52) SIGRTMAX-12
-53) SIGRTMAX-11	54) SIGRTMAX-10	55) SIGRTMAX-9	56) SIGRTMAX-8	57) SIGRTMAX-7
-58) SIGRTMAX-6	59) SIGRTMAX-5	60) SIGRTMAX-4	61) SIGRTMAX-3	62) SIGRTMAX-2
-63) SIGRTMAX-1	64) SIGRTMAX	
- */
 
+
+/*
+ *References:
+ *1) https://github.com/otikkito/cWorld/blob/master/nasa-c-style.pdf
+ *2) https://en.wikipedia.org/wiki/Application_security
+ *3) https://www.tutorialspoint.com/c_standard_library/index.htm
+ *4) https://en.wikipedia.org/wiki/MIL-STD-498 
+ *5) https://www.ece.ncsu.edu/people/gbyrd 
+ */

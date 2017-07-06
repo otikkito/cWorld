@@ -15,7 +15,7 @@ void incr_a();
 //https://en.wikipedia.org/wiki/Integer_overflow
 //-ftapv  compiler option for integer overflow
 // How to handle overflow: https://stackoverflow.com/questions/20851061/how-to-make-gcc-ftrapv-work
-
+//https://gcc.gnu.org/onlinedocs/gcc-7.1.0/gcc/Integer-Overflow-Builtins.html
 int main() {
 
     
