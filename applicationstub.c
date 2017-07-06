@@ -1,6 +1,6 @@
 /****************************************************************
  *FILE NAME:applicationstub.c
- *Please see end of file for references
+ * Please see end of file for references
  * www.kjoseph-it.com 
  *
  *
@@ -77,15 +77,7 @@ const char* get_process_name_by_pid(pid_t pid);
  This is the entry point of program execution from the operating system and shell.
  */
 int main(int argc, char** argv) {
-    /*
-     * I need to find a better way to handle signals and find out what are 
-     * important signals that I need to handle.
-     * man sigaction
-     * man 7 signal
-     *handling of the signals
-     *https://gcc.gnu.org/bugzilla/show_bug.cgi?id=56018
-     *https://netbeans.org/bugzilla/show_bug.cgi?id=191390
-     */
+    
     int i;
     struct sigaction action;
     action.sa_handler = signal_handler;

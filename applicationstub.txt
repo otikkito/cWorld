@@ -33,3 +33,14 @@ http://man7.org/linux/man-pages/man7/signal.7.html
 58) SIGRTMAX-6	59) SIGRTMAX-5	60) SIGRTMAX-4	61) SIGRTMAX-3	62) SIGRTMAX-2
 63) SIGRTMAX-1	64) SIGRTMAX	
  */
+
+
+/*
+     * I need to find a better way to handle signals and find out what are 
+     * important signals that I need to handle.
+     * man sigaction
+     * man 7 signal
+     *handling of the signals
+     *https://gcc.gnu.org/bugzilla/show_bug.cgi?id=56018
+     *https://netbeans.org/bugzilla/show_bug.cgi?id=191390
+     */
