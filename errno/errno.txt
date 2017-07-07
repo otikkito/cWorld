@@ -46,13 +46,13 @@ https://www.tutorialspoint.com/cprogramming/c_error_handling.htm
 
 Program correctness
 -the proof of correctness of programs, use the rules of inference and proof techniques including mathematical unduction
--A program is said to be correct if itt produces the correct output for every possible input.
+-A program is said to be correct if it produces the correct output for every possible input.
 
-A proof that a programs in correct consits of two parts.
+A proof that a programs in correct consists of two parts.
 1)show that the correct answer is obtained if the program terminates.
-2)That the program always termintes
+2)That the program always terminates
 
---intial assertion
+--initial assertion
 --final assertion
 
 Check for blocking and nonblocking system calls
