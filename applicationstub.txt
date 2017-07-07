@@ -13,6 +13,7 @@ Design considerations:
 8) Communication from processor to processor
 9) Timeouts --> https://en.wikipedia.org/wiki/Timeout_(computing)
 10) Configuration files for the application.
+11) scheduling issues
 
 
 /*signals that should be handled in application development
