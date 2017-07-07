@@ -1,5 +1,7 @@
 C++ Language
 
+The c++ standard: https://isocpp.org/std/the-standard
+
 Link to keywords: http://en.cppreference.com/w/cpp/keyword
 Link to the language: http://www.cplusplus.com/files/tutorial.pdf
 Reference : http://www.cplusplus.com/reference/
