@@ -18,6 +18,9 @@
 #include <sys/types.h>
 
 
+//Create an alarm or timer for nanosecond, millisecond, microsecond sleep man 2 nanosleep
+
+
 /* https://en.wikipedia.org/wiki/Time
  * man clock_gettime
  * https://stackoverflow.com/questions/6749621/how-to-create-a-high-resolution-timer-in-linux-to-measure-program-performance
