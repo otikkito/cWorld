@@ -46,6 +46,7 @@
  * 3) Continue to clean up code and correct typos
  * 4) Remove some of the notes
  * 5) Add to the applicationstub.txt notes on what to do and remove from code
+ * 6) Changed the license header to include the file format
  */
  
 
