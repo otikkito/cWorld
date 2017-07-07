@@ -6,3 +6,7 @@ Reference : http://www.cplusplus.com/reference/
 
 C++ Documentation
 yum install libstdc++.x86_64 libstdc++-docs.x86_64
+
+C++ Refresh:
+http://www.pearsonvue.com/cpp/
+Effective C++ ISBN-13: 978-0321334879 
