@@ -1,0 +1,26 @@
+"Threads are like lite weight process." [6] Also in which they share the same 
+global variables.
+
+"Thread-safe means that the program protects shared data, possibly through the 
+use of mutual exclusion." [9]
+
+"Reentrant code means that a program can have more than one thread executing 
+concurrently." [9]
+
+man 7 pthreads
+
+In order to compile multi-threaded application it is necessary to add the following 
+ option to the gcc command line: "gcc thread.c -lpthread"
+
+
+
+References:
+1) https://computing.llnl.gov/tutorials/pthreads/
+2) https://www.cs.cf.ac.uk/Dave/C/node32.html
+3) https://www.cs.cf.ac.uk/Dave/C/node29.html
+4) http://www.thegeekstuff.com/2012/04/create-threads-in-linux/?utm_source=feedburner
+5) http://softpixel.com/~cwright/programming/threads/threads.c.php
+6) http://softpixel.com/~cwright/programming/threads/threads.c.php
+7) https://vcansimplify.wordpress.com/2013/03/08/pthread-tutorial-simplified/
+8) https://web.stanford.edu/~ouster/cgi-bin/papers/threads.pdf
+9) https://randu.org/tutorials/threads/  ---> Good tutorial

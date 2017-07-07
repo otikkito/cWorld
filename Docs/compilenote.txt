@@ -4,3 +4,5 @@ gcc -Wall -pedantic -g soucefile --o savedfilename
 gcc thread.c -lpthread
 
 -ftapv  compiler option for integer overflow
+
+15 common copiler options: http://www.thegeekstuff.com/2012/10/gcc-compiler-options/?utm_source=feedburner
