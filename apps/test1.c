@@ -82,12 +82,12 @@ void tokenizestring(char * string) {
                 case 4: //need to  //string.int[i] = c;
                     break;
             }
-            if((isblank(c))!=0){
-                membernum++;
-            }
+            
 
         }
-
+        if((isblank(c))!=0){
+                membernum++;
+        }
     }
 
     printf("word: %s %s %s\n", word,wordf1,wordf2);
