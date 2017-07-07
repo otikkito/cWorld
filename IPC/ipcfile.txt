@@ -1,5 +1,6 @@
 //http://tldp.org/LDP/lpg/node7.html
 //https://en.wikipedia.org/wiki/Inter-process_communication
+//http://tldp.org/LDP/lpg/node7.html
 
 The linux Inter process communications provide multiple methods for process to communicate with each other. 
 a) Half-duplex UNIX pipes
