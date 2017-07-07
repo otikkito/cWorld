@@ -1,7 +1,7 @@
 Error Functions
 -many of the functions in the library set status indicators when error
 or end of file occur.
-The integer expressiono "errno" declared in <errno.h> may contain an error
+The integer expression "errno" declared in <errno.h> may contain an error
 number that gives further information about the most recent error
 ------
 void clearerr(FILE *stream)
