@@ -62,8 +62,11 @@ int FunctionA(int argument_count,...){
 /*int vfprintf(FILE *stream, const char *format, va_list ap);*/
 /* man vfprintf*/
 void print_log_va(FILE *fp,int argcount,...){
-    
     va_list ap;
     va_start(ap,argcount);
+    while(argcount--){
+        vfprintf(fp,"%s ",ap);
+    }
+    
     
 }
