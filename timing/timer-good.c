@@ -12,9 +12,6 @@
 */
 
 
-
-
-
 /*Global variables*/
  struct timestruct{
     time_t seconds;  /*included in struct timespec*/
@@ -37,14 +34,11 @@ inline void diff_timespec(struct timespec *start,struct timespec *end);
  
 
   
-  /*Function prototype*/
-  /*struct timerstruc convert_timespect(struct timestruc temp)*/
 
-/*TODO need to break it down to seconds, milli seconds and nano seconds*/
+
 int main(int argc, char** argv) {
     
     int i;
-    
     
     i = clock_gettime( CLOCK_MONOTONIC,&start);
     if(i == -1){
