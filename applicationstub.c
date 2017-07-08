@@ -81,6 +81,7 @@ int main(int argc, char** argv) {
     
     int i;
     struct sigaction action;
+    
     action.sa_handler = signal_handler;
     sigaction(SIGINT, &action, NULL);
     sigaction(SIGTERM, &action, NULL);
