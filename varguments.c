@@ -60,7 +60,7 @@ int FunctionA(int argument_count,...){
 
 /* https://stackoverflow.com/questions/14358497/what-is-the-difference-between-fprintf-and-vfprintf-in-c*/
 /*int vfprintf(FILE *stream, const char *format, va_list ap);*/
-/* man vfprintf*/
+/* man vfprintf */
 void print_log_va(FILE *fp,int argcount,...){
     va_list ap;
     va_start(ap,argcount);
