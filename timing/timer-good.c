@@ -1,15 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/* 
- * File:   timerg.c
- * Author: otikkito
- *
- * Created on June 18, 2017, 9:23 AM
- */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,55 +7,15 @@
 #include <sys/types.h>
 
 
-/*TODO Create an alarm or timer for nanosecond, millisecond, microsecond sleep man 2 nanosleep*/
-
-
-/* https://en.wikipedia.org/wiki/Time
- * man clock_gettime
- * https://stackoverflow.com/questions/6749621/how-to-create-a-high-resolution-timer-in-linux-to-measure-program-performance
- * "If you want to compute the elapsed time between two events observed on the 
- * one machine without an intervening reboot, CLOCK_MONOTONIC is the best option." 
- * 
- * 
- * http://www.catb.org/esr/time-programming/
- */
-
-/*
- 
-	
-https://stackoverflow.com/questions/16740014/computing-time-in-linux-granularity-and-precision
-
-On Linux, the available timers with increasing granularity are:
-
-    clock() from <time.h> (20ms or 10ms resolution?)
-
-    gettimeofday() from Posix <sys/time.h> (microseconds)
-
-    clock_gettime() on Posix (nanoseconds?)
-
-
- */
-/*
- struct timespec
-time_t  tv_sec    Seconds.
-long    tv_nsec   Nanoseconds.
- * 
- *POSIX.1b
- *milliseconds = nanoseconds ÷ 1,000,000
-*nanoseconds = milliseconds x 1,000,000
-*A microsecond is equal to 1000 nanoseconds
-*stuct timespec
- *time_t  tv_sec    Seconds.
- *long    tv_nsec   Nanoseconds.
- *time_t and clock_t shall be integer or real-floating types (man type.h)
+/*TODO Create an alarm or timer for nanosecond, millisecond, microsecond sleep
+ *man 2 nanosleep
 */
-/*the different resolution for sleep are listed below:
- man clock_nanosleep
- man nanosleep
- 
- * 
- */
 
+
+
+
+
+/*Global variables*/
  struct timestruct{
     time_t seconds;  /*included in struct timespec*/
     time_t milliseconds;
@@ -74,14 +23,16 @@ long    tv_nsec   Nanoseconds.
     long nanoseconds;  /*included in struct timespec*/
   };
  
+  struct timespec start;
+  struct timespec end;
+  struct timespec diff1;
+  struct timespec diff2;
+  struct timestruct t;
+  
 /*Function prototype*/
 inline void diff_timespec(struct timespec *start,struct timespec *end); 
 
- struct timespec start;
- struct timespec end;
- struct timespec diff1;
- struct timespec diff2;
- struct timestruct t;
+ 
 
  
 
