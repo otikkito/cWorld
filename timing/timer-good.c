@@ -18,7 +18,7 @@
 #include <sys/types.h>
 
 
-//Create an alarm or timer for nanosecond, millisecond, microsecond sleep man 2 nanosleep
+/*TODO Create an alarm or timer for nanosecond, millisecond, microsecond sleep man 2 nanosleep*/
 
 
 /* https://en.wikipedia.org/wiki/Time
