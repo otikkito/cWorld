@@ -287,6 +287,10 @@ void signal_handler(int signal, siginfo_t *info, void *_unused) {
 const char* get_process_name_by_pid(pid_t pid) {
     FILE *f;
     char* name = (char*) calloc(1024, sizeof (char));
+    
+    if(pid == 0){
+        return "Kernel";
+    }
     if (name) {
         sprintf(name, "/proc/%d/cmdline", pid);
         f = fopen(name, "r");
@@ -299,10 +303,7 @@ const char* get_process_name_by_pid(pid_t pid) {
             }
             fclose(f);
         }
-    }
-    if(pid == 0){
-        return "Kernel";
-    }
+    } 
     return name;
 }
 /*********************************************************************/
