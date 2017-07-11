@@ -57,6 +57,7 @@
 #include <stdlib.h>
 #include <errno.h>
 #include <syslog.h>
+#include <string.h>
 #include <sys/types.h>
 
 /*Preprocessor commands*/
@@ -92,11 +93,11 @@ int main(int argc, char** argv) {
     sigaction(SIGPOLL, &action,NULL);
     sigaction(SIGPROF, &action,NULL);
     sigaction(SIGVTALRM, &action,NULL);
-    sigaction(SIGEMT, &action,NULL); /*Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
+    /*sigaction(SIGEMT, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
     sigaction(SIGSTKFLT, &action,NULL);
-    sigaction(SIGHIO, &action,NULL); /*Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
+    /*sigaction(SIGHIO, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
     sigaction(SIGPWR, &action,NULL);
-    sigaction(SIGLOST, &action,NULL); /*Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
+    /*sigaction(SIGLOST, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
     sigaction(SIGINT, &action, NULL);
     sigaction(SIGTERM, &action, NULL);
     sigaction(SIGSEGV, &action, NULL);/*Unable to recover from SIGSEGV in linux to my understanding*/
