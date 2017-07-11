@@ -249,10 +249,6 @@ void signal_handler(int signal, siginfo_t *info, void *_unused) {
             fprintf(stdout, "Received SIGINT from process with pid = %u \n", info->si_pid);
             syslog(LOG_ERR, "Received signal SIGINT and will be shutting down application.c ");
             exit(EXIT_FAILURE);
-        case SIGSEGV:
-            fprintf(stdout, "Received SIGSEGV from process with pid = %u \n", info->si_pid);
-            syslog(LOG_ERR, "Received signal SIGSEGV and will be shutting down application.c ");
-            exit(EXIT_FAILURE);
         case SIGTERM:
             fprintf(stdout, "Received SIGTERM from process with pid = %u \n", info->si_pid);
             syslog(LOG_ERR, "Received signal SIGTERM and will be shutting down application.c");
