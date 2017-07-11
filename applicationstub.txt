@@ -14,6 +14,8 @@ Design considerations:
 9) Timeouts --> https://en.wikipedia.org/wiki/Timeout_(computing)
 10) Configuration files for the application.
 11) scheduling issues
+12) Runtime errors "When it compiles without errors" and when the erros are generated after
+    compilation and execution. --->https://www.quora.com/In-C-programming-what-is-runtime-error-and-how-can-it-be-resolved
 
 
 /*signals that should be handled in application development. After reading man 7 signal
