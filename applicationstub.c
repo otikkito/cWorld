@@ -58,6 +58,7 @@
 #include <errno.h>
 #include <syslog.h>
 #include <string.h>
+#include <signal.h>
 #include <sys/types.h>
 
 /*Preprocessor commands*/
@@ -85,6 +86,8 @@ int main(int argc, char** argv) {
     struct sigaction action;
     
     action.sa_handler = signal_handler;
+    action.sa_flags =SA_SIGINFO;
+    
     sigaction(SIGHUP, &action,NULL);
     sigaction(SIGPIPE, &action,NULL);
     sigaction(SIGALRM, &action,NULL);
@@ -231,7 +234,11 @@ void print_log_file(FILE *f, char *string) {
  *
  *********************************************************/
 void signal_handler(int signal, siginfo_t *info, void *_unused) {
-    
+    /*
+     * http://man7.org/linux/man-pages/man2/sigaction.2.html --> "You must set the sa_flags field"
+     * "you must set the sa_flags field of your struct sigaction with the flag SA_SIGINFO"
+     * https://stackoverflow.com/questions/15148714/signals-siginfo-t-info-causes-segmentation-fault
+     */
     char app_log_message[MAXLOGSIZE];
     
     memset(app_log_message,'\0',sizeof(app_log_message));
