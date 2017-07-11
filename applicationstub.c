@@ -84,6 +84,19 @@ int main(int argc, char** argv) {
     struct sigaction action;
     
     action.sa_handler = signal_handler;
+    sigaction(SIGHUP, &action,NULL);
+    sigaction(SIGPIPE, &action,NULL);
+    sigaction(SIGALRM, &action,NULL);
+    sigaction(SIGUSR1, &action,NULL);
+    sigaction(SIGUSR2, &action,NULL);
+    sigaction(SIGPOLL, &action,NULL);
+    sigaction(SIGPROF, &action,NULL);
+    sigaction(SIGVTALRM, &action,NULL);
+    sigaction(SIGEMT, &action,NULL); /*Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
+    sigaction(SIGSTKFLT, &action,NULL);
+    sigaction(SIGHIO, &action,NULL); /*Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
+    sigaction(SIGPWR, &action,NULL);
+    sigaction(SIGLOST, &action,NULL); /*Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
     sigaction(SIGINT, &action, NULL);
     sigaction(SIGTERM, &action, NULL);
     sigaction(SIGSEGV, &action, NULL);/*Unable to recover from SIGSEGV in linux to my understanding*/
@@ -222,6 +235,7 @@ void signal_handler(int signal, siginfo_t *info, void *_unused) {
     memset(app_log_message,'\0',sizeof(app_log_message));
     
     sprintf(app_log_message,"The application received a signal %d from pid: %u",signal,info->si_pid);
+    /*Log to the application log the signal*/
     print_log_file(fp,app_log_message);
     
     /*To terminate kill -s 15 <pid>*/
@@ -243,7 +257,7 @@ void signal_handler(int signal, siginfo_t *info, void *_unused) {
             syslog(LOG_ERR, "Received signal SIGTERM and will be shutting down application.c");
             exit(EXIT_FAILURE);
     }
-    /*Log to the application log the signal*/
+    
     
     
 }
