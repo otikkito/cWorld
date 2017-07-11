@@ -59,7 +59,8 @@
 #include <syslog.h>
 #include <sys/types.h>
 
-
+/*Preprocessor commands*/
+#define MAXLOGSIZE 300
 
 /*Global variables*/
 char logfile[] = "./text-data-files/logfile.txt";
@@ -85,7 +86,7 @@ int main(int argc, char** argv) {
     action.sa_handler = signal_handler;
     sigaction(SIGINT, &action, NULL);
     sigaction(SIGTERM, &action, NULL);
-    sigaction(SIGSEGV, &action, NULL);
+    sigaction(SIGSEGV, &action, NULL);/*Unable to recover from SIGSEGV in linux to my understanding*/
 
     i = atexit(bye);
     if (i != 0) {
@@ -115,7 +116,7 @@ int main(int argc, char** argv) {
      * any errors in the application.
      * https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
      */
-
+   
      sleep(60000);
 
     return EXIT_SUCCESS; /*return EXIT_SUCCESS indication successful completion of the application*/
@@ -216,7 +217,15 @@ void print_log_file(FILE *f, char *string) {
  *
  *********************************************************/
 void signal_handler(int signal, siginfo_t *info, void *_unused) {
+    
+    char app_log_message[MAXLOGSIZE];
+    memset(app_log_message,'\0',sizeof(app_log_message));
+    
+    sprintf(app_log_message,"The application received a signal %d from pid: %u",signal,info->si_pid);
+    print_log_file(fp,app_log_message);
+    
     /*To terminate kill -s 15 <pid>*/
+    /*man 7 signal*/
     /*TODO need to log the process name as well*/
     /*https://github.com/otikkito/cWorld/blob/master/Docs/cManPages/signal.pdf*/
     switch (signal) {
@@ -233,8 +242,10 @@ void signal_handler(int signal, siginfo_t *info, void *_unused) {
             fprintf(stdout, "Received SIGTERM from process with pid = %u \n", info->si_pid);
             syslog(LOG_ERR, "Received signal SIGTERM and will be shutting down application.c");
             exit(EXIT_FAILURE);
-
     }
+    /*Log to the application log the signal*/
+    
+    
 }
 
 /*********************************************************************/
