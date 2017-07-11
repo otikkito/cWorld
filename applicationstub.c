@@ -235,7 +235,7 @@ void signal_handler(int signal, siginfo_t *info, void *_unused) {
     char app_log_message[MAXLOGSIZE];
     
     memset(app_log_message,'\0',sizeof(app_log_message));
-    sprintf(app_log_message,"The application received a signal %d from pid: %u",signal,info->si_pid);
+    sprintf(app_log_message,"The application received signal %d from pid: %u",signal,info->si_pid);
     /*Log to the application log the signal*/
     print_log_file(fp,app_log_message);
     
