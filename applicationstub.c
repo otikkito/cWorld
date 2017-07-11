@@ -235,6 +235,7 @@ void signal_handler(int signal, siginfo_t *info, void *_unused) {
     char app_log_message[MAXLOGSIZE];
     
     memset(app_log_message,'\0',sizeof(app_log_message));
+    /*siginfo_t not returning properly*/
     sprintf(app_log_message,"The application received signal %d from pid: %u with process name %s",signal,info->si_pid, get_process_name_by_pid(info->si_pid));
     /*Log to the application log the signal*/
     print_log_file(fp,app_log_message);
