@@ -33,6 +33,7 @@ int main(int argc, char** argv) {
     printf("The value of i is %d \n",i);
     while(true){
         sleep(100);
+        
     }
     return (EXIT_SUCCESS);
 }

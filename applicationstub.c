@@ -86,7 +86,7 @@ int main(int argc, char** argv) {
     struct sigaction action;
     
     action.sa_handler = signal_handler;
-    action.sa_flags =SA_SIGINFO;
+    action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid ofo the offending function*/
     
     sigaction(SIGHUP, &action,NULL);
     sigaction(SIGPIPE, &action,NULL);
@@ -113,7 +113,7 @@ int main(int argc, char** argv) {
     }
 
     /*The current pid of the process*/
-    processid = getpid();
+    processid = getpid(); /*Per the documentations this function is always successfull*/
 
     /*Open the logfile to begin logging*/
     fp = fopen(logfile, "a+");
@@ -130,7 +130,9 @@ int main(int argc, char** argv) {
      * Starting place of the application. Add code below and remember to do 
      * proper logging and handling of errors by checking return codes! The main
      * function will return EXIT_SUCCESS or EXIT_FAILURE depending on if there are
-     * any errors in the application.
+     * any runtime errors in the application. The application stub goal is to ensure 
+     * that there are no compile errors thus only having runtime errors which should 
+     * be handled correctly and prevented if thats possible.
      * https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
      */
    
