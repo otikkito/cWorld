@@ -19,6 +19,7 @@ Design considerations:
     an runtime error" --->https://www.quora.com/In-C-programming-what-is-runtime-error-and-how-can-it-be-resolved
 
 
+    
 /*signals that should be handled in application development. After reading man 7 signal
 I have determine that in my application I will handle all signals that can 
 terminate a process indicated by '*'
