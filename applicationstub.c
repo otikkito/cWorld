@@ -216,23 +216,23 @@ void print_log_file(FILE *f, char *string) {
 *********************************************************/
 
 void intialize_signal_handles(){
-    struct sigaction action;
     
+    struct sigaction action;
     action.sa_handler = signal_handler;
     action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid of the offending function*/
     
-    sigaction(SIGHUP, &action,NULL);
-    sigaction(SIGPIPE, &action,NULL);
-    sigaction(SIGALRM, &action,NULL);
-    sigaction(SIGUSR1, &action,NULL);
-    sigaction(SIGUSR2, &action,NULL);
-    sigaction(SIGPOLL, &action,NULL);
-    sigaction(SIGPROF, &action,NULL);
-    sigaction(SIGVTALRM, &action,NULL);
+    sigaction(SIGHUP, &action, NULL);
+    sigaction(SIGPIPE, &action, NULL);
+    sigaction(SIGALRM, &action, NULL);
+    sigaction(SIGUSR1, &action, NULL);
+    sigaction(SIGUSR2, &action, NULL);
+    sigaction(SIGPOLL, &action, NULL);
+    sigaction(SIGPROF, &action, NULL);
+    sigaction(SIGVTALRM, &action, NULL);
     /*sigaction(SIGEMT, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
-    sigaction(SIGSTKFLT, &action,NULL);
+    sigaction(SIGSTKFLT, &action, NULL);
     /*sigaction(SIGHIO, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
-    sigaction(SIGPWR, &action,NULL);
+    sigaction(SIGPWR, &action, NULL);
     /*sigaction(SIGLOST, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
     sigaction(SIGINT, &action, NULL);
     sigaction(SIGTERM, &action, NULL);
