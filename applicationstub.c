@@ -76,34 +76,15 @@ void print_log_file(FILE *f, char *string);
 void signal_handler();
 void bye(void);
 const char* get_process_name_by_pid(pid_t pid);
+void intialize_signal_handles();
 
 /*
  This is the entry point of program execution from the operating system and shell.
  */
 int main(int argc, char** argv) {
-    
+    /*As a design not minimize stuff in the main function*/
     int i;
-    struct sigaction action;
     
-    action.sa_handler = signal_handler;
-    action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid ofo the offending function*/
-    
-    sigaction(SIGHUP, &action,NULL);
-    sigaction(SIGPIPE, &action,NULL);
-    sigaction(SIGALRM, &action,NULL);
-    sigaction(SIGUSR1, &action,NULL);
-    sigaction(SIGUSR2, &action,NULL);
-    sigaction(SIGPOLL, &action,NULL);
-    sigaction(SIGPROF, &action,NULL);
-    sigaction(SIGVTALRM, &action,NULL);
-    /*sigaction(SIGEMT, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
-    sigaction(SIGSTKFLT, &action,NULL);
-    /*sigaction(SIGHIO, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
-    sigaction(SIGPWR, &action,NULL);
-    /*sigaction(SIGLOST, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
-    sigaction(SIGINT, &action, NULL);
-    sigaction(SIGTERM, &action, NULL);
-    sigaction(SIGSEGV, &action, NULL);/*Unable to recover from SIGSEGV in linux to my understanding*/
 
     i = atexit(bye);
     if (i != 0) {
@@ -214,6 +195,52 @@ void print_log_file(FILE *f, char *string) {
 
 /*********************************************************************/
 
+/********************************************************
+*
+*
+* FUNCTION NAME: intialize_signal_handles()
+*
+*
+*
+* ARGUMENTS: Void
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS: void
+*
+*
+*
+*********************************************************/
+
+void intialize_signal_handles(){
+    struct sigaction action;
+    
+    action.sa_handler = signal_handler;
+    action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid of the offending function*/
+    
+    sigaction(SIGHUP, &action,NULL);
+    sigaction(SIGPIPE, &action,NULL);
+    sigaction(SIGALRM, &action,NULL);
+    sigaction(SIGUSR1, &action,NULL);
+    sigaction(SIGUSR2, &action,NULL);
+    sigaction(SIGPOLL, &action,NULL);
+    sigaction(SIGPROF, &action,NULL);
+    sigaction(SIGVTALRM, &action,NULL);
+    /*sigaction(SIGEMT, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
+    sigaction(SIGSTKFLT, &action,NULL);
+    /*sigaction(SIGHIO, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
+    sigaction(SIGPWR, &action,NULL);
+    /*sigaction(SIGLOST, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get red hat distribution to verify*/
+    sigaction(SIGINT, &action, NULL);
+    sigaction(SIGTERM, &action, NULL);
+    sigaction(SIGSEGV, &action, NULL);/*Unable to recover from SIGSEGV in linux to my understanding*/ 
+    
+}
 /********************************************************
  *
  *
