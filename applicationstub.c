@@ -82,10 +82,9 @@ void intialize_signal_handles();
  This is the entry point of program execution from the operating system and shell.
  */
 int main(int argc, char** argv) {
-    /*As a design not minimize stuff in the main function*/
+    /*As a design consideration minimize stuff in the main function*/
     int i;
     
-
     i = atexit(bye);
     if (i != 0) {
         perror("Unable to set atexit()");
@@ -106,7 +105,6 @@ int main(int argc, char** argv) {
     print_application_header();
     print_log_file(fp, "Application started.\n");
    
-
     /*
      * Starting place of the application. Add code below and remember to do 
      * proper logging and handling of errors by checking return codes! The main
