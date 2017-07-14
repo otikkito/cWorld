@@ -15,7 +15,7 @@
 #include <stdlib.h>
 
 
-/*Function prototypes*/
+/*Function prototypes - modulue interface - function implementation*/
 int input();
 int output();
 /*
