@@ -96,8 +96,7 @@ int main(int argc, char** argv) {
     }
 
     /*The current pid of the process*/
-    processid = getpid(); /*Per the documentations this function is always successfull*/
-
+    processid = getpid(); /*Per the documentation this function is always successful*/
     /*Open the logfile to begin logging*/
     fp = fopen(logfile, "a+");
     if(fp == NULL){
