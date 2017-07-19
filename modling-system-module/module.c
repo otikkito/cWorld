@@ -3,7 +3,7 @@
 //Preprocessor directives
 
 
-//module interface
+//module interface (input, output, function)
 
 //module implementation
 

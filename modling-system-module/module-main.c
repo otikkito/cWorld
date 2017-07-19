@@ -5,20 +5,15 @@
  */
 
 /* 
- * File:   model.c
+ * File:   module-main.c
  * Author: otikkito
  *
- * Created on July 1, 2017, 3:25 PM
+ * Created on July 18, 2017, 12:07 PM
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-
-/*Function prototypes - modulue interface - function implementation*/
-//Attributes, properties,characheteristics
-int input();
-int output();
 /*
  * 
  */

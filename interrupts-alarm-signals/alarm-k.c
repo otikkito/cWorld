@@ -40,6 +40,6 @@ int main(int argc, char** argv) {
 
 void signal_handler(int signal){
     if(signal == SIGALRM){
-        printf("Recieved signal sigalarm \n");
+        printf("Received signal sigalarm \n");
     }
 }
