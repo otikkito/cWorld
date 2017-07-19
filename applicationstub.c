@@ -111,10 +111,10 @@ int main(int argc, char** argv) {
     /*
      * Starting place of the application. Add code below and remember to do 
      * proper logging and handling of errors by checking return codes! The main
-     * function will return EXIT_SUCCESS or EXIT_FAILURE depending on if there are
-     * any runtime errors in the application. The application stub goal is to ensure 
-     * that there are no compile errors thus only having runtime errors which should 
-     * be handled correctly and prevented if thats possible.
+     * function will return EXIT_SUCCESS or EXIT_FAILURE depending on if there 
+     * are any runtime errors in the application. The application stub goal is 
+     * to ensure that there are no compile errors thus only having runtime 
+     * errors which should be handled correctly and prevented if thats possible.
      * https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
      */
    
