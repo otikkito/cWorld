@@ -87,6 +87,7 @@ int main(int argc, char** argv) {
     /*As a design consideration minimize stuff in the main function*/
     int i;
     
+    intialize_signal_handles();
     i = atexit(bye);
     if (i != 0) {
         perror("Unable to set atexit()");
