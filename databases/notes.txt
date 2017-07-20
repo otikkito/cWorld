@@ -24,3 +24,5 @@ LOAD DATA LOCAL INFILE
 
 How to move white space to one white space.
 https://stackoverflow.com/questions/156532/how-do-i-import-a-whitespace-delimited-text-file-into-mysql
+
+LOAD DATA INFILE 'filename' INTO TABLE mytable FIELDS TERMINATED BY ' ';
