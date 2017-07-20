@@ -19,5 +19,5 @@ projects I want to develop and for normal use or as an exercise
 -Storing passwords to files
 -Stock monitor,selector  (c++)
 -Network command server
--
+-embedded system programming
 

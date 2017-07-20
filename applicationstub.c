@@ -64,7 +64,7 @@
 #include <sys/types.h>
 
 /*Preprocessor commands*/
-#define MAXLOGSIZE 300
+#define MAXLOGENTRYSIZE 300
 
 /*Global variables*/
 char logfile[] = "./text-data-files/logfile.txt";
@@ -268,7 +268,7 @@ void signal_handler(int signal, siginfo_t *info, void *_unused) {
      * "you must set the sa_flags field of your struct sigaction with the flag SA_SIGINFO"
      * https://stackoverflow.com/questions/15148714/signals-siginfo-t-info-causes-segmentation-fault
      */
-    char app_log_message[MAXLOGSIZE];
+    char app_log_message[MAXLOGENTRYSIZE];
     
     memset(app_log_message,'\0',sizeof(app_log_message));
     /*siginfo_t not returning properly*/

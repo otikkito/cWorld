@@ -1,0 +1,5 @@
+https://www.thanassis.space/gnuplotStreaming.html
+http://hxcaine.com/blog/2013/02/28/running-gnuplot-as-a-live-graph-with-automatic-updates/
+
+I will be attempting to plot real time data information for data acquisition project.
+
