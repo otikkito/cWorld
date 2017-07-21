@@ -5,6 +5,11 @@ The mariadb connector: https://mariadb.com/kb/en/mariadb/mariadb-connector-c/
 The database that comes in RHEL/CENTOS 7 is Mariadb
 mysql_config --libs
 -L/usr/lib64/mysql -lmysqlclient -lpthread -lz -lm -lssl -lcrypto -ldl
+
+Known good compile option:
+/*To compile: 
+ * gcc -g -Wall -pedantic dataaccess.c -L/usr/lib64/mysql -lmysqlclient -lpthread -lz -lm -lssl -lcrypto -ldl  -I/usr/include/mysql
+*/
 Maria database:
 user:root
 password:redhat
