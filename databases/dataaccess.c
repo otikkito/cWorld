@@ -22,12 +22,16 @@
 /*In file included from dataaccess.c:19:0:                                                                          
 /usr/include/mysql/my_global.h:79:23: fatal error: my_config.h: No such file or directory                         
  #include <my_config.h>
+ * 
+ * gcc -g -Wall -pedantic dataaccess.c -I/usr/include/mysql
+
 */
 /*
  * 
  */
 int main(int argc, char** argv) {
     
+    printf("MySql client version: %s\n",mysql_get_client_info());
     
 
     return (EXIT_SUCCESS);
