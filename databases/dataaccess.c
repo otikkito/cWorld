@@ -30,7 +30,7 @@
  * gcc -g -Wall -pedantic dataaccess.c -I/usr/include/mysql
 
  */
-
+/*https://mariadb.com/kb/en/mariadb/mariadb-connectorc-api-functions/*/
 void finish_with_error(MYSQL *con) {
     fprintf(stderr, "%s\n", mysql_error(con));
     mysql_close(con);
@@ -42,30 +42,35 @@ void finish_with_error(MYSQL *con) {
  */
 int main(int argc, char** argv) {
 
+    /*This will print print the client version*/
     printf("MySql client version: %s\n", mysql_get_client_info());
-
-    MYSQL *con = mysql_init(NULL);
+    
+    /*Prepares and initialized MYSQL structure*/
+    MYSQL *con = mysql_init(NULL); 
 
     if (con == NULL) {
         fprintf(stderr, "mysql_init() failed\n");
         exit(1);
     }
 
+    /*Establish a connection to a database server*/
     if (mysql_real_connect(con, "localhost", "root", "redhat",
             "census_database", 0, NULL, 0) == NULL) {
         finish_with_error(con);
     }
-
+    
+    /*Performs a query on the database*/
     if (mysql_query(con, "SELECT * FROM census")) {
         finish_with_error(con);
     }
-
+    
+    /*Returns a buffered resultset from the last executed query.*/
     MYSQL_RES *result = mysql_store_result(con);
 
     if (result == NULL) {
         finish_with_error(con);
     }
-
+    /*Returns the number of fields in the result set*/
     int num_fields = mysql_num_fields(result);
 
     MYSQL_ROW row;
