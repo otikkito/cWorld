@@ -57,3 +57,5 @@ A proof that a programs in correct consists of two parts.
 
 Check for blocking and nonblocking system calls
 
+Error handling
+https://en.wikibooks.org/wiki/C_Programming/Error_handling
