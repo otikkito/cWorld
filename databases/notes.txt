@@ -1,5 +1,10 @@
-The database that comes in RHEL/CENTOS 7 is Mariadb
+https://mariadb.org/    
 
+The mariadb connector: https://mariadb.com/kb/en/mariadb/mariadb-connector-c/
+
+The database that comes in RHEL/CENTOS 7 is Mariadb
+mysql_config --libs
+-L/usr/lib64/mysql -lmysqlclient -lpthread -lz -lm -lssl -lcrypto -ldl
 Maria database:
 user:root
 password:redhat
@@ -9,6 +14,10 @@ password: redhat
 
 root login
 mysql -u root -p
+
+TODO
+1)Summary of key mysql command
+2)Summary of data types in mysql
 
 http://www.tutorialspoint.com/mariadb/
 https://www.linode.com/docs/databases/mariadb/how-to-install-mariadb-on-centos-7
@@ -28,3 +37,7 @@ https://stackoverflow.com/questions/156532/how-do-i-import-a-whitespace-delimite
 LOAD DATA INFILE 'filename' INTO TABLE mytable FIELDS TERMINATED BY ' ';
 
 The mariadb api is the same in c as with mysql
+
+Questions:
+1)What is the difference between mariadb and mysql?
+2)Where is the location of the standard api to interface mariadb?
