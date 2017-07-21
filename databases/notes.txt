@@ -24,6 +24,10 @@ TODO
 1)Summary of key mysql command
 2)Summary of data types in mysql
 
+To remove whitespaces to one whitespce:
+sed 's/ \+/ /g' census-dist-male-first.txt > census-dist-male-first-new.txt 
+
+
 http://www.tutorialspoint.com/mariadb/
 https://www.linode.com/docs/databases/mariadb/how-to-install-mariadb-on-centos-7
 http://www.htmlgoodies.com/primers/database/article.php/3478121/To-Use-or-Not-to-Use-a-Database-That-is-the-Question.htm
