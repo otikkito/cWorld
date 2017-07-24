@@ -9,3 +9,4 @@
 -cyber security techniques
 -Read up on cyber attacks : https://en.wikipedia.org/wiki/Cyberattack
 -VPN
+-wpa supplicant 

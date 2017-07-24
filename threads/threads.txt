@@ -1,4 +1,4 @@
-"Threads are like lite weight process." [6] Also in which they share the same 
+"Threads are like light weight process." [6] Also in which they share the same 
 global variables.
 
 "Thread-safe means that the program protects shared data, possibly through the 
