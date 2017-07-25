@@ -5,6 +5,7 @@
 
 /* man 7 pthreads */
 /* insure that functions are thread say and proper synchronization */
+/*To compile: gcc -g -Wall -pedantic  -pthread threads.c */
 
 /*Function prototype*/
 void *thread_run();
@@ -20,12 +21,14 @@ int main(){
     if(i !=0){
         perror("There was a problem with pthread_create");
     }
-	
-    return 0;
+    printf("The thread should have runned.\n");
+    pthread_join(thread1, NULL);
+    return EXIT_SUCCESS;
 
 }
 
 void *thread_run(){
     sleep(3);
+    printf("In thread run.\n");
     pthread_exit(NULL);
 }   
