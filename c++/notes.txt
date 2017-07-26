@@ -1,0 +1,14 @@
+C++ Refresher
+Source: https://www.tutorialspoint.com/cplusplus/index.htm
+
+-The four pillars of object oriented programming in c++ is:
+1) Encapsulation
+2) Data hiding
+3) Inheritance
+4) Polymorphism
+
+c++ consists of the these 3 main parts.
+1) The core language
+2) The c++ standard library
+3) The standard template library
+
