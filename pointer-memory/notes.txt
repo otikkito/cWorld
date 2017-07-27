@@ -1,0 +1,29 @@
+References: https://www.tutorialspoint.com/cprogramming/c_strings.htm
+
+"Every variable is a memory location and every memory location has its address
+defined which can be accessed using (&) operator." --> https://www.tutorialspoint.com/cprogramming/c_pointers.htm
+
+"A pointer is a variable whose value is the address of another variable"
+-A pointer must declare a valid c data or new data type.
+
+examples:
+int    *ip;    /* pointer to an integer */
+double *dp;    /* pointer to a double */
+float  *fp;    /* pointer to a float */
+char   *ch     /* pointer to a character */
+
+NULL pointers:
+"It is always a good practice to assign a NULL pointer variable in case you do
+not have an exact address to be assigned."
+"In most of the operating systems, programs are not permitted to access memory 
+at address 0 because that memory is reserved by the operating system."
+
+Pointer concepts:
+1) Pointer arithmetic
+2) Array of pointers
+3) Pointer to pointer
+4) Passing pointers to function in c
+5) Return pointer from functions in c
+    
+-"Strings are actually one-dimensional array of characters terminated by a null 
+character '\0'."
