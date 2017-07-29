@@ -10,7 +10,10 @@
  *
  * Created on July 28, 2017, 2:39 PM
  */
-
+/*Notes
+ I need to find a data feed that I can use to populate this class and an api to 
+ * interface it.
+ */
 /*Preprocessor includes*/
 #include <cstdlib>
 #include <iostream>

@@ -3,3 +3,5 @@ http://hxcaine.com/blog/2013/02/28/running-gnuplot-as-a-live-graph-with-automati
 
 I will be attempting to plot real time data information for data acquisition project.
 
+"Real time plotting using GNUplot" ->http://negativeprobability.blogspot.com/2013/01/real-time-plot-updates-using-gnuplot.html
+

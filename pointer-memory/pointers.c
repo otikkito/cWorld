@@ -23,14 +23,15 @@ int main(int argc, char** argv) {
    char var2[10];
    int *pointer;
 
-   printf("Address of var1 variable: %x\n", &var1  );
-   printf("Address of var2 variable: %x\n", &var2  );
+   printf("Address of var1 variable: %p\n", &var1  );
+   printf("Address of var2 variable: %p\n", &var2  );
    
    printf("The address of pointer is %p before intialization\n",pointer);
    
    pointer++;
    printf("The address of the pointer is %p after intilaization\n",pointer);
-   
+   printf("The size of pointer is %d\n", sizeof(pointer));
+   printf("The size of a int is %d\n",sizeof(var1));
 
     return (EXIT_SUCCESS);
 }
