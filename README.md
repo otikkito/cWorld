@@ -3,10 +3,11 @@ cWorld
 
 http://www.iso-9899.info/wiki/The_Standard  --> C language standard
 
+https://www-s.acm.illinois.edu/webmonkeys/book/c_guide/ --> The language reference
+
 http://www.cprogramming.com/ ---> C programming tutorial
 
 http://ctl.yale.edu/writing/using-sources/citing-internet-sources  ---> Citing internet sources
-
 
 https://en.wikipedia.org/wiki/Computer_engineering ---> Computer engineer
 
