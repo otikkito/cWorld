@@ -1,0 +1,8 @@
+This will be the starting point of the modules that I will be working on that wil later become the modules.
+
+
+Module list and descriptions:
+------------------------------
+system-functions: This will include stuff for system information that the application can retrieve
+type-conversion: converting integer to binary or hex and so forth. Also killobytes to kibibytes,etc...
+strings_k: All thins related to strings and character arrays.
