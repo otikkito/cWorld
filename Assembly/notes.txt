@@ -1,0 +1,3 @@
+gcc -Wall -pedantic -S <file-name>
+
+This is to compile the code to assembly and is then usually stored as file-name.s
