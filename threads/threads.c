@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 /* man 7 pthreads */
-/* insure that functions are thread say and proper synchronization */
+/* insure that functions are thread safe and proper synchronization */
 /*To compile: gcc -g -Wall -pedantic  -pthread threads.c */
 
 /*Function prototype*/
