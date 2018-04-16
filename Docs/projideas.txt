@@ -21,5 +21,8 @@ projects I want to develop and for normal use or as an exercise
 -Network command server
 -embedded system programming
 -Regex tutorial: book in the amazon queue and shovel ready ISBN-13: 978-0596514273  ISBN-10: 0596514271
--...
+  a)https://stackoverflow.com/questions/1085083/regular-expressions-in-c-examples?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+  b)
+  ...
+-
 
