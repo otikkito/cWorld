@@ -5,7 +5,7 @@ Computational complexity
 -Worst-case complexity
 -Average-case complexity
 -Memory utilization
--proper/best utilization
+-proper/best utilization/use case
 -Computational speed
 -Accuracy of computation 
 
