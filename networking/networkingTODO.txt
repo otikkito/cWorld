@@ -10,3 +10,6 @@
 -Read up on cyber attacks : https://en.wikipedia.org/wiki/Cyberattack
 -VPN
 -wpa supplicant 
+-router emulater
+-network traffice simulator
+...
