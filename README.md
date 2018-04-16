@@ -11,6 +11,10 @@ http://ctl.yale.edu/writing/using-sources/citing-internet-sources  ---> Citing i
 
 https://en.wikipedia.org/wiki/Computer_engineering ---> Computer engineer
 
+https://en.wikipedia.org/wiki/Systems_engineering ---> System engineer
+
+List of systems engineering schools: https://en.wikipedia.org/wiki/List_of_systems_engineering_universities
+
 A collection of c code from the basic refresher to some abstract data type implementations, 
 cognitive hardware virtualization,...
 
