@@ -1,25 +1,25 @@
 cWorld
 ======
 
-http://www.iso-9899.info/wiki/The_Standard  --> C language standard
+C language standard: http://www.iso-9899.info/wiki/The_Standard
 
-https://www-s.acm.illinois.edu/webmonkeys/book/c_guide/ --> The language reference
+The language reference: https://www-s.acm.illinois.edu/webmonkeys/book/c_guide/
 
-http://www.cprogramming.com/ ---> C programming tutorial
-
------------------------------------------------------------------------------------------------------------
-http://ctl.yale.edu/writing/using-sources/citing-internet-sources  ---> Citing internet sources
+C programming tutorial: http://www.cprogramming.com/
 
 -----------------------------------------------------------------------------------------------------------
-https://en.wikipedia.org/wiki/Computer_engineering ---> Computer engineer
+Citing internet sources: http://ctl.yale.edu/writing/using-sources/citing-internet-sources
 
 -----------------------------------------------------------------------------------------------------------
-
-https://en.wikipedia.org/wiki/Systems_engineering ---> System engineer
+Computer engineer: https://en.wikipedia.org/wiki/Computer_engineering
 
 -----------------------------------------------------------------------------------------------------------
 
-https://en.wikipedia.org/wiki/Engineering_economics ---> Engineering economics
+System engineer: https://en.wikipedia.org/wiki/Systems_engineering 
+
+-----------------------------------------------------------------------------------------------------------
+
+Engineering economics: https://en.wikipedia.org/wiki/Engineering_economics
 
 -----------------------------------------------------------------------------------------------------------
 
