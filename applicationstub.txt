@@ -15,7 +15,7 @@ Design considerations:
 10) Configuration files for the application.
 11) scheduling issues
 12) Runtime errors "When it compiles without errors" and when the errors are generated after
-    compilation and execution."The operating system detects the problem and raise
+    compilation and execution."The operating system is suppose to detect the problems and raise
     an runtime error" --->https://www.quora.com/In-C-programming-what-is-runtime-error-and-how-can-it-be-resolved
 
 
