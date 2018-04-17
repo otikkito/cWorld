@@ -55,7 +55,7 @@ cognitive hardware virtualization, career objectives, ...
 will help me expore all the functionality of the language and to become more proficient. I will
 design the applications to the be as portable as possible.
 
-4/16/2018 Currently I need to clean up the code base and add additional documentation in insure that it
+4/16/2018 Currently I need to clean up the code base and add additional documentation and insure that it
 is used in the correct directory context.
 
 Kito Joseph
