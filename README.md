@@ -58,6 +58,10 @@ design the applications to the be as portable as possible.
 4/16/2018 Currently I need to clean up the code base and add additional documentation and insure that it
 is used in the correct directory context.
 
+4/17/2018
+Farming/garderning operating system:
+1)https://www.deere.com/en/index.html
+
 Kito Joseph
 IEEE Member #93471157
 RHCE License #140-019-977
