@@ -35,6 +35,9 @@ Professional Engineer: http://ncees.org/wp-content/uploads/2015/07/FE-Ele-CBT-sp
 IEEE: https://www.ieee.org/
 
 -----------------------------------------------------------------------------------------------------------
+My linkedin profile: http://www.linkedin.com/in/kitojoseph
+
+-----------------------------------------------------------------------------------------------------------
 
 A collection of c code from the basic refresher to some abstract data type implementations, 
 cognitive hardware virtualization, career objectives, ...
