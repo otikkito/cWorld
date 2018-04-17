@@ -35,6 +35,11 @@ Professional Engineer: http://ncees.org/wp-content/uploads/2015/07/FE-Ele-CBT-sp
 IEEE: https://www.ieee.org/
 
 -----------------------------------------------------------------------------------------------------------
+
+Social media rules to live by: https://www.ibm.com/blogs/zz/en/guidelines.html
+
+-----------------------------------------------------------------------------------------------------------
+
 My linkedin profile: http://www.linkedin.com/in/kitojoseph
 
 -----------------------------------------------------------------------------------------------------------
