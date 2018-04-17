@@ -375,7 +375,7 @@ void bye(void) {
 
 /*
  *References:
- *1) https://github.com/otikkito/cWorld/blob/master/nasa-c-style.pdf
+ *1) https://github.com/otikkito/cWorld/blob/master/nasa-c-style.pdf (conformatity, readablity, maintance, resuability,...)
  *2) https://en.wikipedia.org/wiki/Application_security
  *3) https://www.tutorialspoint.com/c_standard_library/index.htm
  *4) https://en.wikipedia.org/wiki/MIL-STD-498 
