@@ -27,6 +27,11 @@ https://en.wikipedia.org/wiki/Engineering_economics ---> Engineering economics
 List of systems engineering schools: https://en.wikipedia.org/wiki/List_of_systems_engineering_universities
 
 -----------------------------------------------------------------------------------------------------------
+
+IEEE: https://www.ieee.org/
+
+-----------------------------------------------------------------------------------------------------------
+
 A collection of c code from the basic refresher to some abstract data type implementations, 
 cognitive hardware virtualization, career objectives, ...
 
