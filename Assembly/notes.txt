@@ -1,3 +1,5 @@
 gcc -Wall -pedantic -S <file-name>
 
 This is to compile the code to assembly and is then usually stored as file-name.s
+
+How to Use Inline Assembly Language in C Code: https://gcc.gnu.org/onlinedocs/gcc/Using-Assembly-Language-with-C.html
