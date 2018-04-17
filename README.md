@@ -46,3 +46,20 @@ design the applications to the be as portable as possible.
 4/16/2018 Currently I need to clean up the code base and add additional documentation in insure that it
 is used in the correct directory context.
 
+Kito Joseph
+IEEE Member #93471157
+RHCE License #140-019-977
+"A simple person who loves taking initiative, collaborates, likes learning, for propriety, equity and for formal diagnoses.  I also believe that every person should have a degree and at least one certification and sticks to their profession unless a sane job market determines otherwise."
+
+www.linkedin.com/in/kitojoseph
+https://www.eeoc.gov/
+https://github.com/otikkito
+https://www.salary.com/
+https://www.tullylegal.com/attorneys/kathryn-a-donnelly/
+https://www.dav.org/
+https://www.legion.org/
+https://www.ishares.com/
+https://www.tillis.senate.gov/
+https://oldwayspt.org/
+https://www.sec.gov/reportspubs/investor-publications/investorpubsintro529htm.html
+https://en.wikipedia.org/wiki/Cistern
