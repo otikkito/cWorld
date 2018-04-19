@@ -50,6 +50,7 @@ IBM Watson proof of concept: https://drive.google.com/open?id=1ZX4J0C6LNUQ_a-XJb
 
 John Hopkins Engineering: https://engineering.jhu.edu/fields-of-study/#masters-full-time
 
+1)Systems: engineering: https://ep.jhu.edu/programs-and-courses/programs/systems-engineering#quickset-program_pages_content_2
 -----------------------------------------------------------------------------------------------------------
 
 My linkedin profile: http://www.linkedin.com/in/kitojoseph
