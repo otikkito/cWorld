@@ -54,6 +54,10 @@ John Hopkins Engineering: https://engineering.jhu.edu/fields-of-study/#masters-f
 
 -----------------------------------------------------------------------------------------------------------
 
+World fact book: https://www.cia.gov/library/publications/the-world-factbook/   "Possibly have an api to interface for operating system"
+
+-----------------------------------------------------------------------------------------------------------
+
 My linkedin profile: http://www.linkedin.com/in/kitojoseph
 
 -----------------------------------------------------------------------------------------------------------
