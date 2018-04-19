@@ -20,6 +20,7 @@
     Debugging and assertions help you during development, and most (but not all) of the debug/assertions must be disabled in production code;
 
     Thre steps to using selfhealing software: https://www.forbes.com/sites/forbestechcouncil/2017/09/05/three-steps-to-using-self-healing-software/#6e5fb11b92c0
+    compiler: https://en.wikipedia.org/wiki/Compiler
  */
 int main(){
     
