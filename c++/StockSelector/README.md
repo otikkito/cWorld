@@ -1,3 +1,5 @@
+This is a work in progress. This is more for the personal accounting software and maket data that I would like to retrive via the internet.
+
 <a href="http://www.google.com/finance/stockscreener">Goggle stock screener</a><br>
 <a href="http://www.investopedia.com/">Investopedia</a><br>
 <a href="https://www.quandl.com/">Quandl financial data</a><br>
