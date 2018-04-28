@@ -1,3 +1,7 @@
+TODO:
+1)Find some simplification techniques or wrappers for some of the library features.
+2) Write a book about the library in your own words and get a dictionary or create one.
+
 gtk
 http://recolog.blogspot.com/2011/08/gui-programming-with-c-language-on.html
 yum install gtk+.x86_64 gtk3-devel.x86_64
