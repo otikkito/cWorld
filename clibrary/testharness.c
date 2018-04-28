@@ -21,7 +21,7 @@ void printGreating(){
 	printf("in some semiformal way that I have not learned of yet.\n\n\n");
 }
 
-
+//Keywords:range, domain,code coverage, positive and negative test,...
 void testAssert(int x){
 	printf("Testing assert.h ...");
 	assert( x < 5);
