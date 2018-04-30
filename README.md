@@ -62,6 +62,8 @@ My linkedin profile: http://www.linkedin.com/in/kitojoseph
 
 -----------------------------------------------------------------------------------------------------------
 
+Engineer in training: http://engineerintrainingexam.com/?utm_source=EngineerInTrainingExam.com&utm_campaign=6f18a64464-MICRO_SESSIONS_Announcement&utm_medium=email&utm_term=0_3dbd7e4a34-6f18a64464-340661001
+
 A collection of c code from the basic refresher to some abstract data type implementations, 
 cognitive hardware virtualization, career objectives, ...
 
