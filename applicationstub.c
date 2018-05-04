@@ -118,8 +118,10 @@ int main(int argc, char** argv) {
      */
    
      sleep(60000);
-
-    return EXIT_SUCCESS; /*return EXIT_SUCCESS indication successful completion of the application*/
+    
+     print_log_file(fp, "Application terminated.\n");
+ 
+     return EXIT_SUCCESS; /*return EXIT_SUCCESS indication successful completion of the application*/
 }
 
 /*********************************************************************/
