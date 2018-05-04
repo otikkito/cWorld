@@ -326,7 +326,7 @@ const char* get_process_name_by_pid(pid_t pid) {
     char* name = (char*) calloc(1024, sizeof (char));
     
     if(pid == 0){
-        return "Kernel";
+        return "Kernel"; //This is the abstraction point. It abstracts systemd which should be included as well for better pin pointing.
     }
     if (name) {
         sprintf(name, "/proc/%d/cmdline", pid);
