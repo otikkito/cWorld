@@ -12,7 +12,8 @@ Citing internet sources: http://ctl.yale.edu/writing/using-sources/citing-intern
 
 -----------------------------------------------------------------------------------------------------------
 Computer engineer: https://en.wikipedia.org/wiki/Computer_engineering
-  Power electronics: https://en.wikipedia.org/wiki/Power_electronics
+ 
+ 1) Power electronics: https://en.wikipedia.org/wiki/Power_electronics
 
 -----------------------------------------------------------------------------------------------------------
 
