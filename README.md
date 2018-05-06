@@ -11,6 +11,11 @@ C programming tutorial: http://www.cprogramming.com/
 Citing internet sources: http://ctl.yale.edu/writing/using-sources/citing-internet-sources
 
 -----------------------------------------------------------------------------------------------------------
+
+Github wrtting and formatting: https://help.github.com/articles/basic-writing-and-formatting-syntax/
+
+-----------------------------------------------------------------------------------------------------------
+
 Computer engineer: https://en.wikipedia.org/wiki/Computer_engineering
  
  1) Power electronics: https://en.wikipedia.org/wiki/Power_electronics
