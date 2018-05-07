@@ -73,6 +73,8 @@ void functionC(){
     }
 }
 
+
+//2 compliment, need to find out what the systems numbering system is and endiness
 void incr_a() {
     int i = 0;
     printf("The size of a int is: %ld bytes\n", sizeof (i));
