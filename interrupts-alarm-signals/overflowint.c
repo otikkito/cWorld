@@ -22,6 +22,9 @@ void incr_a();
 //https://gcc.gnu.org/
 // How to handle overflow: https://stackoverflow.com/questions/20851061/how-to-make-gcc-ftrapv-work
 //https://gcc.gnu.org/onlinedocs/gcc-7.1.0/gcc/Integer-Overflow-Builtins.html
+
+//Article on integer overflow
+//https://www.cs.utah.edu/~regehr/papers/overflow12.pdf
 int main() {
 
     
