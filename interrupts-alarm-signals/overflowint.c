@@ -14,6 +14,11 @@ void incr_a();
 //https://software.intel.com/sites/default/files/managed/39/c5/325462-sdm-vol-1-2abcd-3abcd.pdf
 //https://en.wikipedia.org/wiki/Integer_overflow
 //-ftrapv  compiler option for integer overflow
+//-ftrapv This option generates traps for signed overflow on addition, subtraction, multiplication operations. 
+//  The options -ftrapv and -fwrapv override each other, so using -ftrapv -fwrapv on the command-line results in 
+//  -fwrapv being effective. Note that only active options override, so using -ftrapv -fwrapv -fno-wrapv on the 
+//  command-line results in -ftrapv being effective.
+
 //https://gcc.gnu.org/
 // How to handle overflow: https://stackoverflow.com/questions/20851061/how-to-make-gcc-ftrapv-work
 //https://gcc.gnu.org/onlinedocs/gcc-7.1.0/gcc/Integer-Overflow-Builtins.html
