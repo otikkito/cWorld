@@ -123,6 +123,7 @@ i= 0 i= 1 i= 2 i= 3 i= 4 i= 5 i= 6 i= 7 i= 8 i= 9 i= 2147483641 i= 2147483642 i=
  */
 
 //https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/deployment_guide/s2-proc-cpuinfo
+//https://www.safaribooksonline.com/library/view/understanding-the-linux/0596005652/ch04s02.html
 /*
  [otikkito@localhost ~]$ cat /proc/cpuinfo 
 processor	: 0
