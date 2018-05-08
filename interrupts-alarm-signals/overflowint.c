@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <assert.h>
 
+//Glossary of terms: https://www.intel.com/content/www/us/en/support/topics/glossary.html
 
 /*Fucntion prototype*/
 void functionA();
