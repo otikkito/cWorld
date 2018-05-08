@@ -75,6 +75,8 @@ void functionC(){
 
 
 //2 compliment, need to find out what the systems numbering system is and endiness
+// This is usually caugth by SIGSEG (Overflow, bounds check, Invalid TSS, general protection,...)
+//https://www.safaribooksonline.com/library/view/understanding-the-linux/0596005652/ch04s02.html
 void incr_a() {
     int i = 0;
     printf("The size of a int is: %ld bytes\n", sizeof (i));
