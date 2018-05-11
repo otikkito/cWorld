@@ -12,6 +12,10 @@ yum install gtk-doc.noarch
 yum install gtk3-devel.x86_64 gtk3-devel-docs.x86_64 glib-devel
 Official reference: https://developer.gnome.org/gtk3/stable/gtk-getting-started.html
 
+
+QT
+https://www.qt.io/
+
 Compile notes:
 gcc -g -Wall -pedantic -I /usr/include/gtk-3.0/  -I /usr/include/glib-1.2 gtk-hello-world.c 
 *** gcc `pkg-config --cflags gtk+-3.0` -o example-0 example-0.c `pkg-config --libs gtk+-3.0`
