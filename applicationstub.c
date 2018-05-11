@@ -220,7 +220,7 @@ void print_log_file(FILE *f, char *string) {
 *********************************************************/
 
 void intialize_signal_handles(){
-    
+   /* Link that talks about different types of signals: https://en.wikipedia.org/wiki/Signal_(IPC)#SIGTRAP */
     struct sigaction action;
     action.sa_handler = signal_handler;
     action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid of the offending function*/
