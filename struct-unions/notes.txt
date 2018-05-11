@@ -1,1 +1,3 @@
-All things structures
+All things structures and unions
+
+TODO: Design patterns, data representation, memory calculation of structures, tutorial on how to use,typedefs,...
