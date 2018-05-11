@@ -20,7 +20,9 @@ Design considerations:
 
 
     
-/*signals that should be handled in application development. After reading man 7 signal
+/*signals that should be handled in application development. 
+***https://en.wikipedia.org/wiki/Signal_(IPC)#SIGTRAP
+After reading man 7 signal
 I have determine that in my application I will handle all signals that can 
 terminate a process indicated by '*'
 kill -l
