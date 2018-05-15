@@ -16,6 +16,10 @@ Github wrtting and formatting: https://help.github.com/articles/basic-writing-an
 
 -----------------------------------------------------------------------------------------------------------
 
+Alumni Computer and Electrical engineering: https://www.ece.ncsu.edu/
+
+-----------------------------------------------------------------------------------------------------------
+
 Computer engineer: https://en.wikipedia.org/wiki/Computer_engineering
  
  1) Power electronics: https://en.wikipedia.org/wiki/Power_electronics
