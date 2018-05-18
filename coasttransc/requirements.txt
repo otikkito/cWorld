@@ -40,6 +40,6 @@ sarbanes-oxley: https://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act
 To my understanding sarbanes-oxley deals mostly with corportate finances but this is dealing more
  with personal finances and accounting.
 
-Place clarification about financial laws that I have to abide by. But for my application I am I 
-would like to be only viewable to the application after logging in. The personal financial data 
+Place clarification about financial laws that I have to abide by. But for my application I
+would like it to be only viewable to the application after logging in. The personal financial data 
 should be encrypted on the hard drive.
