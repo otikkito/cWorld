@@ -6,7 +6,7 @@ Design considerations:
 1) Error handling
 2) Signal handling
 3) Performance issues
-4) Logging of code, errors, and events within the application.
+4) Logging of code, errors, and events within the application. https://en.wikipedia.org/wiki/Event_(computing)
 5) Memory Leaks
 6) Application security from known flaws within the operating system and IPC
 7) Communication from machine to machine 
