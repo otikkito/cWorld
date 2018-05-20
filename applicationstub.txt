@@ -45,11 +45,11 @@ http://man7.org/linux/man-pages/man7/signal.7.html
 
 
 /*
-     * I need to find a better way to handle signals and find out what are 
-     * important signals that I need to handle.
-     * man sigaction
-     * man 7 signal
-     *handling of the signals
-     *https://gcc.gnu.org/bugzilla/show_bug.cgi?id=56018
-     *https://netbeans.org/bugzilla/show_bug.cgi?id=191390
-     */
+* I need to find a better way to handle signals and find out what are 
+* important signals that I need to handle.
+* man sigaction
+* man 7 signal
+*handling of the signals
+*https://gcc.gnu.org/bugzilla/show_bug.cgi?id=56018
+*https://netbeans.org/bugzilla/show_bug.cgi?id=191390
+*/
