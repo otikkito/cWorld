@@ -15,6 +15,6 @@ int get_load_average_of_the_system();
 int get_uptime();
 int get_memory_usage_of_application(char *app_name);
 int get_memory_usage_of_application(pid_t pid);
-FILE *output_file run_system_command(const char *system_comand);
+FILE *output_file run_system_command(const char *system_comand);  //http://www.cs.uleth.ca/~holzmann/C/system/shell_commands.html
 
   
