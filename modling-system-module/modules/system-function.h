@@ -1,6 +1,6 @@
 /*This is the interface to the system-function module*/
 //Some concept functions that are accessible to the application stub.
-
+//Try to utilize the /proc filesystem as much as you can: https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html
 /*Include files*/
 #include <sys/types.h> //pid_t
 
