@@ -12,3 +12,9 @@ Practice 3D and 2D plots
                      /
                     /
                    Z
+
+
+Projects and purposes:
+
+-Plot application statitics: memory, system calls, storage usage, network usage, ... over time
+-
