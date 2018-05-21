@@ -3,6 +3,14 @@
 
 /*Include*/
 
+/*Conversion, rates, constants
+ref:https://kb.iu.edu/d/ackw  // need to find a industry source
+ref:https://en.wikipedia.org/wiki/Kibibyte
+kilobyte kb
+kibibyte kiB
+*/
+
+
 
 /*function prototype*/
 struct binary-digit_t integer_to_binary(int);
