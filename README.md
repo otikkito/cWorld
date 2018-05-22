@@ -15,6 +15,10 @@ Citing internet sources: http://ctl.yale.edu/writing/using-sources/citing-intern
 
 -----------------------------------------------------------------------------------------------------------
 
+Citing code on the internet: https://integrity.mit.edu/handbook/writing-code
+
+-----------------------------------------------------------------------------------------------------------
+
 Github wrtting and formatting: https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
 -----------------------------------------------------------------------------------------------------------
