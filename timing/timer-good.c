@@ -15,6 +15,7 @@
 //How to get time in milliseconds:
 //https://stackoverflow.com/questions/3756323/how-to-get-the-current-time-in-milliseconds-from-c-in-linux/17083824?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
 //https://stackoverflow.com/questions/16548528/command-to-get-time-in-milliseconds/31014389#31014389
+//https://en.wikibooks.org/wiki/C_Programming/time.h/time_t
 
 /*Global variables*/
  struct timestruct{
