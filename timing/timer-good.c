@@ -7,6 +7,7 @@
 #include <sys/types.h>
 
 
+//time programming: http://www.catb.org/esr/time-programming/
 //Calculator: need to create some of this functionality but use only ns, ms,us, and second,...
 //https://www.timecalculator.net/
 //http://www.sengpielaudio.com/calculator-millisecond.htm
