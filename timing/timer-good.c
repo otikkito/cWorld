@@ -24,7 +24,7 @@
     long nanoseconds;  /*included in struct timespec*/
   };
  
-  struct timespec start;
+  struct timespec start; //http://www.gnu.org/software/libc/manual/html_node/Elapsed-Time.html
   struct timespec end;
   struct timespec diff1;
   struct timespec diff2;
