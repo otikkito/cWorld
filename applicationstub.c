@@ -80,9 +80,7 @@ void bye(void);
 const char* get_process_name_by_pid(pid_t pid);
 void intialize_signal_handles();
 
-/*
- This is the entry point of program execution from the operating system and shell.
- */
+/*This is the entry point of program execution from the operating system and shell.*/
 int main(int argc, char** argv) {
     /*As a design consideration minimize stuff in the main function*/
     int i;
@@ -108,8 +106,8 @@ int main(int argc, char** argv) {
     print_log_file(fp, "Application started.\n");
    
     /*
-     * Starting place of the application. Add code below and remember to do 
-     * proper logging and handling of errors by checking return codes! The main
+     * Starting place of the application and application logic. Add code below and remember 
+     * to do proper logging and handling of errors by checking return codes! The main
      * function will return EXIT_SUCCESS or EXIT_FAILURE depending on if there 
      * are any runtime errors in the application. The application stub goal is 
      * to ensure that there are no compile errors thus only having runtime 
