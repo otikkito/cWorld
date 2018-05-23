@@ -11,7 +11,7 @@
  *man 2 nanosleep
 */
 
-
+//REF: http://pubs.opengroup.org/onlinepubs/7908799/xsh/time.h.html
 /*Global variables*/
  struct timestruct{
     time_t seconds;  /*included in struct timespec*/
