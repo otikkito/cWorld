@@ -12,7 +12,10 @@
 */
 
 //REF: http://pubs.opengroup.org/onlinepubs/7908799/xsh/time.h.html
-//How to get time in milliseconds:https://stackoverflow.com/questions/3756323/how-to-get-the-current-time-in-milliseconds-from-c-in-linux/17083824?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+//How to get time in milliseconds:
+//https://stackoverflow.com/questions/3756323/how-to-get-the-current-time-in-milliseconds-from-c-in-linux/17083824?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+//https://stackoverflow.com/questions/16548528/command-to-get-time-in-milliseconds/31014389#31014389
+
 /*Global variables*/
  struct timestruct{
     time_t seconds;  /*included in struct timespec*/
