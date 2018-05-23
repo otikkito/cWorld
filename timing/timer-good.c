@@ -8,6 +8,7 @@
 
 
 //Calculator: need to create some of this functionality but use only ns, ms,us, and second,...
+//https://www.timecalculator.net/
 //http://www.sengpielaudio.com/calculator-millisecond.htm
 /*TODO Create an alarm or timer for nanosecond, millisecond, microsecond sleep
  *man 2 nanosleep
