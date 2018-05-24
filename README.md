@@ -84,6 +84,10 @@ Engineer in training: http://engineerintrainingexam.com/?utm_source=EngineerInTr
 
 -----------------------------------------------------------------------------------------------------------
 
+Repo gittutorial: [Backup of personal website](https://github.com/otikkito/gittutorial/blob/master/backupwebsite/www.kjoseph-it.com/README.md)
+
+-----------------------------------------------------------------------------------------------------------
+
 A collection of c code from the basic refresher to some abstract data type implementations, 
 cognitive hardware virtualization, career objectives, ...
 
