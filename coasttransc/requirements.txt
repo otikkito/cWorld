@@ -1,6 +1,10 @@
 This directory will be for a code snipet that will generate a report from the coastal transaction.
 The is the beginning of a personal finacial accounting software that I may be developing in the future.
 
+Open Financial Exchange: https://en.wikipedia.org/wiki/Open_Financial_Exchange
+
+Software requirement specification: https://en.wikipedia.org/wiki/Software_requirements_specification
+
 Requirments
 -Read in all transactions
 -Display top catagories (if that is include in report from the finacial institution)
