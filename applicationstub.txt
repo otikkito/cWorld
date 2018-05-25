@@ -2,6 +2,9 @@ The purpose of this application is to form a robust application that standardize
 the application development processing and show best practices of application design 
 in the c programming language.
 
+
+Developing application on linux course: https://training.linuxfoundation.org/linux-courses/development-training/developing-applications-for-linux
+
 Design considerations:
 1) Error handling
 2) Signal handling
