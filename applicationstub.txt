@@ -1,6 +1,6 @@
 The purpose of this application is to form a robust application that standardize
-the the application development processing and show best practices of 
-application design in the c programming language.
+the application development processing and show best practices of application design 
+in the c programming language.
 
 Design considerations:
 1) Error handling
