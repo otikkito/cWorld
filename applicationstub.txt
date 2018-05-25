@@ -22,6 +22,7 @@ Design considerations:
     an runtime error" --->https://www.quora.com/In-C-programming-what-is-runtime-error-and-how-can-it-be-resolved
 13) Documentation
 14) Test points
+15) Gui interface and documentation
 
     
 /*signals that should be handled in application development. 
