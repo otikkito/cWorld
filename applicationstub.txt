@@ -23,6 +23,7 @@ Design considerations:
 13) Documentation
 14) Test points
 15) Gui interface and documentation
+16) Refine and document you naming convention and make sure that you site sources include dates as well.
 
     
 /*signals that should be handled in application development. 
