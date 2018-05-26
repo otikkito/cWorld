@@ -24,6 +24,7 @@ Design considerations:
 14) Test points
 15) Gui interface and documentation
 16) Refine and document you naming convention and make sure that you site sources include dates as well.
+17) Applications status dump from the gui or signal if gui not responding needs to dump application status for debugging.
 
     
 /*signals that should be handled in application development. 
