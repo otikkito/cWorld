@@ -72,7 +72,10 @@ FILE *fp;
 pid_t processid;
 
 
-/*Function prototypes*/
+/*
+Function prototypes or function declarations
+https://stackoverflow.com/questions/8496284/terminology-forward-declaration-versus-function-prototype?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+*/
 void print_application_header();
 void print_log_file(FILE *f, char *string);
 void signal_handler();
@@ -124,7 +127,6 @@ int main(int argc, char** argv) {
 
 /*********************************************************************/
 
-/*Function declarations*/
 
 /********************************************************
  *
