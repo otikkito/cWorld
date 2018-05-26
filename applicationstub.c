@@ -35,8 +35,11 @@
  *
  *Date		Author		Change ID	Release		Description of Change
  *----   	------  	---------       -------         ---------------------
- *2/22/2017      Kito Joseph					Added a prolog 
+ *2/22/2017      Kito Joseph					Added a prolog     I am not sure if it should be prolog or file format...
+ *
+ *
  *ALGORITHM (PDL)
+ *
  */
 
 /*
@@ -68,8 +71,8 @@
 
 /*Global variables*/
 char logfile[] = "./text-data-files/logfile.txt";
-FILE *fp;
-pid_t processid;
+FILE *fp; /*Used for global log file TODO add a more descriptive name.*/
+pid_t processid; /*TODO try to use more descriptive name*/
 
 
 /*
