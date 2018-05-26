@@ -24,6 +24,9 @@ Pointer concepts:
 3) Pointer to pointer
 4) Passing pointers to function in c
 5) Return pointer from functions in c
+6) dynamic memory
+7) Memory/storage allocation (malloc, calloc,...) 
+8) freeing memory 
     
 -"Strings are actually one-dimensional array of characters terminated by a null 
 character '\0'."
