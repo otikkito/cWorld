@@ -386,4 +386,5 @@ void bye(void) {
  *4) https://en.wikipedia.org/wiki/MIL-STD-498 
  *5) https://www.ece.ncsu.edu/people/gbyrd 
  *6) applicationstub.txt
+ *7) Readingn code: http://wiki.c2.com/?TipsForReadingCode
  */
