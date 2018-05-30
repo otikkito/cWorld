@@ -99,7 +99,7 @@ design the applications to the be as portable as possible.
 is used in the correct directory context.
 
 4/17/2018
-Farming/garderning operating system:
+Farming/garderning operating system/ Application:
 1)https://www.deere.com/en/index.html
 
 Kito Joseph
