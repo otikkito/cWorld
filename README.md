@@ -102,9 +102,9 @@ is used in the correct directory context.
 Farming/garderning operating system/ Application:
 1)https://www.deere.com/en/index.html
 
-Kito Joseph
-IEEE Member #93471157
-RHCE License #140-019-977
+Kito Joseph<br>
+IEEE Member #93471157<br>
+RHCE License #140-019-977<br>
 "A simple person who loves taking initiative, collaborates, likes learning, for propriety, equity, for formal diagnoses, and a consolidated constitution.  I also believe that every person should have a degree and at least one certification and sticks to their profession unless a sane job market determines otherwise. My career goal is to have a salary paying job to pay for retirement to qualify for social security in my older years. I also believe one should work for the government and private sector as well before retirement."
 
 www.linkedin.com/in/kitojoseph
