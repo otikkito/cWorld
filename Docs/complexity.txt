@@ -10,3 +10,5 @@ Computational complexity
 -Accuracy of computation 
 
 Understanding the complexity of Algorithms
+
+Math related to programming: https://inventwithpython.com/blog/2012/03/18/how-much-math-do-i-need-to-know-to-program-not-that-much-actually/
