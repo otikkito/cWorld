@@ -20,3 +20,5 @@ List of bitwise operators:
 -There are issues with portability in bit codes.
 
 Bit mask: https://stackoverflow.com/questions/10493411/what-is-bit-masking
+
+Sparkfun digital logic tutorial: https://learn.sparkfun.com/tutorials/digital-logic
