@@ -37,7 +37,8 @@ void finish_with_error(MYSQL *con) {
     exit(1);
 }
 
-/*
+/* TODO 
+ * 1)Generalize database commnads for simple intereaction and create a tutorial on uses of database population and find out system statistics of the database within the operating system.
  * 
  */
 int main(int argc, char** argv) {
