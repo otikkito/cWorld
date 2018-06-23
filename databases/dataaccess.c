@@ -42,7 +42,7 @@ void finish_with_error(MYSQL *con) {
  */
 int main(int argc, char** argv) {
 
-    /*This will print print the client version*/
+    /*This will print the client version*/
     printf("MySql client version: %s\n", mysql_get_client_info());
     
     /*Prepares and initialized MYSQL structure*/
