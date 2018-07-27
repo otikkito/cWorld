@@ -41,6 +41,10 @@ Engineering economics: https://en.wikipedia.org/wiki/Engineering_economics
 
 -----------------------------------------------------------------------------------------------------------
 
+Fault tree analysis: https://en.wikipedia.org/wiki/Fault_tree_analysis
+
+-----------------------------------------------------------------------------------------------------------
+
 
 List of systems engineering schools: https://en.wikipedia.org/wiki/List_of_systems_engineering_universities
 
