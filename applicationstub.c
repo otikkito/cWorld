@@ -237,7 +237,7 @@ void intialize_signal_handles(){
     sigaction(SIGPROF, &action, NULL);
     sigaction(SIGVTALRM, &action, NULL);
     /*sigaction(SIGEMT, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get Red Hat distribution to verify*/
-    sigaction(SIGSTKFLT, &action, NULL);
+    //sigaction(SIGSTKFLT, &action, NULL);
     /*sigaction(SIGHIO, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get Red Hat distribution to verify*/
     sigaction(SIGPWR, &action, NULL);
     /*sigaction(SIGLOST, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get Red Hat distribution to verify*/
