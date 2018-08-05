@@ -228,23 +228,56 @@ void intialize_signal_handles(){
     action.sa_handler = signal_handler;
     action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid of the offending function*/
     
+	//To retrive signal names check out man 7 signal
     sigaction(SIGHUP, &action, NULL);
-    sigaction(SIGPIPE, &action, NULL);
-    sigaction(SIGALRM, &action, NULL);
-    sigaction(SIGUSR1, &action, NULL);
-    sigaction(SIGUSR2, &action, NULL);
-    sigaction(SIGPOLL, &action, NULL);
-    sigaction(SIGPROF, &action, NULL);
-    sigaction(SIGVTALRM, &action, NULL);
-    /*sigaction(SIGEMT, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get Red Hat distribution to verify*/
-    //sigaction(SIGSTKFLT, &action, NULL);
-    /*sigaction(SIGHIO, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get Red Hat distribution to verify*/
-    sigaction(SIGPWR, &action, NULL);
-    /*sigaction(SIGLOST, &action,NULL); Not defined in signum.h but defined in the documentation I need to cross check and get Red Hat distribution to verify*/
-    sigaction(SIGINT, &action, NULL);
-    sigaction(SIGTERM, &action, NULL);
-    sigaction(SIGSEGV, &action, NULL);/*Unable to recover from SIGSEGV in linux to my understanding*/ 
+	sigaction(SIGINT, &action, NULL);
+	sigaction(SIGQUIT, &action, NULL);
+	sigaction(SIGILL, &action, NULL);
+	sigaction(SIGTRAP, &action, NULL);
+	sigaction(SIGABRT, &action, NULL);
+	sigaction(SIGBUS, &action, NULL);
+	sigaction(SIGFPE, &action, NULL);
+	sigaction(SIGKILL, &action, NULL);
+	sigaction(SIGUSR1, &action, NULL);
+	sigaction(SIGSEGV, &action, NULL);
+	sigaction(SIGUSR2, &action, NULL);
+	sigaction(SIGPIPE, &action, NULL);
+	sigaction(SIGALRM, &action, NULL);
+	sigaction(SIGTERM,&action, NULL);
+	sigaction(SIGSTKFLT, &action, NULL);  //This gives a compiler error and I need to chross check with Red Hat documentation.
+	sigaction(SIGCHLD, &action, NULL);
+	sigaction(SIGCONT,&action, NULL);
+	sigaction(SIGSTOP, &action, NULL);
+	sigaction(SIGTSTP, &action, NULL);
+	sigaction(SIGTTIN, &action, NULL);
+	sigaction(SIGTTOU, &action, NULL);
+	sigaction(SIGURG, &action, NULL);
+	sigaction(SIGXCPU, &action, NULL);
+	sigaction(SIGXFSZ, &action, NULL); //25
+	sigaction(SIGVTALRM,&action, NULL);
+	sigaction(SIGPROF, &action, NULL);
+	sigaction(SIGWINCH, &action, NULL);
+	sigaction(SIGIO, &action, NULL); //29
+	sigaction(SIGPWR, &action, NULL);
+	sigaction(SIGSYS, &action, NULL);
+	
+	
     
+	/*
+	 1) SIGHUP	 2) SIGINT	 3) SIGQUIT	 4) SIGILL	 5) SIGTRAP
+ 6) SIGABRT	 7) SIGBUS	 8) SIGFPE	 9) SIGKILL	10) SIGUSR1
+11) SIGSEGV	12) SIGUSR2	13) SIGPIPE	14) SIGALRM	15) SIGTERM
+16) SIGSTKFLT	17) SIGCHLD	18) SIGCONT	19) SIGSTOP	20) SIGTSTP
+21) SIGTTIN	22) SIGTTOU	23) SIGURG	24) SIGXCPU	25) SIGXFSZ
+26) SIGVTALRM	27) SIGPROF	28) SIGWINCH	29) SIGIO	30) SIGPWR
+31) SIGSYS	34) SIGRTMIN	35) SIGRTMIN+1	36) SIGRTMIN+2	37) SIGRTMIN+3
+38) SIGRTMIN+4	39) SIGRTMIN+5	40) SIGRTMIN+6	41) SIGRTMIN+7	42) SIGRTMIN+8
+43) SIGRTMIN+9	44) SIGRTMIN+10	45) SIGRTMIN+11	46) SIGRTMIN+12	47) SIGRTMIN+13
+48) SIGRTMIN+14	49) SIGRTMIN+15	50) SIGRTMAX-14	51) SIGRTMAX-13	52) SIGRTMAX-12
+53) SIGRTMAX-11	54) SIGRTMAX-10	55) SIGRTMAX-9	56) SIGRTMAX-8	57) SIGRTMAX-7
+58) SIGRTMAX-6	59) SIGRTMAX-5	60) SIGRTMAX-4	61) SIGRTMAX-3	62) SIGRTMAX-2
+63) SIGRTMAX-1	64) SIGRTMAX
+*/
 }
 /********************************************************
  *
