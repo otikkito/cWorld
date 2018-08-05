@@ -1,1 +1,2 @@
 gcc -g -Wall -pedantic <application-name.c>
+gcc <application-name.c> -lpthread

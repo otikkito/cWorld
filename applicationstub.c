@@ -79,7 +79,7 @@ pid_t processid; /*TODO try to use more descriptive name*/
 Function prototypes or function declarations
 https://stackoverflow.com/questions/8496284/terminology-forward-declaration-versus-function-prototype?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
 */
-void print_application_header();
+void print_application_header_to_console();
 void print_log_file(FILE *f, char *string);
 void signal_handler();
 void bye(void);
@@ -108,7 +108,7 @@ int main(int argc, char** argv) {
         exit(EXIT_FAILURE);
     }
 
-    print_application_header();
+    print_application_header_to_console();
     print_log_file(fp, "Application started.\n");
    
     /*
@@ -134,7 +134,7 @@ int main(int argc, char** argv) {
 /********************************************************
  *
  *
- * FUNCTION NAME: print_application_header
+ * FUNCTION NAME: print_application_header_to_console
  *
  *
  *
@@ -150,9 +150,10 @@ int main(int argc, char** argv) {
  * RETURNS:
  *
  *
- *
+ * TODO:
+ * 1) print also to the log file and console (stdout)
  *********************************************************/
-void print_application_header() {
+void print_application_header_to_console() {
     printf("The process id of this application is: %d\n", processid);
     printf("Welcome to the application stub.\nThe  purpose of this program ");
     printf("is to build a solid framework \nfor the application development ");
@@ -228,7 +229,10 @@ void intialize_signal_handles(){
     action.sa_handler = signal_handler;
     action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid of the offending function*/
     
-	//To retrive signal names check out man 7 signal
+	/*
+	-To retrive signal names check out man 7 signal
+	-Signals that will not be caught please comment out
+	*/
     sigaction(SIGHUP, &action, NULL);
 	sigaction(SIGINT, &action, NULL);
 	sigaction(SIGQUIT, &action, NULL);
@@ -244,7 +248,7 @@ void intialize_signal_handles(){
 	sigaction(SIGPIPE, &action, NULL);
 	sigaction(SIGALRM, &action, NULL);
 	sigaction(SIGTERM,&action, NULL);
-	sigaction(SIGSTKFLT, &action, NULL);  //This gives a compiler error and I need to cross check with Red Hat documentation.
+	//sigaction(SIGSTKFLT, &action, NULL);  //This gives a compiler error and I need to cross check with Red Hat documentation.
 	sigaction(SIGCHLD, &action, NULL);
 	sigaction(SIGCONT,&action, NULL);
 	sigaction(SIGSTOP, &action, NULL);
