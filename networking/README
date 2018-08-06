@@ -18,6 +18,7 @@ Wireshark protocol dissector: https://www.wireshark.org/docs/wsdg_html_chunked/C
 Need to find a router for cisco certification at least at the ccnp level router to practice on:
 1) https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/professional/ccnp-routing-switching.html
 2) Use cisco's packet tracer simulator: https://www.netacad.com/courses/packet-tracer-download/
+3) GNS3: https://www.gns3.com/
 
 ------------------------------------------------------------------------------------
 
