@@ -57,7 +57,8 @@ Data structures may further be categorized into linear data structures and non-l
 
 
 
-
+5 steps to create abstract data type in c:
+https://www.edn.com/electronics-blogs/embedded-basics/4441661/5-simple-steps-to-create-an-abstract-data-type-in-C
 
 
 
