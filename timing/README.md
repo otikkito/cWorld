@@ -8,7 +8,7 @@ frequency [Frequency](https://en.wikipedia.org/wiki/Frequency)
 
 TODO:
 -------
-*)Create a structure that contains seconds, milisec., micorsec, nanosec for timing analysis possibly include if possible number of context switch between diff (i.e context switch id...)
+1)Create a structure that contains seconds, milisec., micorsec, nanosec for timing analysis possibly include if possible number of context switch between diff (i.e context switch id...)
 
 
 Books:
