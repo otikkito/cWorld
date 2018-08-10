@@ -14,7 +14,7 @@ int main(){
     printf("-------------------------------------------------");
     
     
-    kill(get_pid_by_process_name("applicationstub",SIGINT);
+    kill(get_pid_by_process_name("applicationstub"),SIGINT);
     
     printf("Thanks for using the application-stub Test harness.\n
             We are now closing down.");
