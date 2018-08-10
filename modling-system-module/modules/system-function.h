@@ -2,6 +2,7 @@
 //Some concept functions that are accessible to the application stub.
 //Try to utilize the /proc filesystem as much as you can: https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html
 //man 5 proc
+//http://man7.org/linux/man-pages/man5/proc.5.html
 /*Include files*/
 #include <sys/types.h> //pid_t
 
