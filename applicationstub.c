@@ -58,14 +58,13 @@
 
 #include <stdio.h>
 #include <time.h>
-#include <signal.h>
+//#include <signal.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <errno.h>
+//#include <errno.h>
 #include <syslog.h>
 #include <string.h>
-#include <signal.h>
-#include <sys/types.h>
+//#include <sys/types.h>
 
 /*Preprocessor commands*/
 #define MAXLOGENTRYSIZE 300
@@ -233,6 +232,14 @@ void intialize_signal_handles(){
 	/*
 	-To retrive signal names check out man 7 signal
 	-Signals that will not be caught please comment out
+	-Actions for each signal
+	*Term: default actions is to terminate the process
+	*Ign: default action is to ignore the signal
+	*Core: Default action is to terminate the process and dump core
+	*Stop: Default actions is to stop the process
+	*Cont: Default action is to continue the process if it is currently stopped
+
+	**Per man page a process can change the disposition of a signal using sigaction(2) or signal(2)	
 	*/
     sigaction(SIGHUP, &action, NULL);
 	sigaction(SIGINT, &action, NULL);
