@@ -125,7 +125,7 @@ int main(int argc, char** argv) {
     
      print_log_file(fp, "Application terminated.\n");
  
-     return EXIT_SUCCESS; /*return EXIT_SUCCESS indication successful completion of the application*/
+     return (EXIT_SUCCESS); /*return EXIT_SUCCESS indication successful completion of the application*/
 }
 
 /*********************************************************************/
