@@ -52,18 +52,18 @@
  * 6) Changed the license header to include the file format
  * 7) I need to find a way to see if there is any way to get the process and system utilization
  *    https://stackoverflow.com/questions/3769405/determining-cpu-utilization
- * 8) Figure out how to read in the configuration file and configuration file variables (i.e. application log,...)
+ * 8) Figure out how to read in the configuration file and configuration file variables (i.e. application log location,...)
  */
  
 
 #include <stdio.h>
 #include <time.h>
-//#include <signal.h>
 #include <unistd.h>
 #include <stdlib.h>
-//#include <errno.h>
 #include <syslog.h>
 #include <string.h>
+//#include <signal.h>
+//#include <errno.h>
 //#include <sys/types.h>
 
 /*Preprocessor commands*/
