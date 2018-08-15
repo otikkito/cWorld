@@ -33,9 +33,9 @@
  *
  *DEVELOPMENT HISTORY:
  *
- *Date		Author		Change ID	Release		Description of Change
- *----   	------  	---------       -------         ---------------------
- *2/22/2017      Kito Joseph					Added a prolog     I am not sure if it should be prolog or file format...
+ *Date		     Author		  Change ID	   Release		Description of Change
+ *----   	     ------  	  ---------    -------      ---------------------
+ *2/22/2017      Kito Joseph					        Added a prolog.I am not sure if it should be prolog or file format...
  *
  *
  *ALGORITHM (PDL)
@@ -44,12 +44,12 @@
 
 /*
  *Global TODO
- * 1) Find a way to create a file template in the IDE for c files (This can be done by using tools->Template)
+ * 1) Find a way to create a file template in the IDE for c files (This can be done by using tools->Template). I would like use the applicationstub for template after its cleaned up
  * 2) Highlight TODO Tools/Options/Team/Action Items
  * 3) Continue to clean up code and correct typos
  * 4) Remove some of the notes
  * 5) Add to the applicationstub.txt notes on what to do and remove from code
- * 6) Changed the license header to include the file format
+ * 6) Changed the license header to include the file format and which license you would like to use. 
  * 7) I need to find a way to see if there is any way to get the process and system utilization
  *    https://stackoverflow.com/questions/3769405/determining-cpu-utilization
  * 8) Figure out how to read in the configuration file and configuration file variables (i.e. application log location,...)
@@ -79,16 +79,16 @@ pid_t processid; /*TODO try to use more descriptive name*/
 Function prototypes or function declarations
 https://stackoverflow.com/questions/8496284/terminology-forward-declaration-versus-function-prototype?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
 */
-void print_application_header_to_console();
-void print_log_file(FILE *f, char *string);
+int print_application_header_to_console(); //EXIT_SUCCESS or EXIT_FAILURE
+int print_log_file(FILE *f, char *string);
 void signal_handler();
 void bye(void);
 const char* get_process_name_by_pid(pid_t pid);
-void intialize_signal_handles();
+int intialize_signal_handles();
 
 /*This is the entry point of program execution from the operating system and shell.*/
 int main(int argc, char** argv) {
-    /*As a design consideration minimize stuff in the main function*/
+    /*As a design consideration minimize stuff in the main function for no particular reason other than readability and modulation */
     int i;
     
     intialize_signal_handles();
@@ -147,19 +147,21 @@ int main(int argc, char** argv) {
  *
  *
  *
- * RETURNS:
+ * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
  *
  *
  * TODO:
  * 1) print also to the log file and console (stdout)
  *********************************************************/
-void print_application_header_to_console() {
+int print_application_header_to_console() {
     printf("The process id of this application is: %d\n", processid);
     printf("Welcome to the application stub.\nThe  purpose of this program ");
     printf("is to build a solid framework \nfor the application development ");
     printf("process.\n");
     printf("----------------------------------------------------------------\n");
     printf("The process name of this process is: %s \n", get_process_name_by_pid(processid));
+	
+	return(EXIT_SUCCESS);
 }
 
 /*********************************************************************/
@@ -180,8 +182,8 @@ void print_application_header_to_console() {
  *
  *
  *
- * RETURNS:
- *Returns void
+ * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
+ *
  *
  *
  *********************************************************/
@@ -191,12 +193,14 @@ void print_application_header_to_console() {
  * https://github.com/otikkito/cWorld/blob/master/varguments.c
  * ===Rember to flush the buffer with fflush() when logging===
  */
-void print_log_file(FILE *f, char *string) {
+int print_log_file(FILE *f, char *string) {
     char timestring[100];
     time_t currenttime = time(0);
     strftime(timestring, sizeof (timestring), "%c", localtime(&currenttime));
     fprintf(f, "%s %s \n", timestring, string);
     fflush(f);
+	
+	return(EXIT_SUCCESS);
 }
 
 /*********************************************************************/
@@ -217,13 +221,13 @@ void print_log_file(FILE *f, char *string) {
 *
 *
 *
-* RETURNS: void
+* RETURNS: EXIT_SUCCESS or EXIT_FAILURE
 *
 *
 *
 *********************************************************/
 
-void intialize_signal_handles(){
+int intialize_signal_handles(){
    /* Link that talks about different types of signals: https://en.wikipedia.org/wiki/Signal_(IPC)#SIGTRAP */
     struct sigaction action;
     action.sa_handler = signal_handler;
@@ -303,6 +307,7 @@ void intialize_signal_handles(){
 	sigaction(SIGRTMAX-1, &action, NULL);
 	sigaction(SIGRTMAX, &action, NULL);
 
+	return(EXIT_SUCCESS);
 }
 /********************************************************
  *
@@ -320,7 +325,7 @@ void intialize_signal_handles(){
  *
  *
  *
- * RETURNS:
+ * RETURNS: void
  *
  *
  *
@@ -337,7 +342,7 @@ void signal_handler(int signal, siginfo_t *info, void *_unused) {
     /*siginfo_t not returning properly*/
     sprintf(app_log_message,"The application received signal %d from pid: %u with process name %s",signal,info->si_pid, get_process_name_by_pid(info->si_pid));
     /*Log to the application log the signal*/
-    print_log_file(fp,app_log_message);
+    print_log_file(fp,app_log_message);  
     
     /*To terminate kill -s 15 <pid>*/
     /*man 7 signal*/
