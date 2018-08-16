@@ -13,12 +13,14 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "modules/system-function.h"
 
 /*
  * 
  */
 int main(int argc, char** argv) {
 
+	printf("Welcome to module main.");
     return (EXIT_SUCCESS);
 }
 

@@ -4,6 +4,7 @@
 //man 5 proc
 //http://man7.org/linux/man-pages/man5/proc.5.html
 /*Include files*/
+
 #include <sys/types.h> //pid_t
 
 
@@ -14,9 +15,16 @@ int get_free_memory_of_system();
 int get_cpu_utilization_of_system();
 void intialize_signal_handles();
 int get_load_average_of_the_system();
-int get_uptime();
-int get_memory_usage_of_application(char *app_name);
-int get_memory_usage_of_application(pid_t pid);
-FILE *output_file run_system_command(const char *system_comand);  //http://www.cs.uleth.ca/~holzmann/C/system/shell_commands.html
+int get_uptime();//yes use /proc file system
+int get_memory_usage_of_application_given_name(char *appname);
+int get_memory_usage_of_application_given_pid(pid_t pid);
+FILE *run_system_command(const char *system_comand);  //This should be a pointer to a file that contains text output of the system command
+const char* get_operating_system_version();
+int get_number_of_processor_cores_on_system();
+  
 
   
+/*
+References: 
+http://www.cs.uleth.ca/~holzmann/C/system/shell_commands.html
+*/
