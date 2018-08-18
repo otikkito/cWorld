@@ -6,7 +6,11 @@
 #include <stdlib.h>
 #include <dirent.h>
 #include <string.h>
+#include <stdbool.h>
 
+//function protype
+bool dirent_is_a_process(const char *);
+bool file_exist(const char *);
 
 
 const char* get_process_name_by_pid(pid_t pid){
@@ -99,28 +103,43 @@ pid_t get_pid_by_process_name(const char* processName){ //processName is one of 
 	4) return the integer portion that is mapped to the process name
 	*/
 	pid_t processId;
-	
 	processId = 0;
-	
 	struct dirent *de;
 	DIR *dr = opendir("/proc");
-    if( dr == NULL){
+    //char name[NAME_MAX];
+	
+	if( dr == NULL){
 		printf("Could not open directory"); //also need to print to the application log.
 		return (EXIT_FAILURE);
 	}
 	
 	while((de = readdir(dr)) != NULL){
-		printf("%s\n",de->d_name); 
+		pid_t pid;
+		//printf("dirent name: %s  dirent to int/pid: %d \n",de->d_name,atoi(de->d_name)); 
+		pid = atoi(de->d_name);
+		if( pid > 0){
+			printf("The process id in this directory is %d\n",pid);
+			//sprintf(name,"/proc/%d/cmdline
+			//check  to see if processName == /proc/pid/cmdline and return pid
+			//if(strcmp(processName,
+		}
 		/*
 			Algorithm
 			1. if the de->name contains all digits increase count
 			  a)git the length of the string
 			  b)see if each character is a digit
 			2.create an array or linked list conting processid and name
+			
+			to list all directories in path: ls -l | grep "^d"
+
 		*/
 		
-		//printf("The length of de->d_name is : %d\n",strlen(de->d_name));
-	}
+		//convert de->d_name to integer if possible
+		// check to see if it is an integer or string
+		//update list
+		
+		
+	}//while
 	
 
 	closedir(dr);
@@ -135,3 +154,27 @@ int get_number_of_processor_cores_on_system(){
 	
 	return numCores;
 }
+
+/*bool dirent_is_a_process(const char *pname ){
+	FILE *file;
+	
+	char* name = (char*) calloc(1024, sizeof (char));
+	sprintf(name,
+	if(file = fopen("
+	
+	
+	return true;
+}
+
+bool file_exist(const char * fn){
+	FILE *file;
+	
+	if((file = fopen(fname,"r")){
+		fclose(file);
+		return true
+	}
+	return false;
+	
+}
+
+*/
