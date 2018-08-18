@@ -18,9 +18,9 @@ int get_load_average_of_the_system(); //stub
 int get_uptime_of_system();//yes use /proc file system
 int get_uptime_of_application(); //stub
 int get_memory_usage_of_application_given_name(char *appname);//stub
-int get_memory_usage_of_application_given_pid(pid_t pid);
-FILE *run_system_command(const char *system_comand);  //This should be a pointer to a file that contains text output of the system command
-const char* get_operating_system_version();
+int get_memory_usage_of_application_given_pid(pid_t pid);//stub
+//FILE *run_system_command(const char *system_comand); pointer to a file that contains text output of the system command
+const char* get_operating_system_version(); //stub
 int get_number_of_processor_cores_on_system(); //stub
   
 
