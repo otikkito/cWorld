@@ -84,7 +84,7 @@ FILE *run_system_command(const char *system_comand){
 */
 
 const char* get_operating_system_version(){
-	
+	//look at /proc/version
 	return "Version";
 	
 }
