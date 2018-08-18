@@ -13,6 +13,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include "modules/system-function.h"
 
 /*
@@ -20,7 +21,11 @@
  */
 int main(int argc, char** argv) {
 
-	printf("Welcome to module main.");
+	//variable declaration
+	
+	printf("Welcome to module main.\n");
+	printf("The module name is: %s\n",get_process_name_by_pid(getpid()));
+	
     return (EXIT_SUCCESS);
 }
 
