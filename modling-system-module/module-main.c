@@ -25,6 +25,7 @@ int main(int argc, char** argv) {
 	
 	printf("Welcome to module main.\n");
 	printf("The module name is: %s\n",get_process_name_by_pid(getpid()));
+	get_pid_by_process_name("1288");
 	
     return (EXIT_SUCCESS);
 }

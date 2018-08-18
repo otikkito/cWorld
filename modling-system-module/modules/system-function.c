@@ -4,6 +4,8 @@
 #include <sys/types.h> //pid_t
 #include <stdio.h>
 #include <stdlib.h>
+#include <dirent.h>
+#include <string.h>
 
 
 
@@ -33,45 +35,45 @@ const char* get_process_name_by_pid(pid_t pid){
 }
 
 int get_free_memory_of_system(){
-	
+	//look at /proc/meminfo
 
 		return 0;
 }
 
 int get_cpu_utilization_of_system(){
-	
+	//look in /proc/cpuinfo
 
 		return 0;
 }
 
 void intialize_signal_handles(){
-	
+	//location of an implementation is located in applicationstub.c
 
 }
 
 int get_load_average_of_the_system(){
-
+	//This information can be found in /proc/loadavg
 
 	return 0;
 }
 
 int get_uptime_of_system(){
-	
+	// look and decipher the two times in /proc/uptime
 		return 0;
 }
 
 int get_uptime_of_application(){
-
+   //Need to have the start time of the application stored as a global variable in the applicationstub.
 	return 0;
 }
 
 int get_memory_usage_of_application_given_name(char *appname){
-	
+	// use /proc/meminfo
 	return 0;
 }
 	
 int get_memory_usage_of_application_given_pid(pid_t pid){
-	
+	// use /proc/meminfo
 	return 0;
 }
 /*
@@ -100,7 +102,28 @@ pid_t get_pid_by_process_name(const char* processName){ //processName is one of 
 	
 	processId = 0;
 	
+	struct dirent *de;
+	DIR *dr = opendir("/proc");
+    if( dr == NULL){
+		printf("Could not open directory"); //also need to print to the application log.
+		return (EXIT_FAILURE);
+	}
 	
+	while((de = readdir(dr)) != NULL){
+		printf("%s\n",de->d_name); 
+		/*
+			Algorithm
+			1. if the de->name contains all digits increase count
+			  a)git the length of the string
+			  b)see if each character is a digit
+			2.create an array or linked list conting processid and name
+		*/
+		
+		//printf("The length of de->d_name is : %d\n",strlen(de->d_name));
+	}
+	
+
+	closedir(dr);
 	return  processId; 
 }
 
