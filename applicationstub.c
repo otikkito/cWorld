@@ -53,6 +53,8 @@
  * 7) I need to find a way to see if there is any way to get the process and system utilization
  *    https://stackoverflow.com/questions/3769405/determining-cpu-utilization
  * 8) Figure out how to read in the configuration file and configuration file variables (i.e. application log location,...)
+ * 9) Skeleton (computer programming) wiki
+ * 10)...
  */
  
 
