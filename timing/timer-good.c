@@ -1,5 +1,3 @@
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -36,13 +34,7 @@
   struct timestruct t;
   
 /*Function prototype*/
-inline void diff_timespec(struct timespec *start,struct timespec *end); 
-
- 
-
- 
-
-  
+void diff_timespec(struct timespec *start,struct timespec *end); 
 
 
 int main(int argc, char** argv) {
@@ -77,11 +69,11 @@ int main(int argc, char** argv) {
      * 
      *@@@ https://stackoverflow.com/questions/471248/what-is-ultimately-a-time-t-typedef-to
      */
-    printf("It took a total of %d sec. and %d nanosecs. \n",diff1.tv_sec,diff1.tv_nsec);
+    printf("It took a total of %ld sec. and %ld nanosecs. \n",diff1.tv_sec,diff1.tv_nsec);
     
     diff_timespec(&start,&end);
     
-    printf("Using the new function the total seconds is %d sec and %ld nanosecs. \n",t.seconds,t.nanoseconds);
+    printf("Using the new function the total seconds is %ld sec and %ld nanosecs. \n",t.seconds,t.nanoseconds);
     return (EXIT_SUCCESS);
 }   
 
@@ -97,7 +89,7 @@ int main(int argc, char** argv) {
  * To convert between types: https://stackoverflow.com/questions/15024623/convert-milliseconds-to-timespec-gnu-porting
  * Preemption and context switching: http://www.informit.com/articles/article.aspx?p=101760&seqNum=3
  */
-inline void diff_timespec(struct timespec *start,struct timespec *end){
+void diff_timespec(struct timespec *start,struct timespec *end){
     /*
      * https://en.wikipedia.org/wiki/Inline_function
     milliseconds = nanoseconds ÷ 1,000,000

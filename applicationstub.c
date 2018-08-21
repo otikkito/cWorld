@@ -36,7 +36,7 @@
  *Date		     Author		  Change ID	   Release		Description of Change
  *----   	     ------  	  ---------    -------      ---------------------
  *2/22/2017      Kito Joseph					        Added a prolog.I am not sure if it should be prolog or file format...
- *
+ *8/19/2018      Kito Joseph                            Continuing correction/refining documentation and file format/prolog to form a standard file format for application development.
  *
  *ALGORITHM (PDL)
  *
@@ -78,10 +78,10 @@ pid_t processid; /*TODO try to use more descriptive name*/
 
 
 /*
-Function prototypes or function declarations
+Function prototypes or function declarations: //EXIT_SUCCESS or EXIT_FAILURE
 https://stackoverflow.com/questions/8496284/terminology-forward-declaration-versus-function-prototype?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
 */
-int print_application_header_to_console(); //EXIT_SUCCESS or EXIT_FAILURE
+int print_application_header_to_console(); 
 int print_log_file(FILE *f, char *string);
 void signal_handler();
 void bye(void);
