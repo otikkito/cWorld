@@ -10,6 +10,7 @@ TODO:
 -------
 1)Create a structure that contains seconds, milisec., micorsec, nanosec for timing analysis possibly include if possible number of context switch between diff (i.e context switch id...)
 
+2)...
 
 Books:
 
