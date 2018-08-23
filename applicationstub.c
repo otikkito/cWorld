@@ -435,7 +435,7 @@ const char* get_process_name_by_pid(pid_t pid) {
  * void         void U   This function takes no arguments
  *
  *
- * RETURNS:
+ * RETURNS: void
  *
  *
  *
