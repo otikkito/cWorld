@@ -432,7 +432,7 @@ const char* get_process_name_by_pid(pid_t pid) {
  *
  * ARGUMENT     TYPE I/O DESCRIPTION
  * --------     ---- --- -----------
- *
+ * void         void U   This function takes no arguments
  *
  *
  * RETURNS:
