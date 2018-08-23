@@ -24,6 +24,7 @@
  *----   	-----------
  *
  *ABNORMAL TERMINATION CONDITIONS, ERROR AND WARINGING MESSAGES:
+ *-Some of the abnormal conditions will exit the program using the bye funcction and EXIT_FAILURE...
  *
  *ASSUMPTIONS, CONSTRAINTS, RESTRICTIONS
  *
@@ -245,7 +246,8 @@ int intialize_signal_handles(){
 	*Stop: Default actions is to stop the process
 	*Cont: Default action is to continue the process if it is currently stopped
 
-	**Per man page a process can change the disposition of a signal using sigaction(2) or signal(2)	
+	**Per man page a process can change the disposition of a signal using sigaction(2) or signal(2)
+    * signals are define in signal.h	
 	*/
     sigaction(SIGHUP, &action, NULL);
 	sigaction(SIGINT, &action, NULL);
@@ -322,10 +324,11 @@ int intialize_signal_handles(){
  *
  *
  *
- * ARGUMENT     TYPE I/O DESCRIPTION
- * --------     ---- --- -----------
- *
- *
+ * ARGUMENT     TYPE        I/O DESCRIPTION
+ * --------     ----        --- -----------
+ * signal       int         O   The signal that is being handled  
+ * info         siginfo_t   O   This is additional information about the signal and called signal
+ * *_unused     void *      U   This is unused and is passes null in the function call
  *
  * RETURNS: void
  *
@@ -337,6 +340,7 @@ void signal_handler(int signal, siginfo_t *info, void *_unused) {
      * http://man7.org/linux/man-pages/man2/sigaction.2.html --> "You must set the sa_flags field"
      * "you must set the sa_flags field of your struct sigaction with the flag SA_SIGINFO"
      * https://stackoverflow.com/questions/15148714/signals-siginfo-t-info-causes-segmentation-fault
+	 *read man signal.h
      */
     char app_log_message[MAXLOGENTRYSIZE];
     
@@ -379,9 +383,9 @@ void signal_handler(int signal, siginfo_t *info, void *_unused) {
  *
  *
  *
- * ARGUMENT     TYPE I/O DESCRIPTION
- * --------     ---- --- -----------
- *
+ * ARGUMENT     TYPE    I/O DESCRIPTION
+ * --------     ----    --- -----------
+ *pid           pid_t   I   This is the proccess ID of the function
  *
  *
  * RETURNS: A pointer to a constant char

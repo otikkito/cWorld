@@ -32,7 +32,7 @@ int main(int argc, char** argv) {
     i=alarm(5);
     printf("The value of i is %d \n",i);
     while(true){
-        sleep(100);
+        sleep(1);
         
     }
     return (EXIT_SUCCESS);
