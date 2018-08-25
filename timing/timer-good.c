@@ -1,3 +1,47 @@
+/****************************************************************
+*FILE NAME: timer-good.c
+*
+*
+*
+*PURPOSE: To find a good way of measure time events within an application.
+* 
+*
+*FILE REFERENCES:
+*
+*NAME		I/O		Description
+*----           ---             -----------
+*
+*EXTERNAL VARIABLE:
+*SOURCE: <         >
+*
+*NAME	  TYPE    	I/O		Description
+*----     ----          ---             -----------
+*
+*EXTERNAL REFERENCES:
+*
+*Name		Description
+*----   	-----------
+*
+*ABNORMAL ERMINATION CONDITIONS, ERROR AND WARINGING MESSAGES:
+* None at this time.
+*
+*ASSUMPTIONS, CONSTRAINTS, RESTRICTIONS
+*
+*NOTES:
+*
+*REQUIREMENTS/FUNCTIONAL SPECIFICATIONS REFERENCES:
+*
+*DEVELOPMENT HISTORY:
+*
+*Date		Author		Change ID	Release		Description of Change
+*----   	------  	---------   -------     ---------------------
+*8/25/2018  Kito Joseph                         This file is older but anotated that this is the date that I included the file format and function headers. 
+*
+*ALGORITHM (PDL)
+*/
+//--------------------------------------------------------------------------------
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -35,7 +79,30 @@
   
 /*Function prototype*/
 void diff_timespec(struct timespec *start,struct timespec *end); 
+void diff_timespec_k(struct timespec *start,struct timespec *end, struct timestruct *ts);
 
+
+/********************************************************
+*
+*
+* FUNCTION NAME: main
+*
+*
+*
+* ARGUMENTS: argc and argv
+*
+*
+*
+* ARGUMENT     TYPE    I/O DESCRIPTION
+* --------     ----    --- -----------
+* argc         int     I   This indicates the number of command line arguments.
+* argv         char ** I   This is a pointer to an char array vector containing the command line arguments.
+*
+* RETURNS: EXIT_SUCCESS or EXIT_FAILURE
+*
+*
+*
+*********************************************************/
 
 int main(int argc, char** argv) {
     
@@ -89,7 +156,68 @@ int main(int argc, char** argv) {
  * To convert between types: https://stackoverflow.com/questions/15024623/convert-milliseconds-to-timespec-gnu-porting
  * Preemption and context switching: http://www.informit.com/articles/article.aspx?p=101760&seqNum=3
  */
-void diff_timespec(struct timespec *start,struct timespec *end){
+/********************************************************
+*
+*
+* FUNCTION NAME: diff_timespec`
+*
+*
+*
+* ARGUMENTS: struct timepec, struct timespec
+*
+*
+*
+* ARGUMENT     TYPE            I/O DESCRIPTION
+* --------     ----            --- -----------
+* *start       struct timespec I   This is the start time of the event being measured.
+* *end         struct timespec I   This is the end time of the even being measured.
+*
+* RETURNS: currently returns void but needs to either have an output argument or return something.
+*
+*
+*
+*********************************************************/
+
+ void diff_timespec(struct timespec *start,struct timespec *end){
+    /*
+     * https://en.wikipedia.org/wiki/Inline_function
+    milliseconds = nanoseconds ÷ 1,000,000
+    nanoseconds = milliseconds x 1,000,000
+    A microsecond is equal to 1000 nanoseconds
+     */ 
+    t.seconds = ((end->tv_sec)-(start->tv_sec));
+    /*
+     * t.milliseconds
+     * t.microseconds
+     */
+    t.nanoseconds = ((end->tv_nsec)-(start->tv_nsec));
+    
+}
+
+/********************************************************
+*
+*
+* FUNCTION NAME: diff_timespeck_k
+*
+*
+*
+* ARGUMENTS: struct timespec, struct timepsec, struct timestruct
+*
+*
+*
+* ARGUMENT     TYPE                 I/O DESCRIPTION
+* --------     ----                 --- -----------
+* start        struct timestruct *  I   The start time of an event.
+* end          struct timestruct *  I   The end time of an event.
+*
+*
+* RETURNS: void
+*
+*
+*
+*********************************************************/
+
+void diff_timespec_k(struct timespec *start,struct timespec *end, struct timestruct *ts){
     /*
      * https://en.wikipedia.org/wiki/Inline_function
     milliseconds = nanoseconds ÷ 1,000,000
