@@ -124,6 +124,12 @@ int main(int argc, char** argv) {
      * https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
      */
    
+	for(int i=0;;i++){
+	 if(i<0){
+		 printf("i: %d\n",i);
+	 }
+	}
+	
      sleep(60000);
     
      print_log_file(fp, "Application terminated.\n");
