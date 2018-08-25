@@ -180,9 +180,10 @@ int print_application_header_to_console() {
  *
  *
  *
- * ARGUMENT     TYPE I/O DESCRIPTION
- * --------     ---- --- -----------
- *
+ * ARGUMENT     TYPE    I/O DESCRIPTION
+ * --------     ----    --- -----------
+ * f            FILE *  I   a pointer to a file
+ * string       char *  I   pointer to a character array.
  *
  *
  * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
