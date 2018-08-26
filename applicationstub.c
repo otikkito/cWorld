@@ -59,12 +59,12 @@
  */
  
 
-#include <stdio.h>
+#include <stdio.h> //FILE, printf, fopen
 #include <time.h>
-#include <unistd.h>
-#include <stdlib.h>
+#include <unistd.h> //alarm, getcwd, getpid, ...
+#include <stdlib.h> //EXIT_SUCCESS, EXIT_FAILURE, NULL,...
 #include <syslog.h>
-#include <string.h>
+#include <string.h> //memset
 //#include <signal.h>
 //#include <errno.h>
 //#include <sys/types.h>
