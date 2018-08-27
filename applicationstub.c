@@ -38,7 +38,7 @@
  *----   	     ------  	  ---------    -------      ---------------------
  *2/22/2017      Kito Joseph					        Added a prolog.I am not sure if it should be prolog or file format...
  *8/19/2018      Kito Joseph                            Continuing correction/refining documentation and file format/prolog to form a standard file format for application development.
- *
+ *8/26/2018      Kito Joseph                            Formating the file to conform to the nasa-c-style
  *ALGORITHM (PDL)
  *
  */
@@ -55,7 +55,9 @@
  *    https://stackoverflow.com/questions/3769405/determining-cpu-utilization
  * 8) Figure out how to read in the configuration file and configuration file variables (i.e. application log location,...)
  * 9) Skeleton (computer programming) wiki
- * 10)...
+ * 10) Fix the application log so that it displays the time the application for terminated
+ * 11) Correct the naming convention of functions and variables to match the nasa-c-style.
+ * 12) ...
  */
  
 
@@ -65,6 +67,7 @@
 #include <stdlib.h> //EXIT_SUCCESS, EXIT_FAILURE, NULL,...
 #include <syslog.h>
 #include <string.h> //memset
+#include <stdbool.h> //true,false
 //#include <signal.h>
 //#include <errno.h>
 //#include <sys/types.h>
@@ -76,29 +79,34 @@
 char logfile[] = "./text-data-files/logfile.txt";
 FILE *fp; /*Used for global log file TODO add a more descriptive name.*/
 pid_t processid; /*TODO try to use more descriptive name*/
-
+struct configurationDirectives{
+	bool initializeSignalHandler;
+};
 
 /*
 Function prototypes or function declarations: //EXIT_SUCCESS or EXIT_FAILURE
 https://stackoverflow.com/questions/8496284/terminology-forward-declaration-versus-function-prototype?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
 */
-int print_application_header_to_console(); 
-int print_log_file(FILE *f, char *string);
-void signal_handler();
+int printApplicationHeaderToConsole(); 
+int populateConfigDirectives();
+int printLogFile(FILE *f, char *string);
+void signalHandler();
 void bye(void);
 const char* get_process_name_by_pid(pid_t pid);
-int intialize_signal_handles();
+int intializeSignalHandles();
+
+
 
 /*This is the entry point of program execution from the operating system and shell.*/
 int main(int argc, char** argv) {
     /*As a design consideration minimize stuff in the main function for no particular reason other than readability and modulation */
     int i;
     
-    intialize_signal_handles();
+    intializeSignalHandles();
     i = atexit(bye);
     if (i != 0) {
         perror("Unable to set atexit()");
-        print_log_file(fp,"Unable to set atexit()\n");
+        printLogFile(fp,"Unable to set atexit()\n");
         exit(EXIT_FAILURE);
     }
 
@@ -111,8 +119,8 @@ int main(int argc, char** argv) {
         exit(EXIT_FAILURE);
     }
 
-    print_application_header_to_console();
-    print_log_file(fp, "Application started.\n");
+    printApplicationHeaderToConsole();
+    printLogFile(fp, "Application started.\n");
    
     /*
      * Starting place of the application and application logic. Add code below and remember 
@@ -124,15 +132,11 @@ int main(int argc, char** argv) {
      * https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
      */
    
-	for(int i=0;;i++){
-	 if(i<0){
-		 printf("i: %d\n",i);
-	 }
-	}
+	printLogFile(fp, "This is before the sleep");
 	
-     sleep(60000);
+     sleep(6);
     
-     print_log_file(fp, "Application terminated.\n");
+     printLogFile(fp, "Application terminated.\n");
  
      return (EXIT_SUCCESS); /*return EXIT_SUCCESS indication successful completion of the application*/
 }
@@ -143,7 +147,7 @@ int main(int argc, char** argv) {
 /********************************************************
  *
  *
- * FUNCTION NAME: print_application_header_to_console
+ * FUNCTION NAME: printApplicationHeaderToC`onsole
  *
  *
  *
@@ -162,7 +166,7 @@ int main(int argc, char** argv) {
  * TODO:
  * 1) print also to the log file and console (stdout)
  *********************************************************/
-int print_application_header_to_console() {
+int printApplicationHeaderToConsole() {
     printf("The process id of this application is: %d\n", processid);
     printf("Welcome to the application stub.\nThe  purpose of this program ");
     printf("is to build a solid framework \nfor the application development ");
@@ -178,8 +182,8 @@ int print_application_header_to_console() {
 /********************************************************
  *
  *
- * FUNCTION NAME: print_log_file
- *
+ * FUNCTION NAME: printLogFile
+ * The function prints a new line at the end of the string.
  *
  *
  * ARGUMENTS: A pointer to a file and a pointer to a string
@@ -203,7 +207,7 @@ int print_application_header_to_console() {
  * https://github.com/otikkito/cWorld/blob/master/varguments.c
  * ===Rember to flush the buffer with fflush() when logging===
  */
-int print_log_file(FILE *f, char *string) {
+int printLogFile(FILE *f, char *string) {
     char timestring[100];
     time_t currenttime = time(0);
     strftime(timestring, sizeof (timestring), "%c", localtime(&currenttime));
@@ -218,7 +222,7 @@ int print_log_file(FILE *f, char *string) {
 /********************************************************
 *
 *
-* FUNCTION NAME: intialize_signal_handles()
+* FUNCTION NAME: intializeSignalHandles()
 *
 *
 *
@@ -237,10 +241,10 @@ int print_log_file(FILE *f, char *string) {
 *
 *********************************************************/
 
-int intialize_signal_handles(){
+int intializeSignalHandles(){
    /* Link that talks about different types of signals: https://en.wikipedia.org/wiki/Signal_(IPC)#SIGTRAP */
     struct sigaction action;
-    action.sa_handler = signal_handler;
+    action.sa_handler = signalHandler;
     action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid of the offending function*/
     
 	/*
@@ -323,7 +327,7 @@ int intialize_signal_handles(){
 /********************************************************
  *
  *
- * FUNCTION NAME:signal_handler
+ * FUNCTION NAME:signalHandler
  *
  *
  *
@@ -342,7 +346,7 @@ int intialize_signal_handles(){
  *
  *
  *********************************************************/
-void signal_handler(int signal, siginfo_t *info, void *_unused) {
+void signalHandler(int signal, siginfo_t *info, void *_unused) {
     /*
      * http://man7.org/linux/man-pages/man2/sigaction.2.html --> "You must set the sa_flags field"
      * "you must set the sa_flags field of your struct sigaction with the flag SA_SIGINFO"
@@ -355,7 +359,7 @@ void signal_handler(int signal, siginfo_t *info, void *_unused) {
     /*siginfo_t not returning properly*/
     sprintf(app_log_message,"The application received signal %d from pid: %u with process name %s",signal,info->si_pid, get_process_name_by_pid(info->si_pid));
     /*Log to the application log the signal*/
-    print_log_file(fp,app_log_message);  
+    printLogFile(fp,app_log_message);  
     
     /*To terminate kill -s 15 <pid>*/
     /*man 7 signal*/
@@ -427,6 +431,36 @@ const char* get_process_name_by_pid(pid_t pid) {
 /*********************************************************************/
 
 /********************************************************
+*
+*
+* FUNCTION NAME: populateConfigDirectives
+*
+*
+*
+* ARGUMENTS: none
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+* N/A
+*
+*
+* RETURNS: EXIT_SUCCESS or EXIT_FAILURE
+* 
+*
+*
+*********************************************************/
+int populateConfigDirectives(){
+	FILE  *configFile;
+	
+	//open the configuration file
+	
+	//populate the global configuration file structure
+	
+	return EXIT_SUCCESS;
+}
+/********************************************************
  *
  *
  * FUNCTION NAME: bye - it performs cleanup at exit of the application.
@@ -449,7 +483,7 @@ const char* get_process_name_by_pid(pid_t pid) {
  *********************************************************/
 void bye(void) {
     printf("The program is now shutting down.\n");
-    fprintf(fp, "The application has ended now \n");
+	printLogFile(fp,"The application has ended now");
     fclose(fp);
 }
 

@@ -29,6 +29,12 @@ Design considerations:
      completed or not. EXIT_SUCCESS should be at the end of the function.
 
     
+Nasa naming convention
+• Variables: Use lower-case words separated by underscores.
+• Function names: Capitalize the first letter of each word; do not use
+   underscores.
+• Constants: Use upper-case words separated by underscores.
+
 /*signals that should be handled in application development. 
 ***https://en.wikipedia.org/wiki/Signal_(IPC)#SIGTRAP
 After reading man 7 signal
