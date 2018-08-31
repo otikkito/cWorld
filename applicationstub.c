@@ -39,6 +39,7 @@
  *2/22/2017      Kito Joseph					        Added a prolog.I am not sure if it should be prolog or file format...
  *8/19/2018      Kito Joseph                            Continuing correction/refining documentation and file format/prolog to form a standard file format for application development.
  *8/26/2018      Kito Joseph                            Formating the file to conform to the nasa-c-style
+ *
  *ALGORITHM (PDL)
  *
  */
@@ -90,7 +91,7 @@ https://stackoverflow.com/questions/8496284/terminology-forward-declaration-vers
 */
 int printApplicationHeaderToConsole(); 
 int readConfigurationFile();
-int populateConfigDirectives();
+int populateConfigDirectives(); //seems to be a duplicate of readConfigurationFile function
 int printLogFile(FILE *f, char *string);
 void signalHandler();
 void bye(void);
@@ -123,7 +124,8 @@ int main(int argc, char** argv) {
 
     printApplicationHeaderToConsole();
     printLogFile(fp, "Application started.\n");
-   
+    readConfigurationFile();
+	
     /*
      * Starting place of the application and application logic. Add code below and remember 
      * to do proper logging and handling of errors by checking return codes! The main
@@ -136,7 +138,7 @@ int main(int argc, char** argv) {
    
 	printLogFile(fp, "This is before the sleep");
 	
-     sleep(6);
+     sleep(60);
     
      printLogFile(fp, "Application terminated.\n");
  
@@ -197,7 +199,12 @@ int readConfigurationFile(){
 	
 	//populate the global cconfiguration structure
 	while(fgets(line,MAXCONFIGLINESIZE,config_file)){
-		printf("Config- %s",line);
+		if((line[0] == '#') || (line[0] == ' ' )) { 
+			continue;
+		}
+		else{
+			printf("Config- %s\n",line);
+		}
 	}
 	//close the file
 	
