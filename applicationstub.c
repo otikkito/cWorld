@@ -423,7 +423,7 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
  *
  * ARGUMENT     TYPE    I/O DESCRIPTION
  * --------     ----    --- -----------
- *pid           pid_t   I   This is the proccess ID of the function
+ *pid           pid_t   I   This is the proccess ID of the application.
  *
  *
  * RETURNS: A pointer to a constant char
