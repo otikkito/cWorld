@@ -74,6 +74,7 @@
 
 /*Preprocessor commands*/
 #define MAXLOGENTRYSIZE 300
+#define MAXCONFIGLINESIZE 300
 
 /*Global variables*/
 char logfile[] = "./text-data-files/logfile.txt";
@@ -88,12 +89,13 @@ Function prototypes or function declarations: //EXIT_SUCCESS or EXIT_FAILURE
 https://stackoverflow.com/questions/8496284/terminology-forward-declaration-versus-function-prototype?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
 */
 int printApplicationHeaderToConsole(); 
+int readConfigurationFile();
 int populateConfigDirectives();
 int printLogFile(FILE *f, char *string);
 void signalHandler();
 void bye(void);
-const char* get_process_name_by_pid(pid_t pid);
-int intializeSignalHandles();
+const char* getProcessNameByPid(pid_t pid);
+int initializeSignalHandles();
 
 
 
@@ -102,7 +104,7 @@ int main(int argc, char** argv) {
     /*As a design consideration minimize stuff in the main function for no particular reason other than readability and modulation */
     int i;
     
-    intializeSignalHandles();
+    initializeSignalHandles();
     i = atexit(bye);
     if (i != 0) {
         perror("Unable to set atexit()");
@@ -172,12 +174,37 @@ int printApplicationHeaderToConsole() {
     printf("is to build a solid framework \nfor the application development ");
     printf("process.\n");
     printf("----------------------------------------------------------------\n");
-    printf("The process name of this process is: %s \n", get_process_name_by_pid(processid));
+    printf("The process name of this process is: %s \n", getProcessNameByPid(processid));
 	
 	return(EXIT_SUCCESS);
 }
 
 /*********************************************************************/
+
+int readConfigurationFile(){
+	
+	//open the file
+	FILE *config_file;
+	char line[MAXCONFIGLINESIZE];
+	
+	config_file = fopen("applicationstub.conf","r");
+	
+	if(config_file == NULL){
+		perror("Unable to open the configuration file.\n");
+		printLogFile(fp,"Unable to open the configuration file for the applicationstub.");
+		return EXIT_FAILURE;
+	}
+	
+	//populate the global cconfiguration structure
+	while(fgets(line,MAXCONFIGLINESIZE,config_file)){
+		printf("Config- %s",line);
+	}
+	//close the file
+	
+	fclose(config_file);
+	
+	return EXIT_SUCCESS;
+}
 
 /********************************************************
  *
@@ -241,7 +268,7 @@ int printLogFile(FILE *f, char *string) {
 *
 *********************************************************/
 
-int intializeSignalHandles(){
+int initializeSignalHandles(){
    /* Link that talks about different types of signals: https://en.wikipedia.org/wiki/Signal_(IPC)#SIGTRAP */
     struct sigaction action;
     action.sa_handler = signalHandler;
@@ -357,7 +384,7 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
     
     memset(app_log_message,'\0',sizeof(app_log_message));
     /*siginfo_t not returning properly*/
-    sprintf(app_log_message,"The application received signal %d from pid: %u with process name %s",signal,info->si_pid, get_process_name_by_pid(info->si_pid));
+    sprintf(app_log_message,"The application received signal %d from pid: %u with process name %s",signal,info->si_pid, getProcessNameByPid(info->si_pid));
     /*Log to the application log the signal*/
     printLogFile(fp,app_log_message);  
     
@@ -385,7 +412,7 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
 /********************************************************
  *
  *
- * FUNCTION NAME: get_process_name_by_pid
+ * FUNCTION NAME: getProcessNameByPid
  *
  *
  *
@@ -406,7 +433,7 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
  *********************************************************/
 
 /* can also be done be running ps -p PID -i comm= */
-const char* get_process_name_by_pid(pid_t pid) {
+const char* getProcessNameByPid(pid_t pid) {
     FILE *f;
     char* name = (char*) calloc(1024, sizeof (char));
     //Need to determine if RHEL 7 or 6 is being used. /etc/redhat-release
