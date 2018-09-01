@@ -91,7 +91,6 @@ https://stackoverflow.com/questions/8496284/terminology-forward-declaration-vers
 */
 int printApplicationHeaderToConsole(); 
 int readConfigurationFile();
-int populateConfigDirectives(); //seems to be a duplicate of readConfigurationFile function
 int printLogFile(FILE *f, char *string);
 void signalHandler();
 void bye(void);
@@ -181,13 +180,34 @@ int printApplicationHeaderToConsole() {
 	return(EXIT_SUCCESS);
 }
 
-/*********************************************************************/
+/********************************************************
+*
+*
+* FUNCTION NAME: redConfigurationFile();
+*
+*
+*
+* ARGUMENTS: none
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+* N/A
+*
+*
+* RETURNS: EXIT_SUCCESS or EXIT_FAILURE
+*
+*
+*
+*********************************************************/
 
 int readConfigurationFile(){
 	
 	//open the file
 	FILE *config_file;
 	char line[MAXCONFIGLINESIZE];
+	//char configDirective[MAXCONFIGLINESIZE];
 	
 	config_file = fopen("applicationstub.conf","r");
 	
@@ -198,12 +218,19 @@ int readConfigurationFile(){
 	}
 	
 	//populate the global cconfiguration structure
-	while(fgets(line,MAXCONFIGLINESIZE,config_file)){
-		if((line[0] == '#') || (line[0] == ' ' )) { 
+	while((fgets(line,MAXCONFIGLINESIZE,config_file)) != NULL){
+		if((line[0] == '#') || (line[0] == ' ' ) || (line[0] == '\n')) { 
 			continue;
 		}
 		else{
 			printf("Config- %s\n",line);
+		
+			char leftConfigDirective[MAXCONFIGLINESIZE];
+			char rightConfigDirective[MAXCONFIGLINESIZE];
+						
+			sscanf(line,"%s=%s",leftConfigDirective,rightConfigDirective);			
+			printf("The left value is:%s and the right value is %s\n",leftConfigDirective,rightConfigDirective);
+			
 		}
 	}
 	//close the file
@@ -464,36 +491,8 @@ const char* getProcessNameByPid(pid_t pid) {
 }
 /*********************************************************************/
 
-/********************************************************
-*
-*
-* FUNCTION NAME: populateConfigDirectives
-*
-*
-*
-* ARGUMENTS: none
-*
-*
-*
-* ARGUMENT     TYPE I/O DESCRIPTION
-* --------     ---- --- -----------
-* N/A
-*
-*
-* RETURNS: EXIT_SUCCESS or EXIT_FAILURE
-* 
-*
-*
-*********************************************************/
-int populateConfigDirectives(){
-	FILE  *configFile;
-	
-	//open the configuration file
-	
-	//populate the global configuration file structure
-	
-	return EXIT_SUCCESS;
-}
+
+
 /********************************************************
  *
  *
