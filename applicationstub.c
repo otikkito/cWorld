@@ -39,7 +39,7 @@
  *2/22/2017      Kito Joseph					        Added a prolog.I am not sure if it should be prolog or file format...
  *8/19/2018      Kito Joseph                            Continuing correction/refining documentation and file format/prolog to form a standard file format for application development.
  *8/26/2018      Kito Joseph                            Formating the file to conform to the nasa-c-style
- *
+ *9/2/2018       Kito Joseph                            Added the configuration file reading ability to th applicationstub.c
  *ALGORITHM (PDL)
  *
  */
@@ -82,8 +82,8 @@ char logfile[] = "./text-data-files/logfile.txt";
 FILE *fp; /*Used for global log file TODO add a more descriptive name.*/
 pid_t processid; /*TODO try to use more descriptive name*/
 struct configurationDirectives{
-	bool initializeSignalHandler;
-};
+	bool useSignalHandler;
+}cd;
 
 /*
 Function prototypes or function declarations: //EXIT_SUCCESS or EXIT_FAILURE
@@ -124,6 +124,7 @@ int main(int argc, char** argv) {
     printApplicationHeaderToConsole();
     printLogFile(fp, "Application started.\n");
     readConfigurationFile();
+	
 	
     /*
      * Starting place of the application and application logic. Add code below and remember 
@@ -204,12 +205,13 @@ int printApplicationHeaderToConsole() {
 
 int readConfigurationFile(){
 	
-	//open the file
 	FILE *config_file;
 	char line[MAXCONFIGLINESIZE];
-	//char configDirective[MAXCONFIGLINESIZE];
+	
 	
 	config_file = fopen("applicationstub.conf","r");
+	//Initialize the global configuration directive variable.
+	cd.useSignalHandler = false;
 	
 	if(config_file == NULL){
 		perror("Unable to open the configuration file.\n");
@@ -223,14 +225,21 @@ int readConfigurationFile(){
 			continue;
 		}
 		else{
-			printf("Config- %s\n",line);
+			//printf("Config- %s\n",line);
 		
 			char leftConfigDirective[MAXCONFIGLINESIZE];
 			char rightConfigDirective[MAXCONFIGLINESIZE];
-						
-			sscanf(line,"%s=%s",leftConfigDirective,rightConfigDirective);			
-			printf("The left value is:%s and the right value is %s\n",leftConfigDirective,rightConfigDirective);
+			memset(leftConfigDirective,'\0',MAXCONFIGLINESIZE);
+			memset(rightConfigDirective,'\0',MAXCONFIGLINESIZE);
 			
+			sscanf(line,"%s = %s",leftConfigDirective,rightConfigDirective);			
+			//printf("The left value is:%s and the right value is %s\n",leftConfigDirective,rightConfigDirective);
+			
+			if((strcmp(leftConfigDirective,"initialize_signal_handler")) == 0){
+					cd.useSignalHandler = true;
+			
+			
+			}
 		}
 	}
 	//close the file
