@@ -76,13 +76,13 @@ const char* getProcessNameByPid(pid_t pid){
 
 }
 
-int get_free_memory_of_system(){
+int getFreeMemoryOfSystem(){
 	//look at /proc/meminfo
 
 		return 0;
 }
 
-int get_cpu_utilization_of_system(){
+int getCpuUtilizationOfSystem(){
 	//look in /proc/cpuinfo
 
 		return 0;
@@ -93,28 +93,28 @@ void intialize_signal_handles(){
 
 }
 
-int get_load_average_of_the_system(){
+int getLoadAverageOfSystem(){
 	//This information can be found in /proc/loadavg
 
 	return 0;
 }
 
-int get_uptime_of_system(){
+int getUptimeOfSystem(){
 	// look and decipher the two times in /proc/uptime
 		return 0;
 }
 
-int get_uptime_of_application(){
+int getUptimeOfApplication(){
    //Need to have the start time of the application stored as a global variable in the applicationstub.
 	return 0;
 }
 
-int get_memory_usage_of_application_given_name(char *appname){
+int getMemoryUsageOfApplicationGivenName(char *appname){
 	// use /proc/meminfo
 	return 0;
 }
 	
-int get_memory_usage_of_application_given_pid(pid_t pid){
+int getMemoryUsageOfApplicationGivenPid(pid_t pid){
 	// use /proc/meminfo
 	return 0;
 }
@@ -125,13 +125,13 @@ FILE *run_system_command(const char *system_comand){
 }
 */
 
-const char* get_operating_system_version(){
+const char* getOperatingSystemVersion(){
 	//look at /proc/version
 	return "Version";
 	
 }
 
-pid_t get_pid_by_process_name(const char* processName){ //processName is one of the naming convention issue
+pid_t getPidByProcessName(const char* processName){ //processName is one of the naming convention issue
 	//This will be rough draft implementation need to find a better way that has direct mapping
 	/*
 	Algorithm
@@ -184,7 +184,7 @@ pid_t get_pid_by_process_name(const char* processName){ //processName is one of 
 	return  processId; 
 }
 
-int get_number_of_processor_cores_on_system(){
+int getNumberOfProcessorCoresOnSystem(){
 	// look at /proc/cpuinfo cpucore and/or processor
 	int numCores;
 	
