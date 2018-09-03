@@ -36,10 +36,11 @@
  *
  *Date		     Author		  Change ID	   Release		Description of Change
  *----   	     ------  	  ---------    -------      ---------------------
- *2/22/2017      Kito Joseph					        Added a prolog.I am not sure if it should be prolog or file format...
- *8/19/2018      Kito Joseph                            Continuing correction/refining documentation and file format/prolog to form a standard file format for application development.
- *8/26/2018      Kito Joseph                            Formating the file to conform to the nasa-c-style
- *9/2/2018       Kito Joseph                            Added the configuration file reading ability to th applicationstub.c
+ *2/22/2017      Kito Joseph      1					    Added a prolog.I am not sure if it should be prolog or file format...
+ *8/19/2018      Kito Joseph      2                     Continuing correction/refining documentation and file format/prolog to form a standard file format for application development.
+ *8/26/2018      Kito Joseph      3                     Formating the file to conform to the nasa-c-style
+ *9/2/2018       Kito Joseph      4                     Added the configuration file reading ability to th applicationstub.c
+ *
  *ALGORITHM (PDL)
  *
  */
@@ -138,11 +139,11 @@ int main(int argc, char** argv) {
    
 	printLogFile(fp, "This is before the sleep");
 	
-     sleep(60);
+    sleep(60);
     
-     printLogFile(fp, "Application terminated.\n");
+    printLogFile(fp, "Application terminated.\n");
  
-     return (EXIT_SUCCESS); /*return EXIT_SUCCESS indication successful completion of the application*/
+    return (EXIT_SUCCESS); /*return EXIT_SUCCESS indication successful completion of the application*/
 }
 
 /*********************************************************************/

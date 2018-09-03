@@ -1,19 +1,57 @@
+/****************************************************************
+*FILE NAME: system-function.c
+*
+*
+*
+*PURPOSE: To create a library of functions to retrive operating system status and frequent functions used throughout the develpment of system applications.
+* 
+*
+*FILE REFERENCES:
+*
+*NAME		I/O		Description
+*----           ---             -----------
+*
+*EXTERNAL VARIABLE:
+*SOURCE: <         >
+*
+*NAME	  TYPE    	I/O		Description
+*----     ----          ---             -----------
+*
+*EXTERNAL REFERENCES:
+*
+*Name		Description
+*----   	-----------
+*
+*ABNORMAL ERMINATION CONDITIONS, ERROR AND WARINGING MESSAGES:
+*
+*ASSUMPTIONS, CONSTRAINTS, RESTRICTIONS
+*
+*NOTES:
+*
+*REQUIREMENTS/FUNCTIONAL SPECIFICATIONS REFERENCES:
+*
+*DEVELOPMENT HISTORY:
+*
+*Date		Author		Change ID	Release		Description of Change
+*----   	------  	---------       -------         ---------------------
+*
+*ALGORITHM (PDL)
+*/
+
+
+
+
 //This is the system-function implementation
 //TODO find out about multiple inclusions of header files
-
 #include <sys/types.h> //pid_t
 #include <stdio.h>
 #include <stdlib.h>
 #include <dirent.h>
 #include <string.h>
-#include <stdbool.h>
-
-//function protype
-bool dirent_is_a_process(const char *);
-bool file_exist(const char *);
+#include "system-function.h"
 
 
-const char* get_process_name_by_pid(pid_t pid){
+const char* getProcessNameByPid(pid_t pid){
 	//This function is included in the applicationstub.c, make sure that the are the same implemntation and/or reference the same function
 	FILE *f;
     char* name = (char*) calloc(1024, sizeof (char));
@@ -126,7 +164,7 @@ pid_t get_pid_by_process_name(const char* processName){ //processName is one of 
 		/*
 			Algorithm
 			1. if the de->name contains all digits increase count
-			  a)git the length of the string
+			  a)get the length of the string
 			  b)see if each character is a digit
 			2.create an array or linked list conting processid and name
 			
