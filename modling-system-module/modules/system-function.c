@@ -88,7 +88,7 @@ int getCpuUtilizationOfSystem(){
 		return 0;
 }
 
-void intialize_signal_handles(){
+void intializeSignalHsandles(){
 	//location of an implementation is located in applicationstub.c
 
 }
@@ -193,7 +193,7 @@ int getNumberOfProcessorCoresOnSystem(){
 	return numCores;
 }
 
-/*bool dirent_is_a_process(const char *pname ){
+/*bool direntIsAProcess(const char *pname ){
 	FILE *file;
 	
 	char* name = (char*) calloc(1024, sizeof (char));
@@ -204,7 +204,7 @@ int getNumberOfProcessorCoresOnSystem(){
 	return true;
 }
 
-bool file_exist(const char * fn){
+bool fileExist(const char * fn){
 	FILE *file;
 	
 	if((file = fopen(fname,"r")){

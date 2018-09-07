@@ -62,7 +62,7 @@ int getUptimeOfSystem();//use /proc file system
 int getUptimeOfApplication(); //stub
 int getMemoryUsageOfApplicationGivenName(char *appname);//stub
 int getMemoryUsageOfApplicationGivenPid(pid_t pid);//stub
-//FILE *run_system_command(const char *system_comand); pointer to a file that contains text output of the system command
+//FILE *runSystemCommand(const char *system_comand); pointer to a file that contains text output of the system command
 const char* getOperatingSystemVersion(); //stub
 int getNumberOfProcessorCoresOnSystem(); //stub
 bool dirent_is_a_process(const char *);
