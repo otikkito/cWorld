@@ -3,7 +3,8 @@
 *
 *
 *
-*PURPOSE: To create a library of functions to retrive operating system status and frequent functions used throughout the develpment of system applications.
+*PURPOSE: To create a library of functions to retrive operating system 
+*status and frequent functions used throughout the develpment of system applications.
 * 
 *
 *FILE REFERENCES:
@@ -32,9 +33,9 @@
 *
 *DEVELOPMENT HISTORY:
 *
-*Date		Author		Change ID	Release		Description of Change
-*----   	------  	---------       -------         ---------------------
-*
+*Date		Author		  Change ID	      Release		Description of Change
+*----   	------  	  ---------       -------       ---------------------
+*9-7-2018   Kito Joseph       1                         Included the function stubs and file format and function prolog   
 *ALGORITHM (PDL)
 */
 
@@ -48,6 +49,7 @@
 #include <stdlib.h>
 #include <dirent.h>
 #include <string.h>
+#include <stdbool.h>
 #include "system-function.h"
 
 
@@ -76,48 +78,238 @@ const char* getProcessNameByPid(pid_t pid){
 
 }
 
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 int getFreeMemoryOfSystem(){
 	//look at /proc/meminfo
 
 		return 0;
 }
 
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 int getCpuUtilizationOfSystem(){
 	//look in /proc/cpuinfo
 
 		return 0;
 }
 
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 void intializeSignalHsandles(){
 	//location of an implementation is located in applicationstub.c
 
 }
 
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 int getLoadAverageOfSystem(){
 	//This information can be found in /proc/loadavg
 
 	return 0;
 }
 
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 int getUptimeOfSystem(){
 	// look and decipher the two times in /proc/uptime
 		return 0;
 }
 
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 int getUptimeOfApplication(){
    //Need to have the start time of the application stored as a global variable in the applicationstub.
 	return 0;
 }
 
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 int getMemoryUsageOfApplicationGivenName(char *appname){
 	// use /proc/meminfo
 	return 0;
 }
-	
+
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/	
 int getMemoryUsageOfApplicationGivenPid(pid_t pid){
 	// use /proc/meminfo
 	return 0;
 }
+
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 /*
 FILE *run_system_command(const char *system_comand){
 
@@ -125,12 +317,54 @@ FILE *run_system_command(const char *system_comand){
 }
 */
 
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 const char* getOperatingSystemVersion(){
 	//look at /proc/version
 	return "Version";
 	
 }
 
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 pid_t getPidByProcessName(const char* processName){ //processName is one of the naming convention issue
 	//This will be rough draft implementation need to find a better way that has direct mapping
 	/*
@@ -184,6 +418,27 @@ pid_t getPidByProcessName(const char* processName){ //processName is one of the 
 	return  processId; 
 }
 
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 int getNumberOfProcessorCoresOnSystem(){
 	// look at /proc/cpuinfo cpucore and/or processor
 	int numCores;
@@ -193,26 +448,61 @@ int getNumberOfProcessorCoresOnSystem(){
 	return numCores;
 }
 
-/*bool direntIsAProcess(const char *pname ){
-	FILE *file;
-	
-	char* name = (char*) calloc(1024, sizeof (char));
-	sprintf(name,
-	if(file = fopen("
-	
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
+bool direntIsAProcess(const char *pname ){
 	
 	return true;
 }
 
-bool fileExist(const char * fn){
-	FILE *file;
+/********************************************************
+*
+*
+* FUNCTION NAME: fileExist
+*
+*
+*
+* ARGUMENTS: const char *fileName
+*
+*
+*
+* ARGUMENT     TYPE           I/O DESCRIPTION
+* --------     ----           --- -----------
+*file_name     cconst char *  I   This is the complete path of the file that is being checked.
+*
+*
+* RETURNS: returns true (1) if the file exist and false otherwise
+*
+*
+*
+*********************************************************/
+bool fileExist(const char * file_name){
 	
-	if((file = fopen(fname,"r")){
-		fclose(file);
-		return true
+	FILE *fp;
+	
+	fp = fopen(file_name,"r");
+	if(fp == NULL){
+		return false; 
 	}
-	return false;
-	
+	return true;
 }
 
-*/

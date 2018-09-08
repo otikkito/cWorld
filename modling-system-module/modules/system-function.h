@@ -65,8 +65,8 @@ int getMemoryUsageOfApplicationGivenPid(pid_t pid);//stub
 //FILE *runSystemCommand(const char *system_comand); pointer to a file that contains text output of the system command
 const char* getOperatingSystemVersion(); //stub
 int getNumberOfProcessorCoresOnSystem(); //stub
-bool dirent_is_a_process(const char *);
-bool file_exist(const char *);
+bool direntIsAProcess(const char *);
+bool fileExist(const char *file_name);
   
   
 /*

@@ -23,8 +23,12 @@ int main(int argc, char** argv) {
 
 	//variable declaration
 	
-	printf("Welcome to module main.\n");
+	printf("Welcome to module-main.c we will be testing some of the functions here.\n");
+	printf("----------------------------------------------------------------------\n");
 	printf("The module name is: %s\n",getProcessNameByPid(getpid()));
+	printf("Does the file exist. 1 if it does: %d\n",fileExist("/home/Kito Joseph/sandbox/cWorld/text-data-files"));
+	printf("Does the file exist. 1 if it doesL %d\n",fileExist("c:\test.h"));
+	
 	
 	
     return (EXIT_SUCCESS);
