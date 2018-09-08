@@ -295,12 +295,12 @@ int getMemoryUsageOfApplicationGivenName(char *app_name){
 *
 *
 *
-* ARGUMENT     TYPE I/O DESCRIPTION
-* --------     ---- --- -----------
+* ARGUMENT     TYPE   I/O DESCRIPTION
+* --------     ----   --- -----------
+* pid          pid_t  I   The pid of the process
 *
 *
-*
-* RETURNS:
+* RETURNS: returns an integer value of the number of bytes/kilobytes/megabytes/... of the application in question.
 *
 *
 *
@@ -313,11 +313,11 @@ int getMemoryUsageOfApplicationGivenPid(pid_t pid){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: run_system_command
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: In design
 *
 *
 *
@@ -326,7 +326,7 @@ int getMemoryUsageOfApplicationGivenPid(pid_t pid){
 *
 *
 *
-* RETURNS:
+* RETURNS: In design
 *
 *
 *
@@ -341,11 +341,11 @@ FILE *run_system_command(const char *system_comand){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: getOperatingSystemVersion
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: none
 *
 *
 *
@@ -354,7 +354,7 @@ FILE *run_system_command(const char *system_comand){
 *
 *
 *
-* RETURNS:
+* RETURNS: In design
 *
 *
 *
@@ -368,11 +368,11 @@ const char* getOperatingSystemVersion(){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: getPidByProcessName
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: In design
 *
 *
 *
@@ -381,7 +381,7 @@ const char* getOperatingSystemVersion(){
 *
 *
 *
-* RETURNS:
+* RETURNS: in design
 *
 *
 *
@@ -442,20 +442,20 @@ pid_t getPidByProcessName(const char* processName){ //processName is one of the 
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: etNumberOfProcessorCoresOnSystem
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: none
 *
 *
 *
 * ARGUMENT     TYPE I/O DESCRIPTION
 * --------     ---- --- -----------
+*none
 *
 *
-*
-* RETURNS:
+* RETURNS: the number of processor on the given core
 *
 *
 *
