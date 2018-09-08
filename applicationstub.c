@@ -59,7 +59,8 @@
  * 9) Skeleton (computer programming) wiki
  * 10) Fix the application log so that it displays the time the application for terminated
  * 11) Correct the naming convention of functions and variables to match the nasa-c-style.
- * 12) ...
+ * 12) Store in a variable the start time of the application in order to see how long the application has been running.
+ * 13) ...
  */
  
 

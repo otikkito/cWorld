@@ -451,20 +451,20 @@ int getNumberOfProcessorCoresOnSystem(){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: direntIsAProcess
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: pname
 *
 *
 *
-* ARGUMENT     TYPE I/O DESCRIPTION
-* --------     ---- --- -----------
+* ARGUMENT     TYPE          I/O DESCRIPTION
+* --------     ----          --- -----------
+*process_name  const char *  I   This would be the name of the process from the proc filesystem that we are trying to get in order to see if it has a pid.
 *
 *
-*
-* RETURNS:
+* RETURNS: return true if it is a process under the /proc file system
 *
 *
 *
@@ -481,7 +481,7 @@ bool direntIsAProcess(const char *pname ){
 *
 *
 *
-* ARGUMENTS: const char *fileName
+* ARGUMENTS: file_name
 *
 *
 *
