@@ -36,6 +36,7 @@
 *----   	------  	---------   -------     ---------------------
 *7/18/2017  Kito Joseph     01                  Date created
 *9/8//2018  Kito JOseph     02                  Created the file format and prolog pursant to the nasa-c-coding style.
+*
 *ALGORITHM (PDL)
 */
 /* 
@@ -50,9 +51,28 @@
 #include <unistd.h>
 #include "modules/system-function.h"
 
-/*
- * 
- */
+/********************************************************
+*
+*
+* FUNCTION NAME: main
+*
+*
+*
+* ARGUMENTS: argc, argv
+*
+*
+*
+* ARGUMENT     TYPE    I/O DESCRIPTION
+* --------     ----    --- -----------
+*argc          int     I   number of command line arguments
+*argv          char ** I   char array vector for the commandline arguments
+*argv          char ** I   char array vector for the commandline arguments
+*
+* RETURNS: EXIT_SUCCESS or EXIT_FAILURE
+*
+*
+*
+*********************************************************/
 int main(int argc, char** argv) {
 
 	//variable declaration

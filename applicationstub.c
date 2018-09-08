@@ -10,13 +10,13 @@
  *FILE REFERENCES:
  *
  *NAME		I/O		Description
- *----           ---             -----------
+ *----      ---     -----------
  *
  *EXTERNAL VARIABLE:
  *SOURCE: <         >
  *
  *NAME	  TYPE    	I/O		Description
- *----     ----          ---             -----------
+ *----    ----      ---     -----------
  *
  *EXTERNAL REFERENCES:
  *
@@ -167,8 +167,6 @@ int main(int argc, char** argv) {
     return (EXIT_SUCCESS); /*return EXIT_SUCCESS indication successful completion of the application*/
 }
 
-
-
 /********************************************************
  *
  *
@@ -182,7 +180,7 @@ int main(int argc, char** argv) {
  *
  * ARGUMENT     TYPE I/O DESCRIPTION
  * --------     ---- --- -----------
- *
+ * none
  *
  *
  * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
@@ -215,7 +213,7 @@ int printApplicationHeaderToConsole() {
 *
 * ARGUMENT     TYPE I/O DESCRIPTION
 * --------     ---- --- -----------
-* N/A
+* none
 *
 *
 * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
@@ -311,13 +309,13 @@ int printLogFile(FILE *f, char *string) {
 *
 *
 *
-* ARGUMENTS: Void
+* ARGUMENTS: none
 *
 *
 *
 * ARGUMENT     TYPE I/O DESCRIPTION
 * --------     ---- --- -----------
-*
+*none
 *
 *
 * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
