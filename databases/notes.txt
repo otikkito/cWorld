@@ -48,5 +48,5 @@ LOAD DATA INFILE 'filename' INTO TABLE mytable FIELDS TERMINATED BY ' ';
 The mariadb api is the same in c as with mysql
 
 Questions:
-1)What is the difference between mariadb other opensource databasel?
+1)What is the difference between mariadb other open source database?
 ...
