@@ -145,8 +145,10 @@ int main(int argc, char** argv) {
 
     printApplicationHeaderToConsole();
     printLogFile(fp, "Application started.\n");
-    readConfigurationFile();
-	
+    
+	if(readConfigurationFile()){
+		printf("Was able to read configuration file.\n");
+	}
 	
     /*
      * Starting place of the application and application logic. Add code below and remember 

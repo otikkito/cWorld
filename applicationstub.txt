@@ -35,6 +35,11 @@ Nasa naming convention
    underscores.
 • Constants: Use upper-case words separated by underscores.
 
+
+Note: code coverage, make sure you test the application.
+
+Keywords:range, domain,code coverage, positive and negative test,...
+
 /*signals that should be handled in application development. 
 ***https://en.wikipedia.org/wiki/Signal_(IPC)#SIGTRAP
 After reading man 7 signal

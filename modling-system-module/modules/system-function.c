@@ -71,7 +71,7 @@
 *
 * RETURNS: returns the process name given the process id.
 *
-*
+*citation: from stack overflow but will have to do proper citing later.
 *
 *********************************************************/
 const char* getProcessNameByPid(pid_t pid){
