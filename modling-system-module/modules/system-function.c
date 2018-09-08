@@ -53,6 +53,27 @@
 #include "system-function.h"
 
 
+/********************************************************
+*
+*
+* FUNCTION NAME: getProcessNameByPid
+*
+*
+*
+* ARGUMENTS: pid
+*
+*
+*
+* ARGUMENT     TYPE    I/O DESCRIPTION
+* --------     ----    --- -----------
+* pid          pid_t   I   This is the process id of the process that I am inquireing about.
+*
+*
+* RETURNS: returns the process name given the process id.
+*
+*
+*
+*********************************************************/
 const char* getProcessNameByPid(pid_t pid){
 	//This function is included in the applicationstub.c, make sure that the are the same implemntation and/or reference the same function
 	FILE *f;
@@ -81,20 +102,20 @@ const char* getProcessNameByPid(pid_t pid){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: getFreeMemoryOfSystem
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: none
 *
 *
 *
 * ARGUMENT     TYPE I/O DESCRIPTION
 * --------     ---- --- -----------
+*none
 *
 *
-*
-* RETURNS:
+* RETURNS: returns an integer value of the number of bytes/kilobytes/megabytes/... of the system.
 *
 *
 *
@@ -108,20 +129,20 @@ int getFreeMemoryOfSystem(){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: getCpuUtilizationOfSystem
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: none
 *
 *
 *
 * ARGUMENT     TYPE I/O DESCRIPTION
 * --------     ---- --- -----------
+*none
 *
 *
-*
-* RETURNS:
+* RETURNS: returns the percentage of cpu utilization most would be 100%
 *
 *
 *
@@ -135,20 +156,20 @@ int getCpuUtilizationOfSystem(){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: intializeSignalHsandles
+* 
 *
 *
-*
-* ARGUMENTS:
+* ARGUMENTS: none
 *
 *
 *
 * ARGUMENT     TYPE I/O DESCRIPTION
 * --------     ---- --- -----------
+*none
 *
 *
-*
-* RETURNS:
+* RETURNS: returns EXIT_SUCCESS or EXIT_FAILURE
 *
 *
 *
@@ -161,20 +182,20 @@ void intializeSignalHsandles(){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: getLoadAverageOfSystem
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: none
 *
 *
 *
 * ARGUMENT     TYPE I/O DESCRIPTION
 * --------     ---- --- -----------
+*none
 *
 *
-*
-* RETURNS:
+* RETURNS: returns the load average of the system in the format of "one five fifteen" minutes
 *
 *
 *
@@ -188,20 +209,20 @@ int getLoadAverageOfSystem(){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: getUptimeOfSystem
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: none
 *
 *
 *
 * ARGUMENT     TYPE I/O DESCRIPTION
 * --------     ---- --- -----------
+*none
 *
 *
-*
-* RETURNS:
+* RETURNS: the length of time system has been up since reboot and the time since it has been idle in seconds
 *
 *
 *
@@ -214,20 +235,20 @@ int getUptimeOfSystem(){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: getUptimeOfApplication()
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: In design. start and stop time/time of function invocation 
 *
 *
 *
 * ARGUMENT     TYPE I/O DESCRIPTION
 * --------     ---- --- -----------
+*TBD
 *
 *
-*
-* RETURNS:
+* RETURNS: returns the seconds that the application has been running.
 *
 *
 *
@@ -240,25 +261,25 @@ int getUptimeOfApplication(){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: getMemoryUsageOfApplicationGivenName
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: app_name
 *
 *
 *
-* ARGUMENT     TYPE I/O DESCRIPTION
-* --------     ---- --- -----------
+* ARGUMENT     TYPE   I/O DESCRIPTION
+* --------     ----   --- -----------
+*app_name      char * I   This is the name of the application or maybe should be the pid 
 *
 *
-*
-* RETURNS:
+* RETURNS: returns an integer value of the number of bytes/kilobytes/megabytes/... of the application in question.
 *
 *
 *
 *********************************************************/
-int getMemoryUsageOfApplicationGivenName(char *appname){
+int getMemoryUsageOfApplicationGivenName(char *app_name){
 	// use /proc/meminfo
 	return 0;
 }
@@ -266,11 +287,11 @@ int getMemoryUsageOfApplicationGivenName(char *appname){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: getMemoryUsageOfApplicationGivenPid
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: pid
 *
 *
 *
@@ -470,6 +491,7 @@ int getNumberOfProcessorCoresOnSystem(){
 *
 *********************************************************/
 bool direntIsAProcess(const char *pname ){
+	
 	
 	return true;
 }
