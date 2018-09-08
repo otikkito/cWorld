@@ -368,11 +368,11 @@ int initializeSignalHandles(){
 	sigaction(SIGTTOU, &action, NULL);
 	sigaction(SIGURG, &action, NULL);
 	sigaction(SIGXCPU, &action, NULL);
-	sigaction(SIGXFSZ, &action, NULL); //25
+	sigaction(SIGXFSZ, &action, NULL);
 	sigaction(SIGVTALRM,&action, NULL);
 	sigaction(SIGPROF, &action, NULL);
 	sigaction(SIGWINCH, &action, NULL);
-	sigaction(SIGIO, &action, NULL); //29
+	sigaction(SIGIO, &action, NULL);
 	sigaction(SIGPWR, &action, NULL);
 	sigaction(SIGSYS, &action, NULL);
 	sigaction(SIGRTMIN, &action, NULL);
