@@ -24,7 +24,7 @@
  *----   	-----------
  *
  *ABNORMAL TERMINATION CONDITIONS, ERROR AND WARINGING MESSAGES:
- *-Some of the abnormal conditions will exit the program using the bye funcction and EXIT_FAILURE...
+ *-Some of the abnormal conditions will exit the program using the bye funcction and EXIT_FAILURE or EXIT_SUCCESS...
  *
  *ASSUMPTIONS, CONSTRAINTS, RESTRICTIONS
  *
@@ -82,10 +82,11 @@
 /*Global variables*/
 char logfile[] = "./text-data-files/logfile.txt";
 FILE *fp; /*Used for global log file TODO add a more descriptive name.*/
-pid_t processid; /*TODO try to use more descriptive name*/
+pid_t processid; /*TODO try to use more descriptive name and correct name format throughout the file*/
 struct configurationDirectives{
 	bool useSignalHandler;
 }cd;
+
 
 /*
 Function prototypes or function declarations: //EXIT_SUCCESS or EXIT_FAILURE
@@ -100,8 +101,27 @@ const char* getProcessNameByPid(pid_t pid);
 int initializeSignalHandles();
 
 
-
-/*This is the entry point of program execution from the operating system and shell.*/
+/********************************************************
+*
+*
+* FUNCTION NAME: main
+*
+*
+*
+* ARGUMENTS: argc argv
+*
+*
+*
+* ARGUMENT     TYPE     I/O DESCRIPTION
+* --------     ----     --- -----------
+* argc         int      I   the number of command line arguments
+* argv         char **  I   the charachter arrary vector to list the command line arguments
+*
+* RETURNS: EXIT_SUCCESS or EXIT_FAILURE
+*
+*This is the entry point of program execution from the operating system and shell.
+*
+*********************************************************/
 int main(int argc, char** argv) {
     /*As a design consideration minimize stuff in the main function for no particular reason other than readability and modulation */
     int i;
@@ -147,7 +167,6 @@ int main(int argc, char** argv) {
     return (EXIT_SUCCESS); /*return EXIT_SUCCESS indication successful completion of the application*/
 }
 
-/*********************************************************************/
 
 
 /********************************************************
@@ -204,7 +223,6 @@ int printApplicationHeaderToConsole() {
 *
 *
 *********************************************************/
-
 int readConfigurationFile(){
 	
 	FILE *config_file;
@@ -270,15 +288,12 @@ int readConfigurationFile(){
  *
  * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
  *
- *
- *
- *********************************************************/
-
-/* TODO print a variable argument list log file 
+ * TODO print a variable argument list log file 
  * https://github.com/otikkito/cWorld/blob/master/logger.c
  * https://github.com/otikkito/cWorld/blob/master/varguments.c
  * ===Rember to flush the buffer with fflush() when logging===
- */
+ *
+ *********************************************************/
 int printLogFile(FILE *f, char *string) {
     char timestring[100];
     time_t currenttime = time(0);
@@ -288,8 +303,6 @@ int printLogFile(FILE *f, char *string) {
 	
 	return(EXIT_SUCCESS);
 }
-
-/*********************************************************************/
 
 /********************************************************
 *
@@ -312,7 +325,6 @@ int printLogFile(FILE *f, char *string) {
 *
 *
 *********************************************************/
-
 int initializeSignalHandles(){
    /* Link that talks about different types of signals: https://en.wikipedia.org/wiki/Signal_(IPC)#SIGTRAP */
     struct sigaction action;
@@ -396,6 +408,7 @@ int initializeSignalHandles(){
 
 	return(EXIT_SUCCESS);
 }
+
 /********************************************************
  *
  *
@@ -453,7 +466,6 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
     
 }
 
-/*********************************************************************/
 /********************************************************
  *
  *
@@ -476,7 +488,6 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
  *
  *
  *********************************************************/
-
 /* can also be done be running ps -p PID -i comm= */
 const char* getProcessNameByPid(pid_t pid) {
     FILE *f;
@@ -500,9 +511,6 @@ const char* getProcessNameByPid(pid_t pid) {
     } 
     return name;
 }
-/*********************************************************************/
-
-
 
 /********************************************************
  *
@@ -530,7 +538,6 @@ void bye(void) {
 	printLogFile(fp,"The application has ended now");
     fclose(fp);
 }
-
 
 /*
  *References:

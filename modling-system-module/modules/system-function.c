@@ -442,7 +442,8 @@ pid_t getPidByProcessName(const char* processName){ //processName is one of the 
 /********************************************************
 *
 *
-* FUNCTION NAME: etNumberOfProcessorCoresOnSystem
+* FUNCTION NAME: getNumberOfProcessorCoresOnSystem
+* 
 *
 *
 *
