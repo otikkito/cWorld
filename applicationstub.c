@@ -260,7 +260,7 @@ int readConfigurationFile(){
 			
 			if((strcmp(leftConfigDirective,"initialize_signal_handler")) == 0){
 					cd.useSignalHandler = true;
-			]
+			}
 		}
 	}
 	//close the file
