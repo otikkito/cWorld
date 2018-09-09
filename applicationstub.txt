@@ -28,6 +28,11 @@ Design considerations:
 18) Functions should return EXIT_SUCCESS or EXIT_FAILURE given the task of the function indicating if the task was 
      completed or not. EXIT_SUCCESS should be at the end of the function.
 
+	 
+EXIT_FAILURE  1 or non-zero value
+EXIT_SUCCESS  0
+true 1
+false 0
     
 Nasa naming convention
 • Variables: Use lower-case words separated by underscores.

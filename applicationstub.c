@@ -60,7 +60,8 @@
  * 10) Fix the application log so that it displays the time the application for terminated
  * 11) Correct the naming convention of functions and variables to match the nasa-c-style.
  * 12) Store in a variable the start time of the application in order to see how long the application has been running.
- * 13) ...
+ * 13) Fix in the logging facility the gap between logs except for the termination and start of a new application invocation.
+ * 14) ...
  */
  
 
@@ -146,8 +147,11 @@ int main(int argc, char** argv) {
     printApplicationHeaderToConsole();
     printLogFile(fp, "Application started.\n");
     
-	if(readConfigurationFile()){
-		printf("Was able to read configuration file.\n");
+	int rc;
+	rc = readConfigurationFile();
+	
+	if(rc == EXIT_SUCCESS){
+			printLogFile(fp,"Successfully read the configuration file.");
 	}
 	
     /*
@@ -160,9 +164,8 @@ int main(int argc, char** argv) {
      * https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
      */
    
-	printLogFile(fp, "This is before the sleep");
-	
-    sleep(60);
+		
+    sleep(6000);
     
     printLogFile(fp, "Application terminated.\n");
  
@@ -235,7 +238,7 @@ int readConfigurationFile(){
 	
 	if(config_file == NULL){
 		perror("Unable to open the configuration file.\n");
-		printLogFile(fp,"Unable to open the configuration file for the applicationstub.");
+		printLogFile(fp,"Unable to open the configuration file for the applicationstub.c");
 		return EXIT_FAILURE;
 	}
 	
@@ -257,16 +260,24 @@ int readConfigurationFile(){
 			
 			if((strcmp(leftConfigDirective,"initialize_signal_handler")) == 0){
 					cd.useSignalHandler = true;
-			
-			
-			}
+			]
 		}
 	}
 	//close the file
 	
-	fclose(config_file);
 	
-	return EXIT_SUCCESS;
+	int rc;
+	rc = fclose(config_file);
+	
+	if(rc == 0){
+		return EXIT_SUCCESS;
+	}
+	else{
+		perror("Unable to close the configuration file.");
+		return EXIT_FAILURE;
+	}
+	
+	
 }
 
 /********************************************************
