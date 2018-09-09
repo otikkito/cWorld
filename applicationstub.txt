@@ -37,7 +37,7 @@ false 0
 Nasa naming convention
 • Variables: Use lower-case words separated by underscores.
 • Function names: Capitalize the first letter of each word; do not use
-   underscores.
+   underscores. "Howevr I use first letter lowercase and procedding words connected but capitalize for now."
 • Constants: Use upper-case words separated by underscores.
 
 
