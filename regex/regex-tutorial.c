@@ -68,6 +68,13 @@ certainly he never clearly explained it until I read the work
 above. 
 */
 
+/*
+*source: codeproject
+*1)Compile the expression
+*2)Use that expression
+*3)Free the compiled expression when you are done with it.
+
+*/
 char array[] = "This work is the result of research into the files of several law firms dating back to around 1915.";
 
 
