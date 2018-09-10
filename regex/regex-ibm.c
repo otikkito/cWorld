@@ -6,8 +6,7 @@
 /* To find out more "man regcomp"
 int regcomp(regex_t *restrict, const char *restrict, int);
 size_t regerror(int, const regex_t *restrict, char *restrict, size_t);
-int regexec(const regex_t *restrict, const char *restrict, size_t,
-regmatch_t [restrict], int);
+int regexec(const regex_t *restrict, const char *restrict, size_t, regmatch_t [restrict], int);
 void regfree(regex_t *);
 */
 int main(){
@@ -48,6 +47,6 @@ int main(){
 		printf("failed to ERE match '%s' with '%s', returning %d.\n", string, pattern, rc);
 	}
 	printf("The return code of regexec() is : %d\n",rc);
-	 
+	//printf("the pattern match is 
 	regfree(&preg);
 }
