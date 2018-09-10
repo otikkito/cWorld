@@ -127,7 +127,7 @@ int main(int argc, char** argv) {
     /*As a design consideration minimize stuff in the main function for no particular reason other than readability and modulation */
     int i;
     
-    initializeSignalHandles();
+    
     i = atexit(bye);
     if (i != 0) {
         perror("Unable to set atexit()");
@@ -154,6 +154,9 @@ int main(int argc, char** argv) {
 			printLogFile(fp,"Successfully read the configuration file.");
 	}
 	
+	if(cd.useSignalHandler){
+		initializeSignalHandles();
+	}
     /*
      * Starting place of the application and application logic. Add code below and remember 
      * to do proper logging and handling of errors by checking return codes! The main
