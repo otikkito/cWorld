@@ -48,5 +48,6 @@ int main(){
 		printf("failed to ERE match '%s' with '%s', returning %d.\n", string, pattern, rc);
 	}
 	printf("The return code of regexec() is : %d\n",rc);
+	 
 	regfree(&preg);
 }
