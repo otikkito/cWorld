@@ -10,21 +10,46 @@ Abstract Data types
 
 
 
-"Abstract Data Type: ADT may be defined as a set of data values and associated operations that are precisely specified independent of any particular implementation. Thus an Abstract Data Type is an organized collection of information and a set of operations used to manage that information. The set of operations defines the interface of the ADT. As long as the ADT fulfills the conditions of the interface, it doesn’t really matter how the ADT is implemented. Since, in ADT, the data values and operations are defined with mathematical precision, rather than as an implementation in a computer language, we may reason about effects of the operations, relations to other abstract data types whether a program implements the data type etc. One of the simplest abstract data type is the stack data type for which functions might be provided to create an empty stack, to push values onto a stack and to pop values from a stack.
+"Abstract Data Type: ADT may be defined as a set of data values and associated 
+operations that are precisely specified independent of any particular implementation.
+Thus an Abstract Data Type is an organized collection of information and a set of
+operations used to manage that information. The set of operations defines the 
+interface of the ADT. As long as the ADT fulfills the conditions of the interface, 
+it doesn’t really matter how the ADT is implemented. Since, in ADT, the data values 
+and operations are defined with mathematical precision, rather than as an implementation 
+in a computer language, we may reason about effects of the operations, relations to other 
+abstract data types whether a program implements the data type etc. One of the simplest 
+abstract data type is the stack data type for which functions might be provided to create 
+an empty stack, to push values onto a stack and to pop values from a stack.
 
-The basic difference between abstract data type (ADT) and concrete data type is that the latter allow us to look at the concrete representation, whereas the former hide the representation from us. An ADT may be pure ADT or Updatable ADT. A pure ADT is one where all operations are pure functions. This means that operations have no side effects. In particular, they do not modify or update there input arguments. They just use these arguments to generate output, which are fresh values of ADT (or of other types). Most concrete types are pure. For example, no operation on integers actually modifies an integer. Instead, all the operations like ‘+’ produce fresh outputs.
+The basic difference between abstract data type (ADT) and concrete data type is 
+that the latter allow us to look at the concrete representation, whereas the former
+ hide the representation from us. An ADT may be pure ADT or Updatable ADT. A pure ADT 
+ is one where all operations are pure functions. This means that operations have no 
+ side effects. In particular, they do not modify or update there input arguments. 
+ They just use these arguments to generate output, which are fresh values of ADT 
+ (or of other types). Most concrete types are pure. For example, no operation on integers
+ actually modifies an integer. Instead, all the operations like ‘+’ produce fresh outputs.
 
-An updatable ADT is one where some operations actually change values of the ADT. For example, suppose we had an operation called ‘pop’ that took a stack as an argument and modified it. (“in place”, “destructively”) by removing the highest priority item. This operation would be considered impure and the whole ADT would then be impure also. An ADT may be user defined ADT.
+An updatable ADT is one where some operations actually change values of the ADT. 
+For example, suppose we had an operation called ‘pop’ that took a stack as an argument 
+and modified it. (“in place”, “destructively”) by removing the highest priority item. 
+This operation would be considered impure and the whole ADT would then be impure also. 
+An ADT may be user defined ADT.
 
 We know that an Abstract Data Type is a data type that satisfies the following two conditions:
 
 The representation, or definition, of the type and the operations are contained in a single syntactic unit.
-The representation of objects of the type is hidden from the program units that use the type, so only direct operations possible on those objects are those provided in the type’s definition.
+The representation of objects of the type is hidden from the program units that use the type,
+ so only direct operations possible on those objects are those provided in the type’s definition.
 A user defined Abstract Data Type should provide:
 
 A type definition that allows program units to declare variables of the type, but hides the representation of these variables.
 A set of operations for manipulating objects of the type.
-An example of a user defined abstract data type is structure. ’C’ provides four basic types: int, char, float and double. However, ‘C’ also provides the programmer with the ability to define his/her own types. Structure is one such example. A structure is an aggregate of different parts, where each part is of some existing type.
+An example of a user defined abstract data type is structure.
+ ’C’ provides four basic types: int, char, float and double. However, ‘C’ also provides 
+ the programmer with the ability to define his/her own types. Structure is one such example.
+ A structure is an aggregate of different parts, where each part is of some existing type.
 
 struct abc
 
@@ -51,9 +76,16 @@ A set of operations on one or more of the component items.
 Defines rules as to how components relates to each other and to the structure as a whole (assertions).
 Data Structures:
 
-A data structure may be static or dynamic. A static data structure has a fixed size. This meaning is different from the meaning of static modifier. Arrays are static; once we define the number of elements it can hold, the number doesn’t change. A dynamic data structure grows and shrinks at execution time as required by its contents. A dynamic data structure is implemented using links.
+A data structure may be static or dynamic. A static data structure has a fixed size. This meaning is
+ different from the meaning of static modifier. Arrays are static; once we define the number of elements
+ it can hold, the number doesn’t change. A dynamic data structure grows and shrinks at execution
+ time as required by its contents. A dynamic data structure is implemented using links.
 
-Data structures may further be categorized into linear data structures and non-linear data structures. In linear data structures every component has a unique predecessor and successor, except first and last elements, whereas in case of non-linear data structures, no such restriction is there as elements may be arranged in any desired fashion restricted by the way we use to represent such types."[4]
+Data structures may further be categorized into linear data structures and non-linear data
+ structures. In linear data structures every component has a unique predecessor and successor, 
+ except first and last elements, whereas in case of non-linear data structures, no such 
+ restriction is there as elements may be arranged in any desired fashion restricted by the
+ way we use to represent such types."[4]
 
 
 
