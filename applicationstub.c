@@ -1,5 +1,5 @@
 /****************************************************************
- *FILE NAME:applicationstub.c
+ *FILE NAME: applicationstub.c
  * Please see end of file for references
  * www.kjoseph-it.com 
  *
@@ -24,7 +24,7 @@
  *----   	-----------
  *
  *ABNORMAL TERMINATION CONDITIONS, ERROR AND WARINGING MESSAGES:
- *-Some of the abnormal conditions will exit the program using the bye funcction and EXIT_FAILURE or EXIT_SUCCESS...
+ *-Some of the abnormal conditions will exit the program using the bye (atexit) function and EXIT_FAILURE or EXIT_SUCCESS...
  *
  *ASSUMPTIONS, CONSTRAINTS, RESTRICTIONS
  *
@@ -47,7 +47,8 @@
 
 /*
  *Global TODO
- * 1) Find a way to create a file template in the IDE for c files (This can be done by using tools->Template). I would like use the applicationstub for template after its cleaned up
+ * 1) Find a way to create a file template in the IDE for c files (This can be done by using tools->Template). 
+      I would like use the applicationstub for template after its cleaned up
  * 2) Highlight TODO Tools/Options/Team/Action Items
  * 3) Continue to clean up code and correct typos
  * 4) Remove some of the notes
@@ -72,9 +73,9 @@
 #include <syslog.h>
 #include <string.h> //memset
 #include <stdbool.h> //true,false
-//#include <signal.h>
-//#include <errno.h>
-//#include <sys/types.h>
+#include <signal.h> //sigaction
+#include <errno.h>
+#include <sys/types.h>
 
 /*Preprocessor commands*/
 #define MAXLOGENTRYSIZE 300
@@ -95,7 +96,7 @@ https://stackoverflow.com/questions/8496284/terminology-forward-declaration-vers
 */
 int printApplicationHeaderToConsole(); 
 int readConfigurationFile();
-int printLogFile(FILE *f, char *string);
+int printLogFile(FILE *f, char *string); //already contains newline at the end of the string.
 void signalHandler();
 void bye(void);
 const char* getProcessNameByPid(pid_t pid);
@@ -127,11 +128,10 @@ int main(int argc, char** argv) {
     /*As a design consideration minimize stuff in the main function for no particular reason other than readability and modulation */
     int i;
     
-    
     i = atexit(bye);
     if (i != 0) {
         perror("Unable to set atexit()");
-        printLogFile(fp,"Unable to set atexit()\n");
+        printLogFile(fp,"Unable to set atexit()");
         exit(EXIT_FAILURE);
     }
 
@@ -145,7 +145,7 @@ int main(int argc, char** argv) {
     }
 
     printApplicationHeaderToConsole();
-    printLogFile(fp, "Application started.\n");
+    printLogFile(fp, "Application started.");
     
 	int rc;
 	rc = readConfigurationFile();
@@ -170,7 +170,7 @@ int main(int argc, char** argv) {
 		
     sleep(6000);
     
-    printLogFile(fp, "Application terminated.\n");
+    printLogFile(fp, "Application terminated.");
  
     return (EXIT_SUCCESS); /*return EXIT_SUCCESS indication successful completion of the application*/
 }
@@ -234,7 +234,6 @@ int readConfigurationFile(){
 	FILE *config_file;
 	char line[MAXCONFIGLINESIZE];
 	
-	
 	config_file = fopen("applicationstub.conf","r");
 	//Initialize the global configuration directive variable.
 	cd.useSignalHandler = false;
@@ -266,9 +265,8 @@ int readConfigurationFile(){
 			}
 		}
 	}
+	
 	//close the file
-	
-	
 	int rc;
 	rc = fclose(config_file);
 	
@@ -476,8 +474,6 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
             exit(EXIT_FAILURE);
     }
     
-    
-    
 }
 
 /********************************************************
@@ -549,7 +545,8 @@ const char* getProcessNameByPid(pid_t pid) {
  *********************************************************/
 void bye(void) {
     printf("The program is now shutting down.\n");
-	printLogFile(fp,"The application has ended now");
+	printLogFile(fp,"The application has ended now.");
+	printLogFile(fp,"------------------------------");
     fclose(fp);
 }
 
