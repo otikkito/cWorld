@@ -58,7 +58,8 @@ struct abc
 float y;
 
 };
-The above structure definition does not create any variables, rather it creates a new type. Variables of this type may be created in a similar way to variables of a built in type.
+The above structure definition does not create any variables, rather it creates a new type. 
+Variables of this type may be created in a similar way to variables of a built in type.
 
 struct abc a;
 The typedef keyword allows us to create new type names for our new types.

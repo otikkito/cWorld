@@ -59,12 +59,13 @@
 
 int main(){
     
-    printf("Welcome tot the application-stub Test harness\n"); 
+    printf("Welcome to the application-stub Test harness\n"); 
     printf("The process id of the test harness is %u\n",getpid());
     printf("-------------------------------------------------\n");
     
     
    // kill(get_pid_by_process_name("applicationstub"),SIGINT);
+   
     
     printf("Thanks for using the application-stub Test harness.\nWe are now closing down.\n");
     printf("-------------------------------------------------\n");
