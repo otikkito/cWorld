@@ -3,7 +3,7 @@
 *
 *
 *
-*PURPOSE: To find a good way of measure time events within an application.
+*PURPOSE: To find a good way of meassuring time events within an application.
 * 
 *
 *FILE REFERENCES:
@@ -35,7 +35,7 @@
 *
 *Date		Author		Change ID	Release		Description of Change
 *----   	------  	---------   -------     ---------------------
-*8/25/2018  Kito Joseph                         This file is older but anotated that this is the date that I included the file format and function headers. 
+*8/25/2018  Kito Joseph     01                    This file is older but anotated that this is the date that I included the file format and function headers. 
 *
 *ALGORITHM (PDL)
 */

@@ -79,7 +79,7 @@
 * ARGUMENT     TYPE    I/O DESCRIPTION
 * --------     ----    --- -----------
 *argc          int      I  the number of command line arguments
-*argv          char **  I  the char arraay vector for the command line arguments
+*argv          char **  I  the char array vector for the command line arguments
 *
 * RETURNS:
 *

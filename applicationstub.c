@@ -278,7 +278,6 @@ int readConfigurationFile(){
 		return EXIT_FAILURE;
 	}
 	
-	
 }
 
 /********************************************************
