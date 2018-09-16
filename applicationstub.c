@@ -75,6 +75,7 @@
 #include <stdbool.h> //true,false
 #include <signal.h> //sigaction
 #include <errno.h>
+#include <time.h>
 #include <sys/types.h>
 
 /*Preprocessor commands*/
@@ -88,7 +89,8 @@ pid_t processid; /*TODO try to use more descriptive name and correct name format
 struct configurationDirectives{
 	bool useSignalHandler;
 }cd;
-
+struct timespec start_time;
+struct timespec elapsed_time;
 
 /*
 Function prototypes or function declarations: //EXIT_SUCCESS or EXIT_FAILURE
@@ -128,6 +130,14 @@ int main(int argc, char** argv) {
     /*As a design consideration minimize stuff in the main function for no particular reason other than readability and modulation */
     int i;
     
+	/*Get the start time of the application to see how long the appalication has been running.*/
+	
+	i = clock_gettime( CLOCK_MONOTONIC,&start_time);
+    if(i == -1){
+        perror("clock_gettime");
+        exit(EXIT_FAILURE);
+    }
+	
     i = atexit(bye);
     if (i != 0) {
         perror("Unable to set atexit()");
@@ -171,8 +181,8 @@ int main(int argc, char** argv) {
     sleep(6000);
     
     printLogFile(fp, "Application terminated.");
- 
-    return (EXIT_SUCCESS); /*return EXIT_SUCCESS indication successful completion of the application*/
+   
+   return (EXIT_SUCCESS); /*return EXIT_SUCCESS indication successful completion of the application*/
 }
 
 /********************************************************
