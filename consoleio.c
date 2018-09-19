@@ -1,3 +1,42 @@
+/****************************************************************
+*FILE NAME: consoleio.c
+*
+*
+*
+*PURPOSE: 
+* 
+*
+*FILE REFERENCES:
+*
+*NAME		I/O		Description
+*----           ---             -----------
+*
+*EXTERNAL VARIABLE:
+*SOURCE: <         >
+*
+*NAME	  TYPE    	I/O		Description
+*----     ----          ---             -----------
+*
+*EXTERNAL REFERENCES:
+*
+*Name		Description
+*----   	-----------
+*
+*ABNORMAL ERMINATION CONDITIONS, ERROR AND WARINGING MESSAGES:
+*
+*ASSUMPTIONS, CONSTRAINTS, RESTRICTIONS
+*
+*NOTES:
+*
+*REQUIREMENTS/FUNCTIONAL SPECIFICATIONS REFERENCES:
+*
+*DEVELOPMENT HISTORY:
+*
+*Date		Author		Change ID	Release		Description of Change
+*----   	------  	---------   -------     ---------------------
+*
+*ALGORITHM (PDL)
+*/
 #include <stdio.h>
 
 /*
@@ -5,7 +44,27 @@
  */
 
 
-
+/********************************************************
+*
+*
+* FUNCTION NAME: main
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 int main(){
 	
 	int a,b,c,sum;

@@ -1,3 +1,42 @@
+/****************************************************************
+*FILE NAME: logger.c
+*
+*
+*
+*PURPOSE: 
+* 
+*
+*FILE REFERENCES:
+*
+*NAME		I/O		Description
+*----           ---             -----------
+*
+*EXTERNAL VARIABLE:
+*SOURCE: <         >
+*
+*NAME	  TYPE    	I/O		Description
+*----     ----          ---             -----------
+*
+*EXTERNAL REFERENCES:
+*
+*Name		Description
+*----   	-----------
+*
+*ABNORMAL ERMINATION CONDITIONS, ERROR AND WARINGING MESSAGES:
+*
+*ASSUMPTIONS, CONSTRAINTS, RESTRICTIONS
+*
+*NOTES:
+*
+*REQUIREMENTS/FUNCTIONAL SPECIFICATIONS REFERENCES:
+*
+*DEVELOPMENT HISTORY:
+*
+*Date		Author		Change ID	Release		Description of Change
+*----   	------  	---------   -------     ---------------------
+*
+*ALGORITHM (PDL)
+*/
 #include <stdio.h>
 #include <time.h>
 #include <syslog.h>
@@ -36,7 +75,27 @@ const char* get_process_name_by_pid(pid_t pid);
 
 /*Global Variables*/
 FILE *fp;
-
+/********************************************************
+*
+*
+* FUNCTION NAME: main
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 int main(){
 	
 	char logfile[]= "./text-data-files/logfile.txt";
@@ -58,7 +117,7 @@ int main(){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: printf_log
 *
 *
 *
@@ -89,17 +148,17 @@ int print_log(char *string){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: print_syslog
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: string
 *
 *
 *
-* ARGUMENT     TYPE I/O DESCRIPTION
-* --------     ---- --- -----------
-*
+* ARGUMENT     TYPE   I/O DESCRIPTION
+* --------     ----   --- -----------
+* string       char * I    a pointer to a character array
 *
 *
 * RETURNS:
@@ -117,18 +176,18 @@ int print_syslog(char *string){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: print_logfile
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: f, string
 *
 *
 *
-* ARGUMENT     TYPE I/O DESCRIPTION
-* --------     ---- --- -----------
-*
-*
+* ARGUMENT     TYPE    I/O DESCRIPTION
+* --------     ----    --- -----------
+* f            FILE *  I    a pointr to a file stream
+* string       char *  I    a pointer to a character array
 *
 * RETURNS:
 *
@@ -146,18 +205,19 @@ int print_logfile(FILE *f, char *string){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: print_logfile_pid
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: fp, string, pid
 *
 *
 *
-* ARGUMENT     TYPE I/O DESCRIPTION
-* --------     ---- --- -----------
-*
-*
+* ARGUMENT     TYPE    I/O DESCRIPTION
+* --------     ----    --- -----------
+* fp           FILE *  I    a pointer to a file string
+* string       char *  I    a pointer to a character array
+* pid          pid_t   I    the pid of the process
 *
 * RETURNS:
 *
@@ -175,7 +235,7 @@ int print_logfile_pid(FILE *fp, char *string, pid_t pid){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: print_logfile_va
 *
 *
 *

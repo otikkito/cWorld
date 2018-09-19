@@ -1,7 +1,70 @@
+/****************************************************************
+*FILE NAME: crefresh.c
+*
+*
+*
+*PURPOSE: 
+* 
+*
+*FILE REFERENCES:
+*
+*NAME		I/O		Description
+*----           ---             -----------
+*
+*EXTERNAL VARIABLE:
+*SOURCE: <         >
+*
+*NAME	  TYPE    	I/O		Description
+*----     ----          ---             -----------
+*
+*EXTERNAL REFERENCES:
+*
+*Name		Description
+*----   	-----------
+*
+*ABNORMAL ERMINATION CONDITIONS, ERROR AND WARINGING MESSAGES:
+*
+*ASSUMPTIONS, CONSTRAINTS, RESTRICTIONS
+*
+*NOTES:
+*
+*REQUIREMENTS/FUNCTIONAL SPECIFICATIONS REFERENCES:
+*
+*DEVELOPMENT HISTORY:
+*
+*Date		Author		Change ID	Release		Description of Change
+*----   	------  	---------   -------     ---------------------
+*
+*ALGORITHM (PDL)
+*/
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
 #include "crefresh.h"
+
+
+/********************************************************
+*
+*
+* FUNCTION NAME: main
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
+
 
 /*This program is try to use all the functionality of c basically I will go 
  * through all the keywords in c:
@@ -62,6 +125,29 @@ int main(){
 	return 0;
 }
 
+/********************************************************
+*
+*
+* FUNCTION NAME:myfunction
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS: returns 0
+*
+*
+*
+*********************************************************/
+
+
 /*Pass by value*/
 int myfunction(struct datastruct a, struct datastruct b){
 	int ret;
@@ -82,6 +168,29 @@ int myfunction(struct datastruct a, struct datastruct b){
 
 	return 0; //for now
 }
+
+/********************************************************
+*
+*
+* FUNCTION NAME: simplefunction
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
+
 
 /*function that will pass by reference*/
 int simpleFunction(struct datastruct *a, struct datastruct *b){
