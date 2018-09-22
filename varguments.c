@@ -1,3 +1,42 @@
+/****************************************************************
+*FILE NAME: varguments.c
+*
+*
+*
+*PURPOSE: 
+* 
+*
+*FILE REFERENCES:
+*
+*NAME		I/O		Description
+*----           ---             -----------
+*
+*EXTERNAL VARIABLE:
+*SOURCE: <         >
+*
+*NAME	  TYPE    	I/O		Description
+*----     ----          ---             -----------
+*
+*EXTERNAL REFERENCES:
+*
+*Name		Description
+*----   	-----------
+*
+*ABNORMAL ERMINATION CONDITIONS, ERROR AND WARINGING MESSAGES:
+*
+*ASSUMPTIONS, CONSTRAINTS, RESTRICTIONS
+*
+*NOTES:
+*
+*REQUIREMENTS/FUNCTIONAL SPECIFICATIONS REFERENCES:
+*
+*DEVELOPMENT HISTORY:
+*
+*Date		Author		Change ID	Release		Description of Change
+*----   	------  	---------   -------     ---------------------
+*
+*ALGORITHM (PDL)
+*/
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -18,6 +57,27 @@ void print_log_va(FILE *fp,int argcount,...);
 /*Global variables*/
 char log_string[MAXLOGSTRING];
 
+/********************************************************
+*
+*
+* FUNCTION NAME: main
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 
 /*man stdarg.h*/
 int main(){
@@ -38,6 +98,28 @@ int main(){
     return EXIT_SUCCESS;
 }
 
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
+
 /* This is a variadic function
  * man stdarg.h
  * Also check out vfprintf() man stdio.h
@@ -57,6 +139,28 @@ int FunctionA(int argument_count,...){
     
     return 0;
 }
+
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 
 /* https://stackoverflow.com/questions/14358497/what-is-the-difference-between-fprintf-and-vfprintf-in-c*/
 /*int vfprintf(FILE *stream, const char *format, va_list ap);*/
