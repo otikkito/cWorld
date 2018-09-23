@@ -236,7 +236,7 @@ int printApplicationHeaderToConsole() {
 *
 * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
 *
-*
+*TODO: I need to terminate the configuartion with a semicolon
 *
 *********************************************************/
 int readConfigurationFile(){
@@ -266,7 +266,7 @@ int readConfigurationFile(){
 			char rightConfigDirective[MAXCONFIGLINESIZE];
 			memset(leftConfigDirective,'\0',MAXCONFIGLINESIZE);
 			memset(rightConfigDirective,'\0',MAXCONFIGLINESIZE);
-			
+			//I also have to include the semicolon to terminate the line
 			sscanf(line,"%s = %s",leftConfigDirective,rightConfigDirective);			
 			//printf("The left value is:%s and the right value is %s\n",leftConfigDirective,rightConfigDirective);
 			
@@ -499,7 +499,7 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
  *
  * ARGUMENT     TYPE    I/O DESCRIPTION
  * --------     ----    --- -----------
- *pid           pid_t   I   This is the proccess ID of the application.
+ *pid           pid_t   I   This is the proccess id of the application.
  *
  *
  * RETURNS: A pointer to a constant char

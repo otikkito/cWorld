@@ -3,7 +3,7 @@
 *
 *
 *
-*PURPOSE: 
+*PURPOSE: explore the functionality of variadic functions
 * 
 *
 *FILE REFERENCES:
@@ -64,7 +64,7 @@ char log_string[MAXLOGSTRING];
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: none
 *
 *
 *
@@ -73,7 +73,7 @@ char log_string[MAXLOGSTRING];
 *
 *
 *
-* RETURNS:
+* RETURNS: EXIT_SUCCESS or EXIT_FAILURE
 *
 *
 *
@@ -101,18 +101,18 @@ int main(){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: FunctionA
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS:argument_count, variadic argument
 *
 *
 *
-* ARGUMENT     TYPE I/O DESCRIPTION
-* --------     ---- --- -----------
-*
-*
+* ARGUMENT      TYPE I/O DESCRIPTION
+* --------      ---- --- -----------
+*argument_oount int  I   the number of  variables that are in this list
+*...            
 *
 * RETURNS:
 *
@@ -143,20 +143,21 @@ int FunctionA(int argument_count,...){
 /********************************************************
 *
 *
-* FUNCTION NAME:
+* FUNCTION NAME: print_log_va
 *
 *
 *
-* ARGUMENTS:
+* ARGUMENTS: fp,argcount
 *
 *
 *
-* ARGUMENT     TYPE I/O DESCRIPTION
-* --------     ---- --- -----------
+* ARGUMENT     TYPE   I/O DESCRIPTION
+* --------     ----   --- -----------
+* fp           FILE * I   pointer to a file
+* argcount     int    I   the number of arguments that are being passsed in
+* ...          
 *
-*
-*
-* RETURNS:
+* RETURNS: void
 *
 *
 *
