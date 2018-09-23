@@ -40,6 +40,7 @@
  *8/19/2018      Kito Joseph      2                     Continuing correction/refining documentation and file format/prolog to form a standard file format for application development.
  *8/26/2018      Kito Joseph      3                     Formating the file to conform to the nasa-c-style
  *9/2/2018       Kito Joseph      4                     Added the configuration file reading ability to th applicationstub.c
+ *9/23/2018      Kito Joseph      5                     Incuded the application uptime to the application stub. It will print it to the application log
  *
  *ALGORITHM (PDL)
  *
@@ -103,6 +104,7 @@ void signalHandler();
 void bye(void);
 const char* getProcessNameByPid(pid_t pid);
 int initializeSignalHandles();
+int printApplicationUptime();
 
 
 /********************************************************
@@ -180,7 +182,9 @@ int main(int argc, char** argv) {
 		
     sleep(6000);
     
-    printLogFile(fp, "Application terminated.");
+	
+
+   printLogFile(fp, "Application terminated.");
    
    return (EXIT_SUCCESS); /*return EXIT_SUCCESS indication successful completion of the application*/
 }
@@ -532,6 +536,47 @@ const char* getProcessNameByPid(pid_t pid) {
 }
 
 /********************************************************
+*
+*
+* FUNCTION NAME: printApplicationUptime()
+*
+*
+*
+* ARGUMENTS: none
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+* N/A
+*
+*
+* RETURNS: EXIT_SUCCESS or EXIT_FAILURE
+*
+* The granularity of this function will be in mins at this time. If less than one minute it will indicate 0
+*
+*********************************************************/
+int printApplicationUptime(){
+	
+	int mins;
+	int i;
+	char logentry[MAXLOGENTRYSIZE];
+	
+	i = clock_gettime( CLOCK_MONOTONIC,&elapsed_time);
+    if(i == -1){
+        perror("clock_gettime");
+        exit(EXIT_FAILURE);
+    }
+	
+	mins = (elapsed_time.tv_sec -start_time.tv_sec)/60;
+	sprintf(logentry,"This applicaation has an uptime of %d mins",mins);
+	printLogFile(fp,logentry);
+	//need to add variadic argumnts for the printlogfile. 
+	//printLogFile(fp,"The application has been up for %d mins"
+	
+	return EXIT_SUCCESS;
+}
+/********************************************************
  *
  *
  * FUNCTION NAME: bye - it performs cleanup at exit of the application.
@@ -554,6 +599,7 @@ const char* getProcessNameByPid(pid_t pid) {
  *********************************************************/
 void bye(void) {
     printf("The program is now shutting down.\n");
+	printApplicationUptime();
 	printLogFile(fp,"The application has ended now.");
 	printLogFile(fp,"------------------------------");
     fclose(fp);
