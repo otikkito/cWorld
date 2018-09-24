@@ -40,7 +40,7 @@
  *8/19/2018      Kito Joseph      2                     Continuing correction/refining documentation and file format/prolog to form a standard file format for application development.
  *8/26/2018      Kito Joseph      3                     Formating the file to conform to the nasa-c-style
  *9/2/2018       Kito Joseph      4                     Added the configuration file reading ability to th applicationstub.c
- *9/23/2018      Kito Joseph      5                     Incuded the application uptime to the application stub. It will print it to the application log
+ *9/23/2018      Kito Joseph      5                     Included the application uptime to the application stub. It will print it to the application log
  *
  *ALGORITHM (PDL)
  *
@@ -61,7 +61,7 @@
  * 9) Skeleton (computer programming) wiki
  * 10) Fix the application log so that it displays the time the application for terminated
  * 11) Correct the naming convention of functions and variables to match the nasa-c-style.
- * 12) Store in a variable the start time of the application in order to see how long the application has been running.
+ * 12) Store in a variable the start time of the application in order to see how long the application has been running. --first implentation done next step is to add seconds
  * 13) Fix in the logging facility the gap between logs except for the termination and start of a new application invocation.
  * 14) ...
  */
@@ -133,7 +133,6 @@ int main(int argc, char** argv) {
     int i;
     
 	/*Get the start time of the application to see how long the appalication has been running.*/
-	
 	i = clock_gettime( CLOCK_MONOTONIC,&start_time);
     if(i == -1){
         perror("clock_gettime");
@@ -260,7 +259,7 @@ int readConfigurationFile(){
 	
 	//populate the global cconfiguration structure
 	while((fgets(line,MAXCONFIGLINESIZE,config_file)) != NULL){
-		if((line[0] == '#') || (line[0] == ' ' ) || (line[0] == '\n')) { 
+		if((line[0] == '#') || (line[0] == ' ' ) || (line[0] == '\n')) {  //this needs to be corrected and/or add a special character to thee begining of the configuration file indicating it is a config directive
 			continue;
 		}
 		else{
@@ -553,12 +552,13 @@ const char* getProcessNameByPid(pid_t pid) {
 *
 * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
 *
-* The granularity of this function will be in mins at this time. If less than one minute it will indicate 0
+* The granularity of this function will be in mins at this time. If less than one minute it will show 0
 *
 *********************************************************/
 int printApplicationUptime(){
 	
 	int mins;
+	int secs;
 	int i;
 	char logentry[MAXLOGENTRYSIZE];
 	
@@ -569,7 +569,8 @@ int printApplicationUptime(){
     }
 	
 	mins = (elapsed_time.tv_sec -start_time.tv_sec)/60;
-	sprintf(logentry,"This applicaation has an uptime of %d mins",mins);
+	secs = (elapsed_time.tv_sec - start_time.tv_sec)%60;
+	sprintf(logentry,"This applicaation has an uptime of %d mins and %d seconds",mins,secs);
 	printLogFile(fp,logentry);
 	//need to add variadic argumnts for the printlogfile. 
 	//printLogFile(fp,"The application has been up for %d mins"
