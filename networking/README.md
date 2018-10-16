@@ -1,8 +1,11 @@
 This will be the starting point of networking refresher and programming emulation.
 
 https://www.ietf.org/rfc.html  ---> Complete RFC
+
 https://tools.ietf.org/html/rfc791  ---> Internet Protocol
+
 http://beej.us/guide/bgnet/  ---> Network programming (windows/linux)
+
 http://www.internetsociety.org/  ---> Internet society
 
 ------------------------------------------------------------------------------------
