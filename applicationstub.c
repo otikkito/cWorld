@@ -223,7 +223,7 @@ int printApplicationHeaderToConsole() {
 /********************************************************
 *
 *
-* FUNCTION NAME: redConfigurationFile();
+* FUNCTION NAME: readConfigurationFile();
 *
 *
 *
