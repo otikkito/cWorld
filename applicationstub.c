@@ -76,7 +76,6 @@
 #include <stdbool.h> //true,false
 #include <signal.h> //sigaction
 #include <errno.h>
-#include <time.h>
 #include <sys/types.h>
 
 /*Preprocessor commands*/
