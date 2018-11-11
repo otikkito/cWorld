@@ -36,11 +36,11 @@
  *
  *Date		     Author       Change ID    Release	    Description of Change
  *----   	     ------  	  ---------    -------      ---------------------
- *2/22/2017      Kito Joseph      1			    Added a prolog.I am not sure if it should be prolog or file format...
- *8/19/2018      Kito Joseph      2                         Continuing correction/refining documentation and file format/prolog to form a standard file format for application development.
- *8/26/2018      Kito Joseph      3                         Formating the file to conform to the nasa-c-style
- *9/2/2018       Kito Joseph      4                         Added the configuration file reading ability to th applicationstub.c
- *9/23/2018      Kito Joseph      5                         Included the application uptime to the application stub. It will print it to the application log
+ *2/22/2017      Kito Joseph      1			            Added a prolog.I am not sure if it should be prolog or file format...
+ *8/19/2018      Kito Joseph      2                     Continuing correction/refining documentation and file format/prolog to form a standard file format for application development.
+ *8/26/2018      Kito Joseph      3                     Formating the file to conform to the nasa-c-style
+ *9/2/2018       Kito Joseph      4                     Added the configuration file reading ability to th applicationstub.c
+ *9/23/2018      Kito Joseph      5                     Included the application uptime to the application stub. It will print it to the application log
  *
  *ALGORITHM (PDL)
  *
@@ -104,6 +104,7 @@ void bye(void);
 const char* getProcessNameByPid(pid_t pid);
 int initializeSignalHandles();
 int printApplicationUptime();
+int printDebugInfo();
 
 
 /********************************************************
@@ -113,7 +114,7 @@ int printApplicationUptime();
 *
 *
 *
-* ARGUMENTS: argc argv
+* ARGUMENTS: argc, argv
 *
 *
 *
@@ -179,6 +180,8 @@ int main(int argc, char** argv) {
    
 		
     sleep(6000);
+	
+	//printApplicationUptime();
     
 	
 
@@ -349,7 +352,8 @@ int printLogFile(FILE *f, char *string) {
 *
 *********************************************************/
 int initializeSignalHandles(){
-   /* Link that talks about different types of signals: https://en.wikipedia.org/wiki/Signal_(IPC)#SIGTRAP */
+   /* Link that talks about different types of signals: https://en.wikipedia.org/wiki/Signal_(IPC)#SIGTRAP 
+   *https://en.wikipedia.org/wiki/Signal_(IPC)*/
     struct sigaction action;
     action.sa_handler = signalHandler;
     action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid of the offending function*/
@@ -376,9 +380,9 @@ int initializeSignalHandles(){
 	sigaction(SIGBUS, &action, NULL);
 	sigaction(SIGFPE, &action, NULL);
 	sigaction(SIGKILL, &action, NULL);
-	sigaction(SIGUSR1, &action, NULL);
+	sigaction(SIGUSR1, &action, NULL); //use to dump configuration file and other debug information
 	sigaction(SIGSEGV, &action, NULL);
-	sigaction(SIGUSR2, &action, NULL);
+	sigaction(SIGUSR2, &action, NULL);  //use to dump configuration file and other debug information
 	sigaction(SIGPIPE, &action, NULL);
 	sigaction(SIGALRM, &action, NULL);
 	sigaction(SIGTERM,&action, NULL);
@@ -483,6 +487,11 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
             fprintf(stdout, "Received SIGTERM from process with pid = %u \n", info->si_pid);
             syslog(LOG_ERR, "Received signal SIGTERM and will be shutting down application.c");
             exit(EXIT_FAILURE);
+		case SIGUSR1:
+			//This is terminating the program but this is not the behavior that we won't. I need to find out what the corrective actions that I need to take. 
+			printLogFile(fp,"The user has requested to dump debug data");
+		    printDebugInfo();
+			break;
     }
     
 }
@@ -513,10 +522,16 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
 const char* getProcessNameByPid(pid_t pid) {
     FILE *f;
     char* name = (char*) calloc(1024, sizeof (char));
+
     //Need to determine if RHEL 7 or 6 is being used. /etc/redhat-release
     if(pid == 0){
-        return "Kernel"; //This is the abstraction point. It abstracts systemd which should be included as well for better pin pointing.
+        return "Kernel"; //This is the abstraction point...better pin pointing.
     }
+	
+	if(pid ==1){//on rhel 7 and above
+	    return "Systemd";
+	}	
+	
     if (name) {
         sprintf(name, "/proc/%d/cmdline", pid);
         f = fopen(name, "r");
@@ -551,7 +566,7 @@ const char* getProcessNameByPid(pid_t pid) {
 *
 * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
 *
-* The granularity of this function will be in mins at this time. If less than one minute it will show 0
+* The granularity of this function will be in mins and seconds.
 *
 *********************************************************/
 int printApplicationUptime(){
@@ -576,6 +591,35 @@ int printApplicationUptime(){
 	
 	return EXIT_SUCCESS;
 }
+
+/********************************************************
+*
+*
+* FUNCTION NAME: printDebugInfo
+*
+*
+*
+* ARGUMENTS: none
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*N/A
+*
+*
+* RETURNS: EXIT_SUCCESS or EXIT_FAILURE
+*
+*
+*
+*********************************************************/
+int printDebugInfo(){
+
+
+		return EXIT_SUCCESS;
+}
+
+
 /********************************************************
  *
  *
