@@ -193,7 +193,7 @@ int main(int argc, char** argv) {
 /********************************************************
  *
  *
- * FUNCTION NAME: printApplicationHeaderToC`onsole
+ * FUNCTION NAME: printApplicationHeaderToConsole
  *
  *
  *

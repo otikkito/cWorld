@@ -3,7 +3,7 @@ Computational complexity
 |->space complexity
 
 
-Terms: (This will be terms used in making analysis of application. Also words used to describe techincally what is going on in the analysis)
+Terms: (This will be terms used in making analysis of application. Also words/terms used to describe techincally what is going on in the analysis)
 
 
 -Worst-case complexity: https://en.wikipedia.org/wiki/Worst-case_complexity
