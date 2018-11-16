@@ -78,7 +78,7 @@
 #include <errno.h>
 #include <sys/types.h>
 
-/*Preprocessor commands*/
+/*Preprocessor directives*/
 #define MAXLOGENTRYSIZE 300
 #define MAXCONFIGLINESIZE 300
 
@@ -386,7 +386,7 @@ int initializeSignalHandles(){
 	sigaction(SIGPIPE, &action, NULL);
 	sigaction(SIGALRM, &action, NULL);
 	sigaction(SIGTERM,&action, NULL);
-	//sigaction(SIGSTKFLT, &action, NULL);  //This gives a compiler error and I need to cross check with Red Hat documentation.
+	//sigaction(SIGSTKFLT, &action, NULL);  //This gives a compiler error and I need to verify this with Red Hat documentation.
 	sigaction(SIGCHLD, &action, NULL);
 	sigaction(SIGCONT,&action, NULL);
 	sigaction(SIGSTOP, &action, NULL);
