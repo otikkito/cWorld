@@ -261,7 +261,7 @@ int readConfigurationFile(){
 	
 	//populate the global cconfiguration structure
 	while((fgets(line,MAXCONFIGLINESIZE,config_file)) != NULL){
-		if((line[0] == '#') || (line[0] == ' ' ) || (line[0] == '\n')) {  //this needs to be corrected and/or add a special character to thee begining of the configuration file indicating it is a config directive
+		if((line[0] == '#') || (line[0] == ' ' ) || (line[0] == '\n')) {  //this needs to be corrected and/or add a special character to the front of the configuration file indicating it is a config directive
 			continue;
 		}
 		else{

@@ -16,7 +16,7 @@ projects I want to develop and for normal use or as an exercise
 -Firewall
 -Virtual Operating system
 -personal accounting with gnu cash
--Storing passwords to files
+-Storing passwords to files and encrypting it 
 -Stock monitor,selector  (c++)
 -Network command server
 -embedded system programming
