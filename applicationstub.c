@@ -584,7 +584,7 @@ int printApplicationUptime(){
 	
 	mins = (elapsed_time.tv_sec -start_time.tv_sec)/60;
 	secs = (elapsed_time.tv_sec - start_time.tv_sec)%60;
-	sprintf(logentry,"This applicaation has an uptime of %d mins and %d seconds",mins,secs);
+	sprintf(logentry,"This application has an uptime of %d mins and %d seconds",mins,secs);
 	printLogFile(fp,logentry);
 	//need to add variadic argumnts for the printlogfile. 
 	//printLogFile(fp,"The application has been up for %d mins"
