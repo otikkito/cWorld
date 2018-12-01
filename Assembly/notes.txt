@@ -6,6 +6,14 @@ This is to compile the code to assembly and is then usually stored as file-name.
 How to Use Inline Assembly Language in C Code: https://gcc.gnu.org/onlinedocs/gcc/Using-Assembly-Language-with-C.html
 
 Intel processor: https://www.intel.com/  -- The current new line of processors are the I9 processor up to 18 cores. This is what I would like in my next workstation.
+
 Amd processors: http://www.amd.com/en
+
+Computer list:
+--------------
+1) https://www.newegg.com/Product/Product.aspx?Item=1VK-01TP-00022  (10 core gamming pc 3.3Ghz)
+2)...
+...
+
 
 NASM: https://www.nasm.us/index.php
