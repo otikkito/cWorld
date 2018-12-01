@@ -605,7 +605,7 @@ int printApplicationUptime(){
 *
 * ARGUMENT     TYPE I/O DESCRIPTION
 * --------     ---- --- -----------
-*N/A
+* N/A
 *
 *
 * RETURNS: EXIT_SUCCESS or EXIT_FAILURE

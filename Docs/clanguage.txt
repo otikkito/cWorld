@@ -53,7 +53,7 @@ Type casting: https://www.tutorialspoint.com/cprogramming/c_type_casting.htm
 Course that I would like to take: https://www.engineeringonline.ncsu.edu/
 The ten commandments of c programming: http://www.lysator.liu.se/c/ten-commandments.html
 
-#TODO ADD examples of all the keywords
+#TODO add examples of all the keywords
 http://tigcc.ticalc.org/doc/keywords.html
 
 C programming paradigm: imperative and procedural 
