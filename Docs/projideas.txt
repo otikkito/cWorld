@@ -6,6 +6,8 @@ projects I want to develop and for normal use or as an exercise
 -Hash table
 -lookup table
 -stack
+-inventory control via database 
+-learn android operating system in system/application development
 -test unit for the c standard library
 -test suite for kernel
 -networking tutorial basically sending network information from machine to machine
@@ -24,5 +26,5 @@ projects I want to develop and for normal use or as an exercise
   a)https://stackoverflow.com/questions/1085083/regular-expressions-in-c-examples?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
   b)http://web.archive.org/web/20160308115653/http://peope.net/old/regex.html
   ...
--
+-...
 

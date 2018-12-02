@@ -27,7 +27,7 @@ TODO
 1)Summary of key mysql command
 2)Summary of data types in mysql
 
-To remove whitespaces to one whitespce:
+To remove multiple whitespaces to one whitespce between words:
 sed 's/ \+/ /g' census-dist-male-first.txt > census-dist-male-first-new.txt 
 
 
