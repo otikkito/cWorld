@@ -7,7 +7,7 @@ projects I want to develop and for normal use or as an exercise
 -lookup table
 -stack
 -inventory control via database 
--learn android operating system in system/application development
+-learn android operating system and system/application development
 -test unit for the c standard library
 -test suite for kernel
 -networking tutorial basically sending network information from machine to machine

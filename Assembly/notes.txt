@@ -5,7 +5,7 @@ This is to compile the code to assembly and is then usually stored as file-name.
 
 How to Use Inline Assembly Language in C Code: https://gcc.gnu.org/onlinedocs/gcc/Using-Assembly-Language-with-C.html
 
-Intel processor: https://www.intel.com/  -- The current new line of processors are the I9 processor up to 18 cores. This is what I would like in my next workstation.
+Intel processor: https://www.intel.com/  -- The current new line of processors are the I9 processor up to 18 cores. This is what I would like in my next workstation alon g with virtualization extenstion.
 
 Amd processors: http://www.amd.com/en
 
