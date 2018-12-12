@@ -36,11 +36,11 @@
  *
  *Date		     Author       Change ID    Release	    Description of Change
  *----   	     ------  	  ---------    -------      ---------------------
- *2/22/2017      Kito Joseph      1			            Added a prolog.I am not sure if it should be prolog or file format...
- *8/19/2018      Kito Joseph      2                     Continuing correction/refining documentation and file format/prolog to form a standard file format for application development.
- *8/26/2018      Kito Joseph      3                     Formating the file to conform to the nasa-c-style
- *9/2/2018       Kito Joseph      4                     Added the configuration file reading ability to th applicationstub.c
- *9/23/2018      Kito Joseph      5                     Included the application uptime to the application stub. It will print it to the application log
+ *2/22/2017      Kito Joseph      1			    Added a prolog.I am not sure if it should be prolog or file format...
+ *8/19/2018      Kito Joseph      2                         Continuing correction/refining documentation and file format/prolog to form a standard file format for application development.
+ *8/26/2018      Kito Joseph      3                         Formating the file to conform to the nasa-c-style
+ *9/2/2018       Kito Joseph      4                         Added the configuration file reading ability to th applicationstub.c
+ *9/23/2018      Kito Joseph      5                         Included the application uptime to the application stub. It will print it to the application log
  *
  *ALGORITHM (PDL)
  *
@@ -168,6 +168,8 @@ int main(int argc, char** argv) {
 	if(cd.useSignalHandler){
 		initializeSignalHandles();
 	}
+    
+    
     /*
      * Starting place of the application and application logic. Add code below and remember 
      * to do proper logging and handling of errors by checking return codes! The main
@@ -371,7 +373,7 @@ int initializeSignalHandles(){
 	**Per man page a process can change the disposition of a signal using sigaction(2) or signal(2)
     * signals are define in signal.h	
 	*/
-    sigaction(SIGHUP, &action, NULL);
+        sigaction(SIGHUP, &action, NULL);
 	sigaction(SIGINT, &action, NULL);
 	sigaction(SIGQUIT, &action, NULL);
 	sigaction(SIGILL, &action, NULL);
@@ -417,7 +419,7 @@ int initializeSignalHandles(){
 	sigaction(SIGRTMIN+12, &action, NULL);
 	sigaction(SIGRTMIN+13, &action, NULL);
 	sigaction(SIGRTMIN+14, &action, NULL);
-    sigaction(SIGRTMIN+15, &action, NULL);
+        sigaction(SIGRTMIN+15, &action, NULL);
 	sigaction(SIGRTMAX-14, &action, NULL);
 	sigaction(SIGRTMAX-12, &action, NULL);
 	sigaction(SIGRTMAX-11, &action, NULL);
@@ -642,11 +644,11 @@ int printDebugInfo(){
  *
  *********************************************************/
 void bye(void) {
-    printf("The program is now shutting down.\n");
+        printf("The program is now shutting down.\n");
 	printApplicationUptime();
 	printLogFile(fp,"The application has ended now.");
 	printLogFile(fp,"------------------------------");
-    fclose(fp);
+        fclose(fp);
 }
 
 /*
