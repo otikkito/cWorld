@@ -27,7 +27,7 @@ Design considerations:
 17) Applications status dump from the gui or signal if gui is not responding: needs to dump application status for debugging.
 18) Functions should return EXIT_SUCCESS or EXIT_FAILURE given the task of the function indicating if the task was 
      completed or not. EXIT_SUCCESS should be at the end of the function.
-
+...
 	 
 EXIT_FAILURE  1 or non-zero value
 EXIT_SUCCESS  0
@@ -78,3 +78,4 @@ http://man7.org/linux/man-pages/man7/signal.7.html
 *https://gcc.gnu.org/bugzilla/show_bug.cgi?id=56018
 *https://netbeans.org/bugzilla/show_bug.cgi?id=191390
 */
+...
