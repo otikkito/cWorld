@@ -29,7 +29,7 @@ SQL | Exchange Server | Novell GroupWise | QuickBooks | Oracle | UNIX | Linux | 
 
 Connectivity & Hardware
 SAN | CISCO | HP | Blade Servers | DNS Server | DHCP Servers
-Web Servers Ethernet | Fast Ethernet | WAN | LAN | TCP/IP | RAID Systems
+Web Servers | Ethernet | Fast Ethernet | WAN | LAN | TCP/IP | RAID Systems
 
 Network Technologies
 Access Control List | Network Address Translation | Port Address Translation | SMTP | ARP | TCP | UDP
