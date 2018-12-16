@@ -644,11 +644,11 @@ int printDebugInfo(){
  *
  *********************************************************/
 void bye(void) {
-        printf("The program is now shutting down.\n");
+    printf("The program is now shutting down.\n");
 	printApplicationUptime();
 	printLogFile(fp,"The application has ended now.");
 	printLogFile(fp,"------------------------------");
-        fclose(fp);
+    fclose(fp);
 }
 
 /*
