@@ -6,6 +6,7 @@
 
 //get output of popen: https://stackoverflow.com/questions/646241/c-run-a-system-command-and-get-output#comment46620991_646241
 
+//man popen pclose
 int main(){
     
     FILE *fp;
@@ -24,5 +25,6 @@ int main(){
         printf("The line is : %s \n",line);
     }
     
+	pclose(fp);
     return 0;
 }
