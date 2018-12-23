@@ -11,7 +11,7 @@ int main(){
     FILE *fp;
     char line[LINESIZE];
     
-    fp = popen("cat /etc/redhat-release","r");
+    fp = popen("cat ipcfile.txt	","r");
     if(fp == NULL){
         perror("Problem with popen.");
         exit(EXIT_FAILURE);
