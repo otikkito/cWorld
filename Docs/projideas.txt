@@ -2,7 +2,7 @@ This is a list of projects that I want to have in my cWorld library. I will use 
 projects I want to develop and for normal use or as an exercise
 
 -Simple database
--Linked list
+-Linked list, stacks, queus, hash table, trees... Data structures: An advanced approach using c: ISBN-13: 978-0131988477
 -Hash table
 -lookup table
 -stack
