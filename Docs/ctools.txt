@@ -1,6 +1,6 @@
 Some tools that you can use with c programming:
 
--valgrind - suite of tols for debugging and profiling programs
+-valgrind - suite of tools for debugging and profiling programs
 -gdb - the GNU debugger
 -indent -change the appearance of c program by inserting or deleting
 whitespaces
