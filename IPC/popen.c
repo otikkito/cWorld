@@ -12,7 +12,8 @@ int main(){
     FILE *fp;
     char line[LINESIZE];
     
-    fp = popen("cat ipcfile.txt	","r");
+    //fp = popen("cat ipcfile.txt	","r");
+	fp = popen("ls -lah	","r");	
     if(fp == NULL){
         perror("Problem with popen.");
         exit(EXIT_FAILURE);
