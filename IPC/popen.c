@@ -26,6 +26,6 @@ int main(){
         printf("The line is : %s \n",line);
     }
     
-	pclose(fp);
+	pclose(fp); //close the pipe stream
     return 0;
 }
