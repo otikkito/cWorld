@@ -1,5 +1,5 @@
-C++ Language
-keywords:
+C++ Language keywords:
+---------------------------------------------------
 asm 	       else 	  new 	             this
 auto 	       enum 	  operator           throw
 bool 	       explicit   private            true
@@ -19,6 +19,7 @@ dynamic_cast   namespace  template
 
 
 Primitive built in data types:
+---------------------------------------------------
 Boolean ------->	bool
 Character -------> 	char
 Integer ------> 	int
@@ -29,7 +30,7 @@ Wide character ------>	wchar_t
 
 type modifiers: signed unsigned short long
 
-c data types: https://www.tutorialspoint.com/cplusplus/cpp_data_types.htm
+c++ data types: https://www.tutorialspoint.com/cplusplus/cpp_data_types.htm
 
 
 Fucntion arguments: call by value, call by reference, call by pointer
