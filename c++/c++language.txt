@@ -28,7 +28,7 @@ Double floating point ------>	double
 Valueless ------>	void
 Wide character ------>	wchar_t
 
-type modifiers: signed unsigned short long
+type modifiers: signed, unsigned, short, long
 
 c++ data types: https://www.tutorialspoint.com/cplusplus/cpp_data_types.htm
 
