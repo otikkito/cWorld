@@ -45,7 +45,7 @@ https://www.tutorialspoint.com/cprogramming/c_error_handling.htm
 
 
 Program correctness
--the proof of correctness of programs, use the rules of inference and proof techniques including mathematical unduction
+-the proof of correctness of programs, use the rules of inference and proof techniques including mathematical induction
 -A program is said to be correct if it produces the correct output for every possible input.
 
 A proof that a programs in correct consists of two parts.
