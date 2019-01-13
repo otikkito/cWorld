@@ -373,7 +373,9 @@ int initializeSignalHandles(){
 	**Per man page a process can change the disposition of a signal using sigaction(2) or signal(2)
     * signals are define in signal.h	
 	*/
-    sigaction(SIGHUP, &action, NULL);
+	*/
+ */
+	sigaction(SIGHUP, &action, NULL);
 	sigaction(SIGINT, &action, NULL);
 	sigaction(SIGQUIT, &action, NULL);
 	sigaction(SIGILL, &action, NULL);
