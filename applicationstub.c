@@ -1,7 +1,7 @@
 /****************************************************************
  *FILE NAME: applicationstub.c
  * Please see end of file for references
- * www.kjoseph-it.com 
+ * www.kjoseph-it.com
  *
  *
  *PURPOSE: To design an application stub to begin developing applications on the
@@ -48,13 +48,13 @@
 
 /*
  *Global TODO
- * 1) Find a way to create a file template in the IDE for c files (This can be done by using tools->Template). 
+ * 1) Find a way to create a file template in the IDE for c files (This can be done by using tools->Template).
       I would like use the applicationstub for template after its cleaned up
  * 2) Highlight TODO Tools/Options/Team/Action Items
  * 3) Continue to clean up code and correct typos
  * 4) Remove some of the notes
  * 5) Add to the applicationstub.txt notes on what to do and remove from code
- * 6) Changed the license header to include the file format and which license you would like to use. 
+ * 6) Changed the license header to include the file format and which license you would like to use.
  * 7) I need to find a way to see if there is any way to get the process and system utilization
  *    https://stackoverflow.com/questions/3769405/determining-cpu-utilization
  * 8) Figure out how to read in the configuration file and configuration file variables (i.e. application log location,...)
@@ -65,7 +65,7 @@
  * 13) Fix in the logging facility the gap between logs except for the termination and start of a new application invocation.
  * 14) ...
  */
- 
+
 
 #include <stdio.h> //FILE, printf, fopen
 #include <time.h>
@@ -96,7 +96,7 @@ struct timespec elapsed_time;
 Function prototypes or function declarations: //EXIT_SUCCESS or EXIT_FAILURE
 https://stackoverflow.com/questions/8496284/terminology-forward-declaration-versus-function-prototype?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
 */
-int printApplicationHeaderToConsole(); 
+int printApplicationHeaderToConsole();
 int readConfigurationFile();
 int printLogFile(FILE *f, char *string); //already contains newline at the end of the string.
 void signalHandler();
@@ -131,14 +131,14 @@ int printDebugInfo();
 int main(int argc, char** argv) {
     /*As a design consideration minimize stuff in the main function for no particular reason other than readability and modulazation */
     int i;
-    
+
 	/*Get the start time of the application to see how long the appalication has been running.*/
 	i = clock_gettime( CLOCK_MONOTONIC,&start_time);
     if(i == -1){
         perror("clock_gettime");
         exit(EXIT_FAILURE);
     }
-	
+
     i = atexit(bye);
     if (i != 0) {
         perror("Unable to set atexit()");
@@ -157,38 +157,38 @@ int main(int argc, char** argv) {
 
     printApplicationHeaderToConsole();
     printLogFile(fp, "Application started.");
-    
+
 	int rc;
 	rc = readConfigurationFile();
-	
+
 	if(rc == EXIT_SUCCESS){
 			printLogFile(fp,"Successfully read the configuration file.");
 	}
-	
+
 	if(cd.useSignalHandler){
 		initializeSignalHandles();
 	}
-    
-    
+
+
     /*
-     * Starting place of the application and application logic. Add code below and remember 
+     * Starting place of the application and application logic. Add code below and remember
      * to do proper logging and handling of errors by checking return codes! The main
-     * function will return EXIT_SUCCESS or EXIT_FAILURE depending on if there 
-     * are any runtime errors in the application. The application stub goal is 
-     * to ensure that there are no compile errors thus only having runtime 
+     * function will return EXIT_SUCCESS or EXIT_FAILURE depending on if there
+     * are any runtime errors in the application. The application stub goal is
+     * to ensure that there are no compile errors thus only having runtime
      * errors which should be handled correctly and prevented if thats possible.
      * https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
      */
-   
-		
+
+
     sleep(6000);
-	
+
 	//printApplicationUptime();
-    
-	
+
+
 
    printLogFile(fp, "Application terminated.");
-   
+
    return (EXIT_SUCCESS); /*return EXIT_SUCCESS indication successful completion of the application*/
 }
 
@@ -221,7 +221,7 @@ int printApplicationHeaderToConsole() {
     printf("process.\n");
     printf("----------------------------------------------------------------\n");
     printf("The process name of this process is: %s \n", getProcessNameByPid(processid));
-	
+
 	return(EXIT_SUCCESS);
 }
 
@@ -247,20 +247,20 @@ int printApplicationHeaderToConsole() {
 *
 *********************************************************/
 int readConfigurationFile(){
-	
+
 	FILE *config_file;
 	char line[MAXCONFIGLINESIZE];
-	
+
 	config_file = fopen("applicationstub.conf","r");
 	//Initialize the global configuration directive variable.
 	cd.useSignalHandler = false;
-	
+
 	if(config_file == NULL){
 		perror("Unable to open the configuration file.\n");
 		printLogFile(fp,"Unable to open the configuration file for the applicationstub.c");
 		return EXIT_FAILURE;
 	}
-	
+
 	//populate the global cconfiguration structure
 	while((fgets(line,MAXCONFIGLINESIZE,config_file)) != NULL){
 		if((line[0] == '#') || (line[0] == ' ' ) || (line[0] == '\n')) {  //this needs to be corrected and/or add a special character to the front of the configuration file indicating it is a config directive
@@ -268,25 +268,25 @@ int readConfigurationFile(){
 		}
 		else{
 			//printf("Config- %s\n",line);
-		
+
 			char leftConfigDirective[MAXCONFIGLINESIZE];
 			char rightConfigDirective[MAXCONFIGLINESIZE];
 			memset(leftConfigDirective,'\0',MAXCONFIGLINESIZE);
 			memset(rightConfigDirective,'\0',MAXCONFIGLINESIZE);
 			//I also have to include the semicolon to terminate the line
-			sscanf(line,"%s = %s",leftConfigDirective,rightConfigDirective);			
+			sscanf(line,"%s = %s",leftConfigDirective,rightConfigDirective);
 			//printf("The left value is:%s and the right value is %s\n",leftConfigDirective,rightConfigDirective);
-			
+
 			if((strcmp(leftConfigDirective,"initialize_signal_handler")) == 0){
 					cd.useSignalHandler = true;
 			}
 		}
 	}
-	
+
 	//close the file
 	int rc;
 	rc = fclose(config_file);
-	
+
 	if(rc == 0){
 		return EXIT_SUCCESS;
 	}
@@ -294,7 +294,7 @@ int readConfigurationFile(){
 		perror("Unable to close the configuration file.");
 		return EXIT_FAILURE;
 	}
-	
+
 }
 
 /********************************************************
@@ -316,7 +316,7 @@ int readConfigurationFile(){
  *
  * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
  *
- * TODO print a variable argument list log file 
+ * TODO print a variable argument list log file
  * https://github.com/otikkito/cWorld/blob/master/logger.c
  * https://github.com/otikkito/cWorld/blob/master/varguments.c
  * ===Rember to flush the buffer with fflush() when logging===
@@ -328,7 +328,7 @@ int printLogFile(FILE *f, char *string) {
     strftime(timestring, sizeof (timestring), "%c", localtime(&currenttime));
     fprintf(f, "%s %s \n", timestring, string);
     fflush(f);
-	
+
 	return(EXIT_SUCCESS);
 }
 
@@ -354,12 +354,12 @@ int printLogFile(FILE *f, char *string) {
 *
 *********************************************************/
 int initializeSignalHandles(){
-   /* Link that talks about different types of signals: https://en.wikipedia.org/wiki/Signal_(IPC)#SIGTRAP 
+   /* Link that talks about different types of signals: https://en.wikipedia.org/wiki/Signal_(IPC)#SIGTRAP
    *https://en.wikipedia.org/wiki/Signal_(IPC)*/
     struct sigaction action;
     action.sa_handler = signalHandler;
     action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid of the offending function*/
-    
+
 	/*
 	-To retrive signal names check out man 7 signal
 	-Signals that will not be caught please comment out
@@ -372,7 +372,7 @@ int initializeSignalHandles(){
 	*/
 	/*Per man page a process can change the disposition of a signal using sigaction(2) or signal(2)
         * signals are define in signal.h*/
-	
+
 	sigaction(SIGHUP, &action, NULL);
 	sigaction(SIGINT, &action, NULL);
 	sigaction(SIGQUIT, &action, NULL);
@@ -451,7 +451,7 @@ int initializeSignalHandles(){
  *
  * ARGUMENT     TYPE        I/O DESCRIPTION
  * --------     ----        --- -----------
- * signal       int         O   The signal that is being handled  
+ * signal       int         O   The signal that is being handled
  * info         siginfo_t   O   This is additional information about the signal and called signal
  * *_unused     void *      U   This is unused and is passes null in the function call
  *
@@ -468,13 +468,13 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
 	 *read man signal.h
      */
     char app_log_message[MAXLOGENTRYSIZE];
-    
+
     memset(app_log_message,'\0',sizeof(app_log_message));
     /*siginfo_t not returning properly*/
     sprintf(app_log_message,"The application received signal %d from pid: %u with process name %s",signal,info->si_pid, getProcessNameByPid(info->si_pid));
     /*Log to the application log the signal*/
-    printLogFile(fp,app_log_message);  
-    
+    printLogFile(fp,app_log_message);
+
     /*To terminate kill -s 15 <pid>*/
     /*man 7 signal*/
     /*TODO need to log the calling process name as well*/
@@ -490,12 +490,12 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
             syslog(LOG_ERR, "Received signal SIGTERM and will be shutting down application.c");
             exit(EXIT_FAILURE);
 		case SIGUSR1:
-			//This is terminating the program but this is not the behavior that we won't. I need to find out what the corrective actions that I need to take. 
+			//This is terminating the program but this is not the behavior that we won't. I need to find out what the corrective actions that I need to take.
 			printLogFile(fp,"The user has requested to dump debug data");
 		    printDebugInfo();
 			break;
     }
-    
+
 }
 
 /********************************************************
@@ -529,11 +529,11 @@ const char* getProcessNameByPid(pid_t pid) {
     if(pid == 0){
         return "Kernel"; //This is the abstraction point...better pin pointing.
     }
-	
+
 	if(pid ==1){//on rhel 7 and above
 	    return "Systemd";
-	}	
-	
+	}
+
     if (name) {
         sprintf(name, "/proc/%d/cmdline", pid);
         f = fopen(name, "r");
@@ -546,7 +546,7 @@ const char* getProcessNameByPid(pid_t pid) {
             }
             fclose(f);
         }
-    } 
+    }
     return name;
 }
 
@@ -572,25 +572,25 @@ const char* getProcessNameByPid(pid_t pid) {
 *
 *********************************************************/
 int printApplicationUptime(){
-	
+
 	int mins;
 	int secs;
 	int i;
 	char logentry[MAXLOGENTRYSIZE];
-	
+
 	i = clock_gettime( CLOCK_MONOTONIC,&elapsed_time);
     if(i == -1){
         perror("clock_gettime");
         exit(EXIT_FAILURE);
     }
-	
+
 	mins = (elapsed_time.tv_sec -start_time.tv_sec)/60;
 	secs = (elapsed_time.tv_sec - start_time.tv_sec)%60;
 	sprintf(logentry,"This application has an uptime of %d mins and %d seconds",mins,secs);
 	printLogFile(fp,logentry);
-	//need to add variadic argumnts for the printlogfile. 
+	//need to add variadic argumnts for the printlogfile.
 	//printLogFile(fp,"The application has been up for %d mins"
-	
+
 	return EXIT_SUCCESS;
 }
 
@@ -644,7 +644,7 @@ int printDebugInfo(){
  *
  *********************************************************/
 void bye(void) {
-printf("The program is now shutting down.\n");
+    printf("The program is now shutting down.\n");
 	printApplicationUptime();
 	printLogFile(fp,"The application has ended now.");
 	printLogFile(fp,"------------------------------");
@@ -656,8 +656,8 @@ printf("The program is now shutting down.\n");
  *1) https://github.com/otikkito/cWorld/blob/master/Docs/nasa-c-style.pdf (conformity, readablity, maintance, resuability,...)
  *2) https://en.wikipedia.org/wiki/Application_security
  *3) https://www.tutorialspoint.com/c_standard_library/index.htm
- *4) https://en.wikipedia.org/wiki/MIL-STD-498 
- *5) https://www.ece.ncsu.edu/people/gbyrd 
+ *4) https://en.wikipedia.org/wiki/MIL-STD-498
+ *5) https://www.ece.ncsu.edu/people/gbyrd
  *6) applicationstub.txt
  *7) Reading code: http://wiki.c2.com/?TipsForReadingCode
  */
