@@ -369,12 +369,10 @@ int initializeSignalHandles(){
 	*Core: Default action is to terminate the process and dump core
 	*Stop: Default actions is to stop the process
 	*Cont: Default action is to continue the process if it is currently stopped
-
-	**Per man page a process can change the disposition of a signal using sigaction(2) or signal(2)
-    * signals are define in signal.h	
 	*/
-	*/
- */
+	/*Per man page a process can change the disposition of a signal using sigaction(2) or signal(2)
+        * signals are define in signal.h*/
+	
 	sigaction(SIGHUP, &action, NULL);
 	sigaction(SIGINT, &action, NULL);
 	sigaction(SIGQUIT, &action, NULL);
@@ -421,7 +419,7 @@ int initializeSignalHandles(){
 	sigaction(SIGRTMIN+12, &action, NULL);
 	sigaction(SIGRTMIN+13, &action, NULL);
 	sigaction(SIGRTMIN+14, &action, NULL);
-    sigaction(SIGRTMIN+15, &action, NULL);
+	sigaction(SIGRTMIN+15, &action, NULL);
 	sigaction(SIGRTMAX-14, &action, NULL);
 	sigaction(SIGRTMAX-12, &action, NULL);
 	sigaction(SIGRTMAX-11, &action, NULL);
@@ -646,7 +644,7 @@ int printDebugInfo(){
  *
  *********************************************************/
 void bye(void) {
-    printf("The program is now shutting down.\n");
+printf("The program is now shutting down.\n");
 	printApplicationUptime();
 	printLogFile(fp,"The application has ended now.");
 	printLogFile(fp,"------------------------------");
