@@ -63,7 +63,7 @@
  * 11) Correct the naming convention of functions and variables to match the nasa-c-style.
  * 12) Store in a variable the start time of the application in order to see how long the application has been running. --first implentation done next step is to add seconds
  * 13) Fix in the logging facility the gap between logs except for the termination and start of a new application invocation.
- * 14) ...
+ * 14) Find out about the tab convention and use tabs instead of spaces for better readability. https://netbeans.org/bugzilla/show_bug.cgi?id=143795
  */
 
 

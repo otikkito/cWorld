@@ -40,6 +40,7 @@ Nasa naming convention
    underscores. "However I use first letter lowercase and procedding words connected but capitalize for now."
 • Constants: Use upper-case words separated by underscores.
 
+*Use tabs instead of spaces for formating
 
 Note: code coverage, make sure you test the application.
 
