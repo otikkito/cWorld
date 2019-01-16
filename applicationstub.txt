@@ -1,4 +1,3 @@
-The purpose of this application is to form a robust application that standardize
 the application development process and show best practices of application design 
 in the c programming language.
 
