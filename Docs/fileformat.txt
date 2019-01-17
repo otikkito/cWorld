@@ -86,7 +86,7 @@ When citing within the code, the citation information could be placed as a comme
 
 e.g.
 
-***************************************************************************************/
+/***************************************************************************************
 *    Title: GraphicsDrawer source code
 *    Author: Smith, J
 *    Date: 2011
