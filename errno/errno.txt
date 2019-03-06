@@ -21,7 +21,7 @@ int atexit(void (*fcn)(void))
 Test - reduce erros and increase accuracy
 -Test for accuracy
 -Test for repeatability of a function
--text for maximizing uptime through proper handling of erros
+-text for maximizing uptime through proper handling of errors
 -positive and negative test for return codes
 -logging of return codes
 -logging of how long an application has been running
