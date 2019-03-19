@@ -5,3 +5,5 @@ I will be testing other databases to see what we need to do...and what works and
 Mariadb: https://mariadb.org/
 
 Mariadb tutorial: https://www.tutorialspoint.com/mariadb/
+
+Installation of mMariadb: https://www.digitalocean.com/community/tutorials/how-to-install-mariadb-on-centos-7
