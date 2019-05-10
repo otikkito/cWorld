@@ -5,8 +5,7 @@ Some tools that you can use with c programming:
 -indent -change the appearance of c program by inserting or deleting
 whitespaces
 -git - version control
--/usr/bin/time -v <program>  -> will give a lot usefull information like time
-elapsed
+-/usr/bin/time -v <program>  -> will give a lot usefull information like time elapsed
 -DDD - Data display debugger
--Lint 
+-Lint (
 -splint http://www.splint.org/
