@@ -40,4 +40,4 @@ the directory structure in place to help with the project and referencing
 material to aid in the development of network applications.
 
 
-//www.kjoseph-it.com -currently down do to lack of funds and am using github as a temporary backup.
+//https://www.kjoseph-it.com -currently down do to lack of funds and am using github as a temporary backup.
