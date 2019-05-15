@@ -528,7 +528,7 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
 const char* getProcessNameByPid(pid_t pid) {
     FILE *f;
     char* name = (char*) calloc(1024, sizeof (char));
-	//To get release on ubuntu : cat /etc/*release
+	//To get release on Ubuntu : cat /etc/*release
     //Need to determine if RHEL 7 or 6 is being used. /etc/redhat-release
     if(pid == 0){
         return "Kernel"; //This is the abstraction point...better pin pointing.
