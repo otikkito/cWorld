@@ -24,7 +24,8 @@
  *----   	-----------
  *
  *ABNORMAL TERMINATION CONDITIONS, ERROR AND WARINGING MESSAGES:
- *-Some of the abnormal conditions will exit the program using the bye (atexit) function and EXIT_FAILURE or EXIT_SUCCESS...
+ *-Some of the abnormal conditions will exit the program using the bye (atexit) 
+ *function and EXIT_FAILURE or EXIT_SUCCESS...
  *
  *ASSUMPTIONS, CONSTRAINTS, RESTRICTIONS
  *
@@ -70,10 +71,10 @@
  *     d) https://github.com/kbilsted/CodeQualityAndReadability/blob/master/Articles/Readability/OptimalIndentSizeForCodeReadability.md
  */
 
-#include <stdio.h> //FILE, printf, fopen
+#include <stdio.h> //FILE,printf,fopen
 #include <time.h>
-#include <unistd.h> //alarm, getcwd, getpid, ...
-#include <stdlib.h> //EXIT_SUCCESS, EXIT_FAILURE, NULL,...
+#include <unistd.h> //alarm,getcwd,getpid, ...
+#include <stdlib.h> //EXIT_SUCCESS,EXIT_FAILURE,NULL,...
 #include <syslog.h>
 #include <string.h> //memset
 #include <stdbool.h> //true,false
@@ -528,7 +529,7 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
 const char* getProcessNameByPid(pid_t pid) {
     FILE *f;
     char* name = (char*) calloc(1024, sizeof (char));
-	//To get release on Ubuntu : cat /etc/*release
+	//To get release on ubuntu : cat /etc/*release
     //Need to determine if RHEL 7 or 6 is being used. /etc/redhat-release
     if(pid == 0){
         return "Kernel"; //This is the abstraction point...better pin pointing.
@@ -592,6 +593,7 @@ int printApplicationUptime(){
 	secs = (elapsed_time.tv_sec - start_time.tv_sec)%60;
 	sprintf(logentry,"This application has an uptime of %d mins and %d seconds",mins,secs);
 	printLogFile(fp,logentry);
+        printf("%s\n",logentry);
 	//need to add variadic argumnts for the printlogfile.
 	//printLogFile(fp,"The application has been up for %d mins"
 
