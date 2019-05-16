@@ -23,6 +23,7 @@ Need to find a router for cisco certification at least at the ccnp level router 
 2) Use cisco's packet tracer simulator: https://www.netacad.com/courses/packet-tracer-download/
 3) GNS3: https://www.gns3.com/
 4) Virtualbox networking: https://study.com/academy/lesson/how-to-network-virtual-machines-in-virtualbox.html
+5) How to emulate a netwrok using virtualbox: http://www.brianlinkletter.com/how-to-use-virtualbox-to-emulate-a-network/
 
 ------------------------------------------------------------------------------------
 
