@@ -43,6 +43,7 @@
  *9/2/2018       Kito Joseph      4                         Added the configuration file reading ability to the applicationstub.c
  *9/23/2018      Kito Joseph      5                         Included the application uptime to the application stub. It will print it to the application log
  *5/18/2019      Kito Joseph      6                         Provided application uptime to be printed to the console
+ *
  *ALGORITHM (PDL)
  *
  */
