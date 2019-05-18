@@ -23,7 +23,7 @@
  *Name		Description
  *----   	-----------
  *
- *ABNORMAL TERMINATION CONDITIONS, ERROR AND WARINGING MESSAGES:
+ *ABNORMAL TERMINATION CONDITIONS, ERROR AND WARNING MESSAGES:
  *-Some of the abnormal conditions will exit the program using the bye (atexit) 
  *function and EXIT_FAILURE or EXIT_SUCCESS...
  *
@@ -39,7 +39,7 @@
  *----   	     ------  	  ---------    -------      ---------------------
  *2/22/2017      Kito Joseph      1                         Added a prolog.I am not sure if it should be prolog or file format...
  *8/19/2018      Kito Joseph      2                         Continuing correction/refining documentation and file format/prolog to form a standard file format for application development.
- *8/26/2018      Kito Joseph      3                         Formating the file to conform to the nasa-c-style
+ *8/26/2018      Kito Joseph      3                         Formatting the file to conform to the NASA-c-style
  *9/2/2018       Kito Joseph      4                         Added the configuration file reading ability to the applicationstub.c
  *9/23/2018      Kito Joseph      5                         Included the application uptime to the application stub. It will print it to the application log
  *5/18/2019      Kito Joseph      6                         Provided application uptime to be printed to the console
@@ -63,7 +63,7 @@
  * 9) Skeleton (computer programming) wiki
  * 10) Fix the application log so that it displays the time the application for terminated
  * 11) Correct the naming convention of functions and variables to match the nasa-c-style.
- * 12) Store in a variable the start time of the application in order to see how long the application has been running. --first implentation done next step is to add seconds
+ * 12) Store in a variable the start time of the application in order to see how long the application has been running. --first implementation done next step is to add seconds
  * 13) Fix in the logging facility the gap between logs except for the termination and start of a new application invocation.
  * 14) Find out about the tab convention and use tabs instead of spaces for better readability.
  *     a) https://netbeans.org/bugzilla/show_bug.cgi?id=143795
@@ -137,7 +137,7 @@ int main(int argc, char** argv) {
     /*As a design consideration minimize stuff in the main function for no particular reason other than readability and modulazation */
     int i;
 
-	/*Get the start time of the application to see how long the appalication has been running.*/
+	/*Get the start time of the application to see how long the application has been running.*/
 	i = clock_gettime( CLOCK_MONOTONIC,&start_time);
     if(i == -1){
         perror("clock_gettime");
@@ -179,10 +179,10 @@ int main(int argc, char** argv) {
      * Starting place of the application and application logic. Add code below 
      * and remember to do proper logging and handling of errors by checking 
      * return codes! The main function will return EXIT_SUCCESS or EXIT_FAILURE 
-     * depending on if there are any runtime errors in the application. The 
+     * depending on if there are any run-time errors in the application. The 
      * application stub goal is to ensure that there are no compile errors thus 
-     * only having runtime errors which should be handled correctly and 
-     * prevented if thats possible.
+     * only having run-time errors which should be handled correctly and 
+     * prevented if that's possible.
      * https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
      */
 
@@ -249,7 +249,7 @@ int printApplicationHeaderToConsole() {
 *
 * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
 *
-*TODO: I need to terminate the configuartion with a semicolon
+*TODO: I need to terminate the configuration with a semicolon
 *
 *********************************************************/
 int readConfigurationFile(){
@@ -267,7 +267,7 @@ int readConfigurationFile(){
 		return EXIT_FAILURE;
 	}
 
-	//populate the global cconfiguration structure
+	//populate the global configuration structure
 	while((fgets(line,MAXCONFIGLINESIZE,config_file)) != NULL){
 		if((line[0] == '#') || (line[0] == ' ' ) || (line[0] == '\n')) {  //this needs to be corrected and/or add a special character to the front of the configuration file indicating it is a config directive
 			continue;
@@ -367,7 +367,7 @@ int initializeSignalHandles(){
     action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid of the offending function*/
 
 	/*
-	-To retrive signal names check out man 7 signal
+	-To retrieve signal names check out man 7 signal
 	-Signals that will not be caught please comment out
 	-Actions for each signal
 	*Term: default actions is to terminate the process
@@ -660,7 +660,7 @@ void bye(void) {
 
 /*
  *References:
- *1) https://github.com/otikkito/cWorld/blob/master/Docs/nasa-c-style.pdf (conformity, readablity, maintance, resuability,...)
+ *1) https://github.com/otikkito/cWorld/blob/master/Docs/nasa-c-style.pdf (conformity, readability, maintenance, re-usability,...)
  *2) https://en.wikipedia.org/wiki/Application_security
  *3) https://www.tutorialspoint.com/c_standard_library/index.htm
  *4) https://en.wikipedia.org/wiki/MIL-STD-498
