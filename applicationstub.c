@@ -494,11 +494,11 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
             fprintf(stdout, "Received SIGTERM from process with pid = %u \n", info->si_pid);
             syslog(LOG_ERR, "Received signal SIGTERM and will be shutting down application.c");
             exit(EXIT_FAILURE);
-		case SIGUSR1:
-			//This is terminating the program but this is not the behavior that we won't. I need to find out what the corrective actions that I need to take.
-			printLogFile(fp,"The user has requested to dump debug data");
-		    printDebugInfo();
-			break;
+	case SIGUSR1:
+	    //This is terminating the program but this is not the behavior that we won't. I need to find out what the corrective actions that I need to take.
+	    printLogFile(fp,"The user has requested to dump debug data");
+	    printDebugInfo();
+	    break;
     }
 
 }
