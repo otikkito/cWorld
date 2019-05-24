@@ -15,7 +15,7 @@ int main(){
 	while(firoperand > 0){
 		printf("Enter next number for the first operand (<= 0 to quit): ");
 		scanf("%d",&firoperand);
-		printf("%d %% %d is %d\n",firoperand,secoperand,firoperand % secoperand);
+		printf("%d %d %d is %d\n",firoperand,secoperand,firoperand % secoperand);
 	}
 	
 	return 0;
