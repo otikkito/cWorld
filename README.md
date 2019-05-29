@@ -86,6 +86,9 @@ My linkedin profile: http://www.linkedin.com/in/kitojoseph
 
 Engineer in training: http://engineerintrainingexam.com/?utm_source=EngineerInTrainingExam.com&utm_campaign=6f18a64464-MICRO_SESSIONS_Announcement&utm_medium=email&utm_term=0_3dbd7e4a34-6f18a64464-340661001
 
+
+Visual Studio code: https://visualstudio.microsoft.com/
+
 -----------------------------------------------------------------------------------------------------------
 
 Repo gittutorial: [Backup of personal website](https://github.com/otikkito/gittutorial/blob/master/backupwebsite/www.kjoseph-it.com/README.md)
