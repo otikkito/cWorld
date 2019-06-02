@@ -68,8 +68,7 @@
  * 14) Find out about the tab convention and use tabs instead of spaces for better readability.
  *     a) https://netbeans.org/bugzilla/show_bug.cgi?id=143795
  *     b) https://www.quora.com/Which-tab-size-is-better-for-programming-generally-Two-or-four 
- *     c) https://www.quora.com/Which-tab-size-is-better-for-programming-generally-Two-or-four
- *     d) https://github.com/kbilsted/CodeQualityAndReadability/blob/master/Articles/Readability/OptimalIndentSizeForCodeReadability.md
+ *     c) https://github.com/kbilsted/CodeQualityAndReadability/blob/master/Articles/Readability/OptimalIndentSizeForCodeReadability.md
  */
 
 #include <stdio.h> //FILE,printf,fopen
