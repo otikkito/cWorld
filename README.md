@@ -88,7 +88,13 @@ Engineer in training: http://engineerintrainingexam.com/?utm_source=EngineerInTr
 
 -----------------------------------------------------------------------------------------------------------
 
+Visual Studio code: https://visualstudio.microsoft.com/
+
+-----------------------------------------------------------------------------------------------------------
+
 Repo gittutorial: [Backup of personal website](https://github.com/otikkito/gittutorial/blob/master/backupwebsite/www.kjoseph-it.com/README.md)
+
+Personal website: www.kjoseph-it.com
 
 -----------------------------------------------------------------------------------------------------------
 

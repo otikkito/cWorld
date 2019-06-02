@@ -65,8 +65,8 @@
 * ARGUMENT     TYPE    I/O DESCRIPTION
 * --------     ----    --- -----------
 *argc          int     I   number of command line arguments
-*argv          char ** I   char array vector for the commandline arguments
-*argv          char ** I   char array vector for the commandline arguments
+*argv          char ** I   char array vector for the command line arguments
+*argv          char ** I   char array vector for the command line arguments
 *
 * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
 *
