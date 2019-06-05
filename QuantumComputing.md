@@ -17,6 +17,9 @@ https://www.explainingcomputers.com/quantum.html
 
 Quantum computing Microsoft: https://www.microsoft.com/en-us/quantum/
 
+Quantum computing math refresher: https://www.udemy.com/mathematics-prerequisites-for-quantum-computing-and-quantum-physics/
+
+Quantum physics and Quantum computing for beginners: https://www.udemy.com/qc101-introduction-to-quantum-computing-quantum-physics-for-beginners/
 
 June 11th 2018
 
