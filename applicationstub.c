@@ -125,7 +125,7 @@ int printDebugInfo();
 * ARGUMENT     TYPE     I/O DESCRIPTION
 * --------     ----     --- -----------
 * argc         int      I   the number of command line arguments
-* argv         char **  I   the charachter arrary vector to list the command line arguments
+* argv         char **  I   the character array vector to list the command line arguments
 *
 * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
 *
@@ -594,7 +594,7 @@ int printApplicationUptime(){
 	sprintf(logentry,"This application has an uptime of %d mins and %d seconds",mins,secs);
 	printLogFile(fp,logentry);
         printf("%s\n",logentry);
-	//need to add variadic argumnts for the printlogfile.
+	//need to add variadic arguments for the printlogfile.
 	//printLogFile(fp,"The application has been up for %d mins"
 
 	return EXIT_SUCCESS;
