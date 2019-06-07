@@ -61,11 +61,10 @@
  *    https://stackoverflow.com/questions/3769405/determining-cpu-utilization
  * 8) Figure out how to read in the configuration file and configuration file variables (i.e. application log location,...)
  * 9) Skeleton (computer programming) wiki
- * 10) Fix the application log so that it displays the time the application for terminated
- * 11) Correct the naming convention of functions and variables to match the nasa-c-style.
- * 12) Store in a variable the start time of the application in order to see how long the application has been running. --first implementation done next step is to add seconds
- * 13) Fix in the logging facility the gap between logs except for the termination and start of a new application invocation.
- * 14) Find out about the tab convention and use tabs instead of spaces for better readability.
+ * 10) Correct the naming convention of functions and variables to match the nasa-c-style.
+ * 11) Store in a variable the start time of the application in order to see how long the application has been running. --first implementation done next step is to add seconds
+ * 12) Fix in the logging facility the gap between logs except for the termination and start of a new application invocation.
+ * 13) Find out about the tab convention and use tabs instead of spaces for better readability.
  *     a) https://netbeans.org/bugzilla/show_bug.cgi?id=143795
  *     b) https://www.quora.com/Which-tab-size-is-better-for-programming-generally-Two-or-four 
  *     c) https://github.com/kbilsted/CodeQualityAndReadability/blob/master/Articles/Readability/OptimalIndentSizeForCodeReadability.md
