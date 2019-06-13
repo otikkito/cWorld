@@ -19,7 +19,7 @@ Citing code on the internet: https://integrity.mit.edu/handbook/writing-code
 
 -----------------------------------------------------------------------------------------------------------
 
-Github wrtting and formatting: https://help.github.com/articles/basic-writing-and-formatting-syntax/
+Github writing and formatting: https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -102,14 +102,14 @@ A collection of c code from the basic refresher to some abstract data type imple
 cognitive hardware virtualization, career objectives, ...
 
 5/13/14 I am not sure what direction that this is going. But I want to create a c library that 
-will help me expore all the functionality of the language and to become more proficient. I will
+will help me explore all the functionality of the language and to become more proficient. I will
 design the applications to the be as portable as possible.
 
 4/16/2018 Currently I need to clean up the code base and add additional documentation and insure that it
 is used in the correct directory context.
 
 4/17/2018
-Farming/garderning operating system/ Application:
+Farming/gardening operating system/ Application:
 
 1)https://www.deere.com/en/index.html
 
