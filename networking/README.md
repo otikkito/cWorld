@@ -14,6 +14,11 @@ wpa supplicant
 
 ------------------------------------------------------------------------------------
 
+Cisco CCNA labs: https://www.udemy.com/free-packet-tracer-labs-for-the-ccna-exam-practical-ccna-tests/
+
+------------------------------------------------------------------------------------
+
+
 Wireshark protocol dissector: https://www.wireshark.org/docs/wsdg_html_chunked/ChapterDissection.html
 
 ------------------------------------------------------------------------------------
