@@ -19,6 +19,8 @@ TODO:
 
 Projects and purposes:
 
-*Plot application statistics: memory, system calls, storage usage, network usage, ... over time
-*Installing gnuplot on windows: https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/cygwin/part5/
-*Gnuplot tutorial: http://lowrank.net/gnuplot/index-e.html
+-Plot application statistics: memory, system calls, storage usage, network usage, ... over time
+
+-Installing gnuplot on windows: https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/cygwin/part5/
+
+-Gnuplot tutorial: http://lowrank.net/gnuplot/index-e.html

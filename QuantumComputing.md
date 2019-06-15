@@ -15,6 +15,12 @@ Intro quantum computing for non physicist: https://arxiv.org/PS_cache/quant-ph/p
 
 https://www.explainingcomputers.com/quantum.html
 
+Quantum computing Microsoft: https://www.microsoft.com/en-us/quantum/
+
+Quantum computing math refresher: https://www.udemy.com/mathematics-prerequisites-for-quantum-computing-and-quantum-physics/
+
+Quantum physics and Quantum computing for beginners: https://www.udemy.com/qc101-introduction-to-quantum-computing-quantum-physics-for-beginners/
+
 June 11th 2018
 
 -Try to find schools that specialze in this quatntum computing and cognitive computing.

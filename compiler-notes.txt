@@ -1,2 +1,6 @@
 gcc -g -Wall -pedantic <application-name.c>
 gcc <application-name.c> -lpthread
+
+To check a file: aspell -c filename.tx
+To check a indiviual word: aspell -a
+

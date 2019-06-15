@@ -2,7 +2,7 @@ the application development process and show best practices of application desig
 in the c programming language.
 
 
-Developing application on linux course: https://training.linuxfoundation.org/linux-courses/development-training/developing-applications-for-linux
+Developing application on Linux course: https://training.linuxfoundation.org/linux-courses/development-training/developing-applications-for-linux
 
 Design considerations:
 1) Error handling
@@ -16,14 +16,14 @@ Design considerations:
 9) Timeouts --> https://en.wikipedia.org/wiki/Timeout_(computing)
 10) Configuration files for the application.
 11) scheduling issues
-12) Runtime errors "When it compiles without errors" and when the errors are generated after
+12) Run-time errors "When it compiles without errors" and when the errors are generated after
     compilation and execution."The operating system is suppose to detect the problems and raise
-    an runtime error" --->https://www.quora.com/In-C-programming-what-is-runtime-error-and-how-can-it-be-resolved
+    an run-time error" --->https://www.quora.com/In-C-programming-what-is-runtime-error-and-how-can-it-be-resolved
 13) Documentation
 14) Test points
-15) Gui interface and documentation
+15) GUI interface and documentation
 16) Refine and document your naming convention and make sure that you site sources and include dates as well.
-17) Applications status dump from the gui or signal if gui is not responding: needs to dump application status for debugging.
+17) Applications status dump from the GUI or signal if GUI is not responding: needs to dump application status for debugging.
 18) Functions should return EXIT_SUCCESS or EXIT_FAILURE given the task of the function indicating if the task was 
      completed or not. EXIT_SUCCESS should be at the end of the function.
 ...
@@ -33,13 +33,13 @@ EXIT_SUCCESS  0
 true 1
 false 0
     
-Nasa naming convention
+NASA naming convention
 • Variables: Use lower-case words separated by underscores.
 • Function names: Capitalize the first letter of each word; do not use
-   underscores. "However I use first letter lowercase and procedding words connected but capitalize for now."
+   underscores. "However I use first letter lowercase and proceeding words connected but capitalize for now."
 • Constants: Use upper-case words separated by underscores.
 
-*Use tabs instead of spaces for formating
+*Use tabs instead of spaces for formatting
 
 Note: code coverage, make sure you test the application.
 
