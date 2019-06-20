@@ -68,6 +68,7 @@
  *     a) https://netbeans.org/bugzilla/show_bug.cgi?id=143795
  *     b) https://www.quora.com/Which-tab-size-is-better-for-programming-generally-Two-or-four 
  *     c) https://github.com/kbilsted/CodeQualityAndReadability/blob/master/Articles/Readability/OptimalIndentSizeForCodeReadability.md
+ * 14) Select a format:https://www.gnu.org/software/indent/manual/indent.html
  */
 
 #include <stdio.h> //FILE,printf,fopen
