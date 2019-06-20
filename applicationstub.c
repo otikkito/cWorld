@@ -72,14 +72,12 @@
 
 #include <stdio.h> //FILE,printf,fopen
 #include <time.h>
-#include <unistd.h> //alarm,getcwd,getpid, ...
 #include <stdlib.h> //EXIT_SUCCESS,EXIT_FAILURE,NULL,...
 #include <syslog.h>
 #include <string.h> //memset
 #include <stdbool.h> //true,false
 #include <signal.h> //sigaction
 #include <errno.h>
-#include <sys/types.h>
 
 /*Preprocessor directives*/
 #define MAXLOGENTRYSIZE 300
@@ -528,7 +526,7 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
 const char* getProcessNameByPid(pid_t pid) {
     FILE *f;
     char* name = (char*) calloc(1024, sizeof (char));
-	//To get release on ubuntu : cat /etc/*release
+    //ubuntu
     //Need to determine if RHEL 7 or 6 is being used. /etc/redhat-release
     if(pid == 0){
         return "Kernel"; //This is the abstraction point...better pin pointing.
