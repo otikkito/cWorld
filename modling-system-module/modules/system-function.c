@@ -254,7 +254,7 @@ int getUptimeOfSystem(){
 *
 *********************************************************/
 int getUptimeOfApplication(){
-   //Need to have the start time of the application stored as a global variable in the applicationstub.
+   //Need to have the start time of the application stored as a global variable in the applicationstub.c
 	return 0;
 }
 
