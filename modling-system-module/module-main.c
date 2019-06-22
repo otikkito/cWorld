@@ -39,6 +39,7 @@
 *
 *ALGORITHM (PDL)
 */
+
 /* 
  * File:   module-main.c
  * Author: otikkito
@@ -66,7 +67,6 @@
 * --------     ----    --- -----------
 *argc          int     I   number of command line arguments
 *argv          char ** I   char array vector for the command line arguments
-*argv          char ** I   char array vector for the command line arguments
 *
 * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
 *
@@ -75,14 +75,14 @@
 *********************************************************/
 int main(int argc, char** argv) {
 
-	//variable declaration
+	
 	
 	printf("Welcome to module-main.c we will be testing some of the functions here.\n");
 	printf("----------------------------------------------------------------------\n");
 	printf("The module name is: %s\n",getProcessNameByPid(getpid()));
 	printf("Does the file exist. 1 if it does: %d\n",fileExist("/home/Kito Joseph/sandbox/cWorld/text-data-files"));
 	printf("Does the file exist. 1 if it does: %d\n",fileExist("c:\test.h"));
-	printf("
+	
 	
 	
 	

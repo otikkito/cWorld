@@ -40,31 +40,34 @@
 
 
 
-/*This is the interface to the system-function module*/
-//Some concept functions that are accessible to the application stub.
-//Try to utilize the /proc filesystem as much as you can: https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html
-//man 5 proc
-//http://man7.org/linux/man-pages/man5/proc.5.html
+/*This is the interface to the system-function module
+*Some concept functions that are accessible to the application stub.
+*Try to utilize the /proc filesystem as much as you can: https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html
+*man 5 proc
+*http://man7.org/linux/man-pages/man5/proc.5.html
+*/
+
 /*Include files*/
 #include <stdbool.h>
 
-//Preprocessor directives
-//#define NAME_MAX 50 /*Longest file name component which is system-dependent (K&R)*/
+/*Preprocessor directives*/
+
+/*#define NAME_MAX 50 /*Longest file name component which is system-dependent (K&R)*/
 
 /*Function prototype*/
-const char* getProcessNameByPid(pid_t pid);//done
-pid_t getPidByProcessName(const char*); //stub
-int getFreeMemoryOfSystem(); //stub
-int getCpuUtilizationOfSystem(); //stub
-void intialize_signal_handles(); //stub
-int getLoadAverageOfSystem(); //stub
-int getUptimeOfSystem();//use /proc file system
-int getUptimeOfApplication(); //stub
-int getMemoryUsageOfApplicationGivenName(char *appname);//stub
-int getMemoryUsageOfApplicationGivenPid(pid_t pid);//stub
-//FILE *runSystemCommand(const char *system_comand); pointer to a file that contains text output of the system command
-const char* getOperatingSystemVersion(); //stub
-int getNumberOfProcessorCoresOnSystem(); //stub
+const char* getProcessNameByPid(pid_t pid);/*done*/
+pid_t getPidByProcessName(const char*); /*stub*/
+int getFreeMemoryOfSystem(); /*stub*/
+int getCpuUtilizationOfSystem(); /*stub*/
+void intialize_signal_handles(); /*stub*/
+int getLoadAverageOfSystem(); /*stub*/
+int getUptimeOfSystem();/*/proc file system*/
+int getUptimeOfApplication(); /*stub*/
+int getMemoryUsageOfApplicationGivenName(char *appname);/*stub*/
+int getMemoryUsageOfApplicationGivenPid(pid_t pid);/*stub*/
+/*FILE *runSystemCommand(const char *system_command); pointer to a file that contains text output of the system command*/
+const char* getOperatingSystemVersion(); /*stub*/
+int getNumberOfProcessorCoresOnSystem(); /*stub*/
 bool direntIsAProcess(const char *);
 bool fileExist(const char *file_name);
   

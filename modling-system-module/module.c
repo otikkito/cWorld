@@ -7,7 +7,8 @@
 
 //module implementation
 
-
-"Modules provide abstraction, encapsulation, and information-hiding, making the
-large-scale structure of a program easier to understand. Careful design of 
-modules also promotes software reuse, even in embedded systems programming." 
+/*
+*"Modules provide abstraction, encapsulation, and information-hiding, making the
+*large-scale structure of a program easier to understand. Careful design of 
+*modules also promotes software reuse, even in embedded systems programming."
+*/ 

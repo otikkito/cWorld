@@ -399,10 +399,10 @@ pid_t getPidByProcessName(const char* processName){ //processName is one of the 
 	processId = 0;
 	struct dirent *de;
 	DIR *dr = opendir("/proc");
-    //char name[NAME_MAX];
+        //char name[NAME_MAX];
 	
 	if( dr == NULL){
-		printf("Could not open directory"); //also need to print to the application log.
+		printf("Could not open directory"); /*also need to print to the application log.*/
 		return (EXIT_FAILURE);
 	}
 	
