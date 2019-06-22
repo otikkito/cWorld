@@ -81,7 +81,7 @@ int main(int argc, char** argv) {
 	printf("----------------------------------------------------------------------\n");
 	printf("The module name is: %s\n",getProcessNameByPid(getpid()));
 	printf("Does the file exist. 1 if it does: %d\n",fileExist("/home/Kito Joseph/sandbox/cWorld/text-data-files"));
-	printf("Does the file exist. 1 if it doesL %d\n",fileExist("c:\test.h"));
+	printf("Does the file exist. 1 if it does: %d\n",fileExist("c:\test.h"));
 	printf("
 	
 	

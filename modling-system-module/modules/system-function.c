@@ -3,8 +3,8 @@
 *
 *
 *
-*PURPOSE: To create a library of functions to retrive operating system 
-*status and frequent functions used throughout the develpment of system applications.
+*PURPOSE: To create a library of functions to retrieve operating system 
+*status and frequent functions used throughout the development of system applications.
 * 
 *
 *FILE REFERENCES:
@@ -23,7 +23,7 @@
 *Name		Description
 *----   	-----------
 *
-*ABNORMAL ERMINATION CONDITIONS, ERROR AND WARINGING MESSAGES:
+*ABNORMAL TERMINATION CONDITIONS, ERROR AND WARNING MESSAGES:
 *
 *ASSUMPTIONS, CONSTRAINTS, RESTRICTIONS
 *
@@ -66,7 +66,7 @@
 *
 * ARGUMENT     TYPE    I/O DESCRIPTION
 * --------     ----    --- -----------
-* pid          pid_t   I   This is the process id of the process that I am inquireing about.
+* pid          pid_t   I   This is the process id of the process that I am inquiring about.
 *
 *
 * RETURNS: returns the process name given the process id.
@@ -75,7 +75,7 @@
 *
 *********************************************************/
 const char* getProcessNameByPid(pid_t pid){
-	//This function is included in the applicationstub.c, make sure that the are the same implemntation and/or reference the same function
+	//This function is included in the applicationstub.c, make sure that the are the same implementation and/or reference the same function
 	FILE *f;
     char* name = (char*) calloc(1024, sizeof (char));
     //Need to determine if RHEL 7 or 6 is being used. /etc/redhat-release
