@@ -52,7 +52,7 @@
 
 /*Preprocessor directives*/
 
-/*#define NAME_MAX 50 /*Longest file name component which is system-dependent (K&R)*/
+/*#define NAME_MAX 50 Longest file name component which is system-dependent (K&R)*/
 
 /*Function prototype*/
 const char* getProcessNameByPid(pid_t pid);/*done*/
