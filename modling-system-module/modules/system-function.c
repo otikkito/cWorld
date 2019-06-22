@@ -50,6 +50,7 @@
 #include <dirent.h>
 #include <string.h>
 #include <stdbool.h>
+#include <unistd.h>
 #include "system-function.h"
 
 
@@ -428,13 +429,13 @@ pid_t getPidByProcessName(const char* processName){ /* processName is one of the
 			to list all directories in path: ls -l | grep "^d"
 
 		*/
+		/*
+		1. convert de->d_name to integer if possible
+		2. check to see if it is an integer or string
+		3. update list
+		*/
 		
-		//convert de->d_name to integer if possible
-		// check to see if it is an integer or string
-		//update list
-		
-		
-	}//while
+	} /* while */
 	
 
 	closedir(dr);
@@ -464,7 +465,7 @@ pid_t getPidByProcessName(const char* processName){ /* processName is one of the
 *
 *********************************************************/
 int getNumberOfProcessorCoresOnSystem(){
-	// look at /proc/cpuinfo cpucore and/or processor
+	/* look at /proc/cpuinfo cpucore and/or processor */
 	int numCores;
 	
 	numCores = 1;
