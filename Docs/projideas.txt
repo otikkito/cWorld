@@ -19,7 +19,7 @@ projects I want to develop and for normal use or as an exercise
 -Virtual Operating system
 -personal accounting with gnu cash
 -Storing passwords to files and encrypting it 
--Stock monitor,selector  (c++)
+-Stock monitor,selector  (c++) https://en.cppreference.com/w/cpp/links/libs
 -Network command server
 -embedded system programming
 -Regex tutorial: book in the amazon queue and shovel ready ISBN-13: 978-0596514273  ISBN-10: 0596514271
