@@ -1,0 +1,8 @@
+This will be the starting point of the modules/libraries that I will be working on that will later become the modules/libraries.
+
+
+Module list and descriptions:
+------------------------------
+system-functions: This will include stuff for system information that the application can retrieve
+type-conversion: converting integer to binary or hex and so forth. Also kilobytes to kibibytes,etc...
+strings_k: All things related to strings and character arrays.
