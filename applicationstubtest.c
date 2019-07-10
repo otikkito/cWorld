@@ -3,7 +3,7 @@
 *
 *
 *
-*PURPOSE: Robost test framework for the applicationstub.c
+*PURPOSE: Robust test framework for the applicationstub.c
 * 
 *
 *FILE REFERENCES:
@@ -22,7 +22,7 @@
 *Name		Description
 *----   	-----------
 *
-*ABNORMAL ERMINATION CONDITIONS, ERROR AND WARINGING MESSAGES:
+*ABNORMAL TERMINATION CONDITIONS, ERROR AND WARNING MESSAGES:
 *
 *ASSUMPTIONS, CONSTRAINTS, RESTRICTIONS
 *
@@ -43,10 +43,10 @@
 #include <signal.h>
 #include <sys/types.h>
 #include <unistd.h>
-//#include "modling-system-module/modules/system-function.h"
+//#include "modeling-system-module/modules/system-function.h"
 
 //function declaration
-//pid_t get_pid_by_process_name(const char*) //located in : modling-system-module/modules/system-function.h
+//pid_t get_pid_by_process_name(const char*) //located in : modeling-system-module/modules/system-function.h
 
 /*Application test goals
   -ensure that you test all other parts of the program that does not terminate the program until the end of the test.
