@@ -22,7 +22,7 @@
 *Name		Description
 *----   	-----------
 *
-*ABNORMAL ERMINATION CONDITIONS, ERROR AND WARINGING MESSAGES:
+*ABNORMAL TERMINATION CONDITIONS, ERROR AND WARNING MESSAGES:
 *
 *ASSUMPTIONS, CONSTRAINTS, RESTRICTIONS
 *
@@ -107,7 +107,7 @@ int main(){
 	printf("structure c: %c\n",ds1.c);
 	
 	rv = myfunction(ds1,ds2);
-	int j;  //just have to decrare variables before you use them
+	int j;  //just have to declare variables before you use them
 	for(j=0; j<10; j=j+2){
 		printf("the index is: %d\n",j);
 	}
