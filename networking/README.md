@@ -29,7 +29,7 @@ Need to find a router for cisco certification at least at the ccnp level router 
 3) GNS3: https://www.gns3.com/
 4) Virtualbox networking: https://study.com/academy/lesson/how-to-network-virtual-machines-in-virtualbox.html
 5) How to emulate a netwrok using virtualbox: http://www.brianlinkletter.com/how-to-use-virtualbox-to-emulate-a-network/
-
+6) CCNA notes: https://github.com/cbeasley92/CCNA-Training
 ------------------------------------------------------------------------------------
 
 I need to know the point of origination of a packet.
