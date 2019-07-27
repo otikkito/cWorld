@@ -426,7 +426,7 @@ pid_t getPidByProcessName(const char* processName){ /* processName is one of the
 			  b)see if each character is a digit
 			2.create an array or linked list conting processid and name
 			
-			to list all directories in path: ls -l | grep "^d"
+			to list all directories in path that are proceses: ls | grep "^[[:digit:]]"
 
 		*/
 		/*
