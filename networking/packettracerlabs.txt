@@ -1,0 +1,5 @@
+Packet tracer labs and notes.
+-------------------------------
+Packet tracer labs: https://www.packettracerlab.com/
+Labs: https://www.packettracernetwork.com/
+Cisco courses: https://www.netacad.com/courses/networking

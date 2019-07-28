@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* Regex tutorial: https://regexone.com/ */
+
 /* To find out more "man regcomp"
 int regcomp(regex_t *restrict, const char *restrict, int);
 size_t regerror(int, const regex_t *restrict, char *restrict, size_t);
