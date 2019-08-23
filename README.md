@@ -9,6 +9,8 @@ C programming tutorial: http://www.cprogramming.com/
 
 C programming Windows: https://docs.microsoft.com/en-us/cpp/c-language/c-language-reference
 
+Developers best practice: https://www.tutorialspoint.com/developers_best_practices/index.htm
+
 -----------------------------------------------------------------------------------------------------------
 
 Citing internet sources: http://ctl.yale.edu/writing/using-sources/citing-internet-sources
