@@ -21,6 +21,8 @@ Quantum computing math refresher: https://www.udemy.com/mathematics-prerequisite
 
 Quantum physics and Quantum computing for beginners: https://www.udemy.com/qc101-introduction-to-quantum-computing-quantum-physics-for-beginners/
 
+Quantum computer fundamentals @ MIT: https://learn-xpro.mit.edu/quantum-computing
+
 June 11th 2018
 
 -Try to find schools that specialze in this quatntum computing and cognitive computing.
