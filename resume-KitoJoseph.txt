@@ -1,74 +1,76 @@
-
-KITO JOSEPH
+Kito Joseph
 Raleigh, NC
-(984)-218-4109 | kitojoseph@gmail.com | www.linkedin.com/in/kitojoseph
-ELECTRICAL & COMPUTER ENGINEER
+ (984)-218-4109 | kitojoseph@gmail.com | www.linkedin.com/in/kitojoseph
+Electrical & Computer Engineer
 Technology Solutions | Network Administration | System Performance
-Results-proven Engineer with expertise in all facets of managing electrical and computer engineering functions, driven to deliver
-optimal system performance and network administration. Skilled in developing improved procedures, processes and solutions based on 
-ever-evolving technological advances. Demonstrated ability to lead knowledgeable and successful teams to drive productivity. 
-Possess superior analytical skills.  Thrives in fast-paced, complex environments, exceeding expectations in installation, setup,
-virtualizations, clustering, and networking. 
+Results-proven Engineer with expertise in all facets of managing electrical and computer engineering functions, driven to deliver optimal system performance and network administration. Skilled in developing improved procedures, processes and solutions based on ever-evolving technological advances. Demonstrated ability to lead knowledgeable and successful teams to drive productivity. Possess superior analytical skills.  Thrives in fast-paced, complex environments, exceeding expectations in installation, setup, virtualizations, clustering, and networking. 
 
-? Computer Languages
-? Recovery Systems
-? Team Collaboration
-? System Installation
-? Information Technology
-? Application Integration
-? Problem Resolution
-? Customer Service
-? System Administration
-? Consumer Insights
-? Licensing Proficiency
-? Network Security
-TECHNICAL COMPETENCIES
+    • Computer Languages
+    • Recovery Systems
+    • Team Collaboration
+    • System Installation
+    • Information Technology
+    • Application Integration
+    • Problem Resolution
+    • Customer Service
+    • System Administration
+    • Consumer Insights
+    • Licensing Proficiency
+    • Network Security
+Technical Competencies
 Applications
 Microsoft Hyper-V | VMware | Windows Server | Windows 7 | XP | Vista | SharePoint
 SQL | Exchange Server | Novell GroupWise | QuickBooks | Oracle | UNIX | Linux | Microsoft Office Suite
 
 Connectivity & Hardware
 SAN | CISCO | HP | Blade Servers | DNS Server | DHCP Servers
-Web Servers | Ethernet | Fast Ethernet | WAN | LAN | TCP/IP | RAID Systems
+Web Servers Ethernet | Fast Ethernet | WAN | LAN | TCP/IP | RAID Systems
 
 Network Technologies
 Access Control List | Network Address Translation | Port Address Translation | SMTP | ARP | TCP | UDP
 
 Peripheral Technologies
 802.11 a/b/g/n | SSID | AAA | TACACS+ | RADIUS | SSH | Firewall | MAC Address Filtering
-PROFESSIONAL EXPERIENCE
-SDI, Morrisville, NC	2016 â€“ 2016
-System Administrator
-? Monitoring of Suse Linux SAP servers to ensure the optimal configuration and utilization.
-? Performed system installation and upgrades as required when alerts arose.
-? Performed scripting of task to help automate the defect resolution.
-? Evaluated base operating systems and platforms, effectively identifying conflicts and preventing problems before deployment.
+Professional Experience
+PREMIERE COMMUNICATION & CONSULTING, INC., Durham, NC                                                       2019- 2019
+System and Network administrator
+    • Installed, racked, and cabled enterprise hardware in a data center.
+    • Create scripts to help automate routine task in the installation, configuration of enterprise servers and clustering of Netapp appliances.
+    • Verified inventory count and ordered parts from asset in order to make Netapp appliances and servers operational.
+    • Used layer 2 networking to create, change, and management of  Cisco and Brocade switches.
 
-INFINITE COMPUTING SOLUTIONS, Durham, NC	2015 â€“ 2016
+SDI, Morrisville, NC	2016 – 2016
+System Administrator
+    • Monitoring of Suse Linux SAP servers to ensure the optimal configuration and utilization.
+    • Performed system installation and upgrades as required when alerts arose.
+    • Performed scripting of task to help automate the defect resolution.
+    • Evaluated base operating systems and platforms, effectively identifying conflicts and preventing problems before deployment.
+
+INFINITE COMPUTING SOLUTIONS, Durham, NC	2015 – 2016
 System Administrator / Network Administrator
-? Managed all installation, configuration, and administration functions, including those related to Red Hat Enterprise 6/7 platforms.
-? Successfully evaluated new network appliance to integrate into existing network, effectively increasing redundancy and performance to enhance technical operations.
-? Increase network security by verifying access to the VPN.  
-? Evaluated base operating systems and platforms, effectively identifying conflicts and preventing problems before deployment.
-RED HAT, Raleigh, NC	2014 â€“ 2015
+    • Managed all installation, configuration, and administration functions, including those related to Red Hat Enterprise 6/7 platforms.
+    • Successfully evaluated new network appliance to integrate into existing network, effectively increasing redundancy and performance to enhance technical operations.
+    • Increase network security by verifying access to the VPN.  
+    • Evaluated base operating systems and platforms, effectively identifying conflicts and preventing problems before deployment.
+RED HAT, Raleigh, NC	2014 – 2015
 Frontline Technical Support Engineer
-? Provided extensive technical support for issues to maintain Linux servers, effectively resolving complex problems related to bugs, feature enhancements, and software design in c, bash, python, and other programming and scripting languages.
-? Effectively communicated with customers via phone and email in a secure environment, providing superior technical assistance and customer service.
-? Installed, configured, and administrated Red Hat Enterprise 4/5/6.
-? Developed technical documentation regarding software defects and products.
-? Successfully completed certifications as required by company policies and regulations. 
-ELSTER SOLUTION, Raleigh, NC	2011 â€“ 2012
+    • Provided extensive technical support for issues to maintain Linux servers, effectively resolving complex problems related to bugs, feature enhancements, and software design in c, bash, python, and other programming and scripting languages.
+    • Effectively communicated with customers via phone and email in a secure environment, providing superior technical assistance and customer service.
+    • Installed, configured, and administrated Red Hat Enterprise 4/5/6.
+    • Developed technical documentation regarding software defects and products.
+    • Successfully completed certifications as required by company policies and regulations. 
+ELSTER SOLUTION, Raleigh, NC	2011 – 2012
 Test Engineer
-? Collaborated in project management functions, including business strategies, project goals, and schedules.
-? Independently developed, executed, and maintained both manual and automated test scripts in python, visual basic, and C/C++.
-? In collaboration with Developers in a team-centered environment, identified and reconciled test failures; subsequently creating defect reports to prevent future failures.
-? Provided extensive analysis of current documentation and test results, and developed recommendations for improvement based on this analysis.
-? Reduced obstacles to delivering projects within established time frame by identifying and resolving issues.
-? Reported bugs to team leads and software developers to quickly and accurately get them resolved and tracked.  
+    • Collaborated in project management functions, including business strategies, project goals, and schedules.
+    • Independently developed, executed, and maintained both manual and automated test scripts in python, visual basic, and C/C++.
+    • In collaboration with Developers in a team-centered environment, identified and reconciled test failures; subsequently creating defect reports to prevent future failures.
+    • Provided extensive analysis of current documentation and test results, and developed recommendations for improvement based on this analysis.
+    • Reduced obstacles to delivering projects within established time frame by identifying and resolving issues.
+    • Reported bugs to team leads and software developers to quickly and accurately get them resolved and tracked.  
 
 Additional Professional Experience as a Hardware Tester for Computer Task Group in Durham, NC, a Software Engineer for Talari Networks in Raleigh, NC, a Ground Radio Repairman for the United States Marine Corps at Camp Lejeune and an Apprenticeship with the Bibb County Board of Education in Macon, GA.  
 
-EDUCATION & CREDENTIALS
+Education & Credentials
 Bachelor of Science, Computer and Electrical Engineering
 North Carolina State University
 
@@ -78,6 +80,3 @@ Professional Development:
 Implementing Cisco Switched Networks v1.0 
 Configuring, Managing, and Maintaining Windows Server 2003
 Cisco Routers | Software Design | Circuit Analysis
-KITO JOSEPH
-
-
