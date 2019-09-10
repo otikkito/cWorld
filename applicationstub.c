@@ -265,12 +265,12 @@ int readConfigurationFile(){
 
 	//populate the global configuration structure
 	while((fgets(line,MAXCONFIGLINESIZE,config_file)) != NULL){
-		if((line[0] == '#') || (line[0] == ' ' ) || (line[0] == '\n')) {  //this needs to be corrected and/or add a special character to the front of the configuration file indicating it is a config directive
+	/*this needs to be corrected and/or add a special character to the front
+          of the configuration file indicating it is a config directive*/
+		if((line[0] == '#') || (line[0] == ' ' ) || (line[0] == '\n')) {  
 			continue;
 		}
 		else{
-			//printf("Config- %s\n",line);
-
 			char leftConfigDirective[MAXCONFIGLINESIZE];
 			char rightConfigDirective[MAXCONFIGLINESIZE];
 			memset(leftConfigDirective,'\0',MAXCONFIGLINESIZE);
@@ -528,9 +528,9 @@ const char* getProcessNameByPid(pid_t pid) {
     char* name = (char*) calloc(1024, sizeof (char));
     //ubuntu
     //Need to determine if RHEL 7 or 6 is being used. /etc/redhat-release
-    if(pid == 0){
-        return "Kernel"; //This is the abstraction point...better pin pointing.
-    }
+	if(pid == 0){
+	        return "Kernel"; //This is the abstraction point...better pin pointing.
+  	}
 
 	if(pid ==1){//on rhel 7 and above
 	    return "Systemd";
