@@ -581,10 +581,10 @@ int printApplicationUptime(){
 	char logentry[MAXLOGENTRYSIZE];
 
 	i = clock_gettime( CLOCK_MONOTONIC,&elapsed_time);
-    if(i == -1){
-        perror("clock_gettime");
-        exit(EXIT_FAILURE);
-    }
+	if(i == -1){
+        	perror("clock_gettime");
+        	exit(EXIT_FAILURE);
+        }
 
 	mins = (elapsed_time.tv_sec -start_time.tv_sec)/60;
 	secs = (elapsed_time.tv_sec - start_time.tv_sec)%60;
@@ -619,9 +619,8 @@ int printApplicationUptime(){
 *
 *********************************************************/
 int printDebugInfo(){
-
-
-		return EXIT_SUCCESS;
+	printf("The application will now print debug info.\n");
+	return EXIT_SUCCESS;
 }
 
 
