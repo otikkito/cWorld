@@ -660,6 +660,6 @@ void bye(void) {
 *3) https://www.tutorialspoint.com/c_standard_library/index.htm
 *4) https://en.wikipedia.org/wiki/MIL-STD-498
 *5) https://www.ece.ncsu.edu/people/gbyrd
-*6) applicationstub.txt
+*6) https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
 *7) Reading code: http://wiki.c2.com/?TipsForReadingCode
 */
