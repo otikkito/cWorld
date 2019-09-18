@@ -459,7 +459,7 @@ pid_t getPidByProcessName(const char* processName){ /* processName is one of the
 *none
 *
 *
-* RETURNS: the number of processor on the given core
+* RETURNS: the number of cores on the given processor
 *
 *
 *
