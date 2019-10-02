@@ -40,7 +40,7 @@
 */
 
 
-
+//https://superuser.com/questions/716001/how-can-i-get-files-with-numeric-names-using-ls-command
 
 /*This is the system-function implementation*/
 /*TODO find out about multiple inclusions of header files*/
@@ -426,8 +426,8 @@ pid_t getPidByProcessName(const char* processName){ /* processName is one of the
 			  b)see if each character is a digit
 			2.create an array or linked list conting processid and name
 			
-			to list all directories in path that are proceses: ls | grep "^[[:digit:]]"
-
+			to list all directories in path that begin with digit (possible proceses): ls | grep "^[[:digit:]]"
+			to list a file that contains all digits in file name: ls | grep -E '^[0-9]+$'
 		*/
 		/*
 		1. convert de->d_name to integer if possible
