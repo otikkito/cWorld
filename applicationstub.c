@@ -199,7 +199,7 @@ int main(int argc, char** argv) {
  *
  * FUNCTION NAME: printApplicationHeaderToConsole
  *
- *
+ *	
  *
  * ARGUMENTS: none
  *
