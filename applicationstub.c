@@ -69,6 +69,7 @@
  *     b) https://www.quora.com/Which-tab-size-is-better-for-programming-generally-Two-or-four 
  *     c) https://github.com/kbilsted/CodeQualityAndReadability/blob/master/Articles/Readability/OptimalIndentSizeForCodeReadability.md
  * 14) Read in enviromental variables: https://en.wikipedia.org/wiki/Environment_variable
+ * 15) Remove magic numbers
  */
 
 #include <stdio.h> //FILE,printf,fopen
