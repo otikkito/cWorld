@@ -37,12 +37,12 @@
  *
  *Date		     Author       Change ID    Release      Description of Change
  *----   	     ------  	  ---------    -------      ---------------------
- *2/22/2017      Kito Joseph      1                         Added a prolog.I am not sure if it should be prolog or file format...
- *8/19/2018      Kito Joseph      2                         Continuing correction/refining documentation and file format/prolog to form a standard file format for application development.
- *8/26/2018      Kito Joseph      3                         Formatting the file to conform to the NASA-c-style
- *9/2/2018       Kito Joseph      4                         Added the configuration file reading ability to the applicationstub.c
- *9/23/2018      Kito Joseph      5                         Included the application up-time to the application stub. It will print it to the application log
- *5/18/2019      Kito Joseph      6                         Provided application uptime to be printed to the console
+ *2/22/2017      Kito Joseph      1                     Added a prolog.I am not sure if it should be prolog or file format...
+ *8/19/2018      Kito Joseph      2                     Continuing correction/refining documentation and file format/prolog to form a standard file format for application development.
+ *8/26/2018      Kito Joseph      3                     Formatting the file to conform to the NASA-c-style
+ *9/2/2018       Kito Joseph      4                     Added the configuration file reading ability to the applicationstub.c
+ *9/23/2018      Kito Joseph      5                     Included the application up-time to the application stub. It will print it to the application log
+ *5/18/2019      Kito Joseph      6                     Provided application uptime to be printed to the console
  *
  *ALGORITHM (PDL)
  *
