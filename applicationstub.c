@@ -277,7 +277,7 @@ int readConfigurationFile(){
 			char rightConfigDirective[MAXCONFIGLINESIZE];
 			memset(leftConfigDirective,'\0',MAXCONFIGLINESIZE);
 			memset(rightConfigDirective,'\0',MAXCONFIGLINESIZE);
-			//I also have to include the semicolon to terminate the line
+			//TODO I also have to include the semicolon to terminate the line
 			sscanf(line,"%s = %s",leftConfigDirective,rightConfigDirective);
 			//printf("The left value is:%s and the right value is %s\n",leftConfigDirective,rightConfigDirective);
 
@@ -479,26 +479,26 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
     /*Log to the application log the signal*/
     printLogFile(fp,app_log_message);
 
-    /*To terminate kill -s 15 <pid>*/
-    /*man 7 signal*/
-    /*TODO need to log the calling process name as well*/
-    /*https://github.com/otikkito/cWorld/blob/master/Docs/cManPages/signal.pdf*/
-    switch (signal) {
-        case SIGINT:
-            /*TODO need to find a way to print to the logfile with multiple arguments*/
-            fprintf(stdout, "Received SIGINT from process with pid = %u \n", info->si_pid);
-            syslog(LOG_ERR, "Received signal SIGINT and will be shutting down application.c ");
-            exit(EXIT_FAILURE);
-        case SIGTERM:
-            fprintf(stdout, "Received SIGTERM from process with pid = %u \n", info->si_pid);
-            syslog(LOG_ERR, "Received signal SIGTERM and will be shutting down application.c");
-            exit(EXIT_FAILURE);
-	case SIGUSR1:
-	    //This is terminating the program but this is not the behavior that we won't. I need to find out what the corrective actions that I need to take.
-	    printLogFile(fp,"The user has requested to dump debug data");
-	    printDebugInfo();
-	    break;
-    }
+	/*To terminate kill -s 15 <pid>*/
+	/*man 7 signal*/
+	/*TODO need to log the calling process name as well*/
+	/*https://github.com/otikkito/cWorld/blob/master/Docs/cManPages/signal.pdf*/
+	switch (signal) {
+		case SIGINT:
+			/*TODO need to find a way to print to the logfile with multiple arguments*/
+			fprintf(stdout, "Received SIGINT from process with pid = %u \n", info->si_pid);
+			syslog(LOG_ERR, "Received signal SIGINT and will be shutting down application.c ");
+			exit(EXIT_FAILURE);
+		case SIGTERM:
+			fprintf(stdout, "Received SIGTERM from process with pid = %u \n", info->si_pid);
+			syslog(LOG_ERR, "Received signal SIGTERM and will be shutting down application.c");
+			exit(EXIT_FAILURE);
+		case SIGUSR1:
+			//This is terminating the program but this is not the behavior that we won't. I need to find out what the corrective actions that I need to take.
+			printLogFile(fp,"The user has requested to dump debug data");
+			printDebugInfo();
+			break;
+	}
 
 }
 
