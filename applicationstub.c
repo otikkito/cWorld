@@ -1,77 +1,78 @@
 /****************************************************************
- *FILE NAME: applicationstub.c
- * Please see end of file for references
- * www.kjoseph-it.com
- *
- *
- *PURPOSE: To design an application stub to begin developing applications on the
- * Linux/Unix platform
- *
- *FILE REFERENCES:
- *
- *NAME		I/O		Description
- *----      ---     -----------
- *
- *EXTERNAL VARIABLE:
- *SOURCE: <         >
- *
- *NAME	  TYPE    	I/O		Description
- *----    ----      ---     -----------
- *
- *EXTERNAL REFERENCES:
- *
- *Name		Description
- *----   	-----------
- *
- *ABNORMAL TERMINATION CONDITIONS, ERROR AND WARNING MESSAGES:
- *-Some of the abnormal conditions will exit the program using the bye (atexit) 
- *function and EXIT_FAILURE or EXIT_SUCCESS...
- *
- *ASSUMPTIONS, CONSTRAINTS, RESTRICTIONS
- *
- *NOTES:
- *
- *REQUIREMENTS/FUNCTIONAL SPECIFICATIONS REFERENCES:
- *
- *DEVELOPMENT HISTORY:
- *
- *Date		     Author       Change ID    Release      Description of Change
- *----   	     ------  	  ---------    -------      ---------------------
- *2/22/2017      Kito Joseph      1                     Added a prolog.I am not sure if it should be prolog or file format...
- *8/19/2018      Kito Joseph      2                     Continuing correction/refining documentation and file format/prolog to form a standard file format for application development.
- *8/26/2018      Kito Joseph      3                     Formatting the file to conform to the NASA-c-style
- *9/2/2018       Kito Joseph      4                     Added the configuration file reading ability to the applicationstub.c
- *9/23/2018      Kito Joseph      5                     Included the application up-time to the application stub. It will print it to the application log
- *5/18/2019      Kito Joseph      6                     Provided application uptime to be printed to the console
- *
- *ALGORITHM (PDL)
- *
- */
+*FILE NAME: applicationstub.c
+* Please see end of file for references
+* www.kjoseph-it.com
+*
+*
+*PURPOSE: To design an application stub to begin developing applications on the
+* Linux/Unix platform
+*
+*FILE REFERENCES:
+*
+*NAME		I/O		Description
+*----      ---     -----------
+*
+*EXTERNAL VARIABLE:
+*SOURCE: <         >
+*
+*NAME	  TYPE    	I/O		Description
+*----    ----      ---     -----------
+*
+*EXTERNAL REFERENCES:
+*
+*Name		Description
+*----   	-----------
+*
+*ABNORMAL TERMINATION CONDITIONS, ERROR AND WARNING MESSAGES:
+*-Some of the abnormal conditions will exit the program using the bye (atexit) 
+*function and EXIT_FAILURE or EXIT_SUCCESS...
+*
+*ASSUMPTIONS, CONSTRAINTS, RESTRICTIONS
+*
+*NOTES:
+*
+*REQUIREMENTS/FUNCTIONAL SPECIFICATIONS REFERENCES:
+*
+*DEVELOPMENT HISTORY:
+*
+*Date		     Author       Change ID    Release      Description of Change
+*----   	     ------  	  ---------    -------      ---------------------
+*2/22/2017      Kito Joseph      1                     Added a prolog.I am not sure if it should be prolog or file format...
+*8/19/2018      Kito Joseph      2                     Continuing correction/refining documentation and file format/prolog to form a standard file format for application development.
+*8/26/2018      Kito Joseph      3                     Formatting the file to conform to the NASA-c-style
+*9/2/2018       Kito Joseph      4                     Added the configuration file reading ability to the applicationstub.c
+*9/23/2018      Kito Joseph      5                     Included the application up-time to the application stub. It will print it to the application log
+*5/18/2019      Kito Joseph      6                     Provided application uptime to be printed to the console
+*
+*ALGORITHM (PDL)
+*
+*/
 
 /*
- *Global TODO
- * 1) Find a way to create a file template in the IDE for c files (This can be done by using tools->Template).
-      I would like use the applicationstub for template after its cleaned up
- * 2) Highlight TODO Tools/Options/Team/Action Items
- * 3) Continue to clean up code and correct typos
- * 4) Remove some of the notes
- * 5) Add to the applicationstub.txt notes on what to do and remove from code
- * 6) Changed the license header to include the file format and which license you would like to use.
- * 7) I need to find a way to see if there is any way to get the process and system utilization
- *    https://stackoverflow.com/questions/3769405/determining-cpu-utilization
- * 8) Figure out how to read in the configuration file and configuration file variables (i.e. application log location,...)
- * 9) Skeleton (computer programming) wiki
- * 10) Correct the naming convention of functions and variables to match the nasa-c-style.
- * 11) Store in a variable the start time of the application in order to see how long the application has been running. --first implementation done next step is to add seconds
- * 12) Fix in the logging facility the gap between logs except for the termination and start of a new application invocation.
- * 13) Find out about the tab convention and use tabs instead of spaces for better readability.
- *     a) https://netbeans.org/bugzilla/show_bug.cgi?id=143795
- *     b) https://www.quora.com/Which-tab-size-is-better-for-programming-generally-Two-or-four 
- *     c) https://github.com/kbilsted/CodeQualityAndReadability/blob/master/Articles/Readability/OptimalIndentSizeForCodeReadability.md
- * 14) Read in enviromental variables: https://en.wikipedia.org/wiki/Environment_variable
- * 15) Remove magic numbers
- */
+*Global TODO
+* 1) Find a way to create a file template in the IDE for c files (This can be done by using tools->Template).
+*	I would like use the applicationstub for template after its cleaned up
+* 2) Highlight TODO Tools/Options/Team/Action Items
+* 3) Continue to clean up code and correct typos
+* 4) Remove some of the notes
+* 5) Add to the applicationstub.txt notes on what to do and remove from code
+* 6) Changed the license header to include the file format and which license you would like to use.
+* 7) I need to find a way to see if there is any way to get the process and system utilization
+*	https://stackoverflow.com/questions/3769405/determining-cpu-utilization
+* 8) Figure out how to read in the configuration file and configuration file variables (i.e. application log location,...)
+* 9) Skeleton (computer programming) wiki
+* 10) Correct the naming convention of functions and variables to match the nasa-c-style.
+* 11) Store in a variable the start time of the application in order to see how long the application has been running. --first implementation done next step is to add seconds
+* 12) Fix in the logging facility the gap between logs except for the termination and start of a new application invocation.
+* 13) Find out about the tab convention and use tabs instead of spaces for better readability.
+*	a) https://netbeans.org/bugzilla/show_bug.cgi?id=143795
+*	b) https://www.quora.com/Which-tab-size-is-better-for-programming-generally-Two-or-four 
+*	c) https://github.com/kbilsted/CodeQualityAndReadability/blob/master/Articles/Readability/OptimalIndentSizeForCodeReadability.md
+* 14) Read in enviromental variables: https://en.wikipedia.org/wiki/Environment_variable
+* 15) Remove magic numbers
+*/
 
+/*Include directives*/
 #include <stdio.h> //FILE,printf,fopen
 #include <time.h>
 #include <stdlib.h> //EXIT_SUCCESS,EXIT_FAILURE,NULL,...
@@ -108,7 +109,6 @@ const char* getProcessNameByPid(pid_t pid);
 int initializeSignalHandles();
 int printApplicationUptime();
 int printDebugInfo();
-
 
 /********************************************************
 *
