@@ -81,6 +81,9 @@
 #include <stdbool.h> //true,false
 #include <signal.h> //sigaction
 #include <errno.h>
+#include <unistd.h> //getpid
+
+#include <sys/types.h> //getpid
 
 /*Preprocessor directives*/
 #define MAXLOGENTRYSIZE 300
@@ -197,27 +200,27 @@ int main(int argc, char** argv) {
 }
 
 /********************************************************
- *
- *
- * FUNCTION NAME: printApplicationHeaderToConsole
- *
- *	
- *
- * ARGUMENTS: none
- *
- *
- *
- * ARGUMENT     TYPE I/O DESCRIPTION
- * --------     ---- --- -----------
- * none
- *
- *
- * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
- *
- *
- * TODO:
- * 1) print also to the log file and console (stdout)
- *********************************************************/
+*
+*
+* FUNCTION NAME: printApplicationHeaderToConsole
+*
+*	
+*
+* ARGUMENTS: none
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+* none
+*
+*
+* RETURNS: EXIT_SUCCESS or EXIT_FAILURE
+*
+*
+* TODO:
+* 1) print also to the log file and console (stdout)
+*********************************************************/
 int printApplicationHeaderToConsole() {
     printf("The process id of this application is: %d\n", processid);
     printf("Welcome to the application stub.\nThe  purpose of this program ");
@@ -302,30 +305,30 @@ int readConfigurationFile(){
 }
 
 /********************************************************
- *
- *
- * FUNCTION NAME: printLogFile
- * The function prints a new line at the end of the string.
- *
- *
- * ARGUMENTS: A pointer to a file and a pointer to a string
- *
- *
- *
- * ARGUMENT     TYPE    I/O DESCRIPTION
- * --------     ----    --- -----------
- * f            FILE *  I   a pointer to a file
- * string       char *  I   pointer to a character array.
- *
- *
- * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
- *
- * TODO print a variable argument list log file
- * https://github.com/otikkito/cWorld/blob/master/logger.c
- * https://github.com/otikkito/cWorld/blob/master/varguments.c
- * ===Rember to flush the buffer with fflush() when logging===
- *
- *********************************************************/
+*
+*
+* FUNCTION NAME: printLogFile
+* The function prints a new line at the end of the string.
+*
+*
+* ARGUMENTS: A pointer to a file and a pointer to a string
+*
+*
+*
+* ARGUMENT     TYPE    I/O DESCRIPTION
+* --------     ----    --- -----------
+* f            FILE *  I   a pointer to a file
+* string       char *  I   pointer to a character array.
+*
+*
+* RETURNS: EXIT_SUCCESS or EXIT_FAILURE
+*
+* TODO print a variable argument list log file
+* https://github.com/otikkito/cWorld/blob/master/logger.c
+* https://github.com/otikkito/cWorld/blob/master/varguments.c
+* ===Rember to flush the buffer with fflush() when logging===
+*
+*********************************************************/
 int printLogFile(FILE *f, char *string) {
     char timestring[100];
     time_t currenttime = time(0);
@@ -443,27 +446,27 @@ int initializeSignalHandles(){
 }
 
 /********************************************************
- *
- *
- * FUNCTION NAME:signalHandler
- *
- *
- *
- * ARGUMENTS: Signal type, siginfo_t, void *
- *
- *
- *
- * ARGUMENT     TYPE        I/O DESCRIPTION
- * --------     ----        --- -----------
- * signal       int         O   The signal that is being handled
- * info         siginfo_t   O   This is additional information about the signal and called signal
- * *_unused     void *      U   This is unused and is passes null in the function call
- *
- * RETURNS: void
- *
- *
- *
- *********************************************************/
+*
+*
+* FUNCTION NAME:signalHandler
+*
+*
+*
+* ARGUMENTS: Signal type, siginfo_t, void *
+*
+*
+*
+* ARGUMENT     TYPE        I/O DESCRIPTION
+* --------     ----        --- -----------
+* signal       int         O   The signal that is being handled
+* info         siginfo_t   O   This is additional information about the signal and called signal
+* *_unused     void *      U   This is unused and is passes null in the function call
+*
+* RETURNS: void
+*
+*
+*
+*********************************************************/
 void signalHandler(int signal, siginfo_t *info, void *_unused) {
     /*
      * http://man7.org/linux/man-pages/man2/sigaction.2.html --> "You must set the sa_flags field"
@@ -503,26 +506,26 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
 }
 
 /********************************************************
- *
- *
- * FUNCTION NAME: getProcessNameByPid
- *
- *
- *
- * ARGUMENTS: pid_t which is defined in <sys/types.h>
- *
- *
- *
- *
- * ARGUMENT     TYPE    I/O DESCRIPTION
- * --------     ----    --- -----------
- *pid           pid_t   I   This is the proccess id of the application.
- *
- *
- * RETURNS: A pointer to a constant char
- *
- *
- *
+*
+*
+* FUNCTION NAME: getProcessNameByPid
+*
+*
+*
+* ARGUMENTS: pid_t which is defined in <sys/types.h>
+*
+*
+*
+*
+* ARGUMENT     TYPE    I/O DESCRIPTION
+* --------     ----    --- -----------
+*pid           pid_t   I   This is the proccess id of the application.
+*
+*
+* RETURNS: A pointer to a constant char
+*
+*
+*
  *********************************************************/
 /* can also be done be running ps -p PID -i comm= */
 const char* getProcessNameByPid(pid_t pid) {
@@ -627,26 +630,26 @@ int printDebugInfo(){
 
 
 /********************************************************
- *
- *
- * FUNCTION NAME: bye - it performs cleanup at exit of the application.
- *
- *
- *
- * ARGUMENTS: void
- *
- *
- *
- * ARGUMENT     TYPE I/O DESCRIPTION
- * --------     ---- --- -----------
- * void         void U   This function takes no arguments
- *
- *
- * RETURNS: void
- *
- *
- *
- *********************************************************/
+*
+*
+* FUNCTION NAME: bye - it performs cleanup at exit of the application.
+*
+*
+*
+* ARGUMENTS: void
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+* void         void U   This function takes no arguments
+*
+*
+* RETURNS: void
+*
+*
+*
+*********************************************************/
 void bye(void) {
 	printf("The program is now shutting down.\n");
 	printApplicationUptime();
