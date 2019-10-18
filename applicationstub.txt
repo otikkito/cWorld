@@ -1,4 +1,4 @@
-the application development process and show best practices of application design 
+The application development process and show best practices of application design 
 in the c programming language.
 
 
