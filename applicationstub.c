@@ -655,7 +655,7 @@ void bye(void) {
 	printApplicationUptime();
 	printLogFile(fp,"The application has ended now.");
 	printLogFile(fp,"------------------------------");
-	fclose(fp); //flushes and close the logfile.
+	fclose(fp); //flushes the buffer and close the logfile.
 }
 
 /*
