@@ -31,6 +31,7 @@ Need to find a router for cisco certification at least at the ccnp level router 
 5) How to emulate a netwrok using virtualbox: http://www.brianlinkletter.com/how-to-use-virtualbox-to-emulate-a-network/
 6) CCNA notes: https://github.com/cbeasley92/CCNA-Training
 7) Packet tracer notes and labs: https://www.packettracernetwork.com/
+8) Hpyer-V virtual switch: https://www.altaro.com/hyper-v/the-hyper-v-virtual-switch-explained-part-1/
 ------------------------------------------------------------------------------------
 
 I need to know the point of origination of a packet.
