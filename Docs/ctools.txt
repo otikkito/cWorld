@@ -9,3 +9,4 @@ whitespaces
 -DDD - Data display debugger
 -Lint (
 -splint http://www.splint.org/
+-aspell
