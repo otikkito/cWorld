@@ -50,7 +50,7 @@
 /*Preprocessor directives*/
 #define MAXLOGSTRING 300
 
-/*Funciton prototypes*/
+/*Function prototypes*/
 int FunctionA(int argument_count,...);
 void print_log_va(FILE *fp,int argcount,...);
 
