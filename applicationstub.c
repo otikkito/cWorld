@@ -68,7 +68,7 @@
 *	a) https://netbeans.org/bugzilla/show_bug.cgi?id=143795
 *	b) https://www.quora.com/Which-tab-size-is-better-for-programming-generally-Two-or-four 
 *	c) https://github.com/kbilsted/CodeQualityAndReadability/blob/master/Articles/Readability/OptimalIndentSizeForCodeReadability.md
-* 14) Read in enviromental variables: https://en.wikipedia.org/wiki/Environment_variable
+* 14) Read in environmental variables: https://en.wikipedia.org/wiki/Environment_variable
 * 15) Remove magic numbers
 */
 
@@ -154,7 +154,7 @@ int main(int argc, char** argv) {
 
     /*The current pid of the process*/
     processid = getpid(); /*Per the documentation this function is always successful*/
-    /*Open the logfile to begin logging*/
+    /*Open the log file to begin logging*/
     fp = fopen(logfile, "a+");
     if(fp == NULL){
         perror("Error with fopen(). Unable to open the application log");
@@ -271,7 +271,7 @@ int readConfigurationFile(){
 	//populate the global configuration structure
 	while((fgets(line,MAXCONFIGLINESIZE,config_file)) != NULL){
 	/*this needs to be corrected and/or add a special character to the front
-          of the configuration file indicating it is a config directive*/
+          of the configuration file indicating it is a configuration directive*/
 		if((line[0] == '#') || (line[0] == ' ' ) || (line[0] == '\n')) {  
 			continue;
 		}
@@ -326,7 +326,7 @@ int readConfigurationFile(){
 * TODO print a variable argument list log file
 * https://github.com/otikkito/cWorld/blob/master/logger.c
 * https://github.com/otikkito/cWorld/blob/master/varguments.c
-* ===Rember to flush the buffer with fflush() when logging===
+* ===Remember to flush the buffer with fflush() when logging===
 *
 *********************************************************/
 int printLogFile(FILE *f, char *string) {
@@ -519,7 +519,7 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
 *
 * ARGUMENT     TYPE    I/O DESCRIPTION
 * --------     ----    --- -----------
-*pid           pid_t   I   This is the proccess id of the application.
+*pid           pid_t   I   This is the process id of the application.
 *
 *
 * RETURNS: A pointer to a constant char
@@ -655,7 +655,7 @@ void bye(void) {
 	printApplicationUptime();
 	printLogFile(fp,"The application has ended now.");
 	printLogFile(fp,"------------------------------");
-	fclose(fp); //flushes the buffer and close the logfile.
+	fclose(fp); //flushes the buffer and close the log file.
 }
 
 /*
