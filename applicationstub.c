@@ -82,7 +82,6 @@
 #include <signal.h> //sigaction
 #include <errno.h>
 #include <unistd.h> //getpid
-
 #include <sys/types.h> //getpid
 
 /*Preprocessor directives*/
