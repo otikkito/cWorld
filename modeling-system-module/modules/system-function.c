@@ -44,13 +44,13 @@
 
 /*This is the system-function implementation*/
 /*TODO find out about multiple inclusions of header files*/
-#include <sys/types.h> /* pid_t */
 #include <stdio.h>
 #include <stdlib.h>
 #include <dirent.h>
 #include <string.h>
 #include <stdbool.h>
 #include <unistd.h>
+#include <sys/types.h> /* pid_t */
 #include "system-function.h"
 
 
