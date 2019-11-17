@@ -49,6 +49,7 @@
 
 /*Include files*/
 #include <stdbool.h>
+#include <unistd.h>
 
 /*Preprocessor directives*/
 

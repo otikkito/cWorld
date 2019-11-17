@@ -38,6 +38,8 @@
 *9/8//2018  Kito JOseph     02                  Created the file format and prolog pursant to the nasa-c-coding style.
 *
 *ALGORITHM (PDL)
+*
+*compile option: gcc -g -Wall -pedantic module-main.c modules/system-function.c
 */
 
 /* 
