@@ -232,6 +232,10 @@ int getLoadAverageOfSystem(){
 *********************************************************/
 int getUptimeOfSystem(){
 	/* look and decipher the two times in /proc/uptime */
+	/*
+	*There are two number is /proc/uptime the first is the number of seconds the system has been up
+	*the second number is the time spent in idle process
+	*/
 		return 0;
 }
 
@@ -316,7 +320,7 @@ int getMemoryUsageOfApplicationGivenPid(pid_t pid){
 /********************************************************
 *
 *
-* FUNCTION NAME: run_system_command
+* FUNCTION NAME: runSystemCommand
 *
 *
 *
@@ -334,12 +338,10 @@ int getMemoryUsageOfApplicationGivenPid(pid_t pid){
 *
 *
 *********************************************************/
-/*
-FILE *run_system_command(const char *system_comand){
-
+FILE *runSystemCommand(const char *system_comand){
+	/* man popen */
 	return fp;
 }
-*/
 
 /********************************************************
 *
@@ -424,9 +426,9 @@ pid_t getPidByProcessName(const char* processName){ /* processName is one of the
 			1. if the de->name contains all digits increase count
 			  a)get the length of the string
 			  b)see if each character is a digit
-			2.create an array or linked list conting processid and name
+			2.create an array or linked list containing processid and name
 			
-			to list all directories in path that begin with digit (possible proceses): ls | grep "^[[:digit:]]"
+			to list all directories in path that begin with digit (possible process): ls | grep "^[[:digit:]]"
 			to list a file that contains all digits in file name: ls | grep -E '^[0-9]+$'
 		*/
 		/*
@@ -466,6 +468,7 @@ pid_t getPidByProcessName(const char* processName){ /* processName is one of the
 *********************************************************/
 int getNumberOfProcessorCoresOnSystem(){
 	/* look at /proc/cpuinfo cpucore and/or processor */
+	/*So there is a the system is showing logical cores and not the number of physical cores*/
 	int numCores;
 	
 	numCores = 1;
@@ -495,7 +498,7 @@ int getNumberOfProcessorCoresOnSystem(){
 *
 *********************************************************/
 bool direntIsAProcess(const char *pname ){
-	
+	/*This is determined if the file name in /proc is all digits*/
 	
 	return true;
 }
