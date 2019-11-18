@@ -513,7 +513,7 @@ bool direntIsAProcess(const char *pname ){
 *
 * ARGUMENT     TYPE           I/O DESCRIPTION
 * --------     ----           --- -----------
-*file_name     cconst char *  I   This is the complete path of the file that is being checked.
+*file_name     const char *  I   This is the complete path of the file that is being checked.
 *
 *
 * RETURNS: returns true (1) if the file exist and false otherwise
