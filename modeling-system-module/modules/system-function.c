@@ -338,8 +338,9 @@ int getMemoryUsageOfApplicationGivenPid(pid_t pid){
 *
 *
 *********************************************************/
-FILE *runSystemCommand(const char *system_comand){
+FILE *runSystemCommand(const char *system_command){
 	/* man popen */
+	
 	return fp;
 }
 
