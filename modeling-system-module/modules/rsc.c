@@ -17,6 +17,27 @@ FILE *runSystemCommand(const char *system_comand);
  1. "ps -aux"-> RHEL, "ps - aux" ->cygwin
  2. ls
 */
+/********************************************************
+*
+*
+* FUNCTION NAME: main
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 int main(int argc, char** argv) {
 	FILE *fp;
 	char line[LINE_MAX];
@@ -39,7 +60,27 @@ int main(int argc, char** argv) {
 	return 0;
 }
 
-
+/********************************************************
+*
+*
+* FUNCTION NAME:
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT         TYPE        I/O DESCRIPTION
+* --------         ----        --- -----------
+* system_command   const char   I   this is the command that will be run
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
 FILE *runSystemCommand(const char *system_command){
 	/* man popen */
 	/*
