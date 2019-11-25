@@ -21,6 +21,8 @@ struct rscOut *runSystemCommandStruc(const char *system_comand); /* structure im
  3. locating substring in string "strstr()" function
  4. Return code of the process echo $? of piped process
  
+TODO Save it to a character array or file of size x
+
  example commands to run on RHEL and cygwin:
  1. "ps -aux"-> RHEL, "ps - aux" ->cygwin
  2. ls
