@@ -154,7 +154,7 @@ int main(int argc, char** argv) {
     /*The current pid of the process*/
     processid = getpid(); /*Per the documentation this function is always successful*/
     /*Open the log file to begin logging*/
-    fp = fopen(logfile, "a+"); /* TODO Change the name of fp and it is accesable througout the file */
+    fp = fopen(logfile, "a+"); /* TODO Change the name of fp and it is accessible throughout the file */
     if(fp == NULL){
         perror("Error with fopen(). Unable to open the application log");
         exit(EXIT_FAILURE);
@@ -590,7 +590,7 @@ int printApplicationUptime(){
         	exit(EXIT_FAILURE);
         }
 
-	mins = (elapsed_time.tv_sec -start_time.tv_sec)/60;
+	mins = (elapsed_time.tv_sec - start_time.tv_sec)/60;
 	secs = (elapsed_time.tv_sec - start_time.tv_sec)%60;
 	sprintf(logentry,"This application has an uptime of %d mins and %d seconds",mins,secs);
 	printLogFile(fp,logentry);

@@ -3,7 +3,15 @@
 #include <limits.h>
 #include <unistd.h>
 
-FILE *runSystemCommand(const char *system_comand);
+
+struct rscOut{
+	FILE *output; /* A pointer to the output of the command */
+	int rc; /* The return code of the command */
+};
+
+FILE *runSystemCommand(const char *system_comand); /*File return implementation */
+struct rscOut *runSystemCommandStruc(const char *system_comand); /* structure implementation */
+
 
 
 /*
@@ -93,4 +101,29 @@ FILE *runSystemCommand(const char *system_command){
 	
 	
 	return fp;
+}
+
+/********************************************************
+*
+*
+* FUNCTION NAME: runSystemCommandStruc
+*
+*
+*
+* ARGUMENTS:
+*
+*
+*
+* ARGUMENT     TYPE I/O DESCRIPTION
+* --------     ---- --- -----------
+*
+*
+*
+* RETURNS:
+*
+*
+*
+*********************************************************/
+struct rscOut *runSystemCommandStruc(const char *system_comand){
+	
 }
