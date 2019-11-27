@@ -550,7 +550,7 @@ const char* getProcessNameByPid(pid_t pid) {
 				if (size > 0) {
 					if ('\n' == name[size - 1])
 						name[size - 1] = '\0';
-					}
+				}
 			fclose(f);
 		}
 	}
