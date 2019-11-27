@@ -9,8 +9,8 @@ struct rscOut{
 	int rc; /* The return code of the command */
 };
 
-FILE *runSystemCommand(const char *system_comand); /*File return implementation */
-struct rscOut *runSystemCommandStruc(const char *system_comand); /* structure implementation */
+FILE *runSystemCommand(const char *system_command); /*File return implementation */
+struct rscOut *runSystemCommandStruc(const char *system_command); /* structure implementation */
 
 
 
@@ -55,18 +55,24 @@ int main(int argc, char** argv) {
 	
 	printf("Welcome to run system command.\n");
 	
-	fp = runSystemCommand("ls");
+	/* fp = runSystemCommand("ls");
 	
 	if(fp == NULL ){
 		perror("Unable to use popen with that command or error with popen.");
 		exit(EXIT_FAILURE);
 	}
-	/* char *fgets(char *s, int size, FILE *stream); */
+	
 	while((fgets(line,LINE_MAX,fp)) != NULL){
 		printf("%s",line);
 	}
 	rc = pclose(fp);
 	printf("The return code for this runSystemCommand is: %d \n",rc);
+	*/
+	
+	struct rscOut *output;
+
+	output = runSystemCommandStruc("ps -aux");
+
 	return 0;
 }
 
@@ -121,11 +127,19 @@ FILE *runSystemCommand(const char *system_command){
 *
 *
 *
-* RETURNS:
-*
+* RETURNS: In this implemention I am trying to return a structure that points to
+*	   the output and return code. Of course I close the file before I can 
+*          return the output a return code.
 *
 *
 *********************************************************/
-struct rscOut *runSystemCommandStruc(const char *system_comand){
+struct rscOut *runSystemCommandStruc(const char *system_command){
+
+	struct rscOut *out;
+	
+	out->output = popen(system_command, "r");
+	out->rc = pclose(out->output);
+
+	return out;
 	
 }
