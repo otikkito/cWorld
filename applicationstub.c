@@ -534,7 +534,7 @@ const char* getProcessNameByPid(pid_t pid) {
 	//Need to determine if RHEL 7 or 6 is being used. /etc/redhat-release
 	if(pid == 0){
 	        return "Kernel"; //This is the abstraction point...better pin pointing.
-  	}
+	}
 
 	if(pid ==1){//on rhel 7 and above
 	    return "Systemd";
