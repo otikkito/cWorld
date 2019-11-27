@@ -360,11 +360,11 @@ int printLogFile(FILE *f, char *string) {
 *
 *********************************************************/
 int initializeSignalHandles(){
-   /* Link that talks about different types of signals: https://en.wikipedia.org/wiki/Signal_(IPC)#SIGTRAP
-   *https://en.wikipedia.org/wiki/Signal_(IPC)*/
-    struct sigaction action;
-    action.sa_handler = signalHandler;
-    action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid of the offending function*/
+	/* Link that talks about different types of signals: https://en.wikipedia.org/wiki/Signal_(IPC)#SIGTRAP
+	*https://en.wikipedia.org/wiki/Signal_(IPC)*/
+	struct sigaction action;
+	action.sa_handler = signalHandler;
+	action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid of the offending function*/
 
 	/*
 	-To retrieve signal names check out man 7 signal
@@ -377,7 +377,7 @@ int initializeSignalHandles(){
 	*Cont: Default action is to continue the process if it is currently stopped
 	*/
 	/*Per man page a process can change the disposition of a signal using sigaction(2) or signal(2)
-        * signals are define in signal.h*/
+	* signals are define in signal.h*/
 
 	sigaction(SIGHUP, &action, NULL);
 	sigaction(SIGINT, &action, NULL);
