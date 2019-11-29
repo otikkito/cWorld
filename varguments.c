@@ -154,7 +154,7 @@ int FunctionA(int argument_count,...){
 * ARGUMENT     TYPE   I/O DESCRIPTION
 * --------     ----   --- -----------
 * fp           FILE * I   pointer to a file
-* argcount     int    I   the number of arguments that are being passsed in
+* argcount     int    I   the number of arguments that are being passed in
 * ...          
 *
 * RETURNS: void
