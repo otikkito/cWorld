@@ -134,7 +134,7 @@ int printDebugInfo();
 *
 *********************************************************/
 int main(int argc, char** argv) {
-	/*As a design consideration minimize stuff in the main function for no particular reason other than readability and modulazation */
+	/*As a design consideration minimize stuff in the main function for no particular reason other than readability and modularization */
 	int i;
 
 	/*Get the start time of the application to see how long the application has been running.*/
