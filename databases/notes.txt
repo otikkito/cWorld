@@ -1,5 +1,19 @@
 https://mariadb.org/    
 
+TODO:
+*Installation insturction (setup, password)
+*create a databases steps
+*query the database from the command line or in
+
+
+1) createdatabase: "CREATE DATABASES <dataBaseName>"
+ex. "CREATE DATABASE kitosdb;"
+2) switch to database: "USE <dataBaseName>"
+ex. "USE DATABASE kitosdb;"
+3) create table: "CREATE TABLE <tableName> (columnName1 dataType,columName2 dataType,...)
+ex. "create table personlist (name varchar(50), ssn varchar(9));"
+4) show tables: "SHOW TABLES;"
+
 The mariadb connector: https://mariadb.com/kb/en/mariadb/mariadb-connector-c/
 
 The database that comes in RHEL/CENTOS 7 is Mariadb
