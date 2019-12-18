@@ -13,6 +13,14 @@ ex. "USE DATABASE kitosdb;"
 3) create table: "CREATE TABLE <tableName> (columnName1 dataType,columName2 dataType,...)
 ex. "create table personlist (name varchar(50), ssn varchar(9));"
 4) show tables: "SHOW TABLES;"
+5) View columns in a table: "SHOW COLUMNS FROM mytable FROM mydb;"
+ex. "SHOW COLUMNS FROM personlist"
+6) adding and changing data in a table: "INSERT <tableName> VALUES ('text1','text2','text3');"
+ex. "INSERT personlist values('Kito Joseph', '333333333');"
+*to update use the "UPDATE" command
+ex. "UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;"
 
 The mariadb connector: https://mariadb.com/kb/en/mariadb/mariadb-connector-c/
 
