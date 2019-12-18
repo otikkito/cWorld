@@ -3,7 +3,7 @@ https://mariadb.org/
 TODO:
 *Installation insturction (setup, password)
 *create a databases steps
-*query the database from the command line or in
+*query the database from the command line (remote or local)
 
 
 1) createdatabase: "CREATE DATABASES <dataBaseName>"
@@ -21,6 +21,12 @@ ex. "INSERT personlist values('Kito Joseph', '333333333');"
 ex. "UPDATE table_name
 SET column1 = value1, column2 = value2, ...
 WHERE condition;"
+7) adding columns to table:"ALTER TABLE table
+ADD [COLUMN] column_name column_definition [FIRST|AFTER existing_column];"
+8) to remove a column: "ALTER TABLE "table_name" DROP "column_name";"
+
+
+
 
 The mariadb connector: https://mariadb.com/kb/en/mariadb/mariadb-connector-c/
 
