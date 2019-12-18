@@ -47,7 +47,7 @@ Where,
 database : Specify database name
 source: https://www.cyberciti.biz/faq/run-sql-query-directly-on-the-command-line/
 
-
+Install Mariadb client: https://mariadb.com/kb/en/library/yum/
 
 The mariadb connector: https://mariadb.com/kb/en/mariadb/mariadb-connector-c/
 
