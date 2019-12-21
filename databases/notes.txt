@@ -7,6 +7,27 @@ TODO:
 *create a databases steps
 *query the database from the command line (remote or local)
 
+source:
+Create user commands: http://www.daniloaz.com/en/how-to-create-a-user-in-mysql-mariadb-and-grant-permissions-on-a-specific-database/
+
+Reset the root password: https://robbinespu.github.io/eng/2018/03/29/Reset_mariadb_root_password.html
+
+Installing mariadb: https://www.linode.com/docs/databases/mariadb/how-to-install-mariadb-on-centos-7/
+
+Remote database access
+mariadb root password: reess: https://websiteforstudents.com/configure-remote-access-mysql-mariadb-databases/
+permissions: https://chartio.com/resources/tutorials/how-to-grant-all-privileges-on-a-database-in-mysql/
+
+user:  dbadmin , password: redhat
+user: kito, passowrd: redhat
+
+Initial install:
+1) create user: CREATE USER 'myuser' IDENTIFIED BY 'mypassword';
+2) allow access from localhost:  GRANT USAGE ON *.* TO 'myuser'@localhost IDENTIFIED BY 'mypassword';
+3) to allow access from any computer on the network:  GRANT USAGE ON *.* TO 'myuser'@localhost IDENTIFIED BY 'mypassword';
+4) apply changes made: FLUSH PRIVILEGES;
+5) Verify user hads the right permissions: SHOW GRANTS FOR 'myuser'@localhost;
+6) Create a super user: GRANT ALL PRIVILEGES ON *.* TO 'username'@'%';
 
 1) createdatabase: "CREATE DATABASES <dataBaseName>"
 ex. "CREATE DATABASE kitosdb;"
