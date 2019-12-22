@@ -26,7 +26,7 @@ Initial install:
 2) allow access from localhost:  GRANT USAGE ON *.* TO 'myuser'@localhost IDENTIFIED BY 'mypassword';
 3) to allow access from any computer on the network:  GRANT USAGE ON *.* TO 'myuser'@localhost IDENTIFIED BY 'mypassword';
 4) apply changes made: FLUSH PRIVILEGES;
-5) Verify user hads the right permissions: SHOW GRANTS FOR 'myuser'@localhost;
+5) Verify user has the right permissions: SHOW GRANTS FOR 'myuser'@localhost;
 6) Create a super user: GRANT ALL PRIVILEGES ON *.* TO 'username'@'%';
 
 1) createdatabase: "CREATE DATABASES <dataBaseName>"
