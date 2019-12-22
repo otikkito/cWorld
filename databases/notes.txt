@@ -49,7 +49,8 @@ ADD [COLUMN] column_name column_definition [FIRST|AFTER existing_column];"
 8) to remove a column: "ALTER TABLE "table_name" DROP "column_name";"
 9)install client on remote system:"mariadb-client"
 ex. "sudo apt-get install mariadb-client" or "yum install 
-
+10) get the number of records:  select count(*) from tablename;
+11) delte records from table and leaving the schema: delete from tablename;
 
 running remote commands:
 The syntax is as follows for both MariaDB and MySQL client:
@@ -118,6 +119,13 @@ https://stackoverflow.com/questions/156532/how-do-i-import-a-whitespace-delimite
 
 LOAD DATA INFILE 'filename' INTO TABLE mytable FIELDS TERMINATED BY ' ';
 
+ LOAD DATA LOCAL INFILE '/home/otikkito/sandbox/cWorld/text-data-files/namedatabase/personlist.txt' into table personlist fields terminated by ' ' lines terminated by '\n' (fname,lname) ;
+
+---
+-ability to scroll records from tables:
+mysql> pager less -SFX
+mysql> SELECT * FROM sometable;
+----
 The mariadb api is the same in c as with mysql
 
 Questions:
