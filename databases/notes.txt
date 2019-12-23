@@ -51,7 +51,7 @@ ADD [COLUMN] column_name column_definition [FIRST|AFTER existing_column];"
 ex. "sudo apt-get install mariadb-client" or "yum install 
 10) get the number of records:  select count(*) from tablename;
 11) delte records from table and leaving the schema: delete from tablename;
-
+----
 running remote commands:
 The syntax is as follows for both MariaDB and MySQL client:
 
@@ -68,7 +68,7 @@ Where,
 -e : Execute sql query
 database : Specify database name
 source: https://www.cyberciti.biz/faq/run-sql-query-directly-on-the-command-line/
-
+----
 Install Mariadb client: https://mariadb.com/kb/en/library/yum/
 
 The mariadb connector: https://mariadb.com/kb/en/mariadb/mariadb-connector-c/
