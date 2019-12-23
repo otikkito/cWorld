@@ -124,7 +124,7 @@ int main(int argc, char** argv) {
 	if (mysql_real_connect(con, "localhost", "dbadmin", "redhat",
             "kitosdb", 0, NULL, 0) == NULL) {
         finish_with_error(con);
-    }
+    	}
 
 	return EXIT_SUCCESS;
 }
