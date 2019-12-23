@@ -40,7 +40,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <mysql.h>
+#include <mysql/mysql.h>
 #include <mysql/my_config.h>
 #include <mysql/my_global.h>
 
@@ -84,6 +84,7 @@ int main(int argc, char** argv) {
     	printf("MySql client version: %s\n", mysql_get_client_info());
 
 	/*Prepares and initialized MYSQL structure*/
+	/*The data structure definition is on line 249 of /usr/include/mysql/mysql.h */
 	MYSQL *con = mysql_init(NULL); 
 
 	if (con == NULL) {
