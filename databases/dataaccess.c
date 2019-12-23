@@ -51,7 +51,7 @@
  * Created on July 20, 2017, 6:49 PM
  */ 
 
-/*http://zetcode.com/db/mysqlc/*/
+/* http://zetcode.com/db/mysqlc/ */
 
 /*To compile: 
  * gcc -g -Wall -pedantic dataaccess.c -L/usr/lib64/mysql -lmysqlclient -lpthread -lz -lm -lssl -lcrypto -ldl  -I/usr/include/mysql
