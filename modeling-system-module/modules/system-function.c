@@ -470,6 +470,7 @@ pid_t getPidByProcessName(const char* processName){ /* processName is one of the
 int getNumberOfProcessorCoresOnSystem(){
 	/* look at /proc/cpuinfo cpucore and/or processor */
 	/*So there is a the system is showing logical cores and not the number of physical cores*/
+	/*Check out this library: http://libcpuid.sourceforge.net/index.html */
 	int numCores;
 	
 	numCores = 1;
