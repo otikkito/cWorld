@@ -50,7 +50,10 @@ ADD [COLUMN] column_name column_definition [FIRST|AFTER existing_column];"
 9)install client on remote system:"mariadb-client"
 ex. "sudo apt-get install mariadb-client" or "yum install 
 10) get the number of records:  select count(*) from tablename;
-11) delte records from table and leaving the schema: delete from tablename;
+11) delete all records from table and leaving the schema: delete from tablename;
+12) list all records from table where columns start withs or contains a character/string:
+    select * from personlist where lname like 'a%';
+13)...
 ----
 running remote commands:
 The syntax is as follows for both MariaDB and MySQL client:
