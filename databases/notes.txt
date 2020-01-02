@@ -35,6 +35,7 @@ ex. "CREATE DATABASE kitosdb;"
 ex. "USE DATABASE kitosdb;"
 3) create table: "CREATE TABLE <tableName> (columnName1 dataType,columName2 dataType,...)
 ex. "create table personlist (name varchar(50), ssn varchar(9));"
+ex. "create table personlist (personid int auto_increment primary key, fname varchar(50), lname varchar(50));"
 4) show tables: "SHOW TABLES;"
 5) View columns in a table: "SHOW COLUMNS FROM mytable FROM mydb;"
 ex. "SHOW COLUMNS FROM personlist"
