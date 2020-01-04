@@ -12,6 +12,6 @@ Prata, Stephen. C Primer Plus. Person Education Inc.
 7. Maintain and modify the program
 
 
-*I need to document my work while developing code. The simplest way the book advise to do is the right comments to provide explanation into what you are doing.
+*I need to document my work while developing code. The simplest way the book advise to do is the write comments to provide explanation into what you are doing.
 *Sometimes you find that the design is not feasible so you have to go back to the design stages again to get everything in order.
 *"The compiler converts your source code to an intermediate code, and the linker combines this with other code to produce the executable file."
