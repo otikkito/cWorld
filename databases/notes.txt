@@ -2,6 +2,9 @@ https://mariadb.org/
 
 Connecting to database: https://codingbee.net/rhce/mariadb-install-and-configure-a-mariadb-server-on-centos-rhel-7-2
 
+*one root, one dbadmin, and then user for the programs.
+
+
 TODO:
 *Installation insturction (setup, password)
 *create a databases steps
@@ -28,6 +31,7 @@ Initial install:
 4) apply changes made: FLUSH PRIVILEGES;
 5) Verify user has the right permissions: SHOW GRANTS FOR 'myuser'@localhost;
 6) Create a super user: GRANT ALL PRIVILEGES ON *.* TO 'username'@'%';
+7) List all mysql users on: SELECT User,Host FROM mysql.user;
 
 1) createdatabase: "CREATE DATABASES <dataBaseName>"
 ex. "CREATE DATABASE kitosdb;"
