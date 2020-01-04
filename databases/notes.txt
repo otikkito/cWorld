@@ -123,7 +123,9 @@ https://stackoverflow.com/questions/156532/how-do-i-import-a-whitespace-delimite
 
 LOAD DATA INFILE 'filename' INTO TABLE mytable FIELDS TERMINATED BY ' ';
 
- LOAD DATA LOCAL INFILE '/home/otikkito/sandbox/cWorld/text-data-files/namedatabase/personlist.txt' into table personlist fields terminated by ' ' lines terminated by '\n' (fname,lname) ;
+LOAD DATA LOCAL INFILE '/home/otikkito/sandbox/cWorld/text-data-files/namedatabase/personlist.txt' into table personlist  fields terminated by ' ' lines terminated by '\n' (fname,lname) ;
+
+CREATE TABLE requests( requestdate DATETIME NOT NULL, id INT NOT NULL, ip VARCHAR(255) NOT NULL, information VARCHAR(255) NOT NULL, PRIMARY KEY(requestdate, id));
 
 ---
 -ability to scroll records from tables:
