@@ -36,6 +36,7 @@ Initial install:
 9) Revoke grants for all users: REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'bloguser'@'localhost';
 10) Remove user from a table: DROP USER 'bloguser'@'localhost';
 11) user privileges: GRANT SELECT, INSERT, DELETE ON database.* TO 'user'@'localhost';
+12) renmote access: https://mariadb.com/kb/en/configuring-mariadb-for-remote-client-access/
 
 1) createdatabase: "CREATE DATABASES <dataBaseName>"
 ex. "CREATE DATABASE kitosdb;"
