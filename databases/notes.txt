@@ -37,6 +37,7 @@ Initial install:
 10) Remove user from a table: DROP USER 'bloguser'@'localhost';
 11) user privileges: GRANT SELECT, INSERT, DELETE ON database.* TO 'user'@'localhost';
 12) renmote access: https://mariadb.com/kb/en/configuring-mariadb-for-remote-client-access/
+13)remote mysql client for windows: https://www.heidisql.com/
 
 1) createdatabase: "CREATE DATABASES <dataBaseName>"
 ex. "CREATE DATABASE kitosdb;"
