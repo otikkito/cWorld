@@ -1,7 +1,7 @@
 Abstract Data types
 -"The implementation details can be changed without altering the ADT interface." [1]
 -This is accomplished by creating 3 different files.
-->"One to hold the type and constant definitions." [1] ? cross check with originating website
+->"One to hold the type and constant definitions." [1] ? verify with originating website
 ->"One to hold the prototypes of the functions in the ADT's (public) interface." [1]
 ->"One to hold the implementations of the public and private functions." [1]
 
