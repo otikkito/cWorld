@@ -81,9 +81,11 @@ const char* getProcessNameByPid(pid_t pid){
 	char* name = (char*) calloc(1024, sizeof (char));
     	/*Need to determine if RHEL 7 or 6 is being used. /etc/redhat-release*/
     	if(pid == 0){
-        	return "Kernel"; /*This is the abstraction point. It abstracts systemd which should be included as well for better pin pointing.*/
+        	return "Kernel"; /*This is the abstraction point... better pin pointing.*/
     	}
-    	
+    	if(pid == 1){
+		return "SystemD";	
+	}
     	if (name) {
         sprintf(name, "/proc/%d/cmdline", pid);
         f = fopen(name, "r");
