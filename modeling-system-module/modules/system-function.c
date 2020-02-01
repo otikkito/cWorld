@@ -427,7 +427,7 @@ pid_t getPidByProcessName(const char* processName){ /* processName is one of the
 			1. if the de->name contains all digits increase count
 			  a)get the length of the string
 			  b)see if each character is a digit
-			2.create an array or linked list containing processid and name
+			2.create an array, linked list, or dynamic structure containing processid and name
 			
 			to list all directories in path that begin with digit (possible process): ls | grep "^[[:digit:]]"
 			to list a file that contains all digits in file name: ls | grep -E '^[0-9]+$'
