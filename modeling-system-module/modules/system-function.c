@@ -152,7 +152,7 @@ int getFreeMemoryOfSystem(){
 *********************************************************/
 int getCpuUtilizationOfSystem(){
 	/* look in /proc/cpuinfo */
-	/*Check out this library: http://libcpuid.sourceforge.net/index.html */
+	
 		return 0;
 }
 
