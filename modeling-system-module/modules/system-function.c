@@ -81,9 +81,11 @@ const char* getProcessNameByPid(pid_t pid){
 	char* name = (char*) calloc(1024, sizeof (char));
     	/*Need to determine if RHEL 7 or 6 is being used. /etc/redhat-release*/
     	if(pid == 0){
-        	return "Kernel"; /*This is the abstraction point. It abstracts systemd which should be included as well for better pin pointing.*/
+        	return "Kernel"; /*This is the abstraction point... better pin pointing.*/
     	}
-    	
+    	if(pid == 1){
+		return "SystemD";	
+	}
     	if (name) {
         sprintf(name, "/proc/%d/cmdline", pid);
         f = fopen(name, "r");
@@ -152,7 +154,7 @@ int getFreeMemoryOfSystem(){
 *********************************************************/
 int getCpuUtilizationOfSystem(){
 	/* look in /proc/cpuinfo */
-	/*Check out this library: http://libcpuid.sourceforge.net/index.html */
+	
 		return 0;
 }
 
@@ -427,7 +429,7 @@ pid_t getPidByProcessName(const char* processName){ /* processName is one of the
 			1. if the de->name contains all digits increase count
 			  a)get the length of the string
 			  b)see if each character is a digit
-			2.create an array or linked list containing processid and name
+			2.create an array, linked list, or dynamic structure containing processid and name
 			
 			to list all directories in path that begin with digit (possible process): ls | grep "^[[:digit:]]"
 			to list a file that contains all digits in file name: ls | grep -E '^[0-9]+$'

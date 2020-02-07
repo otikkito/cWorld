@@ -1,6 +1,9 @@
 https://mariadb.org/    
-
+Lamp stack: https://www.tecmint.com/install-lamp-in-centos-7/
 Connecting to database: https://codingbee.net/rhce/mariadb-install-and-configure-a-mariadb-server-on-centos-rhel-7-2
+
+*one root, one dbadmin, and then user for the programs.
+
 
 TODO:
 *Installation insturction (setup, password)
@@ -28,6 +31,13 @@ Initial install:
 4) apply changes made: FLUSH PRIVILEGES;
 5) Verify user has the right permissions: SHOW GRANTS FOR 'myuser'@localhost;
 6) Create a super user: GRANT ALL PRIVILEGES ON *.* TO 'username'@'%';
+7) List all mysql users on: SELECT User,Host FROM mysql.user;
+8) List grants for user: SHOW GRANTS FOR 'bloguser'@'localhost';
+9) Revoke grants for all users: REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'bloguser'@'localhost';
+10) Remove user from a table: DROP USER 'bloguser'@'localhost';
+11) user privileges: GRANT SELECT, INSERT, DELETE ON database.* TO 'user'@'localhost';
+12) renmote access: https://mariadb.com/kb/en/configuring-mariadb-for-remote-client-access/
+13)remote mysql client for windows: https://www.heidisql.com/
 
 1) createdatabase: "CREATE DATABASES <dataBaseName>"
 ex. "CREATE DATABASE kitosdb;"
@@ -123,7 +133,9 @@ https://stackoverflow.com/questions/156532/how-do-i-import-a-whitespace-delimite
 
 LOAD DATA INFILE 'filename' INTO TABLE mytable FIELDS TERMINATED BY ' ';
 
- LOAD DATA LOCAL INFILE '/home/otikkito/sandbox/cWorld/text-data-files/namedatabase/personlist.txt' into table personlist fields terminated by ' ' lines terminated by '\n' (fname,lname) ;
+LOAD DATA LOCAL INFILE '/home/otikkito/sandbox/cWorld/text-data-files/namedatabase/personlist.txt' into table personlist  fields terminated by ' ' lines terminated by '\n' (fname,lname) ;
+
+CREATE TABLE requests( requestdate DATETIME NOT NULL, id INT NOT NULL, ip VARCHAR(255) NOT NULL, information VARCHAR(255) NOT NULL, PRIMARY KEY(requestdate, id));
 
 ---
 -ability to scroll records from tables:
@@ -142,5 +154,5 @@ ORDER BY COUNT(*), host_short;
 The mariadb api is the same in c as with mysql
 
 Questions:
-1)What is the difference between mariadb and other open source databases?
+1)What is the difference between mariadb and other open source databases? https://blog.panoply.io/a-comparative-vmariadb-vs-mysql
 ...

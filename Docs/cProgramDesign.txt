@@ -1,0 +1,17 @@
+C program design: https://stackoverflow.com/questions/925754/resources-for-learning-c-program-design
+
+How to write a c program: http://www.trytoprogram.com/c-programming/how-to-write-c-program/
+
+"Step 2: Design the Program
+After you have a conceptual picture of what your program ought to do, you should decide how the program will go about it. What should the user interface be like? How should the program be organized? Who will the target user be? How much time do you have to complete the program?
+
+You also need to decide how to represent the data in the program and, possibly, in auxiliary files, as well as which methods to use to process the data. When you first learn programming in C, the choices will be simple, but as you deal with more complex situations, you'll find that these decisions require more thought. Choosing a good way to represent the information can often make designing the program and processing the data much easier.
+
+Again, you should be thinking in general terms, not about specific code, but some of your decisions may be based on general characteristics of the language. For example, a C programmer has more options in data representation than, say, a Pascal programmer."[1]
+
+
+
+
+
+
+[1] https://www.9wy.net/onlinebook/CPrimerPlus5/ch01lev1sec6.html
