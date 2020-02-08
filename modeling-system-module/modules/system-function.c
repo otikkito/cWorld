@@ -127,7 +127,7 @@ const char* getProcessNameByPid(pid_t pid){
 *********************************************************/
 int getFreeMemoryOfSystem(){
 	/*look at /proc/meminfo */
-
+/*http://man7.org/linux/man-pages/man2/sysinfo.2.html*/
 		return 0;
 }
 
@@ -473,6 +473,7 @@ int getNumberOfProcessorCoresOnSystem(){
 	/* look at /proc/cpuinfo cpucore and/or processor */
 	/*So there is a the system is showing logical cores and not the number of physical cores*/
 	/*Check out this library: http://libcpuid.sourceforge.net/index.html */
+	/*https://stackoverflow.com/questions/4586405/how-to-get-the-number-of-cpus-in-linux-using-c*/
 	int numCores;
 	
 	numCores = 1;
