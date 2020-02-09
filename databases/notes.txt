@@ -4,6 +4,10 @@ Connecting to database: https://codingbee.net/rhce/mariadb-install-and-configure
 
 *one root, one dbadmin, and then user for the programs.
 
+php mysqli:
+*https://codular.com/php-mysqli
+
+
 
 TODO:
 *Installation insturction (setup, password)
