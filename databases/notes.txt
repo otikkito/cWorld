@@ -161,3 +161,40 @@ The mariadb api is the same in c as with mysql
 Questions:
 1)What is the difference between mariadb and other open source databases? https://blog.panoply.io/a-comparative-vmariadb-vs-mysql
 ...
+
+
+
+=======================================================================
+yum install php-mysqlnd php-pdo
+<html>
+<!-- https://codular.com/php-mysqli -->
+<!-- https://www.w3schools.com/php/php_ref_mysqli.asp -->
+
+	<h1>Welcome to Kito's website</h1>
+	<p>Please build out this site</p>
+	<?php
+
+	$db = new mysqli('localhost', 'root', 'redhat', 'kitosdb');
+
+	if($db->connect_errno > 0){
+    		die('Unable to connect to database [' . $db->connect_error . ']');
+	}
+
+	$sql = "SELECT * from personlist;";	
+	
+	if(!$result = $db->query($sql)){
+	    die('There was an error running the query [' . $db->error . ']');
+	}
+	
+	while($row = $result->fetch_assoc()){
+		printf ("%s %s\n", $row["fname"], $row["lname"]);
+	echo '<br>';
+	}
+	
+	$result->free();
+
+	phpinfo();
+	?>
+</html>
+
+==========================================================
