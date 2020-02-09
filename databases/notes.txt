@@ -55,6 +55,7 @@ ex. "create table personlist (personid int auto_increment primary key, fname var
 ex. "SHOW COLUMNS FROM personlist"
 6) adding and changing data in a table: "INSERT <tableName> VALUES ('text1','text2','text3');"
 ex. "INSERT personlist values('Kito Joseph', '333333333');"
+ex."insert into personlist (fname,lname) values('John','Doe');"
 *to update use the "UPDATE" command
 ex. "UPDATE table_name
 SET column1 = value1, column2 = value2, ...
