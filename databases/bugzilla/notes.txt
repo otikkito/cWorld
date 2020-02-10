@@ -12,4 +12,15 @@ Installation: https://bugzilla.readthedocs.io/en/5.0/installing/linux.html#linux
 database setup: https://bugzilla.readthedocs.io/en/5.0/installing/mysql.html#mysql
 HowTo: https://www.guru99.com/bugzilla-tutorial-for-beginners.html
 
+
+Bugzilla leanring objectives:
+1. Time management
+2. Creating new products
+
+Install guide:
+1. Install mutt: yum install mutt ( I need to find out away to send email from server using posfix another email server)
+2. dnf install mariadb-server.x86_64 httpd -y
+3. ...
+
+
 https://www.howtoforge.com/tutorial/install-bugzilla-50-on-centos-7/
