@@ -7,4 +7,8 @@ Will Work: World Wide, Can Work Remotely
 Contact: info@linuxcertified.com
 Comment: We are a open-source expertise company - with extensive experience in installing, customizing and maintaining development tools including Bugzilla.
 
+
+Installation: https://bugzilla.readthedocs.io/en/5.0/installing/linux.html#linux-config-database
+database setup: https://bugzilla.readthedocs.io/en/5.0/installing/mysql.html#mysql
+
 https://www.howtoforge.com/tutorial/install-bugzilla-50-on-centos-7/
