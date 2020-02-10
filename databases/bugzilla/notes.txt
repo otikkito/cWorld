@@ -1,3 +1,10 @@
 Consultants for bugzilla: https://www.bugzilla.org/support/consulting.html 
+Name: LinuxCertified, Inc.
+Website: http://www.linuxcertified.com/
+Services: Bugzilla consulting, developing, customizing. Other Open-Source based development tools supported as well.
+Primary Location: Sunnyvale, CA, USA
+Will Work: World Wide, Can Work Remotely
+Contact: info@linuxcertified.com
+Comment: We are a open-source expertise company - with extensive experience in installing, customizing and maintaining development tools including Bugzilla.
 
 https://www.howtoforge.com/tutorial/install-bugzilla-50-on-centos-7/
