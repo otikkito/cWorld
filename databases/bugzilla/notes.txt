@@ -1,1 +1,3 @@
+Consultants for bugzilla: https://www.bugzilla.org/support/consulting.html 
+
 https://www.howtoforge.com/tutorial/install-bugzilla-50-on-centos-7/
