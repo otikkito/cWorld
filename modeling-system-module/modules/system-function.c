@@ -396,6 +396,7 @@ const char* getOperatingSystemVersion(){
 *********************************************************/
 pid_t getPidByProcessName(const char* processName){ /* processName is one of the naming convention issue */
 	/*This will be rough draft implementation need to find a better way that has direct mapping */
+	/* checkout linux command "pgrep" */
 	/*
 	Algorithm
 	1) Goto the /proc directory
