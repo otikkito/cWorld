@@ -24,6 +24,14 @@ On Linux, the available timers with increasing granularity are:
 
  */
 
+---------
+real
+It represents time taken by command to execute since its initiation to its termination
+user
+It represents the amount of time that command/program took to execute its own code
+sys
+It represents time taken by Unix to fire the command
+----------
 /*
  struct timespec
 time_t  tv_sec    Seconds.
