@@ -11,7 +11,7 @@ Comment: We are a open-source expertise company - with extensive experience in i
 Installation: https://bugzilla.readthedocs.io/en/5.0/installing/linux.html#linux-config-database
 database setup: https://bugzilla.readthedocs.io/en/5.0/installing/mysql.html#mysql
 HowTo: https://www.guru99.com/bugzilla-tutorial-for-beginners.html
-
+Configuration: https://techrideradmin.blogspot.com/2019/01/how-to-install-and-configure-bugzilla-on-centos-7-step-by-step-guide.html
 
 Bugzilla leanring objectives:
 1. Time management
