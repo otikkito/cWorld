@@ -56,6 +56,8 @@ The ten commandments of c programming: http://www.lysator.liu.se/c/ten-commandme
 C testing:
 CUnit: http://cunit.sourceforge.net/doc/index.html
 #dnf install CUnit.x86_64
+Introduction to cunit testing: http://people.cs.aau.dk/~bnielsen/TOV07/lektioner/cunit-intro-07.pdf
+You can't unit test c, right? https://youtu.be/z-uWt5wVVkU
 
 #TODO add examples of all the keywords
 http://tigcc.ticalc.org/doc/keywords.html
