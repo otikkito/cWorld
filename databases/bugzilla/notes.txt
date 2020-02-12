@@ -27,8 +27,9 @@ Install guest additions:
 #dnf kernel-devel.x86_64
 
 Install guide: Attempt made with (Rhel 8.1 with server with GUI)
+0. enable epel and run: dnf update
 1. Install mutt: yum install mutt ( I need to find out away to send email from server using posfix another email server)
-2. dnf install -y mariadb-server.x86_64 httpd php-mysqlnd.x86_64 php 
+2. dnf install -y mariadb-server.x86_64 httpd php-mysqlnd.x86_64 php perl-Memoize.noarch perl-CPAN.noarch
 3. dnf groupinstall "Development Tools"
 4. #mysql_secure_installation
 5. # mysql -u root -p
@@ -43,6 +44,15 @@ MariaDB [(none)]> exit
 9. dnf install perl-Memoize.noarch perl-CPAN.noarch
 10. #cd /var/www/html/bugzilla/
 11. perl install-module.pl --all
-
- 
+12. Install epel: dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+13. dnf install mod_perl.x86_64  (in the Epel repository)
+14. from the /vvar/www/html/bugzilla directory run: perl install-module.pl --all
+15. vim /var/www/html/bugzilla/localconfig 
+Change the database parameter as shown below
+$db_host = 'localhost';
+$db_name = 'bugzilladb';
+$db_user = 'bug';
+$db_pass = 'bug';
+Save and close the file.
+16. Uncomment or add in the IfModule in: /etc/httpd/conf/httpd.conf
 https://www.howtoforge.com/tutorial/install-bugzilla-50-on-centos-7/
