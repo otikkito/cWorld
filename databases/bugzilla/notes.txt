@@ -26,10 +26,23 @@ Install guest additions:
 #dnf install elfutils-libelf-devel
 #dnf kernel-devel.x86_64
 
-Install guide:
+Install guide: Attempt made with (Rhel 8.1 with server with GUI)
 1. Install mutt: yum install mutt ( I need to find out away to send email from server using posfix another email server)
 2. dnf install -y mariadb-server.x86_64 httpd php-mysqlnd.x86_64 php 
-3. #mysql_secure_installation
+3. dnf groupinstall "Development Tools"
+4. #mysql_secure_installation
+5. # mysql -u root -p
+MariaDB [(none)]> create database bugzilladb;
+MariaDB [(none)]> CREATE USER bug@localhost IDENTIFIED BY "bug";
+MariaDB [(none)]> GRANT ALL ON bugzilladb.* TO bug@localhost;
+MariaDB [(none)]> FLUSH PRIVILEGES;
+MariaDB [(none)]> exit
+6. download in /var/www/html/: #wget https://ftp.mozilla.org/pub/mozilla.org/webtools/bugzilla-5.0.6.tar.gz
+7. tar -xvf bugzilla-5.0.6.tar.gz
+8. mv /var/www/html/bugzilla-5.0.6.tar.gz /var/www/html/bugzilla
+9. dnf install perl-Memoize.noarch perl-CPAN.noarch
+10. #cd /var/www/html/bugzilla/
+11. perl install-module.pl --all
 
-
+ 
 https://www.howtoforge.com/tutorial/install-bugzilla-50-on-centos-7/
