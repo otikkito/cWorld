@@ -18,13 +18,17 @@ Bugzilla leanring objectives:
 2. Creating new products
 
 To subscribe a machine:
+*ensure the system has a good hostname
+#hostnamectl set-host <hostname>
 #subscription-manager register 
 #subscription-manager attach --auto
 
+
 Install guest additions:
+#dnf update -y
 #dnf groupinstall "Development Tools"
 #dnf install elfutils-libelf-devel
-#dnf kernel-devel.x86_64
+#dnf install kernel-devel.x86_64 
 
 Install guide: Attempt made with (Rhel 8.1 with server with GUI)
 0. enable epel and run: dnf update
@@ -45,15 +49,14 @@ MariaDB [(none)]> exit
 9. dnf install perl-Memoize.noarch perl-CPAN.noarch
 10. #cd /var/www/html/bugzilla/
 11. perl install-module.pl --all
-12. Install epel: dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-13. dnf install mod_perl.x86_64  (in the Epel repository)
-14. from the /vvar/www/html/bugzilla directory run: perl install-module.pl --all
-15. vim /var/www/html/bugzilla/localconfig 
+12. Install epel: dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm  -> not sure if needed
+13. from the /vvar/www/html/bugzilla directory run: perl install-module.pl --all
+14. vim /var/www/html/bugzilla/localconfig 
 Change the database parameter as shown below
 $db_host = 'localhost';
 $db_name = 'bugzilladb';
 $db_user = 'bug';
 $db_pass = 'bug';
 Save and close the file.
-16. Uncomment or add in the IfModule in: /etc/httpd/conf/httpd.conf
+15. Uncomment or add in the IfModule in: /etc/httpd/conf/httpd.conf
 https://www.howtoforge.com/tutorial/install-bugzilla-50-on-centos-7/
