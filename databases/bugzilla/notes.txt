@@ -30,6 +30,7 @@ Install guide: Attempt made with (Rhel 8.1 with server with GUI)
 0. enable epel and run: dnf update
 1. Install mutt: yum install mutt ( I need to find out away to send email from server using posfix another email server)
 2. dnf install -y mariadb-server.x86_64 httpd php-mysqlnd.x86_64 php perl-Memoize.noarch perl-CPAN.noarch
+2a. /usr/bin/perl install-module.pl --all   -> TODO try to find all necessary perl modules
 3. dnf groupinstall "Development Tools"
 4. #mysql_secure_installation
 5. # mysql -u root -p
