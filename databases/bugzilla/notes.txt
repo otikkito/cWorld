@@ -12,6 +12,7 @@ Installation: https://bugzilla.readthedocs.io/en/5.0/installing/linux.html#linux
 database setup: https://bugzilla.readthedocs.io/en/5.0/installing/mysql.html#mysql
 HowTo: https://www.guru99.com/bugzilla-tutorial-for-beginners.html
 Configuration: https://techrideradmin.blogspot.com/2019/01/how-to-install-and-configure-bugzilla-on-centos-7-step-by-step-guide.html
+Buzilla Tutorial: https://www.tutorialspoint.com/bugzilla/index.htm
 
 Bugzilla leanring objectives:
 1. Time management
