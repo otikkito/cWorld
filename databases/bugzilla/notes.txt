@@ -68,6 +68,10 @@ Options Indexes FollowSymLinks ExecCGI
 ...
 AddHandler cgi-script .cgi
 </IfModule>
+<IfModule dir_module>
+    DirectoryIndex index.html index.cgi
+</IfModule>
+
 16. #./checksetup.pl
 17. #./testserver.pl http://127.0.0.1/bugzilla
 https://www.howtoforge.com/tutorial/install-bugzilla-50-on-centos-7/
