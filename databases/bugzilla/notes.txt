@@ -59,5 +59,15 @@ $db_name = 'bugzilladb';
 $db_user = 'bug';
 $db_pass = 'bug';
 Save and close the file.
-15. Uncomment or add in the IfModule in: /etc/httpd/conf/httpd.conf
+15. enable cgi scipts in apache /etc/httpd/conf/httpd.conf
+in the <Directory "/var/ww/html">
+...
+Options Indexes FollowSymLinks ExecCGI
+</Directory>
+<IfModule mime_module>
+...
+AddHandler cgi-script .cgi
+</IfModule>
+16. #./checksetup.pl
+17. #./testserver.pl http://127.0.0.1/bugzilla
 https://www.howtoforge.com/tutorial/install-bugzilla-50-on-centos-7/
