@@ -18,6 +18,7 @@ source:
 Create user commands: http://www.daniloaz.com/en/how-to-create-a-user-in-mysql-mariadb-and-grant-permissions-on-a-specific-database/
 
 Reset the root password: https://robbinespu.github.io/eng/2018/03/29/Reset_mariadb_root_password.html
+Forgotten user password: https://websiteforstudents.com/how-to-change-mysql-mariadb-user-passwords-on-ubuntu-16-04-18-04/
 
 Installing mariadb: https://www.linode.com/docs/databases/mariadb/how-to-install-mariadb-on-centos-7/
 
