@@ -1,3 +1,4 @@
+  
 Consultants for bugzilla: https://www.bugzilla.org/support/consulting.html 
 Name: LinuxCertified, Inc.
 Website: http://www.linuxcertified.com/
@@ -13,6 +14,7 @@ database setup: https://bugzilla.readthedocs.io/en/5.0/installing/mysql.html#mys
 HowTo: https://www.guru99.com/bugzilla-tutorial-for-beginners.html
 Configuration: https://techrideradmin.blogspot.com/2019/01/how-to-install-and-configure-bugzilla-on-centos-7-step-by-step-guide.html
 Buzilla Tutorial: https://www.tutorialspoint.com/bugzilla/index.htm
+Bugzilla Installation: https://www.howtoforge.com/tutorial/install-bugzilla-50-on-centos-7/
 
 Bugzilla leanring objectives:
 1. Time management
@@ -20,46 +22,47 @@ Bugzilla leanring objectives:
 
 To subscribe a machine:
 *ensure the system has a good hostname
-#hostnamectl set-host <hostname>
+#hostnamectl set-hostname <hostname>
 #subscription-manager register 
 #subscription-manager attach --auto
-
 
 Install guest additions:
 #dnf update -y
 #dnf groupinstall "Development Tools"
-#dnf install elfutils-libelf-devel
-#dnf install kernel-devel.x86_64 
+#dnf install elfutils-libelf-devel 
+#reboot
+#run VBoxLinuxAdditions.run 
+#reboot
 
-Install guide: Attempt made with (Rhel 8.1 with server with GUI)
-0. enable epel and run: dnf update
-1. Install mutt: yum install mutt ( I need to find out away to send email from server using posfix another email server)
-2. dnf install -y mariadb-server.x86_64 httpd php-mysqlnd.x86_64 php perl-Memoize.noarch perl-CPAN.noarch
-2a. /usr/bin/perl install-module.pl --all   -> TODO try to find all necessary perl modules
-3. dnf groupinstall "Development Tools"
-4. #mysql_secure_installation
-5. # mysql -u root -p
+Install guide: Attempt made with (Rhel 8.1 server with GUI); First subscribe the system and install Guest Additions.
+1. enable epel :#dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm  -> not sure if needed 
+2. #dnf update
+3. dnf install -y mariadb-server.x86_64 httpd php-mysqlnd.x86_64 php perl-Memoize.noarch perl-autodie perl-CPAN.noarch
+4. #systemctl enable mariadb
+5. #systemctl start mariadb 
+6. #systemctl start httpd
+7. #systemctl enable httpd
+8. #mysql_secure_installation
+9. #mysql -u root -p
 MariaDB [(none)]> create database bugzilladb;
 MariaDB [(none)]> CREATE USER bug@localhost IDENTIFIED BY "bug";
 MariaDB [(none)]> GRANT ALL ON bugzilladb.* TO bug@localhost;
 MariaDB [(none)]> FLUSH PRIVILEGES;
 MariaDB [(none)]> exit
-6. download in /var/www/html/: #wget https://ftp.mozilla.org/pub/mozilla.org/webtools/bugzilla-5.0.6.tar.gz
-7. tar -xvf bugzilla-5.0.6.tar.gz
-8. mv /var/www/html/bugzilla-5.0.6.tar.gz /var/www/html/bugzilla
-9. dnf install perl-Memoize.noarch perl-CPAN.noarch
-10. #cd /var/www/html/bugzilla/
-11. perl install-module.pl --all
-12. Install epel: dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm  -> not sure if needed
-13. from the /vvar/www/html/bugzilla directory run: perl install-module.pl --all
-14. vim /var/www/html/bugzilla/localconfig 
+10. download in /var/www/html/: #wget https://ftp.mozilla.org/pub/mozilla.org/webtools/bugzilla-5.0.6.tar.gz
+11. tar -xvf bugzilla-5.0.6.tar.gz
+12. mv /var/www/html/bugzilla-5.0.6 /var/www/html/bugzilla
+13. #cd /var/www/html/bugzilla/
+14. from the /var/www/html/bugzilla directory run:#perl install-module.pl --all
+13. from the /var/www/html/bugzilla directory run:# ./checksetup.pl
+15. vim /var/www/html/bugzilla/localconfig 
 Change the database parameter as shown below
 $db_host = 'localhost';
 $db_name = 'bugzilladb';
 $db_user = 'bug';
 $db_pass = 'bug';
 Save and close the file.
-15. enable cgi scipts in apache /etc/httpd/conf/httpd.conf
+16. enable cgi scipts in apache /etc/httpd/conf/httpd.conf
 in the <Directory "/var/ww/html">
 ...
 Options Indexes FollowSymLinks ExecCGI
@@ -72,6 +75,7 @@ AddHandler cgi-script .cgi
     DirectoryIndex index.html index.cgi
 </IfModule>
 
-16. #./checksetup.pl
-17. #./testserver.pl http://127.0.0.1/bugzilla
-https://www.howtoforge.com/tutorial/install-bugzilla-50-on-centos-7/
+17. # systemctl restart httpd
+18.<Need to configure selinux> I disabled it for testing purposes (#setenforce 0)
+19. #./checksetup.pl
+20. #./testserver.pl http://127.0.0.1/bugzilla
