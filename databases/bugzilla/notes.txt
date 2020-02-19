@@ -23,10 +23,13 @@ Bugzilla leanring objectives:
 To subscribe a machine:
 *ensure the system has a good hostname
 #hostnamectl set-hostname <hostname>
+#reboot   (To have new hostname to take effect
+From the gnome desktop use network manager to setup network
 #subscription-manager register 
 #subscription-manager attach --auto
 
 Install guest additions:
+#su
 #dnf update -y
 #dnf groupinstall "Development Tools"
 #dnf install elfutils-libelf-devel 
