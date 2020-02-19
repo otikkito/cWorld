@@ -54,8 +54,8 @@ MariaDB [(none)]> exit
 12. mv /var/www/html/bugzilla-5.0.6 /var/www/html/bugzilla
 13. #cd /var/www/html/bugzilla/
 14. from the /var/www/html/bugzilla directory run:#perl install-module.pl --all
-13. from the /var/www/html/bugzilla directory run:# ./checksetup.pl
-15. vim /var/www/html/bugzilla/localconfig 
+15. from the /var/www/html/bugzilla directory run:# ./checksetup.pl
+16. vim /var/www/html/bugzilla/localconfig 
 Change the database parameter as shown below
 $db_host = 'localhost';
 $db_name = 'bugzilladb';
