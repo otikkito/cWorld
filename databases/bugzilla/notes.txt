@@ -39,7 +39,7 @@ Install guest additions:
 
 Install guide: Attempt made with (Rhel 8.1 server with GUI); First subscribe the system and install Guest Additions.
 1. enable epel :#dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm  -> not sure if needed 
-2. #dnf update
+2. #dnf update -y
 3. dnf install -y mariadb-server.x86_64 httpd php-mysqlnd.x86_64 php perl-Memoize.noarch perl-autodie perl-CPAN.noarch
 4. #systemctl enable mariadb
 5. #systemctl start mariadb 
