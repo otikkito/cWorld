@@ -23,7 +23,7 @@ Bugzilla leanring objectives:
 To subscribe a machine:
 *ensure the system has a good hostname
 #hostnamectl set-hostname <hostname>
-#reboot   (To have new hostname to take effect
+#reboot   (To have new hostname to take effect)
 From the gnome desktop use network manager to setup network
 #subscription-manager register 
 #subscription-manager attach --auto
