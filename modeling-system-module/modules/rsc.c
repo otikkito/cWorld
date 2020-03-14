@@ -127,7 +127,7 @@ FILE *runSystemCommand(const char *system_command){
 *
 *
 *
-* RETURNS: In this implemention I am trying to return a structure that points to
+* RETURNS: In this implementation I am trying to return a structure that points to
 *	   the output and return code. Of course I close the file before I can 
 *          return the output a return code.
 *
