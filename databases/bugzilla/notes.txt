@@ -15,6 +15,7 @@ HowTo: https://www.guru99.com/bugzilla-tutorial-for-beginners.html
 Configuration: https://techrideradmin.blogspot.com/2019/01/how-to-install-and-configure-bugzilla-on-centos-7-step-by-step-guide.html
 Buzilla Tutorial: https://www.tutorialspoint.com/bugzilla/index.htm
 Bugzilla Installation: https://www.howtoforge.com/tutorial/install-bugzilla-50-on-centos-7/
+Building a rpm package: https://opensource.com/article/18/9/how-build-rpm-packages
 
 Bugzilla leanring objectives:
 1. Time management
