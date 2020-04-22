@@ -8,7 +8,7 @@ http://beej.us/guide/bgnet/  ---> Network programming (windows/linux)
 
 http://www.internetsociety.org/  ---> Internet society
 
-https://users.cs.northwestern.edu/~agupta/cs340/project2/TCPIP_State_Transition_Diagram.pdf    -->TCP State diagram
+https://users.cs.northwestern.edu/~agupta/cs340/project2/TCPIP_State_Transition_Diagram.pdf    -->TCP/IP State diagram
 
 ------------------------------------------------------------------------------------
 
