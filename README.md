@@ -98,6 +98,8 @@ Repo gittutorial: [Backup of personal website](https://github.com/otikkito/gittu
 
 Personal website: www.kjoseph-it.com
 
+Learning website: http://kitojoseph.dyndns.org/
+
 -----------------------------------------------------------------------------------------------------------
 
 A collection of c code from the basic refresher to some abstract data type implementations, 
