@@ -181,7 +181,7 @@ yum install php-mysqlnd php-pdo
     		die('Unable to connect to database [' . $db->connect_error . ']');
 	}
 
-	$sql = "SELECT * from personlist;";	
+	$sql = "SELECT * from personlist where lname like 'ra%';";	
 	
 	if(!$result = $db->query($sql)){
 	    die('There was an error running the query [' . $db->error . ']');
