@@ -12,6 +12,8 @@ https://users.cs.northwestern.edu/~agupta/cs340/project2/TCPIP_State_Transition_
 
 http://jodies.de/ipcalc   --> Ip calculator
 
+https://www.youtube.com/watch?v=aAIeo7chB6k#action=share   ->Ip subnet problem
+
 ------------------------------------------------------------------------------------
 
 wpa supplicant
