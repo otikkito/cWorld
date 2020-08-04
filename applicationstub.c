@@ -376,7 +376,7 @@ int initializeSignalHandles(){
 	*Stop: Default actions is to stop the process
 	*Cont: Default action is to continue the process if it is currently stopped
 	*/
-	/*Per man page a process can change the disposition of a signal using sigaction(2) or signal(2)
+	/*Per the man page a process can change the disposition of a signal using sigaction(2) or signal(2)
 	* signals are define in signal.h*/
 
 	sigaction(SIGHUP, &action, NULL);
