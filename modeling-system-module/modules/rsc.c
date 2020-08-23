@@ -105,7 +105,7 @@ FILE *runSystemCommand(const char *system_command){
         */
 
 	FILE *fp = NULL;
-	fp=popen(system_command,"r");
+	fp = popen(system_command,"r");
 	
 	
 	return fp;
