@@ -70,6 +70,7 @@
 *	c) https://github.com/kbilsted/CodeQualityAndReadability/blob/master/Articles/Readability/OptimalIndentSizeForCodeReadability.md
 * 14) Read in environmental variables: https://en.wikipedia.org/wiki/Environment_variable
 * 15) Remove magic numbers
+  16) Document in the applicationstub.txt or another file about compiler coding practices that is cpu agnostic: https://www.keil.com/support/man/docs/armcc/armcc_chr1359124220881.htm
 */
 
 /*Include directives*/

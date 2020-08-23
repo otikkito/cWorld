@@ -43,7 +43,25 @@
 //https://superuser.com/questions/716001/how-can-i-get-files-with-numeric-names-using-ls-command
 
 /*This is the system-function implementation*/
-/*TODO find out about multiple inclusions of header files*/
+/*TODO find out about multiple inclusions of header files:
+The basic use of header files is to provide symbol declarations for functions 
+and globals. Because multiple declarations of a given symbol in a single 
+translation unit are a syntax error, you have to defensively structure your 
+header files to not redefine anything in case they are included multiple times.
+Keep in mind that you just cannot prevent header files from being included more 
+than once unless you were to forbid header files themselves from including other
+header files… and doing that would be suboptimal at best as we shall see in a 
+future post on self-containment.
+ https://jmmv.dev/2013/11/header-files-multiple-inclusion.html#the-rule 
+-guarding against multiple inclusion of header files:
+-Improves compilation time.
+-Reduces the size of object files generated using the -g compiler command-line option, which can speed up link time.
+-Avoids compilation errors that arise from including the same code multiple times.
+source: https://www.keil.com/support/man/docs/armcc/armcc_chr1359124224501.htm
+-
+Code metrics: https://www.keil.com/support/man/docs/armcc/armcc_chr1359124223206.htm
+
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <dirent.h>
@@ -76,7 +94,7 @@
 *
 *********************************************************/
 const char* getProcessNameByPid(pid_t pid){
-	/*This function is included in the applicationstub.c, make sure that the are the same implementation and/or reference the same function*/
+	/*This function is included in the applicationstub.c, make sure that there are the same implementation and/or reference the same function*/
 	FILE *f;
 	char* name = (char*) calloc(1024, sizeof (char));
     	/*Need to determine if RHEL 7 or 6 is being used. /etc/redhat-release*/
@@ -342,7 +360,7 @@ int getMemoryUsageOfApplicationGivenPid(pid_t pid){
 *********************************************************/
 FILE *runSystemCommand(const char *system_command){
 	/* man popen */
-	
+	FILE *fp;
 	return fp;
 }
 
