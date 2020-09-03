@@ -18,6 +18,8 @@ https://youtu.be/ecCuyq-Wprc  --> Subnetting
 
 https://www.showmecables.com/blog/post/cable-distance-limits-data  --> Cable distance limits
 
+https://www.electronics-notes.com/articles/connectivity/ethernet-ieee-802-3/cables-types-pinout-cat-5-5e-6.php  --> Ethernet cable specs
+
 ------------------------------------------------------------------------------------
 
 wpa supplicant
