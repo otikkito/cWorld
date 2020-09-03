@@ -60,7 +60,7 @@ IEEE: https://www.ieee.org/
 
 -----------------------------------------------------------------------------------------------------------
 
-Social media rules to live by: https://www.ibm.com/blogs/zz/en/guidelines.html
+Social media rules to live by: https://insidesocialmedia.com/social-media-policies/ibms-social-media-policy/#:~:text=Don't%20cite%20or%20reference,be%20acceptable%20in%20IBM's%20workplace.
 
 -----------------------------------------------------------------------------------------------------------
 

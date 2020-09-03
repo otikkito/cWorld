@@ -16,6 +16,8 @@ https://www.youtube.com/watch?v=aAIeo7chB6k#action=share   --> Ip subnet problem
 
 https://youtu.be/ecCuyq-Wprc  --> Subnetting
 
+https://www.showmecables.com/blog/post/cable-distance-limits-data  --> Cable distance limits
+
 ------------------------------------------------------------------------------------
 
 wpa supplicant
