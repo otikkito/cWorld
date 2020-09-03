@@ -31,6 +31,10 @@ Pointer concepts:
 -"Strings are actually one-dimensional array of characters terminated by a null 
 character '\0'."
 
+
+Book:
+pointers in C: ISBN-13: 978-1430259114 , ISBN-10: 1430259116
+
 Two common mistakes when use with pointers:
 1) Not assigning a pointer to memory address before using it ->https://users.cs.cf.ac.uk/Dave.Marshall/C/node10.html
 2) Illegal indirection
