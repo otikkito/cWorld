@@ -2,6 +2,11 @@
  * or at least try.
  */
 
+
+/*
+Books:
+String Algorithms in C: Efficient Text Representation and Search :ISBN-13: 978-1484259191 , ISBN-10: 148425919X
+*/
 //http://stackoverflow.com/questions/9834067/difference-between-char-and-const-char
 //https://www.cs.bu.edu/teaching/c/string/intro/
 //https://stackoverflow.com/questions/9834067/difference-between-char-and-const-char
