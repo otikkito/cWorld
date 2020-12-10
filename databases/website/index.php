@@ -1,7 +1,7 @@
 <html>
 <!-- https://codular.com/php-mysqli -->
 <!-- https://www.w3schools.com/php/php_ref_mysqli.asp -->
-<!--- https://www.websiteout.net/  -->
+<!--- Database setup: https://github.com/otikkito/cWorld/blob/master/databases/notes.txt -->
 <head>
 <title>Kito Joseph's website</title>
 </head>	
