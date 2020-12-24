@@ -491,11 +491,11 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
 		case SIGINT:
 			/*TODO need to find a way to print to the logfile with multiple arguments*/
 			fprintf(stdout, "Received SIGINT from process with pid = %u \n", info->si_pid);
-			syslog(LOG_ERR, "Received signal SIGINT and will be shutting down application.c ");
+			syslog(LOG_ERR, "Received signal SIGINT and will be shutting down applicationstub.c ");
 			exit(EXIT_FAILURE);
 		case SIGTERM:
 			fprintf(stdout, "Received SIGTERM from process with pid = %u \n", info->si_pid);
-			syslog(LOG_ERR, "Received signal SIGTERM and will be shutting down application.c");
+			syslog(LOG_ERR, "Received signal SIGTERM and will be shutting down applicationstub.c");
 			exit(EXIT_FAILURE);
 		case SIGUSR1:
 			//This is terminating the program but this is not the behavior that we won't. I need to find out what the corrective actions that I need to take.
