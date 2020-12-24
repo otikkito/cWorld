@@ -366,7 +366,7 @@ int initializeSignalHandles(){
 	*https://en.wikipedia.org/wiki/Signal_(IPC)*/
 	struct sigaction action;
 	action.sa_handler = signalHandler;
-	action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid of the offending function*/
+	action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid of the offending process*/
 
 	/*
 	-To retrieve signal names check out man 7 signal
