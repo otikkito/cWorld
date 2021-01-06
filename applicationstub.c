@@ -191,7 +191,7 @@ int main(int argc, char** argv) {
 
 	sleep(6000);
 
-	//printApplicationUptime();
+	printApplicationUptime();
 
 
 
