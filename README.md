@@ -78,7 +78,7 @@ John Hopkins Engineering: https://engineering.jhu.edu/fields-of-study/#masters-f
 
 -----------------------------------------------------------------------------------------------------------
 
-World fact book: https://www.cia.gov/library/publications/the-world-factbook/   
+World fact book: https://www.cia.gov/the-world-factbook/
 
 -----------------------------------------------------------------------------------------------------------
 
