@@ -92,6 +92,8 @@ Engineer in training: http://engineerintrainingexam.com/?utm_source=EngineerInTr
 
 Visual Studio code: https://visualstudio.microsoft.com/
 
+Windows Desktop development: https://docs.microsoft.com/en-us/windows/apps/desktop/
+
 -----------------------------------------------------------------------------------------------------------
 
 Repo gittutorial: [Backup of personal website](https://github.com/otikkito/gittutorial/blob/master/backupwebsite/www.kjoseph-it.com/README.md)
