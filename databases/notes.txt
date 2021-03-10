@@ -217,3 +217,8 @@ You are dealing with structured binary data that belongs in the file system, for
 ---------------------
 
 Why use a database: https://www.linkedin.com/learning/programming-foundations-databases-2/why-use-a-database
+
+--------------------
+Advantage and Disadvantage of normalizing a database: https://www.techwalla.com/articles/advantages-disadvantages-of-normalizing-a-database
+--------------------
+
