@@ -160,7 +160,7 @@ ORDER BY COUNT(*), host_short;
 The mariadb api is the same in c as with mysql
 
 Questions:
-1)What is the difference between mariadb and other open source databases? https://blog.panoply.io/a-comparative-vmariadb-vs-mysql
+1)What is the difference between mariadb and other open/closed source databases? https://blog.panoply.io/a-comparative-vmariadb-vs-mysql
 ...
 
 
