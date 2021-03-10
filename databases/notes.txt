@@ -222,3 +222,5 @@ Why use a database: https://www.linkedin.com/learning/programming-foundations-da
 Advantage and Disadvantage of normalizing a database: https://www.techwalla.com/articles/advantages-disadvantages-of-normalizing-a-database
 --------------------
 
+How databases are used in the real world: https://www.techwalla.com/articles/how-are-databases-used-in-the-real-world
+---------------------
