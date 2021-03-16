@@ -142,5 +142,7 @@ https://en.wikipedia.org/wiki/Cistern <br>
 https://www.nsbe.org/ <br>
 https://ng.usembassy.gov/ <br>
 http://www.nigeriaembassyusa.org/ <br>
+https://uk.usembassy.gov/ <br>
+http://www.nigeriaembassyusa.org/ <br>
 
 
