@@ -533,7 +533,7 @@ const char* getProcessNameByPid(pid_t pid) {
 	FILE *f;
 	char* name = (char*) calloc(1024, sizeof (char));
 	//ubuntu
-	//Need to determine if RHEL 7 or 6 is being used. /etc/redhat-release
+	//Need to determine if RHEL 7 or 6 is being used. "/etc/redhat-release" on ubuntu "/etc/os-release" 
 	if(pid == 0){
 	        return "Kernel"; //This is the abstraction point...better pin pointing.
 	}
