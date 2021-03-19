@@ -13,6 +13,11 @@
  * 
  *https://www.tomsguide.com/us/darpa-self-healing-software,news-17761.html
  
+ -Compiler engineer
+-Error handle
+-runtime handling
+-identification of bugs
+ 
  * https://softwareengineering.stackexchange.com/questions/33156/defensive-programming-techniques
     Check and sanitize your inputs;
     Protect your routine from bad data. No "garbage in, garbage out";
