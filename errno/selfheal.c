@@ -11,6 +11,8 @@
  * http://syque.com/cstyle/ch10.3.htm
  * https://www.quora.com/What-are-the-common-runtime-errors-in-programming-and-in-general
  * 
+ *https://www.tomsguide.com/us/darpa-self-healing-software,news-17761.html
+ 
  * https://softwareengineering.stackexchange.com/questions/33156/defensive-programming-techniques
     Check and sanitize your inputs;
     Protect your routine from bad data. No "garbage in, garbage out";
