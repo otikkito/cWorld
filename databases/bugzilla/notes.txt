@@ -19,7 +19,7 @@ Building a rpm package: https://opensource.com/article/18/9/how-build-rpm-packag
 
 Bugzilla leanring objectives:
 1. Time management
-2. Creating new products
+2. Creating new products and/or feature enhancements
 3. Bug tracking
 
 To subscribe a machine:
