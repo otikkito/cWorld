@@ -92,6 +92,8 @@ Engineer in training: http://engineerintrainingexam.com/?utm_source=EngineerInTr
 
 Visual Studio code: https://visualstudio.microsoft.com/
 
+Development on Windows: https://docs.microsoft.com/en-us/windows/apps/
+
 Windows Desktop development: https://docs.microsoft.com/en-us/windows/apps/desktop/
 
 -----------------------------------------------------------------------------------------------------------
