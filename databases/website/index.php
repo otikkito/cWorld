@@ -8,7 +8,8 @@
 <title>Kito Joseph's website</title>
 </head>	
 <center><h1>Welcome to Kito Marid Joseph's website</h1></center>
-	<p>Please build out this learning website. This site is always under construction. Current location is Raleigh, NC. I am a <a href=https://www.ece.ncsu.edu/ugrad/cpe/> computer</a> and <a href=https://www.ece.ncsu.edu/ugrad/ee/>electrical</a> engineer that graduated from North Carolina State University in 2009 and I am looking for work. Make sure that you site your sources and stay in practice.</p><br>
+<center> Last updated 3/24/21</center>
+	<p>Please build out this learning website. This site is always under construction. The current location of this website is Raleigh, NC, zip 27606. I am a <a href=https://www.ece.ncsu.edu/ugrad/cpe/> computer</a> and <a href=https://www.ece.ncsu.edu/ugrad/ee/>electrical</a> engineer that graduated from North Carolina State University in 2009 and I am looking for work and job references. Make sure that you site your sources and stay in practice.</p><br>
 <?php
 echo shell_exec('uptime -p'); 
 ?>
