@@ -2,16 +2,19 @@
 <!-- https://codular.com/php-mysqli -->
 <!-- https://www.w3schools.com/php/php_ref_mysqli.asp -->
 <!-- Database setup https://github.com/otikkito/cWorld/blob/master/databases/notes.txt  -->
-<!-- Dynamic dns setup: https://github.com/rharmonson/richtech/wiki/Dynamic-DNS-Client-using-ddclient-on-CentOS-7  -->
 <!-- Apache tutorial: https://www.guru99.com/apache.html -->
 
 <head>
 <title>Kito Joseph's website</title>
 </head>	
 <center><h1>Welcome to Kito Marid Joseph's website</h1></center>
-	<p>Please build out this learning website. This site is always under construction. Current location is Raleigh, NC. I am a <a href=https://www.ece.ncsu.edu/ugrad/cpe/> computer</a> and <a href=https://www.ece.ncsu.edu/ugrad/ee/>electrical</a> engineer that graduated from North Carolina State University in 2009 and I am looking for work. Make sure that you site your sources.</p><br>
+	<p>Please build out this learning website. This site is always under construction. Current location is Raleigh, NC. I am a <a href=https://www.ece.ncsu.edu/ugrad/cpe/> computer</a> and <a href=https://www.ece.ncsu.edu/ugrad/ee/>electrical</a> engineer that graduated from North Carolina State University in 2009 and I am looking for work. Make sure that you site your sources and stay in practice.</p><br>
 <?php
-echo shell_exec('uptime -p');
+echo shell_exec('uptime -p'); 
+?>
+<br>
+<?php
+echo php_uname(a);
 ?>
 <br><br>
 <!-- site for hit counter https://www.thoughtco.com/web-page-hit-counter-2693831 -->
@@ -48,7 +51,7 @@ $db->close();
 
 <br>
 <a href="https://bugzilla.redhat.com/">Red Hat Bugzilla.</a><br><br><br>
-<a href="KitoJosephResumeMCC.pdf">Kito's resume</a><br><br>
+<a href="KitoJosephResumeMCC.pdf">Kito's resume</a><br><a href="discharge-list.pdf">Military benefits</a><br>
 <a href="/workpics">Work-Datacenter-pictures</a>&nbsp;<a href="/botanicgarden">Juniper-level-botanic-garden-pictures</a>
 <a href="/biltmore-estate">Biltmore-Estate-pictures</a> <br><br>
 <?php
