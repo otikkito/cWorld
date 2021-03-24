@@ -17,6 +17,10 @@ echo shell_exec('uptime -p');
 <?php
 echo php_uname(a);
 ?>
+<br>
+<?php
+system('cat /etc/redhat-release');
+?>
 <br><br>
 <!-- site for hit counter https://www.thoughtco.com/web-page-hit-counter-2693831 -->
 <!-- mysqli documentation: https://www.php.net/manual/en/book.mysqli.php -->
