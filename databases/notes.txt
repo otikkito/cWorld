@@ -156,6 +156,8 @@ FROM information_schema.processlist
 GROUP BY host_short
 ORDER BY COUNT(*), host_short;
 ---
+mariabdb - list open sessions: https://dataedo.com/kb/query/mariadb/list-database-sessions
+---
 
 The mariadb api is the same in c as with mysql
 
