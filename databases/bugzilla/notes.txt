@@ -81,7 +81,7 @@ AddHandler cgi-script .cgi
 </IfModule>
 
 17. # systemctl restart httpd
-18.<Need to configure selinux> I disabled it for testing purposes (#setenforce 0)
+18.<Need to configure selinux> I disabled it for testing purposes (#setenforce 0)  //NSA //https://en.wikipedia.org/wiki/Security-Enhanced_Linux
 19. #./checksetup.pl
 20. #./testserver.pl http://127.0.0.1/bugzilla
 
