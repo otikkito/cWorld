@@ -6,10 +6,14 @@
 
 <head>
 <title>Kito Joseph's website</title>
-</head>	
-<center><h1>Welcome to Kito Marid Joseph's website</h1></center>
-<center> Last updated 3/24/21</center>
-	<p>Please build out this learning website. This site is always under construction. The current location of this website is Raleigh, NC, zip 27606. I am a <a href=https://www.ece.ncsu.edu/ugrad/cpe/> computer</a> and <a href=https://www.ece.ncsu.edu/ugrad/ee/>electrical</a> engineer that graduated from North Carolina State University in 2009 and I am looking for work and job references. Make sure that you site your sources and stay in practice.</p><br>
+</head>
+<center><h1>Welcome to Kito Marid Joseph's website</h1></center><br>
+<center>Last updated 3/26/21</center><br>
+<img  src="att_globe_logo.png" alt="My ISP - AT&T" class="center">
+<br>
+<p>Please build out this learning website. This site is always under construction. The current location of me and this website is Raleigh, NC, zip 27606. I am a <a href=https://www.ece.ncsu.edu/ugrad/cpe/> computer</a> and <a href=https://www.ece.ncsu.edu/ugrad/ee/>electrical</a> engineer that graduated from North Carolina State University (an accredited university) in 2009 and I am looking for work and job references. Make sure that you site your sources and stay in practice.</p><br>
+<p>Possible jobs that are coming to Durham, NC which I hope I can land one of them.
+<a href="https://abc11.com/business/google-to-create-hub-in-durham-add-1000+-jobs/10428545/">Google Jobs</a></p>
 <?php
 echo shell_exec('uptime -p'); 
 ?>
