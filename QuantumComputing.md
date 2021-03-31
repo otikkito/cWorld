@@ -24,6 +24,7 @@ Quantum physics and Quantum computing for beginners: https://www.udemy.com/qc101
 Quantum computer fundamentals @ MIT: https://learn-xpro.mit.edu/quantum-computing
 
 Cleveland clinic on premis: https://venturebeat.com/2021/03/30/cleveland-clinic-will-be-ibms-first-private-sector-customer-to-install-a-quantum-computer-on-premise/
+
 June 11th 2018
 
 -Try to find schools that specialze in this quatntum computing and cognitive computing.
