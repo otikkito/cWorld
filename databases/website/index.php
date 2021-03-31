@@ -8,10 +8,11 @@
 <title>Kito Joseph's website</title>
 </head>
 <center><h1>Welcome to Kito Marid Joseph's website</h1></center><br>
-<center>Last updated 3/26/21</center><br>
+<center>Last updated 3/31/21</center><br>
 <img  src="att_globe_logo.png" alt="My ISP - AT&T" class="center">
 <br>
 <p>Please build out this learning website. This site is always under construction. The current location of me and this website is Raleigh, NC, zip 27606. I am a <a href=https://www.ece.ncsu.edu/ugrad/cpe/> computer</a> and <a href=https://www.ece.ncsu.edu/ugrad/ee/>electrical</a> engineer that graduated from North Carolina State University (an accredited university) in 2009 and I am looking for work and job references. Make sure that you site your sources and stay in practice.</p><br>
+<a href="/Docs/Computer-Engineering-BS-14CPEBS.pdf">Computer and Electrical Engineering Curriculum</a>
 <p>Possible jobs that are coming to Durham, NC which I hope I can land one of them.
 <a href="https://abc11.com/business/google-to-create-hub-in-durham-add-1000+-jobs/10428545/">Google Jobs</a></p>
 <?php
@@ -59,8 +60,8 @@ $db->close();
 ?>
 
 <br>
-<a href="https://bugzilla.redhat.com/">Red Hat Bugzilla.</a><br><br><br>
-<a href="KitoJosephResumeMCC.pdf">Kito's resume</a><br><a href="discharge-list.pdf">Military benefits</a><br>
+<a href="https://bugzilla.redhat.com/">Red Hat Bugzilla.</a>&nbsp;<a href="https://access.redhat.com/">Red Hat Linux knowledge base</a><br><br><br>
+<a href="/Docs/KitoJosephResumeMCC.pdf">Kito's resume</a><br><a href="/Docs/discharge-list.pdf">Military benefits</a><br>
 <a href="/workpics">Work-Datacenter-pictures</a>&nbsp;<a href="/botanicgarden">Juniper-level-botanic-garden-pictures</a>
 <a href="/biltmore-estate">Biltmore-Estate-pictures</a> <br><br>
 <?php
@@ -108,5 +109,6 @@ echo "Today's date is: " . date("m/d/Y") . "<br>";
 	$result->free();
 
 	phpinfo();
-	?>
+?>
+<center><a href="https://www.kjoseph-it.com/">Kito Joseph's personal website</a></center>
 </html>
