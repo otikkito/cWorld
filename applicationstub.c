@@ -2,6 +2,7 @@
 *FILE NAME: applicationstub.c
 * Please see end of file for references
 * www.kjoseph-it.com
+* http://kitojoseph.dyndns.org
 *
 *
 *PURPOSE: To design an application stub to begin developing applications on the
