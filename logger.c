@@ -215,7 +215,7 @@ int print_logfile(FILE *f, char *string){
 *
 * ARGUMENT     TYPE    I/O DESCRIPTION
 * --------     ----    --- -----------
-* fp           FILE *  I    a pointer to a file string
+* fp           FILE *  I    a pointer to a file stream
 * string       char *  I    a pointer to a character array
 * pid          pid_t   I    the pid of the process
 *
