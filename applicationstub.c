@@ -285,7 +285,7 @@ int readConfigurationFile(){
 			//TODO I also have to include the semicolon to terminate the line
 			sscanf(line,"%s = %s",leftConfigDirective,rightConfigDirective);
 			//printf("The left value is:%s and the right value is %s\n",leftConfigDirective,rightConfigDirective);
-
+			//TODO finish right configuration directive (i.e. true or false, etc)
 			if((strcmp(leftConfigDirective,"initialize_signal_handler")) == 0){
 					cd.useSignalHandler = true;
 			}
