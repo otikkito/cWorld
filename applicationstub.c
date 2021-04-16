@@ -157,7 +157,7 @@ int main(int argc, char** argv) {
 	/*The current pid of the process*/
 	processid = getpid(); /*Per the documentation this function is always successful*/
 	/*Open the log file to begin logging*/
-	fp = fopen(logfile, "a+"); /* TODO Change the name of fp and it is accessible throughout the file */
+	fp = fopen(logfile, "a+"); /* TODO Change the name of fp and make sure it is accessible throughout the file */
 	if(fp == NULL){
 		perror("Error with fopen(). Unable to open the application log");
 		exit(EXIT_FAILURE);
