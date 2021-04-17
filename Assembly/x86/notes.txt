@@ -1,2 +1,2 @@
 x86
-Need to recompile the applicationstub.asm possibly add a git hook to update the assembly file.
+I need to recompile the applicationstub.asm and possibly add a git hook to update the assembly file after each commit and update of the applicationstub file.
