@@ -68,7 +68,7 @@ MIT opencourseware: https://ocw.mit.edu/index.htm
 
 -----------------------------------------------------------------------------------------------------------
 
-IBM Watson proof of concept: https://drive.google.com/open?id=1ZX4J0C6LNUQ_a-XJbPgjhxOi_b30cUNN
+IBM Watson proof of concept: http://www.ashleighlathrop.com/
 
 -----------------------------------------------------------------------------------------------------------
 
