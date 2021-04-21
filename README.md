@@ -114,7 +114,7 @@ Farming/gardening operating system/ Application:
 
 1)https://www.deere.com/en/index.html
 
-Kito Joseph<br>
+Kito Marid Joseph, CpE<br>
 IEEE Member #93471157<br>
 RHCE License #140-019-977<br>
 "A simple person who loves taking initiative, collaborates, likes learning, for propriety, equity, for formal diagnoses, and a consolidated constitution. 
