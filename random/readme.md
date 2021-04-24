@@ -20,5 +20,5 @@ It turns out that computers are not very good at being spontaneous – they can 
 
 References:
 
-https://www.unitychain.io/blog/random-number-generation-and-their-use-cases/
+1) https://www.unitychain.io/blog/random-number-generation-and-their-use-cases/
 
