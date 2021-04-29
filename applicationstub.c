@@ -3,7 +3,7 @@
 * Please see end of file for references
 * www.kjoseph-it.com
 * http://kitojoseph.dyndns.org
-*
+* Kito Joseph, CpE, IEEE Member #93471157
 *
 *PURPOSE: To design an application stub to begin developing applications on the
 * Linux/Unix platform
@@ -669,6 +669,6 @@ void bye(void) {
 *4) https://en.wikipedia.org/wiki/MIL-STD-498
 *5) https://www.ece.ncsu.edu/people/gbyrd
 *6) https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
-*7) POSIX Specifications: https://pubs.opengroup.org/onlinepubs/9699919799/
+*7) IEEE POSIX Specifications: https://pubs.opengroup.org/onlinepubs/9699919799/
 *7) Reading code: http://wiki.c2.com/?TipsForReadingCode
 */
