@@ -187,6 +187,7 @@ int main(int argc, char** argv) {
 	* only having run-time errors which should be handled correctly and 
 	* prevented if that's possible.
 	* https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
+	* https://github.com/otikkito/cWorld/blob/master/applicationstub.conf
 	*/
 
 
