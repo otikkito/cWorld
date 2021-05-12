@@ -67,8 +67,10 @@ http://man7.org/linux/man-pages/man7/signal.7.html
 58) SIGRTMAX-6	59) SIGRTMAX-5	60) SIGRTMAX-4	61) SIGRTMAX-3	62) SIGRTMAX-2
 63) SIGRTMAX-1	64) SIGRTMAX	
  */
-
-
+------------
+Algorithms: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011 
+Erik Demaine, and Srini Devadas. 6.006 Introduction to Algorithms. Fall 2011. Massachusetts Institute of Technology: MIT OpenCourseWare, https://ocw.mit.edu. License: Creative Commons BY-NC-SA.
+------------
 /*
 * I need to find a better way to handle signals and find out what are 
 * important signals that I need to handle.
