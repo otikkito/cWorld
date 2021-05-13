@@ -5,3 +5,8 @@ I will be attempting to plot real time data information for data acquisition pro
 
 "Real time plotting using GNUplot" ->http://negativeprobability.blogspot.com/2013/01/real-time-plot-updates-using-gnuplot.html
 
+Use Case of Gnuplot and Matlab
+-Real time plotting
+-Portfolio analysis
+-Algorithm development
+-...
