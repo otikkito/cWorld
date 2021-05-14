@@ -490,7 +490,7 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
 	/*To terminate kill -s 15 <pid>*/
 	/*man 7 signal*/
 	/*TODO need to log the calling process name as well*/
-	/*TODO find out more about journalctl vs older syslog implementations*/
+	/*TODO find out more about journalctl vs older syslog implementations of logging*/
 	/*https://github.com/otikkito/cWorld/blob/master/Docs/cManPages/signal.pdf*/
 	switch (signal) {
 		case SIGINT:
