@@ -1,14 +1,16 @@
-The application development process and show best practices of application design 
-in the c programming language.
+These are notes on the application development process and to show best 
+practices of application design in the c programming language.
 
 
-Developing application on Linux course: https://training.linuxfoundation.org/linux-courses/development-training/developing-applications-for-linux
+Developing application on Linux course: 
+https://training.linuxfoundation.org/linux-courses/development-training/developing-applications-for-linux
 
 Design considerations:
 1) Error handling
 2) Signal handling
 3) Performance issues
-4) Logging of code, errors, and events within the application (application log, histogram ..., bottlenecks, checkpoint success and failures) https://en.wikipedia.org/wiki/Event_(computing)
+4) Logging of code, errors, and events within the application (application log, histogram ..., bottlenecks, checkpoint success and failures) 
+   https://en.wikipedia.org/wiki/Event_(computing)
 5) Memory Leaks
 6) Application security from known flaws within the operating system and IPC
 7) Communication from machine to machine 
