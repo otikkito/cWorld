@@ -93,8 +93,8 @@
 
 /*Global variables*/
 char logfile[] = "./text-data-files/logfile.txt";
-FILE *fp; /*Used for global log file TODO add a more descriptive name.*/
-pid_t processid; /*TODO try to use more descriptive name and correct name format throughout the file*/
+FILE *fp; /* name short for "file pointer" */
+pid_t processid; 
 struct configurationDirectives{
 	bool useSignalHandler;
 }cd;
@@ -155,9 +155,9 @@ int main(int argc, char** argv) {
 	}
 
 	/*The current pid of the process*/
-	processid = getpid(); /*Per the documentation this function is always successful*/
+	processid = getpid(); /*Per the documentation (i.e. "man getpid") this function is always successful*/
 	/*Open the log file to begin logging*/
-	fp = fopen(logfile, "a+"); /* TODO Change the name of fp and make sure it is accessible throughout the file */
+	fp = fopen(logfile, "a+"); 
 	if(fp == NULL){
 		perror("Error with fopen(). Unable to open the application log");
 		exit(EXIT_FAILURE);
@@ -225,13 +225,15 @@ int main(int argc, char** argv) {
 * 1) print also to the log file and console (stdout)
 *********************************************************/
 int printApplicationHeaderToConsole() {
+	//print to the console	
 	printf("The process id of this application is: %d\n", processid);
 	printf("Welcome to the application stub.\nThe  purpose of this program ");
 	printf("is to build a solid framework \nfor the application development ");
 	printf("process.\n");
 	printf("----------------------------------------------------------------\n");
 	printf("The process name of this process is: %s \n", getProcessNameByPid(processid));
-
+	//TODO print to the application log file
+	
 	return(EXIT_SUCCESS);
 }
 
