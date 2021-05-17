@@ -30,7 +30,7 @@ From the gnome desktop use network manager to setup network
 #subscription-manager register 
 #subscription-manager attach --auto
 
-Install guest additions:
+Install guest additions on the guest operating system via Virtualbox:
 #su
 #dnf update -y
 #dnf groupinstall "Development Tools"
