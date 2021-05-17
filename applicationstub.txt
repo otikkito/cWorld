@@ -12,7 +12,7 @@ Design considerations:
 4) Logging of code, errors, and events within the application (application log, histogram ..., bottlenecks, checkpoint success and failures) 
    https://en.wikipedia.org/wiki/Event_(computing)
 5) Memory Leaks
-6) Application security from known flaws within the operating system and IPC
+6) Application security from known flaws within the operating system, IPC, etc
 7) Communication from machine to machine 
 8) Communication from processor to processor
 9) Timeouts --> https://en.wikipedia.org/wiki/Timeout_(computing)
@@ -83,3 +83,40 @@ Erik Demaine, and Srini Devadas. 6.006 Introduction to Algorithms. Fall 2011. Ma
 *https://netbeans.org/bugzilla/show_bug.cgi?id=191390
 */
 ...
+--------------------------------------------------------------------------------
+Application Security
+--------------------
+Terms
+Asset: Resource of value such as the data in a database, money in an account, file on the filesystem or any system resource.
+Vulnerability: A weakness or gap in security program that can be exploited by threats to gain unauthorized access to an asset.
+Attack or eploit:  An action taken to harm an asset.
+Threat: Anything that can exploit a vulnerability and obtain, damage, or destroy an asset.
+
+Application threats and attacks
+-------------------------------
+Category 	Threats / Attacks
+Input Validation 	Buffer overflow; cross-site scripting; SQL injection; canonicalization
+Software Tampering 	Attacker modifies an existing application's runtime behavior to perform unauthorized actions; exploited via binary patching, code substitution, or code extension
+Authentication 	Network eavesdropping; Brute force attack; dictionary attacks; cookie replay; credential theft
+Authorization 	Elevation of privilege; disclosure of confidential data; data tampering; luring attacks
+Configuration management 	Unauthorized access to administration interfaces; unauthorized access to configuration stores; retrieval of clear text configuration data; lack of individual accountability; over-privileged process and service accounts
+Sensitive information 	Access sensitive code or data in storage; network eavesdropping; code/data tampering
+Session management 	Session hijacking; session replay; man in the middle
+Cryptography 	Poor key generation or key management; weak or custom encryption
+Parameter manipulation 	Query string manipulation; form field manipulation; cookie manipulation; HTTP header manipulation
+Exception management 	Information disclosure; denial of service
+Auditing and logging 	User denies performing an operation; attacker exploits an application without trace; attacker covers his or her tracks
+Injection 	SQL injection; NoSQL; OS Command; Object-relational mapping; LDAP injection
+Broken authentication 	Credential stuffing; brute force attacks; weak passwords
+Sensitive data exposure 	Weak cryptography; un-enforced encryption
+XML external entities 	XML external entity attack
+Broken access control 	CORS misconfiguration; force browsing; elevation of privilege
+Security misconfiguration 	Unpatched flaws; failure to set security values in settings; out of date or vulnerable software
+Cross-site scripting (XSS) 	Reflected XSS; Stored XSS; DOM XSS
+Insecure deserialization 	Object and data structure is modified; data tampering
+Using components with known vulnerabilities 	Out of date software; failure to scan for vulnerabilities; failure to fix underlying platform frameworks; failure to updated or upgraded library compatibility
+Insufficient logging & monitoring 	Failure to log auditable events; failure to generate clear log messages: inappropriate alerts; failure to detect or alert for active attacks in or near real-time 
+
+Ref:
+Wikipedia contributors, "Application security," Wikipedia, The Free Encyclopedia, https://en.wikipedia.org/w/index.php?title=Application_security&oldid=1020206045 (accessed May 17, 2021). 
+--------------------------------------------------------------------------------

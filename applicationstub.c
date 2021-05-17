@@ -97,6 +97,7 @@ FILE *fp; /* name short for "file pointer" */
 pid_t processid; 
 struct configurationDirectives{
 	bool useSignalHandler;
+	//Add additional configuration directives here and the configuration directives should be read in the readConfigurationFile() function
 }cd;
 struct timespec start_time;
 struct timespec elapsed_time;
