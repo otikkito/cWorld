@@ -89,7 +89,7 @@ Application Security
 Terms
 Asset: Resource of value such as the data in a database, money in an account, file on the filesystem or any system resource.
 Vulnerability: A weakness or gap in security program that can be exploited by threats to gain unauthorized access to an asset.
-Attack or eploit:  An action taken to harm an asset.
+Attack or exploit:  An action taken to harm an asset.
 Threat: Anything that can exploit a vulnerability and obtain, damage, or destroy an asset.
 
 Application threats and attacks
