@@ -1,5 +1,9 @@
 Here we will be exploring the functionality of latex on windows and linux.
 
+-Latex: https://www.latex-project.org/ and for windows: https://miktex.org/
+
+-Online Latex: https://www.overleaf.com/
+
 Tutorial and reference
 1. http://course1.winona.edu/eerrthum/latex/windows.html -> "Setup and tutorial for using latex with texworks/miktex" 
 2. http://math.ucr.edu/~huerta/latexforbeginners.html

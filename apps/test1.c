@@ -51,6 +51,7 @@
   https://en.wikipedia.org/wiki/Natural_language_processing
   https://www.coursera.org/learn/natural-language-processing
   http://opennlp.apache.org/
+  Oxford dictionary: https://developer.oxforddictionaries.com/
  */
 
 /*

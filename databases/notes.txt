@@ -156,11 +156,13 @@ FROM information_schema.processlist
 GROUP BY host_short
 ORDER BY COUNT(*), host_short;
 ---
+mariabdb - list open sessions: https://dataedo.com/kb/query/mariadb/list-database-sessions
+---
 
 The mariadb api is the same in c as with mysql
 
 Questions:
-1)What is the difference between mariadb and other open source databases? https://blog.panoply.io/a-comparative-vmariadb-vs-mysql
+1)What is the difference between mariadb and other open/closed source databases? https://blog.panoply.io/a-comparative-vmariadb-vs-mysql
 ...
 
 
@@ -199,3 +201,28 @@ yum install php-mysqlnd php-pdo
 </html>
 
 ==========================================================
+
+Source: "https://softwareengineering.stackexchange.com/questions/190482/why-use-a-database-instead-of-just-saving-your-data-to-disk/190483#:~:text=A%20database%20is%20needed%20if,data%20is%20larger%20than%20memory."
+
+"Why use a database instead of just saving your data to disk"
+
+when to use a file:
+You have unstructured data in reasonable amounts that the file system can handle
+You don't care about structure, relationships
+You don't care about scalability or reliability (although these can be done, depending on the file system)
+You don't want or can't deal with the overhead a database will add
+You are dealing with structured binary data that belongs in the file system, for example: images, PDFs, documents, etc.
+--
+-A database is needed if you have multiple processes (users/servers) modifying the data. Then the database serves to prevent them from overwriting each others changes.
+-You also need a database when your data is larger than memory. Nowadays with the memory we have available, this does indeed makes the use of databases in many applications obsolete.
+-Your approach is definitely better than the nonsense of "in-memory databases". Which are essentially your approach, but with a lot of overhead added.
+---------------------
+
+Why use a database: https://www.linkedin.com/learning/programming-foundations-databases-2/why-use-a-database
+
+--------------------
+Advantage and Disadvantage of normalizing a database: https://www.techwalla.com/articles/advantages-disadvantages-of-normalizing-a-database
+--------------------
+
+How databases are used in the real world: https://www.techwalla.com/articles/how-are-databases-used-in-the-real-world
+---------------------

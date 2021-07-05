@@ -2,7 +2,7 @@ This is a list of projects that I want to have in my cWorld library. I will use 
 projects I want to develop and for normal use or as an exercise
 
 -Simple database
--Linked list, stacks, queus, hash table, trees... Data structures: An advanced approach using c: ISBN-13: 978-0131988477
+-Linked list, stacks, queues, hash table, trees... Data structures: An advanced approach using c: ISBN-13: 978-0131988477
 -Hash table
 -lookup table
 -stack
@@ -12,7 +12,8 @@ projects I want to develop and for normal use or as an exercise
 -test suite for kernel
 -networking tutorial basically sending network information from machine to machine
 -Something that will help with bit manipulation and low level bit problems
--Timer high resolution 
+-Timer high resolution
+-Dictionary of "MAN" page terms
 -Operating systems
 -Test what is the fastest form of interprocess communications and trade offs
 -Firewall

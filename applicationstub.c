@@ -2,7 +2,8 @@
 *FILE NAME: applicationstub.c
 * Please see end of file for references
 * www.kjoseph-it.com
-*
+* http://kitojoseph.dyndns.org
+* Kito Joseph, CpE, IEEE Member #93471157
 *
 *PURPOSE: To design an application stub to begin developing applications on the
 * Linux/Unix platform
@@ -92,10 +93,11 @@
 
 /*Global variables*/
 char logfile[] = "./text-data-files/logfile.txt";
-FILE *fp; /*Used for global log file TODO add a more descriptive name.*/
-pid_t processid; /*TODO try to use more descriptive name and correct name format throughout the file*/
+FILE *fp; /* name short for "file pointer" */
+pid_t processid; 
 struct configurationDirectives{
 	bool useSignalHandler;
+	//Add additional configuration directives here and the configuration directives should be read in the readConfigurationFile() function
 }cd;
 struct timespec start_time;
 struct timespec elapsed_time;
@@ -154,9 +156,9 @@ int main(int argc, char** argv) {
 	}
 
 	/*The current pid of the process*/
-	processid = getpid(); /*Per the documentation this function is always successful*/
+	processid = getpid(); /*Per the documentation (i.e. "man getpid") this function is always successful*/
 	/*Open the log file to begin logging*/
-	fp = fopen(logfile, "a+"); /* TODO Change the name of fp and it is accessible throughout the file */
+	fp = fopen(logfile, "a+"); 
 	if(fp == NULL){
 		perror("Error with fopen(). Unable to open the application log");
 		exit(EXIT_FAILURE);
@@ -186,12 +188,13 @@ int main(int argc, char** argv) {
 	* only having run-time errors which should be handled correctly and 
 	* prevented if that's possible.
 	* https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
+	* https://github.com/otikkito/cWorld/blob/master/applicationstub.conf
 	*/
 
 
 	sleep(6000);
 
-	//printApplicationUptime();
+	printApplicationUptime();
 
 
 
@@ -223,13 +226,15 @@ int main(int argc, char** argv) {
 * 1) print also to the log file and console (stdout)
 *********************************************************/
 int printApplicationHeaderToConsole() {
+	//print to the console	
 	printf("The process id of this application is: %d\n", processid);
 	printf("Welcome to the application stub.\nThe  purpose of this program ");
 	printf("is to build a solid framework \nfor the application development ");
 	printf("process.\n");
 	printf("----------------------------------------------------------------\n");
 	printf("The process name of this process is: %s \n", getProcessNameByPid(processid));
-
+	//TODO print to the application log file
+	
 	return(EXIT_SUCCESS);
 }
 
@@ -251,7 +256,7 @@ int printApplicationHeaderToConsole() {
 *
 * RETURNS: EXIT_SUCCESS or EXIT_FAILURE
 *
-*TODO: I need to terminate the configuration with a semicolon
+*TODO: I need to terminate the configuration line directive with a semicolon
 *
 *********************************************************/
 int readConfigurationFile(){
@@ -282,10 +287,10 @@ int readConfigurationFile(){
 			memset(leftConfigDirective,'\0',MAXCONFIGLINESIZE);
 			memset(rightConfigDirective,'\0',MAXCONFIGLINESIZE);
 			//TODO I also have to include the semicolon to terminate the line
-			sscanf(line,"%s = %s",leftConfigDirective,rightConfigDirective);
+			sscanf(line,"%s = %s;",leftConfigDirective,rightConfigDirective);
 			//printf("The left value is:%s and the right value is %s\n",leftConfigDirective,rightConfigDirective);
-
-			if((strcmp(leftConfigDirective,"initialize_signal_handler")) == 0){
+			//TODO finish right configuration directive (i.e. true or false, etc)
+			if( ((strcmp(leftConfigDirective,"initialize_signal_handler")) == 0) && ((strcmp(rightConfigDirective,"true") == 0)) ){
 					cd.useSignalHandler = true;
 			}
 		}
@@ -366,7 +371,7 @@ int initializeSignalHandles(){
 	*https://en.wikipedia.org/wiki/Signal_(IPC)*/
 	struct sigaction action;
 	action.sa_handler = signalHandler;
-	action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid of the offending function*/
+	action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid of the offending process*/
 
 	/*
 	-To retrieve signal names check out man 7 signal
@@ -486,16 +491,17 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
 	/*To terminate kill -s 15 <pid>*/
 	/*man 7 signal*/
 	/*TODO need to log the calling process name as well*/
+	/*TODO find out more about journalctl vs older syslog implementations of logging*/
 	/*https://github.com/otikkito/cWorld/blob/master/Docs/cManPages/signal.pdf*/
 	switch (signal) {
 		case SIGINT:
 			/*TODO need to find a way to print to the logfile with multiple arguments*/
 			fprintf(stdout, "Received SIGINT from process with pid = %u \n", info->si_pid);
-			syslog(LOG_ERR, "Received signal SIGINT and will be shutting down application.c ");
+			syslog(LOG_ERR, "Received signal SIGINT and will be shutting down applicationstub.c ");
 			exit(EXIT_FAILURE);
 		case SIGTERM:
 			fprintf(stdout, "Received SIGTERM from process with pid = %u \n", info->si_pid);
-			syslog(LOG_ERR, "Received signal SIGTERM and will be shutting down application.c");
+			syslog(LOG_ERR, "Received signal SIGTERM and will be shutting down applicationstub.c");
 			exit(EXIT_FAILURE);
 		case SIGUSR1:
 			//This is terminating the program but this is not the behavior that we won't. I need to find out what the corrective actions that I need to take.
@@ -533,7 +539,7 @@ const char* getProcessNameByPid(pid_t pid) {
 	FILE *f;
 	char* name = (char*) calloc(1024, sizeof (char));
 	//ubuntu
-	//Need to determine if RHEL 7 or 6 is being used. /etc/redhat-release
+	//Need to determine what os version (i.e RHEL 7 or 6) is being used (e.g. "/etc/redhat-release" on ubuntu/openSuse "/etc/os-release" )
 	if(pid == 0){
 	        return "Kernel"; //This is the abstraction point...better pin pointing.
 	}
@@ -668,5 +674,8 @@ void bye(void) {
 *4) https://en.wikipedia.org/wiki/MIL-STD-498
 *5) https://www.ece.ncsu.edu/people/gbyrd
 *6) https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
-*7) Reading code: http://wiki.c2.com/?TipsForReadingCode
+*7) IEEE POSIX Specifications: https://pubs.opengroup.org/onlinepubs/9699919799/
+*8) Linux application development training: https://training.linuxfoundation.org/training/developing-applications-for-linux/
+*9) Configuration file: https://github.com/otikkito/cWorld/blob/master/applicationstub.conf
+*10) Reading code: http://wiki.c2.com/?TipsForReadingCode
 */

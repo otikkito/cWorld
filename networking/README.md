@@ -1,6 +1,6 @@
 This will be the starting point of networking refresher and programming emulation.
 
-https://www.ietf.org/rfc.html  ---> Complete RFC
+https://www.rfc-editor.org/rfc-index.html  ---> Complete RFC
 
 https://tools.ietf.org/html/rfc791  ---> Internet Protocol
 
@@ -60,4 +60,4 @@ the directory structure in place to help with the project and referencing
 material to aid in the development of network applications.
 
 
-//https://www.kjoseph-it.com -currently down do to lack of funds and am using github as a temporary backup.
+//https://www.kjoseph-it.com -currently down do to lack of funds and I am using github as a temporary backup.

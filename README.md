@@ -68,17 +68,17 @@ MIT opencourseware: https://ocw.mit.edu/index.htm
 
 -----------------------------------------------------------------------------------------------------------
 
-IBM Watson proof of concept: https://drive.google.com/open?id=1ZX4J0C6LNUQ_a-XJbPgjhxOi_b30cUNN
+IBM Watson proof of concept: http://www.ashleighlathrop.com/
 
 -----------------------------------------------------------------------------------------------------------
 
-John Hopkins Engineering: https://engineering.jhu.edu/fields-of-study/#masters-full-time
+Johns Hopkins Engineering: https://engineering.jhu.edu/fields-of-study/#masters-full-time
 
 1) Systems engineering: https://ep.jhu.edu/programs-and-courses/programs/systems-engineering#quickset-program_pages_content_2
 
 -----------------------------------------------------------------------------------------------------------
 
-World fact book: https://www.cia.gov/library/publications/the-world-factbook/   
+World fact book: https://www.cia.gov/the-world-factbook/
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -90,9 +90,6 @@ Engineer in training: http://engineerintrainingexam.com/?utm_source=EngineerInTr
 
 -----------------------------------------------------------------------------------------------------------
 
-Visual Studio code: https://visualstudio.microsoft.com/
-
------------------------------------------------------------------------------------------------------------
 
 Repo gittutorial: [Backup of personal website](https://github.com/otikkito/gittutorial/blob/master/backupwebsite/www.kjoseph-it.com/README.md)
 
@@ -117,7 +114,7 @@ Farming/gardening operating system/ Application:
 
 1)https://www.deere.com/en/index.html
 
-Kito Joseph<br>
+Kito Marid Joseph, CpE<br>
 IEEE Member #93471157<br>
 RHCE License #140-019-977<br>
 "A simple person who loves taking initiative, collaborates, likes learning, for propriety, equity, for formal diagnoses, and a consolidated constitution. 
@@ -139,6 +136,8 @@ https://www.sec.gov/reportspubs/investor-publications/investorpubsintro529htm.ht
 https://en.wikipedia.org/wiki/Cistern <br>
 https://www.nsbe.org/ <br>
 https://ng.usembassy.gov/ <br>
+http://www.nigeriaembassyusa.org/ <br>
+https://uk.usembassy.gov/ <br>
 http://www.nigeriaembassyusa.org/ <br>
 
 

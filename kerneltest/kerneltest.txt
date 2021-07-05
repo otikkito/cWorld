@@ -11,7 +11,7 @@ performance.
 -supplying random input data
 -applying random changes to valid input
 -startup delay
--resource hogging program (cpu/memory)
+-resource hogging program (i.e. cpu/memory/storage)
 -Network security
 -IPC / shared resources
 -Application security 
