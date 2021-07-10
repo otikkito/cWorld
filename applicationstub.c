@@ -374,7 +374,7 @@ int initializeSignalHandles(){
 	action.sa_flags = SA_SIGINFO; /*This is needed in order to get the pid of the offending process*/
 
 	/*
-	-To retrieve signal names check out man 7 signal
+	-To retrieve signal names check out "man 7 signal"
 	-Signals that will not be caught please comment out
 	-Actions for each signal
 	*Term: default actions is to terminate the process
