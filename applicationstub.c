@@ -189,6 +189,7 @@ int main(int argc, char** argv) {
 	* prevented if that's possible.
 	* https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
 	* https://github.com/otikkito/cWorld/blob/master/applicationstub.conf
+	* https://man7.org/linux/man-pages/man1/systemctl.1.html
 	*/
 
 
