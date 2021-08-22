@@ -156,7 +156,7 @@ int main(int argc, char** argv) {
 	}
 
 	/*The current pid of the process*/
-	processid = getpid(); /*Per the documentation (i.e. "man getpid") this function is always successful*/
+	processid = getpid(); /*Per the documentation (i.e. "man getpid") this function is always is successful*/
 	/*Open the log file to begin logging*/
 	fp = fopen(logfile, "a+"); 
 	if(fp == NULL){
@@ -297,7 +297,7 @@ int readConfigurationFile(){
 		}
 	}
 
-	//close the file
+	//close the file to scale
 	int rc;
 	rc = fclose(config_file);
 

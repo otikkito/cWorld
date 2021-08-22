@@ -197,7 +197,7 @@ int getCpuUtilizationOfSystem(){
 *
 *
 *********************************************************/
-void intializeSignalHsandles(){
+void intializeSignalHandles(){
 	/*location of an implementation is located in applicationstub.c */
 
 }
