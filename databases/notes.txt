@@ -23,7 +23,7 @@ Forgotten user password: https://websiteforstudents.com/how-to-change-mysql-mari
 Installing mariadb: https://www.linode.com/docs/databases/mariadb/how-to-install-mariadb-on-centos-7/
 
 Remote database access
-mariadb root password: reess: https://websiteforstudents.com/configure-remote-access-mysql-mariadb-databases/
+mariadb root password: redhat: https://websiteforstudents.com/configure-remote-access-mysql-mariadb-databases/
 permissions: https://chartio.com/resources/tutorials/how-to-grant-all-privileges-on-a-database-in-mysql/
 grant privileges on databases: https://mariadb.com/kb/en/grant/
 user:  dbadmin , password: redhat
