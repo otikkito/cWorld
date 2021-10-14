@@ -201,7 +201,8 @@ int main(int argc, char** argv) {
 
    printLogFile(fp, "Application terminated.");
 
-   return (EXIT_SUCCESS); /*return EXIT_SUCCESS indication successful completion of the application*/
+   return (EXIT_SUCCESS); /*return EXIT_SUCCESS indication successful completion of the application. 
+                           exit status can be checked using "echo $?" from the shell*/
 }
 
 /********************************************************
