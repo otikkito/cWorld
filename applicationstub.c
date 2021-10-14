@@ -679,4 +679,5 @@ void bye(void) {
 *8) Linux application development training: https://training.linuxfoundation.org/training/developing-applications-for-linux/
 *9) Configuration file: https://github.com/otikkito/cWorld/blob/master/applicationstub.conf
 *10) Reading code: http://wiki.c2.com/?TipsForReadingCode
+*11)On the changing notion of code readability: https://github.com/kbilsted/CodeQualityAndReadability/blob/master/Articles/Readability/TheChangingNotionOfReadability.md
 */
