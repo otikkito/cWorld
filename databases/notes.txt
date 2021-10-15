@@ -27,7 +27,7 @@ mariadb root password: redhat: https://websiteforstudents.com/configure-remote-a
 permissions: https://chartio.com/resources/tutorials/how-to-grant-all-privileges-on-a-database-in-mysql/
 grant privileges on databases: https://mariadb.com/kb/en/grant/
 user:  dbadmin , password: redhat
-user: kito, passowrd: redhat
+user: kito, password: redhat
 
 Initial install:
 1) create user: CREATE USER 'myuser' IDENTIFIED BY 'mypassword';
