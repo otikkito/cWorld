@@ -8,10 +8,10 @@
 <title>Kito Joseph's website</title>
 </head>
 <center><h1>Welcome to Kito Marid Joseph's website</h1></center><br>
-<center>Last updated 7/1/21</center><br>
+<center>Last updated 10/14/21</center><br>
 <!-- My isp is Spectrum -->
 <br>
-<p>Please build out this learning website. This site is always under construction. The current location of me and this website is Cary, NC, zip 27518. I am a <a href=https://www.ece.ncsu.edu/ugrad/cpe/> computer</a> and <a href=https://www.ece.ncsu.edu/ugrad/ee/>electrical</a> engineer that graduated from North Carolina State University (an accredited university) in 2009 and I am looking for job references. Make sure that you site your sources and stay in practice.</p><br>
+<p>Would you please build out this learning website? This site is always under construction. The current location of me and this website is Cary, NC, zip 27518. I am a <a href=https://www.ece.ncsu.edu/ugrad/cpe/> computer</a> and <a href=https://www.ece.ncsu.edu/ugrad/ee/>electrical</a> engineer that graduated from North Carolina State University (an accredited university) in 2009, and I am looking for job references. So make sure that you cite your sources and stay in practice. I am also looking to make new friends on Facebook. But if we connect, keep it clean.</p><br>
 <a href="/Docs/Computer-Engineering-BS-14CPEBS.pdf">Computer and Electrical Engineering Curriculum</a>
 <p>Possible jobs that are coming to Durham, NC which I hope I can land one of them.
 <a href="https://abc11.com/business/google-to-create-hub-in-durham-add-1000+-jobs/10428545/">Google Jobs</a></p>
