@@ -47,6 +47,10 @@ Fault tree analysis: https://en.wikipedia.org/wiki/Fault_tree_analysis
 
 -----------------------------------------------------------------------------------------------------------
 
+Discrete Mathematics: https://www.javatpoint.com/discrete-mathematics-tutorial
+
+-----------------------------------------------------------------------------------------------------------
+
 
 List of systems engineering schools: https://en.wikipedia.org/wiki/List_of_systems_engineering_universities
 
