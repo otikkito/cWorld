@@ -35,6 +35,10 @@ Computer engineer: https://en.wikipedia.org/wiki/Computer_engineering
 
 -----------------------------------------------------------------------------------------------------------
 
+Electrical engineering essentialshttps://www.sparkfun.com/engineering_essentials
+
+-----------------------------------------------------------------------------------------------------------
+
 System engineer: https://en.wikipedia.org/wiki/Systems_engineering 
 
 -----------------------------------------------------------------------------------------------------------
