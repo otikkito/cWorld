@@ -35,7 +35,7 @@ Computer engineer: https://en.wikipedia.org/wiki/Computer_engineering
 
 -----------------------------------------------------------------------------------------------------------
 
-Electrical engineering essentialshttps://www.sparkfun.com/engineering_essentials
+Electrical engineering essentials: https://www.sparkfun.com/engineering_essentials
 
 -----------------------------------------------------------------------------------------------------------
 
