@@ -1,0 +1,26 @@
+Quantum computing: https://en.wikipedia.org/wiki/Quantum_computing
+
+Goldman sachs: http://www.goldmansachs.com/our-thinking/pages/toshiya-hari-quantum-computing.html?mediaIndex=1&autoPlay=true&cid=sch-pd-google-outsidersquantumcomputing-searchad-20183--&mkwid=EZmftaQ9
+
+QCGPU: https://qcgpu.github.io/
+
+https://www.research.ibm.com/ibm-q/learn/what-is-quantum-computing/
+
+https://uwaterloo.ca/institute-for-quantum-computing/quantum-computing-101
+
+NCSTATE: https://www.wraltechwire.com/2018/05/10/ibm-chooses-nc-state-as-partner-for-first-ibm-quantum-computing-hub-in-north-america/
+
+Intro quatum computing for non physicist: https://arxiv.org/PS_cache/quant-ph/pdf/9809/9809016v2.pdf
+
+Cleveland Clinic -Quantum Comp.: https://venturebeat.com/2021/03/30/cleveland-clinic-will-be-ibms-first-private-sector-customer-to-install-a-quantum-computer-on-premise/
+
+"Chemical engineers, for example, are anticipating that quantum computers will 
+be able to simulate large and complex molecules to predict the combinations that
+will best fight off disease in order to create life-saving drugs much faster;
+ banking giants are counting on quantum systems to determine the best stocks to 
+ buy and sell for maximum return, based on calculations that can account for 
+ any more fast-changing factors; and car manufacturers are testing how the 
+ technology could revolutionise the design of batteries, the optimisation of 
+ supply chains or the management of traffic in dense, urban settings."
+ 
+ https://www.zdnet.com/article/quantum-computing-is-just-getting-going-but-the-hype-could-bring-everything-crashing-down/
