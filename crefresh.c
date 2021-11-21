@@ -151,10 +151,7 @@ int main(){
 /*Pass by value*/
 int myfunction(struct datastruct a, struct datastruct b){
 	int ret;
-	
-	assert(&a != NULL);
-	assert(&b != NULL);
-	
+		
 	ret = strcmp(a.name,b.name);
 	if(ret == 0){
 		printf("The name is the same\n");
@@ -194,6 +191,10 @@ int myfunction(struct datastruct a, struct datastruct b){
 
 /*function that will pass by reference*/
 int simpleFunction(struct datastruct *a, struct datastruct *b){
+	
+	assert(&a != NULL);
+	assert(&b != NULL);
+	
 	printf("Function:The location of a is: %p\n",a);
 	printf("Function:The location of b is: %p\n",b); 
 	return 0;
