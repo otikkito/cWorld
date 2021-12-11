@@ -681,4 +681,5 @@ void bye(void) {
 *9) Configuration file: https://github.com/otikkito/cWorld/blob/master/applicationstub.conf
 *10) Reading code: http://wiki.c2.com/?TipsForReadingCode
 *11) On the changing notion of code readability: https://github.com/kbilsted/CodeQualityAndReadability/blob/master/Articles/Readability/TheChangingNotionOfReadability.md
+*12) c/c++ IDEs in linux: https://codecondo.com/best-c-c-ides-editors-to-consider-for-linux/
 */
