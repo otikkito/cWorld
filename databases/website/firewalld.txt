@@ -1,0 +1,80 @@
+[root@kitosrhellaptop-server ~]# rpm -qc firewalld
+/etc/firewalld/firewalld.conf
+/etc/firewalld/lockdown-whitelist.xml
+/etc/sysconfig/firewalld
+/usr/share/dbus-1/system.d/FirewallD.conf
+-------------
+[root@kitosrhellaptop-server ~]# firewall-cmd --list-all
+ public (active)
+  target: default
+  icmp-block-inversion: no
+  interfaces: wlp3s0
+  sources:
+  services: cockpit dhcpv6-client http ssh
+  ports:
+  protocols:
+  forward: no
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+------------
+[root@kitosrhellaptop-server ~]# firewall-cmd --get-zones
+block dmz drop external home internal libvirt nm-shared public trusted work
+------------
+[root@kitosrhellaptop-server ~]# firewall-cmd --get-services
+RH-Satellite-6 RH-Satellite-6-capsule amanda-client amanda-k5-client amqp amqps apcupsd audit bacula bacula-client bb bgp bitcoin bitcoin-rpc bitcoin-testnet bitcoin-testnet-rpc bittorrent-lsd ceph ceph-mon cfengine cockpit collectd condor-collector ctdb dhcp dhcpv6 dhcpv6-client distcc dns dns-over-tls docker-registry docker-swarm dropbox-lansync elasticsearch etcd-client etcd-server finger foreman foreman-proxy freeipa-4 freeipa-ldap freeipa-ldaps freeipa-replication freeipa-trust ftp galera ganglia-client ganglia-master git grafana gre high-availability http https imap imaps ipp ipp-client ipsec irc ircs iscsi-target isns jenkins kadmin kdeconnect kerberos kibana klogin kpasswd kprop kshell kube-apiserver ldap ldaps libvirt libvirt-tls lightning-network llmnr managesieve matrix mdns memcache minidlna mongodb mosh mountd mqtt mqtt-tls ms-wbt mssql murmur mysql nbd nfs nfs3 nmea-0183 nrpe ntp nut openvpn ovirt-imageio ovirt-storageconsole ovirt-vmconsole plex pmcd pmproxy pmwebapi pmwebapis pop3 pop3s postgresql privoxy prometheus proxy-dhcp ptp pulseaudio puppetmaster quassel radius rdp redis redis-sentinel rpc-bind rquotad rsh rsyncd rtsp salt-master samba samba-client samba-dc sane sip sips slp smtp smtp-submission smtps snmp snmptrap spideroak-lansync spotify-sync squid ssdp ssh steam-streaming svdrp svn syncthing syncthing-gui synergy syslog syslog-tls telnet tentacle tftp tftp-client tile38 tinc tor-socks transmission-client upnp-client vdsm vnc-server wbem-http wbem-https wsman wsmans xdmcp xmpp-bosh xmpp-client xmpp-local xmpp-server zabbix-agent zabbix-server
+-------------
+[root@kitosrhellaptop-server services]# firewall-cmd  --get-default-zone
+public
+-------------
+[root@kitosrhellaptop-server services]# firewall-cmd --list-all
+public (active)
+  target: default
+  icmp-block-inversion: no
+  interfaces: wlp3s0
+  sources:
+  services: cockpit dhcpv6-client http ssh
+  ports:
+  protocols:
+  forward: no
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+------------
+#firewall-cmd --add-service=mysql
+#firewall-cmd --reload  (removes all non persistant configurations)
+#firewall-cmd --add-service=mysql --permanent  (for persistant configurations)
+and to take effect run#firewall-cmd --reload (for changes to take effect)
+to remove services#firewall-cmd --remove-service=https
+------------
+port forwarding
+[root@kitosrhellaptop-server services]# netstat -nltp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name 
+tcp        0      0 0.0.0.0:111             0.0.0.0:*               LISTEN      1/systemd        
+tcp        0      0 192.168.122.1:53        0.0.0.0:*               LISTEN      8576/dnsmasq     
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      2640/sshd        
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      2631/cupsd       
+tcp6       0      0 :::111                  :::*                    LISTEN      1/systemd        
+tcp6       0      0 :::80                   :::*                    LISTEN      6564/httpd       
+tcp6       0      0 :::22                   :::*                    LISTEN      2640/sshd        
+tcp6       0      0 ::1:631                 :::*                    LISTEN      2631/cupsd       
+tcp6       0      0 :::3306                 :::*                    LISTEN      2904/mysqld      
+
+#firewall-cmd --add-forward-port=8080:proto=tcp:toport=80
+#firewall-cmd --add-forward-port=8080:proto=tcp:toport=80:toaddr=192.122.1.3
+#firewall-cmd --remove-forward-port....
+#firewall-cmd --remove-service mysql
+---------------
+*rich rules
+*#firewall-cmd --panic-on
+*#firewall-cmd --panic-off
+---------------
+CentOS 7: Firewalld Concepts and Examples [RHCSA7/RHCE7]: https://youtu.be/TyMallqnWiw
+
+https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-centos-8
+
