@@ -3,7 +3,7 @@
 <!-- https://www.w3schools.com/php/php_ref_mysqli.asp -->
 <!-- Database setup https://github.com/otikkito/cWorld/blob/master/databases/notes.txt  -->
 <!-- Apache tutorial: https://www.guru99.com/apache.html -->
-
+<!-- To get ip 4 address:#curl -4 icanhazip.com -->
 <head>
 <title>Kito Joseph's website</title>
 </head>
