@@ -3,12 +3,12 @@
 <!-- https://www.w3schools.com/php/php_ref_mysqli.asp -->
 <!-- Database setup https://github.com/otikkito/cWorld/blob/master/databases/notes.txt  -->
 <!-- Apache tutorial: https://www.guru99.com/apache.html -->
-<!-- To get ip 4 address:#curl -4 icanhazip.com -->
+
 <head>
 <title>Kito Joseph's website</title>
 </head>
 <center><h1>Welcome to Kito Marid Joseph's website</h1></center><br>
-<center>Last updated 10/14/21</center><br>
+<center>Last updated 10/31/21</center><br>
 <!-- My isp is Spectrum -->
 <br>
 <p>Would you please build out this learning website? This site is always under construction. The current location of me and this website is Cary, NC, zip 27518. I am a <a href=https://www.ece.ncsu.edu/ugrad/cpe/> computer</a> and <a href=https://www.ece.ncsu.edu/ugrad/ee/>electrical</a> engineer that graduated from North Carolina State University (an accredited university) in 2009, and I am looking for job references. So make sure that you cite your sources and stay in practice. I am also looking to make new friends on Facebook. But if we connect, keep it clean.</p><br>
@@ -25,6 +25,11 @@ echo php_uname(a);
 <br>
 <?php
 system('cat /etc/redhat-release');
+?>
+<br>
+My public ipv4:
+<?php
+system('curl -4 icanhazip.com');
 ?>
 <br><br>
 <!-- site for hit counter https://www.thoughtco.com/web-page-hit-counter-2693831 -->
@@ -60,7 +65,7 @@ $db->close();
 ?>
 
 <br>
-<a href="https://bugzilla.redhat.com/">Red Hat Bugzilla.</a>&nbsp;<a href="https://access.redhat.com/">Red Hat Linux knowledge base</a>&nbsp;<a href="https://access.redhat.com/labs/rhcb/">Red Hat code browser</a><br><br><br>
+<a href="https://bugzilla.redhat.com/">Red Hat Bugzilla.</a>&nbsp;<a href="https://access.redhat.com/">Red Hat Linux knowledge base</a>&nbsp;<a href="https://access.redhat.com/labs/rhcb/">Red Hat code browser</a>&nbsp;<a href="https://www.redhat.com/en/store">Red Hat store</a><br><br><br>
 <a href="/Docs/KitoJosephResumeMCC.pdf">Kito's resume</a><br><a href="/Docs/discharge-list.pdf">Military benefits</a><br>
 <a href="/workpics">Work-Datacenter-pictures</a>&nbsp;<a href="/botanicgarden">Juniper-level-botanic-garden-pictures</a>
 <a href="/biltmore-estate">Biltmore-Estate-pictures</a> <br><br>
