@@ -27,9 +27,14 @@ echo php_uname(a);
 system('cat /etc/redhat-release');
 ?>
 <br>
-My public ipv4:
+My public ipv4 address:
 <?php
 system('curl -4 icanhazip.com');
+?>
+<br>
+My public ipv6 address:
+<?php
+system('curl icanhazip.com');
 ?>
 <br><br>
 <!-- site for hit counter https://www.thoughtco.com/web-page-hit-counter-2693831 -->
