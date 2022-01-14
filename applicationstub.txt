@@ -70,6 +70,9 @@ http://man7.org/linux/man-pages/man7/signal.7.html
 63) SIGRTMAX-1	64) SIGRTMAX	
  */
 ------------
+Episode 494: Robert Seacord on Avoiding Defects in C Programming
+https://www.se-radio.net/2022/01/episode-494-robert-seacord-on-avoiding-defects-in-c-programming/
+------------
 Algorithms: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011 
 Erik Demaine, and Srini Devadas. 6.006 Introduction to Algorithms. Fall 2011. Massachusetts Institute of Technology: MIT OpenCourseWare, https://ocw.mit.edu. License: Creative Commons BY-NC-SA.
 ------------
