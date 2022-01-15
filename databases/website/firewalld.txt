@@ -50,6 +50,7 @@ public (active)
 #firewall-cmd --add-service=mysql --permanent  (for persistant configurations)
 and to take effect run#firewall-cmd --reload (for changes to take effect)
 to remove services#firewall-cmd --remove-service=https
+#firewall-cmd --runtime-to-permanent
 ------------
 port forwarding
 [root@kitosrhellaptop-server services]# netstat -nltp
