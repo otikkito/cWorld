@@ -26,6 +26,15 @@ wpa supplicant
 
 ------------------------------------------------------------------------------------
 
+HTTP status code
+1xx Information
+2xx Success
+3xx Redirection
+4xx Client error
+5xx Server error
+
+------------------------------------------------------------------------------------
+
 Cisco CCNA labs: https://www.udemy.com/free-packet-tracer-labs-for-the-ccna-exam-practical-ccna-tests/
 
 ------------------------------------------------------------------------------------
