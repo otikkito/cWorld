@@ -27,10 +27,15 @@ wpa supplicant
 ------------------------------------------------------------------------------------
 
 HTTP status code
+
 1xx Information
+
 2xx Success
+
 3xx Redirection
+
 4xx Client error
+
 5xx Server error
 
 ------------------------------------------------------------------------------------
