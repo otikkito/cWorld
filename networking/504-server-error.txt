@@ -1,0 +1,49 @@
+"504 Gateway Timeout Error means your web server didn’t receive a timely response from another server upstream when it attempted to load one of your web pages. Put simply, your web servers aren’t communicating with each other fast enough. Since a 504 Gateway Timeout Error is rather generic, it doesn’t actually pinpoint the exact cause of the issue. When this happens, your website will serve an error web page to your site’s visitors."
+
+ 
+
+"504 Gateway Timeout Causes
+
+504 Gateway Timeout Errors are among the most frustrating HTTP status codes you can receive. They indicate what happened to your website, but they don’t tell you why it happened, making it challenging for you to pinpoint its cause and ultimately correct the issue.
+
+Below are a few possibilities.
+
+Server Connectivity Issues
+
+Most websites live on multiple servers or third-party hosting providers. If your server is down for maintenance or any other reason, your website could serve visitors a 504 Gateway Timeout Error page.
+
+DNS Changes
+
+If you’ve recently changed servers or moved your website to a different IP address, it’ll make changes to your website’s DNS server. This could cause your website to serve its visitors a 504 Gateway Timeout Error page. Your website won’t be up and running until these DNS changes take full effect, which can take a few hours.
+
+Faulty Firewall Configurations
+
+Your firewall is your website’s gatekeeper, protecting your site from malicious visitors or distributed denial-of-service (DDoS) attacks. Sometimes, a faulty firewall configuration will cause your firewall to deem requests from a content delivery network as an attack on your server and reject them, resulting in a 504 Gateway Timeout Error.
+
+Errors in Your Website's Code
+
+If there’s a mistake in your website’s code, your server might not be able to correctly answer requests from a content delivery network.
+
+Network Connectivity Errors
+
+Since a 504 error is the result of a timeout during the processing of a request between servers, the problem likely lies with them — not the user's internet connection or device. However, if only one user reports seeing a 504 error on your site, it could have to do with their modem, router, or another device. or their internet connection.
+
+Since there are multiple reasons why a 504 error might occur, it will ultimately be up to you to rule each one out until you find the true cause. Fortunately, there are five common and effective solutions for fixing most 504 Gateway Timeout Errors’ causes."
+
+Source: https://blog.hubspot.com/marketing/504-gateway-timeout
+
+ 
+
+ 
+
+HTTP status code
+
+1xx Information
+
+2xx Success
+
+3xx Redirection
+
+4xx Client error
+
+5xx Server error
