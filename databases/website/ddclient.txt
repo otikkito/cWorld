@@ -1,2 +1,5 @@
 
 ddclient is a Perl client used to update dynamic DNS entries for accounts on many dynamic DNS services. https://github.com/ddclient/ddclient
+
+
+https://www.linuxquestions.org/questions/linux-networking-3/ddclient-not-updating-dyndns-org-help-305961/
