@@ -4,6 +4,7 @@
 #include <stdlib.h>
 
 /* Regex tutorial: https://regexone.com/ */
+/* Regex in c: https://www.geeksforgeeks.org/regular-expressions-in-c/ */
 
 /* To find out more "man regcomp"
 int regcomp(regex_t *restrict, const char *restrict, int);
