@@ -1,0 +1,21 @@
+prerequisites
+-you need to trust the public key cryptography and signature works
+-Public key, private key
+
+
+
+
+
+		          protocol
+				-->Give me youtube.com
+Your browser	<--Sure, here's my certificate, containing my public key. It was signed by Google CA              https://youtube.com
+				-->I trust Google CA, so looks like you are indeed who you say you are
+				    I have created a new secret key and encrypted it with your public key
+				<--> we are the only two machine on the entire internet who know this new secret key   
+				     From now on let's encrypt all of our communication with this key!
+   
+   
+Certificate Authority
+-certificate signing request
+-key pair
+-automation of certificates with Kubernetes 
