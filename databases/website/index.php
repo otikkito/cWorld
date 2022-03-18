@@ -37,7 +37,7 @@ My public ipv6 address:
 <?php
 system('curl icanhazip.com');
 ?>
-<!-- Some php code not displaying because of SE linux ->
+<!-- Some php code not displaying because of SE linux -->
 <br><br>
 <!-- site for hit counter https://www.thoughtco.com/web-page-hit-counter-2693831 -->
 <!-- mysqli documentation: https://www.php.net/manual/en/book.mysqli.php -->
