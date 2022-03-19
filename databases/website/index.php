@@ -4,7 +4,8 @@
 <!-- Database setup https://github.com/otikkito/cWorld/blob/master/databases/notes.txt  -->
 <!-- Apache tutorial: https://www.guru99.com/apache.html -->
 <!-- To get ip 4 address:#curl -4 icanhazip.com -->
-<!-- Certificate Authority: https://letsencrypt.org/ -->	
+<!-- Certificate Authority: https://letsencrypt.org/ -->
+<!-- How to troubleshoot site being down on Linux: https://www.e2enetworks.com/help/knowledge-base/how-to-troubleshoot-when-your-site-is-down-on-a-linux-server/ -->
 <head>
 <title>Kito Joseph's website</title>
 </head>
