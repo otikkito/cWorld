@@ -1,3 +1,6 @@
+@@:https://www.techotopia.com/index.php/Basic_RHEL_Firewall_Configuration_with_firewalld
+
+
 [root@kitosrhellaptop-server ~]# rpm -qc firewalld
 /etc/firewalld/firewalld.conf
 /etc/firewalld/lockdown-whitelist.xml
