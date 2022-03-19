@@ -1,6 +1,0 @@
-gcc -g -Wall -pedantic <application-name.c>
-gcc <application-name.c> -lpthread
-
-To spell check a file : aspell -c filename.txt
-To check a indiviual word: aspell -a
-To check multiple files: https://stackoverflow.com/questions/12799741/how-to-run-spell-check-on-multiple-files-and-display-any-incorrect-words-in-shel

@@ -3,6 +3,15 @@ gcc -Wall -pedantic -g soucefile --o savedfilename
 
 gcc thread.c -lpthread
 
+gcc -g -Wall -pedantic <application-name.c>
+gcc <application-name.c> -lpthread
+
+To spell check a file : aspell -c filename.txt
+To check a indiviual word: aspell -a
+To check multiple files: https://stackoverflow.com/questions/12799741/how-to-run-spell-check-on-multiple-files-and-display-any-incorrect-words-in-shel
+
+
 -ftapv  compiler option for integer overflow
+
 
 15 common copiler options: http://www.thegeekstuff.com/2012/10/gcc-compiler-options/?utm_source=feedburner
