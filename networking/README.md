@@ -20,6 +20,8 @@ https://www.showmecables.com/blog/post/cable-distance-limits-data  --> Cable dis
 
 https://www.electronics-notes.com/articles/connectivity/ethernet-ieee-802-3/cables-types-pinout-cat-5-5e-6.php  --> Ethernet cable specs
 
+https://www.hostinger.com/tutorials/how-to-use-the-dig-command-in-linux/  --> Dig 
+
 ------------------------------------------------------------------------------------
 
 wpa supplicant
