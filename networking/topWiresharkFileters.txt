@@ -1,0 +1,25 @@
+The filtering capabilities of Wireshark are very comprehensive. You can filter on just about any field of any protocol, even down to the HEX values in a data stream. Sometimes though, the hardest part about setting a filter in Wireshark is remembering the syntax. 
+
+ 
+
+So below are the most common filters that I use in Wireshark. Please comment below and add any common ones that you use as well. 
+
+    ip.addr == 10.0.0.1 [Sets a filter for any packet with 10.0.0.1, as either the source or dest]  
+
+    ip.addr==10.0.0.1  && ip.addr==10.0.0.2 [sets a conversation filter between the two defined IP addresses]  
+
+    tcp.time_delta > .250 [sets a filter to display all tcp packets that have a delta time of greater than 250mSec in the context of their stream. Note, this filter requires TCP Conversation Timestamps to be calculated. To learn to do that, click here.]  
+
+    tcp.port==4000 [sets a filter for any TCP packet with 4000 as a source or dest port]  
+
+    tcp.flags == 0x012 [displays all TCP SYN/ACK packets - shows the connections that had a positive response. Related to this is tcp.flags.syn==1]  
+
+    ip.addr == 10.0.0.0/24 [Shows packets to and from any address in the 10.0.0.0/24 space]  
+
+    frame contains traffic [displays all packets that contain the word ‘traffic’. Excellent when searching on a specific string or user ID]  
+
+    !(arp or icmp or stp) [masks out arp, icmp, stp, or whatever other protocols may be background noise. Allowing you to focus on the traffic of interest]  
+
+    eth[0x47:2] == 01:80 [This is an example of an offset filter. It sets a filter for the HEX values of 0x01 and 0x80 specifically at the offset location of 0x47]  
+
+    tcp.analysis.flags && !tcp.analysis.window_update [displays all retransmissions, duplicate acks, zero windows, and more in the trace. Helps when tracking down slow application performance and packet loss. It will not include the window updates, since these aren't really important for me to see in most cases.] 
