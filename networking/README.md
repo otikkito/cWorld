@@ -53,6 +53,8 @@ Cisco CCNA labs: https://www.udemy.com/free-packet-tracer-labs-for-the-ccna-exam
 
 Wireshark protocol dissector: https://www.wireshark.org/docs/wsdg_html_chunked/ChapterDissection.html
 
+Wireshark capture filters: https://wiki.wireshark.org/CaptureFilters
+
 ------------------------------------------------------------------------------------
 
 Need to find a router for cisco certification at least at the ccnp level router to practice on:
