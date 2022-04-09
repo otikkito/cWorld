@@ -2,7 +2,7 @@ https://mariadb.org/
 Lamp stack: https://www.tecmint.com/install-lamp-in-centos-7/
 Connecting to database: https://codingbee.net/rhce/mariadb-install-and-configure-a-mariadb-server-on-centos-rhel-7-2
 Fetching rows: https://stackoverflow.com/questions/12647154/mysqli-query-results-to-show-all-rows
-*one root, one dbadmin, and then user for the programs.
+*one root, one dbadmin, and then one user for the programs.
 
 php mysqli:
 *https://codular.com/php-mysqli
