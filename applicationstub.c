@@ -280,7 +280,7 @@ int readConfigurationFile(){
 	//populate the global configuration structure
 	while((fgets(line,MAXCONFIGLINESIZE,config_file)) != NULL){
 	/*this needs to be corrected and/or add a special character to the front
-	of the configuration file indicating it is a configuration directive*/
+	of the configuration file line indicating it is a configuration directive*/
 		if((line[0] == '#') || (line[0] == ' ' ) || (line[0] == '\n')) {  
 			continue;
 		}
