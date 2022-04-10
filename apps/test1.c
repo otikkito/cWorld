@@ -89,7 +89,7 @@ int main() {
  */
 void tokenizestring(char * string) {
     printf("This is the string: %s", string);
-    //Break up each word and put it into a string
+    //Break up each word of the string
     int i;
     int membernum = 1;
     int j;
