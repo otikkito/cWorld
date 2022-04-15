@@ -54,6 +54,7 @@
 //https://www.timecalculator.net/
 //http://www.sengpielaudio.com/calculator-millisecond.htm
 //Saleae: https://www.saleae.com/
+//Oscope:https://www.testandmeasurementtips.com/category/oscilloscopes/pc-based-oscilloscopes/
 /*TODO Create an alarm or timer for nanosecond, millisecond, microsecond sleep
  *man 2 nanosleep
 */
