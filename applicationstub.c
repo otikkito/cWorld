@@ -61,7 +61,7 @@
 * 7) I need to find a way to see if there is any way to get the process and system utilization
 *	https://stackoverflow.com/questions/3769405/determining-cpu-utilization
 * 8) Figure out how to read in the configuration file and configuration file variables (i.e. application log location,...)
-* 9) Skeleton (computer programming) wiki
+* 9) Skeleton (computer programming) wiki: https://en.wikipedia.org/wiki/Skeleton_(computer_programming)
 * 10) Correct the naming convention of functions and variables to match the nasa-c-style.
 * 11) Store in a variable the start time of the application in order to see how long the application has been running. --first implementation done next step is to add seconds
 * 12) Fix in the logging facility the gap between logs except for the termination and start of a new application invocation.
