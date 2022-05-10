@@ -39,6 +39,7 @@ My public ipv6 address:
 system('curl icanhazip.com');
 ?>
 <!-- Some php code not displaying because of SE linux -->
+<!-- Persistently disable SE Linux: https://bobcares.com/blog/how-to-set-selinux-to-permissive-mode-permanently/ -->
 <br><br>
 <!-- site for hit counter https://www.thoughtco.com/web-page-hit-counter-2693831 -->
 <!-- mysqli documentation: https://www.php.net/manual/en/book.mysqli.php -->
