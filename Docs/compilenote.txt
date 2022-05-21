@@ -1,5 +1,5 @@
 to compile a simple c program
-gcc -Wall -pedantic -g soucefile --o savedfilename
+gcc -Wall -pedantic -g soucefile -o savedfilename
 
 gcc thread.c -lpthread
 
