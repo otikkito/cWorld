@@ -194,7 +194,7 @@ int main(int argc, char** argv) {
 	*/
 
 
-	sleep(50);
+	sleep(500);
 
 	printApplicationUptime();
 
