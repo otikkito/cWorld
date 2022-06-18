@@ -54,6 +54,7 @@ void incr_a();
 
 //https://software.intel.com/sites/default/files/managed/39/c5/325462-sdm-vol-1-2abcd-3abcd.pdf
 //https://en.wikipedia.org/wiki/Integer_overflow
+//Interger overflow: https://wiki.sei.cmu.edu/confluence/display/c/INT32-C.+Ensure+that+operations+on+signed+integers+do+not+result+in+overflow
 //-ftrapv  compiler option for integer overflow
 //-ftrapv This option generates traps for signed overflow on addition, subtraction, multiplication operations. 
 //  The options -ftrapv and -fwrapv override each other, so using -ftrapv -fwrapv on the command-line results in 

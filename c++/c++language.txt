@@ -54,6 +54,28 @@ C++ Refresh:
 http://www.pearsonvue.com/cpp/
 Effective C++ ISBN-13: 978-0321334879 
 
+
+
+What is C++ used for?
+C++ has many real-world applications, including:
+
+Video game development
+GUI-based applications
+Databases
+Operating systems
+Web browsers
+Computation and graphics
+Banking
+The cloud
+Distributed systems
+Compilers
+Embedded systems
+Enterprise software
+Libraries
+Large-scale server applications
+Code compilers
+
+
 IDE
 ---
 clion https://www.jetbrains.com/clion/specials/clion/clion.html?gclid=EAIaIQobChMIgrrgpbvD3wIVxoKzCh1OUgTrEAAYASAAEgLIJPD_BwE&gclsrc=aw.ds

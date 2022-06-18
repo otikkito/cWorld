@@ -61,7 +61,7 @@
 * 7) I need to find a way to see if there is any way to get the process and system utilization
 *	https://stackoverflow.com/questions/3769405/determining-cpu-utilization
 * 8) Figure out how to read in the configuration file and configuration file variables (i.e. application log location,...)
-* 9) Skeleton (computer programming) wiki
+* 9) Skeleton (computer programming) wiki: https://en.wikipedia.org/wiki/Skeleton_(computer_programming)
 * 10) Correct the naming convention of functions and variables to match the nasa-c-style.
 * 11) Store in a variable the start time of the application in order to see how long the application has been running. --first implementation done next step is to add seconds
 * 12) Fix in the logging facility the gap between logs except for the termination and start of a new application invocation.
@@ -194,7 +194,7 @@ int main(int argc, char** argv) {
 	*/
 
 
-	sleep(50);
+	sleep(500);
 
 	printApplicationUptime();
 
@@ -280,7 +280,7 @@ int readConfigurationFile(){
 	//populate the global configuration structure
 	while((fgets(line,MAXCONFIGLINESIZE,config_file)) != NULL){
 	/*this needs to be corrected and/or add a special character to the front
-	of the configuration file indicating it is a configuration directive*/
+	of the configuration file line indicating it is a configuration directive*/
 		if((line[0] == '#') || (line[0] == ' ' ) || (line[0] == '\n')) {  
 			continue;
 		}
@@ -683,4 +683,6 @@ void bye(void) {
 *10) Reading code: http://wiki.c2.com/?TipsForReadingCode
 *11) On the changing notion of code readability: https://github.com/kbilsted/CodeQualityAndReadability/blob/master/Articles/Readability/TheChangingNotionOfReadability.md
 *12) c/c++ IDEs in linux: https://codecondo.com/best-c-c-ides-editors-to-consider-for-linux/
+*13) Computer system programming: https://github.com/otikkito/cWorld/blob/master/ECE_209.pdf
+*14) The Linux man-pages: https://www.kernel.org/doc/man-pages/
 */

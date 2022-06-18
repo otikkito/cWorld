@@ -25,9 +25,9 @@ int main(){
 * --------      ----      --- -----------
 *preg           regex_t   O 
 *pattern        char *    I
-*REG_EXTENDED   int?      I   cflag parameter to the functinos that are symobolic constants
+*REG_EXTENDED   int?      I   cflag parameter to the functions that are symobolic constants
 *
-*returns: int,  the functino regcomp shall return 0 upon succesfull completion.
+*returns: int,  the function regcomp shall return 0 upon succesfull completion.
 *The regcomp() function shall compile the regular expression contained in the string pointed to by the pattern
 *argument and place the results in the structure pointed to by preg. The cflags argument is the bitwiseinclusive
 *OR of zero or more of the following flags, which are defined in the <regex.h> header:
@@ -44,7 +44,7 @@ int main(){
 *string        char *
 *nmatch        size_t
 *pmatch        regmatch_t
-*returns: int, the functino regexec shall return 0 upon succesfull completion.
+*returns: int, the function regexec shall return 0 upon succesfull completion.
 */
 	if((rc = regexec(&preg, string, nmatch,pmatch,0)) != 0){
 		printf("failed to ERE match '%s' with '%s', returning %d.\n", string, pattern, rc);
