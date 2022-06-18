@@ -1,16 +1,18 @@
 <html>
-<!-- https://codular.com/php-mysqli -->
-<!-- https://www.w3schools.com/php/php_ref_mysqli.asp -->
+<!-- MySQLi for beginners: https://codular.com/php-mysqli -->
+<!-- PHP MySQLi Introduction: https://www.w3schools.com/php/php_ref_mysqli.asp -->
 <!-- Database setup https://github.com/otikkito/cWorld/blob/master/databases/notes.txt  -->
 <!-- Apache tutorial: https://www.guru99.com/apache.html -->
 <!-- To get ip 4 address:#curl -4 icanhazip.com -->
 <!-- Certificate Authority: https://letsencrypt.org/ -->
 <!-- How to troubleshoot site being down on Linux: https://www.e2enetworks.com/help/knowledge-base/how-to-troubleshoot-when-your-site-is-down-on-a-linux-server/ -->
+<!-- W3C's markup Validation Service: https://validator.w3.org/ -->
+<!-- 101 Ways to make your website more awesome: https://www.freecodecamp.org/news/101-ways-to-make-your-website-more-awesome-79c934dd2a11/  -->
 <head>
 <title>Kito Joseph's website</title>
 </head>
 <center><h1>Welcome to Kito Marid Joseph's website</h1></center><br>
-<center>Last updated 1/13/22</center><br>
+<center>Last updated 6/18/22</center><br>
 <!-- My isp is Spectrum -->
 <br>
 <p>Would you please build out this learning website? This site is always under construction. The current location of me and this website is Cary, NC, zip 27518. I am a <a href=https://www.ece.ncsu.edu/ugrad/cpe/> computer</a> and <a href=https://www.ece.ncsu.edu/ugrad/ee/>electrical</a> engineer that graduated from North Carolina State University (an accredited university) in 2009, and I am looking for job references. So make sure that you cite your sources and stay in practice. I am also looking to make new friends on Facebook. But if we connect, keep it clean.</p><br>
@@ -39,6 +41,7 @@ My public ipv6 address:
 system('curl icanhazip.com');
 ?>
 <!-- Some php code not displaying because of SE linux -->
+<!-- Persistently disable SE Linux: https://bobcares.com/blog/how-to-set-selinux-to-permissive-mode-permanently/ -->
 <br><br>
 <!-- site for hit counter https://www.thoughtco.com/web-page-hit-counter-2693831 -->
 <!-- mysqli documentation: https://www.php.net/manual/en/book.mysqli.php -->
@@ -80,7 +83,7 @@ $db->close();
 <?php
 echo "Today's date is: " . date("m/d/Y") . "<br>";
 ?>
-<p><a href="https://github.com/otikkito/cWorld/blob/master/databases/website/index.php">Code for this page</a<br>
+<p><a href="https://github.com/otikkito/cWorld/blob/master/databases/website/index.php">Code for this page</a><br>
 <p><a href="https://www.worldofmolecules.com/antioxidants/vitaminc.htm">Vitamin C</a></p>
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="8419f706-1f58-466b-9349-7d419b16d7dc" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="4e254be8-ddf6-4050-a4cc-fb995c2b1c1b" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
