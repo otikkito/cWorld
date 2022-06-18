@@ -79,7 +79,7 @@ $db->close();
 <a href="https://bugzilla.redhat.com/">Red Hat Bugzilla.</a>&nbsp;<a href="https://access.redhat.com/">Red Hat Linux knowledge base</a>&nbsp;<a href="https://access.redhat.com/labs/rhcb/">Red Hat code browser</a>&nbsp;<a href="https://www.redhat.com/en/store">Red Hat store</a><br><br><br>
 <a href="/Docs/KitoJosephResumeMCC.pdf">Kito's resume</a><br><a href="/Docs/discharge-list.pdf">Military benefits</a><br>
 <a href="/workpics">Work-Datacenter-pictures</a>&nbsp;<a href="/botanicgarden">Juniper-level-botanic-garden-pictures</a>
-<a href="/biltmore-estate">Biltmore-Estate-pictures</a> <br><br>
+<a href="/biltmore-estate">Biltmore-Estate-pictures</a> <a href="/charleston-trip">Charleston-SC-Trip</a><br><br>
 <?php
 echo "Today's date is: " . date("m/d/Y") . "<br>";
 ?>
