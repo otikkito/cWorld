@@ -137,6 +137,7 @@ LOAD DATA LOCAL INFILE
 How to move white space to one white space.
 https://stackoverflow.com/questions/156532/how-do-i-import-a-whitespace-delimited-text-file-into-mysql
 
+How to populate the database with data:
 LOAD DATA INFILE 'filename' INTO TABLE mytable FIELDS TERMINATED BY ' ';
 
 LOAD DATA LOCAL INFILE '/home/otikkito/sandbox/cWorld/text-data-files/namedatabase/personlist.txt' into table personlist  fields terminated by ' ' lines terminated by '\n' (fname,lname) ;
