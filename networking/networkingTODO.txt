@@ -11,7 +11,7 @@
 -VPN
 -wpa supplicant 
 -router emulater
--network traffice simulator
+-network traffic simulator
 -network wrapper library for network programming
 -Network dictionary for TCP/IP terms
 ...
