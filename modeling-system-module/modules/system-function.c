@@ -55,7 +55,7 @@ future post on self-containment.
  https://jmmv.dev/2013/11/header-files-multiple-inclusion.html#the-rule 
 -guarding against multiple inclusion of header files:
 -Improves compilation time.
--Reduces the size of object files generated using the -g compiler command-line option, which can speed up link time.
+-Reduces the size of object files generated using the -g compiler command-line option, which can speed up link time. (not sure if this a correct statement.)
 -Avoids compilation errors that arise from including the same code multiple times.
 source: https://www.keil.com/support/man/docs/armcc/armcc_chr1359124224501.htm
 -
