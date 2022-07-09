@@ -14,3 +14,12 @@ int main(){
 	return 0;
 	
 }
+
+/*
+[root@kitosrhellaptop-server Strings]# ./a.out 
+Welecome to the atoi example.
+Ex.1 : 5555
+Ex.2 : 5555
+Ex.3 : 55
+Ex.4 : 0
+*/
