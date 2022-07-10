@@ -436,7 +436,7 @@ pid_t getPidByProcessName(const char* processName){ /* processName is one of the
 	while((de = readdir(dr)) != NULL){
 		pid_t pid;
 		/* printf("dirent name: %s  dirent to int/pid: %d \n",de->d_name,atoi(de->d_name)); */
-		pid = atoi(de->d_name);
+		pid = atoi(de->d_name); //atoi example output: https://github.com/otikkito/cWorld/blob/master/Strings/atoi-ex.c
 		if( pid > 0){
 			printf("The process id in this directory is %d\n",pid);
 			/* sprintf(name,"/proc/%d/cmdline */
