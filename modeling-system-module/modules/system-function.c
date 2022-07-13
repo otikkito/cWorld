@@ -556,6 +556,7 @@ bool fileExist(const char * file_name){
 	if(fp == NULL){
 		return false; 
 	}
+	fclose(fp);
 	return true;
 }
 
