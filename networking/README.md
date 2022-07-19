@@ -44,6 +44,8 @@ HTTP status code
 
 A Private IP address is one of three ranges (10.x.x.x, 192.168.x.x, 172.16.0.0 - 172.31.255.255)
 
+The multicast addresses are in the range 224.0. 0.0 through 239.255. 255.255. 
+
 ------------------------------------------------------------------------------------
 
 Cisco CCNA labs: https://www.udemy.com/free-packet-tracer-labs-for-the-ccna-exam-practical-ccna-tests/
