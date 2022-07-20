@@ -10,4 +10,5 @@ This is a work in progress. This is more for the personal accounting software an
 <a href="https://www.mta.org/">Trade school</a><br>
 <a href="http://stockcharts.com/">Stock charts</a><br>
 <a href="https://www.edwardjones.com/">Edward Jones</a><br>
-<a href="https://www.federalreserve.gov/">Federal Reserve</a></div>
+<a href="https://www.federalreserve.gov/">Federal Reserve</a><br>
+<a href="https://en.wikipedia.org/wiki/Apache_Kafka"> Real time data feed: Kafka</a>
