@@ -52,8 +52,8 @@
   -ensure that you test all other parts of the program that does not terminate the program until the end of the test.
   -write a unit test for all the functions.
   -write a a regression suite for the application stub template.
-  -ensure that all the documentation is in place.
-  -ensure that the file format/prolog is up to date.
+  -ensure that all the documentation are in place.
+  -ensure that the file format/prolog are up to date.
   -ensure that you self document all the code.
 */
 
