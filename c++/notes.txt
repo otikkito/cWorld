@@ -12,4 +12,26 @@ c++ consists of the these 3 main parts.
 2) The c++ standard library
 3) The standard template library
 
-    
+c++ paradigms:
+Supported paradigms
+A programming paradigm is a methodology or way of programming that a programming language supports. Here is a summary of a few common paradigms:
+Declarative
+A declarative language will focus more on specifying what a language is supposed to accomplish rather than by what means it is supposed to accomplish it. Such a paradigm might be used to avoid undesired side-effects resulting from having to write one's own code.
+
+Functional
+Functional programming is a subset of declarative programming that tries to express problems in terms of mathematical equations and functions. It goes out of its way to avoid the concepts of states and mutable variables which are common in imperative languages.
+
+Generic
+Generic programming focuses on writing skeleton algorithms in terms of types that will be specified when the algorithm is actually used, thus allowing some leniency to programmers who wish to avoid strict strong typing rules. It can be a very powerful paradigm if well-implemented.
+
+Imperative
+Imperative languages allow programmers to give the computer ordered lists of instructions without necessarily having to explicitly state the task. It can be thought of being the opposite of declarative programming.
+
+Structured
+Structured programming languages aim to provide some form of noteworthy structure to a language, such as intuitive control over the order in which statements are executed (if X then do Y otherwise do Z, do X while Y is Z). Such languages generally deprecate "jumps", such as those provided by the goto statement in C and C++.
+
+Procedural
+Although it is sometimes used as a synonym for imperative programming, a procedural programming language can also refer to an imperative structured programming language which supports the concept of procedures and subroutines (also known as functions in C or C++).
+
+Object-Oriented
+Object-Oriented programming (sometimes abbreviated to OOP) is a subset of structured programming which expresses programs in the terms of "objects", which are meant to model objects in the real world. Such a paradigm allows code to be reused in remarkable ways and is meant to be easy to understand.
