@@ -419,7 +419,7 @@ pid_t getPidByProcessName(const char* processName){ /* processName is one of the
 	Algorithm consideration: https://github.com/otikkito/cWorld/blob/master/Docs/Big-O.png
 	1) Goto the /proc directory
 	2) create an array of pid given in the proc directory that are process ids
-	3)search the /proc/pid/cmdline for string containing the process name
+	3)search the /proc/pid/cmdline for string containing the process name if the process name exists
 	4) return the integer portion that is mapped to the process name
 	*/
 	pid_t processId;
