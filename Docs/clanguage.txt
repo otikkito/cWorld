@@ -78,4 +78,4 @@ TODO
 4) Type up and summarize key concepts that I don't understand in this language.
 5) Compiler design
 6) Runtime error handling and code regeneration within process allocated memory if possible.
-7) find program that helps with flow chart and  software diagrams (visio)
+7) find program that helps with flow chart and  software diagrams (Visio)
