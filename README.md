@@ -121,6 +121,10 @@ is used in the correct directory context.
 4/17/2018
 Farming/gardening operating system/ Application:
 
+-data acquisition
+
+-sensor readings
+
 1)https://www.deere.com/en/index.html
 
 Kito Marid Joseph, CpE<br>
