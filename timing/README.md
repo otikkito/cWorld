@@ -21,3 +21,5 @@ Ref:
 [1] https://en.wikipedia.org/wiki/Static_timing_analysis
 
 [2] https://en.wikipedia.org/wiki/Context_switch
+
+[3] Static timing analysis: https://youtu.be/nq1cc6-A1H0
