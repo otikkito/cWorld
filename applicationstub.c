@@ -497,6 +497,7 @@ void signalHandler(int signal, siginfo_t *info, void *_unused) {
 	/*man 7 signal*/
 	/*TODO need to log the calling process name as well*/
 	/*TODO find out more about journalctl vs older syslog implementations of logging*/
+	/* Using journalctl: https://www.loggly.com/ultimate-guide/using-journalctl/ */
 	/*https://github.com/otikkito/cWorld/blob/master/Docs/cManPages/signal.pdf*/
 	switch (signal) {
 		case SIGINT:
