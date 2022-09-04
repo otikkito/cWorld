@@ -28,6 +28,7 @@ Design considerations:
 17) Applications status dump from the GUI or signal if GUI is not responding: needs to dump application status for debugging.
 18) Functions should return EXIT_SUCCESS or EXIT_FAILURE given the task of the function indicating if the task was 
      completed or not. EXIT_SUCCESS should be at the end of the function.
+19) integer overflow: https://www.welivesecurity.com/2022/02/21/integer-overflow-how-it-occur-can-be-prevented/
 ...
 	 
 EXIT_FAILURE  1 or non-zero value
