@@ -14,6 +14,8 @@ int main(){
 	return 0;
 	
 }
+<<<<<<< HEAD
+=======
 
 /*
 [root@kitosrhellaptop-server Strings]# ./a.out 
@@ -23,3 +25,4 @@ Ex.2 : 5555
 Ex.3 : 55
 Ex.4 : 0
 */
+>>>>>>> 35cf4b05eca9ab77f5d7f46fcbe7c3632767618c

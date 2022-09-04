@@ -124,6 +124,7 @@ echo "Today's date is: " . date("m/d/Y") . "<br>";
 	
 	$result->free();
 
+
 	phpinfo();
 ?>
 <center><a href="https://www.kjoseph-it.com/">Kito Joseph's personal website</a></center>
