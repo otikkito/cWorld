@@ -292,7 +292,7 @@ int readConfigurationFile(){
 			memset(leftConfigDirective,'\0',MAXCONFIGLINESIZE);
 			memset(rightConfigDirective,'\0',MAXCONFIGLINESIZE);
 			//TODO I also have to include the semicolon to terminate the line
-			sscanf(line,"%s = %s;",leftConfigDirective,rightConfigDirective);
+			sscanf(line,"%s=%s;",leftConfigDirective,rightConfigDirective);
 			//printf("The left value is:%s and the right value is %s\n",leftConfigDirective,rightConfigDirective);
 			//TODO finish right configuration directive (i.e. true or false, etc)
 			if( ((strcmp(leftConfigDirective,"initialize_signal_handler")) == 0) && ((strcmp(rightConfigDirective,"true") == 0)) ){
