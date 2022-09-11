@@ -3,4 +3,6 @@ Embedded systems site: http://www.ganssle.com/
 Making embedded systems: ISBN-13: 978-1449302146 ISBN-10: 1449302149
 
 
+10 Real Life Examples of Embedded Systems:   https://www.digi.com/blog/post/examples-of-embedded-systems
+
 https://www.elprocus.com/embedded-project-ideas/
