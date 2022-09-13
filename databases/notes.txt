@@ -47,7 +47,7 @@ Initial install:
 1) createdatabase: "CREATE DATABASES <dataBaseName>"
 ex. "CREATE DATABASE kitosdb;"
 2) switch to database: "USE <dataBaseName>"
-ex. "USE DATABASE kitosdb;"
+ex. "USE kitosdb;"
 3) create table: "CREATE TABLE <tableName> (columnName1 dataType,columName2 dataType,...)
 ex. "create table personlist (name varchar(50), ssn varchar(9));"
 ex. "create table personlist (personid int auto_increment primary key, fname varchar(50), lname varchar(50));"
