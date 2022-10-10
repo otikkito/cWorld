@@ -22,6 +22,8 @@ https://www.electronics-notes.com/articles/connectivity/ethernet-ieee-802-3/cabl
 
 https://www.hostinger.com/tutorials/how-to-use-the-dig-command-in-linux/  --> Dig 
 
+https://lzone.de/cheat-sheet/Linux-Networking  --> Linux networking
+
 ------------------------------------------------------------------------------------
 
 wpa supplicant
