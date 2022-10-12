@@ -24,6 +24,8 @@ https://www.hostinger.com/tutorials/how-to-use-the-dig-command-in-linux/  --> Di
 
 https://lzone.de/cheat-sheet/Linux-Networking  --> Linux networking
 
+https://www.redhat.com/sysadmin/what-you-need-know-about-ipv6  --> IP 6 address
+
 ------------------------------------------------------------------------------------
 
 wpa supplicant
