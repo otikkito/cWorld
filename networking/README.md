@@ -26,6 +26,8 @@ https://lzone.de/cheat-sheet/Linux-Networking  --> Linux networking
 
 https://www.redhat.com/sysadmin/what-you-need-know-about-ipv6  --> IP 6 address
 
+https://en.wikipedia.org/wiki/Fibre_Channel#Topologies   --> Fibre channel
+
 ------------------------------------------------------------------------------------
 
 wpa supplicant
