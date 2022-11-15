@@ -1,4 +1,4 @@
-Here we will be exploring the functionality of latex on windows and linux.
+Here we will be exploring the functionality of latex on windows and Linux.
 
 -Latex: https://www.latex-project.org/ and for windows: https://miktex.org/
 
