@@ -2,6 +2,8 @@ GNUplot official home page http://www.gnuplot.info/
 
 Matlab home page: https://www.mathworks.com/products/matlab.html
 
+Intro to Matlab: https://ocw.mit.edu/courses/res-18-002-introduction-to-matlab-spring-2008/
+
 GNU octave: https://www.gnu.org/software/octave/
 
 TODO:
