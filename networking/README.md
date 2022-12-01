@@ -30,6 +30,8 @@ https://en.wikipedia.org/wiki/Fibre_Channel#Topologies   --> Fibre channel
 
 https://wiki.teltonika-networks.com/wikibase/index.php?title=IPv6_addressing&mobileaction=toggle_view_desktop  --> Ipv6
 
+https://www.cyberciti.biz/faq/linux-restart-network-interface/  --> Restart network
+
 ------------------------------------------------------------------------------------
 
 wpa supplicant
