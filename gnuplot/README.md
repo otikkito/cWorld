@@ -28,3 +28,5 @@ Projects and purposes:
 -Installing gnuplot on windows: https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/cygwin/part5/
 
 -Gnuplot tutorial: http://lowrank.net/gnuplot/index-e.html
+
+-Data visualization: KNOW WHAT YOUR DATA IS SAYING, KNOW WHAT YOUR AUDIENCE NEEDS TO HEAR, KNOW WHAT YOU REALLY WANT TO SAY.
