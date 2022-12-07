@@ -38,3 +38,5 @@ Projects and purposes:
 -Data visual inspiration: https://www.dataviz-inspiration.com/
 
 -Xenographics: https://xeno.graphics/
+
+*"Data exploration is almost always about comparisons of some kind - literally comparing some values to each other, or comparing to some explicit or implicit benchmark, or to a previous value, etc." source: Linkedin 
