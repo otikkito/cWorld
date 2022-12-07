@@ -32,3 +32,9 @@ Projects and purposes:
 -Data visualization: KNOW WHAT YOUR DATA IS SAYING, KNOW WHAT YOUR AUDIENCE NEEDS TO HEAR, KNOW WHAT YOU REALLY WANT TO SAY.
 
 -Visual Vocabulary: https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary
+
+-Data visual: https://datavizproject.com/
+
+-Data visual inspiration: https://www.dataviz-inspiration.com/
+
+-Xenographics: https://xeno.graphics/
