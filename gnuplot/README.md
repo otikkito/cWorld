@@ -30,3 +30,5 @@ Projects and purposes:
 -Gnuplot tutorial: http://lowrank.net/gnuplot/index-e.html
 
 -Data visualization: KNOW WHAT YOUR DATA IS SAYING, KNOW WHAT YOUR AUDIENCE NEEDS TO HEAR, KNOW WHAT YOU REALLY WANT TO SAY.
+
+-Visual Vocabulary: https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary
