@@ -689,4 +689,5 @@ void bye(void) {
 *12) c/c++ IDEs in linux: https://codecondo.com/best-c-c-ides-editors-to-consider-for-linux/
 *13) Computer system programming: https://github.com/otikkito/cWorld/blob/master/ECE_209.pdf
 *14) The Linux man-pages: https://www.kernel.org/doc/man-pages/
+&14) Linux Device Drivers: https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Flinux-device-drivers%3Ftrk%3Dshare_ent_url%26shareId%3D%252FlnqNdSOSjyTwihZQY%252FnIw%253D%253D
 */
