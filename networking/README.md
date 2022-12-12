@@ -32,6 +32,8 @@ https://wiki.teltonika-networks.com/wikibase/index.php?title=IPv6_addressing&mob
 
 https://www.cyberciti.biz/faq/linux-restart-network-interface/  --> Restart network
 
+https://ask.fedoraproject.org/t/behavior-of-fedora-dns-and-resolv-conf/17105/10  --> DNS troubleshooting
+
 ------------------------------------------------------------------------------------
 
 wpa supplicant
