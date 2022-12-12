@@ -193,6 +193,7 @@ int main(int argc, char** argv) {
 	* https://man7.org/linux/man-pages/man1/systemctl.1.html
 	* https://github.com/otikkito/cWorld/blob/master/crefresh.c
 	* https://github.com/otikkito/cWorld/blob/master/Docs/clanguage.txt
+	* https://access.redhat.com/solutions/56021  (core dump KB)
 	*/
 
 
