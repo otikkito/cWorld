@@ -692,4 +692,5 @@ void bye(void) {
 *14) The Linux man-pages: https://www.kernel.org/doc/man-pages/
 *15) Linux Device Drivers: https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Flinux-device-drivers%3Ftrk%3Dshare_ent_url%26shareId%3D%252FlnqNdSOSjyTwihZQY%252FnIw%253D%253D
 *16) Cscope: https://cscope.sourceforge.net/
+*17) Journalctl: https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fred-hat-certified-system-administrator-ex200-cert-prep-1-deploy-configure-and-manage%3Ftrk%3Dshare_ent_url%26shareId%3DK%252F5ITP0FRXW8tYTX2vjO8Q%253D%253D
 */
