@@ -36,6 +36,8 @@ https://www.cyberciti.biz/faq/linux-restart-network-interface/  --> Restart netw
 
 https://ask.fedoraproject.org/t/behavior-of-fedora-dns-and-resolv-conf/17105/10  --> DNS troubleshooting
 
+https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fcisco-networking-foundations-ip-addressing%3Ftrk%3Dshare_ent_url%26shareId%3D0%252FMxZ%252BkoQ%252FCdAHW7USKFfQ%253D%253D   --> IP Addressing
+
 ------------------------------------------------------------------------------------
 
 wpa supplicant
