@@ -10,7 +10,9 @@ http://www.internetsociety.org/  ---> Internet society
 
 https://users.cs.northwestern.edu/~agupta/cs340/project2/TCPIP_State_Transition_Diagram.pdf    --> TCP/IP State diagram
 
-http://jodies.de/ipcalc   --> Ip calculator
+http://jodies.de/ipcalc   --> IP calculator
+
+https://www.calculator.net/ip-subnet-calculator.html --> IP subnet calculator
 
 https://www.youtube.com/watch?v=aAIeo7chB6k#action=share   --> Ip subnet problem
 
