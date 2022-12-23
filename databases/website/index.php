@@ -8,11 +8,13 @@
 <!-- How to troubleshoot site being down on Linux: https://www.e2enetworks.com/help/knowledge-base/how-to-troubleshoot-when-your-site-is-down-on-a-linux-server/ -->
 <!-- W3C's markup Validation Service: https://validator.w3.org/ -->
 <!-- 101 Ways to make your website more awesome: https://www.freecodecamp.org/news/101-ways-to-make-your-website-more-awesome-79c934dd2a11/  -->
+<!-- Broken Links: https://www.seoptimer.com/blog/broken-links/ -->
 <head>
 <title>Kito Joseph's website</title>
 </head>
-<center><h1>Welcome to Kito Marid Joseph's website</h1></center><br>
-<center>Last updated 12/1/22</center><br>
+<center><h1>Welcome to Ki
+o Marid Joseph's website</h1></center><br>
+<center>Last updated 12/23/2022</center><br>
 <!-- My isp is Spectrum -->
 <br>
 <p>Would you please build out this learning website? This site is always under construction. The current location of me and this website is Cary, NC, zip 27518. I am a <a href=https://www.ece.ncsu.edu/ugrad/cpe/> computer</a> and <a href=https://www.ece.ncsu.edu/ugrad/ee/>electrical</a> engineer that graduated from North Carolina State University (an accredited university) in 2009, and I am looking for job references. So make sure that you cite your sources and stay in practice. I am also looking to make new friends on Facebook. But if we connect, keep it clean.</p><br>
