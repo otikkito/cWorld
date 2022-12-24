@@ -12,8 +12,7 @@
 <head>
 <title>Kito Joseph's website</title>
 </head>
-<center><h1>Welcome to Ki
-o Marid Joseph's website</h1></center><br>
+<center><h1>Welcome to Kito Marid Joseph's website</h1></center><br>
 <center>Last updated 12/23/2022</center><br>
 <!-- My isp is Spectrum -->
 <br>
