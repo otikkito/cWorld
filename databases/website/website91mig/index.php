@@ -39,7 +39,7 @@ My public ipv4 address:
 system('curl ipv4.icanhazip.com');
 ?>
 <br>
-My public ipv6 address: Under construction
+My public ipv6 address: 
 <?php 
 system('curl ipv6.icanhazip.com');
 ?>
