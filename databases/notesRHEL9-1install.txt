@@ -1,1 +1,71 @@
 
+RHEL 9.1 install
+1. Install Server with GUI
+2. if installing in virtualbox install guest additions
+	a) From the Oracal VM Virtualbox menu select "devices" -> "Insert Guest Addition CD images..."
+	b) when prompted for "Trust this location" select cancel and go to the terminal
+	c) #su
+	d) #dnf update -y
+	e) #dnf groupinstall "Development Tools"
+	f) #dnf install elfutils-libelf-devel 
+	d) # cd /run/media/<username>/VBox_GAs_7.0.2/ and run VboxLinuxAdditions.run
+	e) reboot 
+3. #dnf install -y mariadb-server.x86_64 httpd php-mysqlnd.x86_64 php perl-Memoize.noarch perl-autodie perl-CPAN.noarch
+4. #dnf install -y mariadb-server.x86_64 httpd php-mysqlnd.x86_64 php perl-Memoize.noarch perl-autodie perl-CPAN.noarch
+5. #systemctl enable mariadb
+5. #systemctl start mariadb 
+7. #systemctl start httpd
+8. #systemctl enable httpd
+9. #mysql_secure_installation
+	a) from the prompt : "Enter current password for root" mariadb user "redhat"
+	b) from the prompt : "Switch to unix_socket authentication [Y/n]" --> "n", this will "Disabling Unix Socket login and enabling password Login"[4]
+	c) from the prompt : "Change the root password? [Y/n] " --> n
+	d) from the prompt : "Remove anonymous users? [Y/n]" --> Y
+	e) from the prompt : "Disallow root login remotely? [Y/n] " --> Y
+	f) from the prompt : "Remove test database and access to it? [Y/n]" --> Y
+	g) from the prompt : "Reload privilege tables now? [Y/n]" --> Y
+<!!!!Snapshoot!!!!!>
+10. Login to MariaDB to setup database 
+	a) #mysql -u root -p
+	b) MariaDB [(none)]> CREATE DATABASE kitosdb;
+	c) MariaDB [(none)]> USE kitosdb;
+	d) MariaDB [kitosdb]>create table personlist (personid int auto_increment primary key, fname varchar(50), lname varchar(50));
+	e) MariaDB [kitosdb]> show tables;
+		+-------------------+
+		| Tables_in_kitosdb |
+		+-------------------+
+		| personlist        |
+		+-------------------+
+		1 row in set (0.000 sec)
+	f) MariaDB [kitosdb]> show columns from personlist;
+		+----------+-------------+------+-----+---------+----------------+
+		| Field    | Type        | Null | Key | Default | Extra          |
+		+----------+-------------+------+-----+---------+----------------+
+		| personid | int(11)     | NO   | PRI | NULL    | auto_increment |
+		| fname    | varchar(50) | YES  |     | NULL    |                |
+		| lname    | varchar(50) | YES  |     | NULL    |                |
+		+----------+-------------+------+-----+---------+----------------+
+		3 rows in set (0.001 sec)
+
+11. populate database: 
+	# MariaDB [kitosdb]> LOAD DATA LOCAL INFILE '/root/sandbox/cWorld/text-data-files/namedatabase/personlist.txt' into table personlist  fields terminated by ' ' lines terminated by '\n' (fname,lname) ;
+
+Query OK, 8001 rows affected (0.092 sec)             
+Records: 8001  Deleted: 0  Skipped: 0  Warnings: 0
+
+12. verify the population: #select * from personlist;
+13. Grant access for root: MariaDB [(none)]> GRANT USAGE ON *.* TO 'root'@localhost IDENTIFIED BY 'redhat';
+14. create site hit counter in database: MariaDB [kitosdb]> create table site-hit (counter INT UNSIGNED NOT NULL)
+	a) insert first value into sitehit count: MariaDB [kitosdb]> insert sitehit value(1);
+
+
+
+REF:
+1) How to Setup the Hostname and FQDN on CentOS / RHEL: https://webhostinghero.org/how-to-setup-the-hostname-and-fqdn-on-centos-rhel/
+2) Dynamic DNS: https://en.wikipedia.org/wiki/Dynamic_DNS
+3) Install and configure MariaDB: https://www.youtube.com/watch?v=rsDRgbc5zBI
+4) Configuring MariaDB: https://www.itzgeek.com/how-tos/linux/debian/how-to-install-mariadb-on-debian-10.html
+5) How to correctly set hostname and domain name: https://unix.stackexchange.com/questions/322883/how-to-correctly-set-hostname-and-domain-name#:~:text=Setting%20your%20domain%2C%20assuming%20you%20have%20a%20resolvconf,reproduce%20the%20previous%20change%20into%20your%20%2Fetc%2Fresolv.conf%20%29.
+6) Configure domain in CentOS: https://serverfault.com/questions/369415/configure-domain-name-in-centos#:~:text=If%20by%20domain%20name%20you%20mean%20domain%20suffix%2C,one%20good%20place%20for%20it%2C%20and%20it%27s%20%2Fetc%2Fsysconfig%2Fnetwork.
+7) How to set the fully qualified hostname on Centos 7.0: https://unix.stackexchange.com/questions/239920/how-to-set-the-fully-qualified-hostname-on-centos-7-0
+8) FQDN: https://www.hostinger.com/tutorials/fqdn
