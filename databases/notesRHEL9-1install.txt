@@ -1,3 +1,22 @@
+Hostname and domain name setup:
+	a) #hostnamectl set-hostname kitojoseph
+	b) add this entry in quotation marks to /etc/host -> "192.168.1.90 kitojoseph.dyndns.org kitojoseph"
+
+Set password:
+	#su
+	#passwd
+
+Disable SELINUX:
+edit /etc/selinux/config and set SELINUX value to “SELINUX=permissive”
+
+Set firewall:
+	a) [root@kitojoseph html]# firewall-cmd --list-all
+	b) [root@kitojoseph html]# firewall-cmd --add-service=http --permanent
+	   success
+	   [root@kitojoseph html]# firewall-cmd --add-service=https --permanent
+           success
+	  [root@kitojoseph html]# firewall-cmd --reload
+	  success
 
 RHEL 9.1 install
 1. Install Server with GUI
@@ -54,7 +73,7 @@ Records: 8001  Deleted: 0  Skipped: 0  Warnings: 0
 
 11. verify the population: #select * from personlist;
 12. Grant access for root: MariaDB [(none)]> GRANT USAGE ON *.* TO 'root'@localhost IDENTIFIED BY 'redhat';
-13. create site hit counter in database: MariaDB [kitosdb]> create table site-hit (counter INT UNSIGNED NOT NULL)
+13. create site hit counter in database: MariaDB [kitosdb]> create table sitehit (counter INT UNSIGNED NOT NULL);
 	a) insert first value into sitehit count: MariaDB [kitosdb]> insert sitehit value(1);
 
 
@@ -68,4 +87,5 @@ REF:
 6) Configure domain in CentOS: https://serverfault.com/questions/369415/configure-domain-name-in-centos#:~:text=If%20by%20domain%20name%20you%20mean%20domain%20suffix%2C,one%20good%20place%20for%20it%2C%20and%20it%27s%20%2Fetc%2Fsysconfig%2Fnetwork.
 7) How to set the fully qualified hostname on Centos 7.0: https://unix.stackexchange.com/questions/239920/how-to-set-the-fully-qualified-hostname-on-centos-7-0
 8) FQDN: https://www.hostinger.com/tutorials/fqdn
-9) 8) Suspending when closing the laptop lid: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/desktop_migration_and_administration_guide/closing-lid
+9) Suspending when closing the laptop lid: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/desktop_migration_and_administration_guide/closing-lid
+10) How to set SELinux to permissive mode permanently – Let’s do it!! : https://bobcares.com/blog/how-to-set-selinux-to-permissive-mode-permanently/
