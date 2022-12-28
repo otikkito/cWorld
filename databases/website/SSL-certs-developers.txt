@@ -1,0 +1,110 @@
+SSL Certificates for Web Developers
+----------------------------------
+What you need:
+	-Working website
+	-Registered domain name
+	-Comfortable with the command line
+	-Hosting provider who can help you
+
+SSL certificate
+	-Triggers the "little padlock" or green bar in a browser
+	-Uses HTTPS for secure communication
+	-Certifies the ownership of a public key
+	-Used for encrypting data sent between a browser and a remote server
+
+SSL: Secure Socket Layer, Cryptographic protocol for communication security
+*Certificates are not dependent on the protocol
+
+Certufucate Contents (file type: .crt , .cer)
+	-Organization
+	-URL
+	-State, country
+	-Valid date range
+	-Issuer
+	
+Purpose
+	-encryption
+	-Identity
+	-Trustworthiness (...of that person)
+	
+Symmetric-Key Cryptography
+	-encrypt data using a password
+	-decrypt data using the same passpassword
+	-Symmetric key = same key
+	
+Public Key Cryptography
+	-Asymmetric-key cryptography
+	-Pair of mathematically linked numbers
+	-Public key and private key
+	-Private key should always be kept secrete and secure
+	-Public key can be shared widely
+	
+SSL/TLS Handshake
+	-A browser sends a request to a secure server
+	-The serversends back it SSL certificate, which includes the public key and other data about the server's identity
+	-The browser confirms the SSL certificate is valid
+	-The browser encrypts a very long password using the public key and sends it to the server
+	-The server decrypts the data using its private key and retrieves the password
+	-The server and browser both posses the same password
+	-They use the shared password to encrypt all future communications with symmetric-key cryptography
+
+Certificate Authorities
+	-Entities that issue digital certificates
+	-CAs certify the ownership of a public key
+	-Provide information, a public key, and sometimes a fee
+	-Get back a certificate
+	-Similar to notarizing an identity
+	-Trusted third party
+	-Browsers keep a list of the CAs (their own or from the OS)
+	-A broswer trusts the CAs
+	-A CA has certified that a particular URL owns a public key
+	-A browser can trust the public key
+	-Root Certificate Authorities
+	-Greater volume of certificates require more CAs
+	-Do not want too many Root CAs
+	-Intermediate Certificate Authorities
+	-Root CAs can delegate work and trust to Intermediate CAs
+	-"Chain of trust"
+	
+Domain scopes
+	-Single domain (www.coolsite.com)
+	-Wildcard (*.coolsite.com)
+	-Multi-domain (coolsite.com, greatsite.org, coolsite.net)
+	-Unified Communications/ Subject Alternative name
+	
+Validateion level
+		-Domain validation (DV)
+		-Organization validation (OV)
+		-Extended validation (EV)
+	
+<VirtualHost 192.0.0.1:80>
+	ServerName yourdomain.com
+	DocumentRoot /var/www/html/
+</VirtualHost>
+
+<VirtualHost 192.0.0.1:80>
+	ServerName yourdomain.com
+	DocumentRoot /var/www/html/
+	
+	SSLEngine on
+	SSLCertificateFile /path/to/domain.crt
+	SSLCertificateKeyFile /path/to/domain.key
+	SSLCertificateChainFile /path/to/chain.crt
+</VirtualHost>
+
+Test configuration in Apache :#apachectl configtest
+
+Redirect all traffic from port 80 to port 443 using https
+<VirtualHost 192.0.0.1:80>
+	ServerName yourdomain.com
+	DocumentRoot /var/www/html/
+	
+	Redirect permanent / https://yourdomain.cmo
+</VirtualHost>
+
+*HTTP Strict Transport Security
+*HSTS Preloading
+
+
+REF:
+https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fssl-certificates-for-web-developers%3Ftrk%3Dshare_ent_url%26shareId%3DQoSvvdhXQaqzO4pnfZfMAw%253D%253D
