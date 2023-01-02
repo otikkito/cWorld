@@ -26,7 +26,7 @@ echo shell_exec('uptime -p');
 ?>
 <br>
 <?php
-echo php_uname(a);
+echo php_uname();
 ?>
 <br>
 <?php
