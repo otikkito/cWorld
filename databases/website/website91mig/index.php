@@ -10,6 +10,7 @@
 <!-- W3C's markup Validation Service: https://validator.w3.org/ -->
 <!-- 101 Ways to make your website more awesome: https://www.freecodecamp.org/news/101-ways-to-make-your-website-more-awesome-79c934dd2a11/  -->
 <!-- Broken Links: https://www.seoptimer.com/blog/broken-links/ -->
+<!--How to troubleshoot site down:  https://www.pcworld.com/article/423801/5-ways-to-diagnose-a-website-thats-not-working.html -->
 <head>
 <title>Kito Joseph's website</title>
 </head>
@@ -86,7 +87,7 @@ $db->close();
 <?php
 echo "Today's date is: " . date("m/d/Y") . "<br>";
 ?>
-<a href="https://github.com/otikkito/cWorld/blob/master/databases/website/index.php">Code for this page</a><br>
+<a href="/codeForThisPage">Code for this page</a><br>
 <p><a href="https://www.worldofmolecules.com/antioxidants/vitaminc.htm">Vitamin C</a></p>
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="8419f706-1f58-466b-9349-7d419b16d7dc" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="4e254be8-ddf6-4050-a4cc-fb995c2b1c1b" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
