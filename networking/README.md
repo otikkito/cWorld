@@ -14,6 +14,8 @@ http://jodies.de/ipcalc   --> IP calculator
 
 https://www.calculator.net/ip-subnet-calculator.html --> IP subnet calculator
 
+https://www.subnet-calculator.com/  --> Subnet Calculator
+
 https://www.youtube.com/watch?v=aAIeo7chB6k#action=share   --> Ip subnet problem
 
 https://youtu.be/ecCuyq-Wprc  --> Subnetting
