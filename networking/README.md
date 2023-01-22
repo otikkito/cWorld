@@ -34,6 +34,8 @@ https://www.electronics-notes.com/articles/connectivity/ethernet-ieee-802-3/cabl
 
 https://www.hostinger.com/tutorials/how-to-use-the-dig-command-in-linux/  --> Dig 
 
+https://www.statdns.com/rfc/  --> DNS related RFC
+
 https://lzone.de/cheat-sheet/Linux-Networking  --> Linux networking
 
 https://www.redhat.com/sysadmin/what-you-need-know-about-ipv6  --> IP 6 address
