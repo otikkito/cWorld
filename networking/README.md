@@ -14,6 +14,8 @@ https://packetlife.net/  --> PacketLife
 
 http://beej.us/guide/bgnet/  ---> Network programming (windows/linux)
 
+https://www.dpstele.com/snmp/management-information-base.php   --> An Introduction To SNMP MIB Files
+
 http://www.internetsociety.org/  ---> Internet society
 
 https://users.cs.northwestern.edu/~agupta/cs340/project2/TCPIP_State_Transition_Diagram.pdf    --> TCP/IP State diagram
