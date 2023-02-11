@@ -1,4 +1,3 @@
-***<p align="center">cWorld</p>***
 -----------------------------------------------------------------------------------------------------------
 
 C language standard: http://www.iso-9899.info/wiki/The_Standard
