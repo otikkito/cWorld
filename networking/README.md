@@ -109,6 +109,10 @@ The internet of things: https://en.wikipedia.org/wiki/Internet_of_things
 
 ------------------------------------------------------------------------------------
 
+Networking cheat-sheet: https://packetlife.net/library/cheat-sheets/
+
+------------------------------------------------------------------------------------
+
 The definitive guide to network programming:  ISBN-13: 978-1590593226 
 
 2/27/17 Get the documentation and study material that I need to master and put
