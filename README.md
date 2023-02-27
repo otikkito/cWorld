@@ -10,6 +10,8 @@ C programming Windows: https://docs.microsoft.com/en-us/cpp/c-language/c-languag
 
 Developers best practice: https://www.tutorialspoint.com/developers_best_practices/index.htm
 
+C/C++ learning youtube channel: https://www.youtube.com/@JacobSorber
+
 -----------------------------------------------------------------------------------------------------------
 
 Citing internet sources: http://ctl.yale.edu/writing/using-sources/citing-internet-sources
