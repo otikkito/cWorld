@@ -12,6 +12,7 @@
 <!-- How to troubleshoot site down:  https://www.pcworld.com/article/423801/5-ways-to-diagnose-a-website-thats-not-working.html -->
 <head>
 <title>Kito Joseph's website</title>
+<link rel="icon" href="kitobadge.jpg" type="image/x-icon">
 </head>
 <center><h1>Welcome to Kito Marid Joseph's website</h1></center><br>
 <center>Last updated 12/23/2022</center><br>
