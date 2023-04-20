@@ -22,3 +22,4 @@ List of bitwise operators:
 Bit mask: https://stackoverflow.com/questions/10493411/what-is-bit-masking
 
 Sparkfun digital logic tutorial: https://learn.sparkfun.com/tutorials/digital-logic
+State machines: https://youtu.be/QbPlHQ4Gqe4
