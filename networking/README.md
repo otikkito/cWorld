@@ -1,6 +1,6 @@
 This will be the starting point of networking refresher and programming emulation.
 
-https://www.binarytides.com/raw-sockets-c-code-linux/   --> Raw socket programmingg
+https://www.binarytides.com/raw-sockets-c-code-linux/   --> Raw socket programming
 
 https://www.computernetworkingnotes.com/networking-tutorials/  --> Networking Tutorials
 
