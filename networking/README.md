@@ -1,5 +1,7 @@
 This will be the starting point of networking refresher and programming emulation.
 
+https://www.binarytides.com/raw-sockets-c-code-linux/   --> Raw socket programmingg
+
 https://www.computernetworkingnotes.com/networking-tutorials/  --> Networking Tutorials
 
 https://www.rfc-editor.org/rfc-index.html  ---> Complete RFC
