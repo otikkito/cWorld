@@ -676,12 +676,12 @@ void bye(void) {
 
 /*
 *References:
-*1) https://github.com/otikkito/cWorld/blob/master/Docs/nasa-c-style.pdf (conformity, readability, maintenance, re-usability,...)
-*2) https://en.wikipedia.org/wiki/Application_security
-*3) https://www.tutorialspoint.com/c_standard_library/index.htm
-*4) https://en.wikipedia.org/wiki/MIL-STD-498
-*5) https://www.ece.ncsu.edu/people/gbyrd
-*6) https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
+*1) NASA C coding style: https://github.com/otikkito/cWorld/blob/master/Docs/nasa-c-style.pdf (conformity, readability, maintenance, re-usability,...)
+*2) Application Security: https://en.wikipedia.org/wiki/Application_security
+*3) C Standard Library Reference Tutorial: https://www.tutorialspoint.com/c_standard_library/index.htm
+*4) MIL-STD-498 Military Staandard Software Development and Documentation: https://en.wikipedia.org/wiki/MIL-STD-498
+*5) Former professor (Dr. Greg Byrd): https://www.ece.ncsu.edu/people/gbyrd
+*6) Application development template: https://github.com/otikkito/cWorld/blob/master/applicationstub.txt
 *7) IEEE POSIX Specifications: https://pubs.opengroup.org/onlinepubs/9699919799/
 *8) Linux application development training: https://training.linuxfoundation.org/training/developing-applications-for-linux/
 *9) Configuration file: https://github.com/otikkito/cWorld/blob/master/applicationstub.conf
