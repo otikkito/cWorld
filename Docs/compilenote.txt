@@ -10,6 +10,13 @@ To spell check a file : aspell -c filename.txt
 To check a indiviual word: aspell -a
 To check multiple files: https://stackoverflow.com/questions/12799741/how-to-run-spell-check-on-multiple-files-and-display-any-incorrect-words-in-shel
 
+gspell.x86_64 : Spell-checking library for GTK+
+gspell.i686 : Spell-checking library for GTK+
+hunspell.x86_64 : A spell checker and morphological analyzer library
+hunspell.i686 : A spell checker and morphological analyzer library
+
+Hunspell Tutorial: http://xahlee.info/comp/hunspell_spell_checking.html
+
 
 -ftapv  compiler option for integer overflow
 
