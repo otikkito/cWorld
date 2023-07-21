@@ -70,6 +70,7 @@ procedure: A set of instructions that perform a specific task; a subroutine or f
 Data Structures in C are used to store data in an organized and efficient manner.
 
 Data Types vs. Abstract Data Types: https://youtu.be/ZniDyolzrBw
+  -->There are multiple ways to implement an ADT
 
 https://en.wikipedia.org/wiki/Abstraction_(software_engineering)
 "Abstracts one or more actions to a procedure, which can be called as a single command."
