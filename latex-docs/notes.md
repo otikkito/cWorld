@@ -1,7 +1,7 @@
 Here we will be exploring the functionality of latex on windows and Linux.
 
 -Latex: https://www.latex-project.org/ and for windows: https://miktex.org/
-
+-ChatGPT: Table of contents and Bibliography in Latex: https://chat.openai.com/share/67e039de-db89-4be1-93cf-48ecbded8e54
 -Online Latex: https://www.overleaf.com/
 
 Tutorial and reference

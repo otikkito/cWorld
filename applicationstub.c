@@ -694,4 +694,6 @@ void bye(void) {
 *16) Cscope: https://cscope.sourceforge.net/
 *17) Journalctl: https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fred-hat-certified-system-administrator-ex200-cert-prep-1-deploy-configure-and-manage%3Ftrk%3Dshare_ent_url%26shareId%3DK%252F5ITP0FRXW8tYTX2vjO8Q%253D%253D
 18) C programming language standard: https://www.open-std.org/jtc1/sc22/wg14/
+19) man signal-safety : Note that sig_atomic_t is not thread-safe, only async-signal safe.
+20) https://en.wikipedia.org/wiki/Reentrancy_(computing)
 */
