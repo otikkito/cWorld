@@ -416,6 +416,7 @@ pid_t getPidByProcessName(const char* processName){ /* processName is one of the
 	/*This will be rough draft implementation need to find a better way that has direct mapping */
 	/* checkout linux command "pgrep" */
 	/*
+        *@implementation of "getPidByProcessName" according to ChatGPT: https://chat.openai.com/share/f2994a13-ac06-4aa6-b4d8-74a7b7383191
 	Algorithm consideration: https://github.com/otikkito/cWorld/blob/master/Docs/Big-O.png
 	1) Goto the /proc directory
 	2) create an array of pid given in the proc directory that are process ids
