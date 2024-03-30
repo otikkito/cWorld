@@ -360,6 +360,7 @@ int getMemoryUsageOfApplicationGivenPid(pid_t pid){
 *********************************************************/
 FILE *runSystemCommand(const char *system_command){
 	/* man popen */
+	//ChatGPT implementation: https://chat.openai.com/share/a5857b3f-9abd-465b-a54c-4e376284576a
 	FILE *fp;
 	return fp;
 }
