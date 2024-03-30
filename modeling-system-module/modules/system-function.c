@@ -525,7 +525,7 @@ int getNumberOfProcessorCoresOnSystem(){
 *********************************************************/
 bool direntIsAProcess(const char *pname ){
 	/*This is determined if the file name in /proc is all digits*/
-	
+	//ChatGPT implementation : https://chat.openai.com/share/751b67a9-2b06-4b8b-8513-4f10ddf0fc82
 	return true;
 }
 
