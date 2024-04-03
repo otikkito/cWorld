@@ -61,6 +61,10 @@ void incr_a();
 //  -fwrapv being effective. Note that only active options override, so using -ftrapv -fwrapv -fno-wrapv on the 
 //  command-line results in -ftrapv being effective.
 
+
+//How do you prevent integer overflow in RHEL 9 C language in Linux?--> According to ChatGPT: https://chat.openai.com/share/f85bf7a5-0678-4f5c-824a-542a3fa42526
+
+
 //https://gcc.gnu.org/
 // How to handle overflow: https://stackoverflow.com/questions/20851061/how-to-make-gcc-ftrapv-work
 //https://gcc.gnu.org/onlinedocs/gcc-7.1.0/gcc/Integer-Overflow-Builtins.html
