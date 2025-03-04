@@ -73,6 +73,10 @@ Social media rules to live by: https://insidesocialmedia.com/social-media-polici
 
 -----------------------------------------------------------------------------------------------------------
 
+Critical Section in Synchronization : https://www.geeksforgeeks.org/g-fact-70/
+
+----------------------------------------------------------------------------------------------------------
+
 MIT opencourseware: https://ocw.mit.edu/index.htm
 
 -----------------------------------------------------------------------------------------------------------
