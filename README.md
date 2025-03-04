@@ -36,6 +36,10 @@ Computer engineer: https://en.wikipedia.org/wiki/Computer_engineering
 
 -----------------------------------------------------------------------------------------------------------
 
+Critical Section in Synchronization: https://www.geeksforgeeks.org/g-fact-70/
+
+-----------------------------------------------------------------------------------------------------------
+
 Electrical engineering essentials: https://www.sparkfun.com/engineering_essentials
 
 -----------------------------------------------------------------------------------------------------------
