@@ -8,9 +8,9 @@ C programming tutorial: http://www.cprogramming.com/
 
 C programming Windows: https://docs.microsoft.com/en-us/cpp/c-language/c-language-reference
 
-Developers best practice: https://www.tutorialspoint.com/developers_best_practices/index.htm
+Developers' best practice: https://www.tutorialspoint.com/developers_best_practices/index.htm
 
-C/C++ learning youtube channel: https://www.youtube.com/@JacobSorber
+C/C++ learning YouTube channel: https://www.youtube.com/@JacobSorber
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -26,7 +26,7 @@ Github writing and formatting: https://help.github.com/articles/basic-writing-an
 
 -----------------------------------------------------------------------------------------------------------
 
-Alumni Computer and Electrical engineering: https://www.ece.ncsu.edu/
+Alumni Computer and Electrical Engineering: https://www.ece.ncsu.edu/
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -79,9 +79,6 @@ Social media rules to live by: https://insidesocialmedia.com/social-media-polici
 
 MIT opencourseware: https://ocw.mit.edu/index.htm
 
------------------------------------------------------------------------------------------------------------
-
-IBM Watson proof of concept: http://www.ashleighlathrop.com/
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -89,10 +86,6 @@ Johns Hopkins Engineering: https://engineering.jhu.edu/fields-of-study/#masters-
 
 1) Systems engineering: https://ep.jhu.edu/programs-and-courses/programs/systems-engineering#quickset-program_pages_content_2
  --> Introduction to systems engineering course: https://ep.jhu.edu/courses/645662-introduction-to-systems-engineering/
-
------------------------------------------------------------------------------------------------------------
-
-World fact book: https://www.cia.gov/the-world-factbook/
 
 -----------------------------------------------------------------------------------------------------------
 
