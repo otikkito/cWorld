@@ -81,22 +81,15 @@ MIT opencourseware: https://ocw.mit.edu/index.htm
 
 -----------------------------------------------------------------------------------------------------------
 
-IBM Watson proof of concept: http://www.ashleighlathrop.com/
-
------------------------------------------------------------------------------------------------------------
-
 Johns Hopkins Engineering: https://engineering.jhu.edu/fields-of-study/#masters-full-time
 
 1) Systems engineering: https://ep.jhu.edu/programs-and-courses/programs/systems-engineering#quickset-program_pages_content_2
  --> Introduction to systems engineering course: https://ep.jhu.edu/courses/645662-introduction-to-systems-engineering/
 
------------------------------------------------------------------------------------------------------------
-
-World fact book: https://www.cia.gov/the-world-factbook/
 
 -----------------------------------------------------------------------------------------------------------
 
-My linkedin profile: http://www.linkedin.com/in/kitojoseph
+My LinkedIn profile: http://www.linkedin.com/in/kitojoseph
 
 -----------------------------------------------------------------------------------------------------------
 
