@@ -1,6 +1,19 @@
 -----------
 How to search in cpan for a perl module? : https://copilot.microsoft.com/shares/W9StT2o7HASrzDP6c7zui
 ----------
+How to install perl modules from metacpan.org? : https://copilot.microsoft.com/shares/tpMqDm8Pgv6K1veJZuEHd
+-------------
+Bugzilla: https://www.bugzilla.org/
+------------
+perl module missing: https://copilot.microsoft.com/shares/p2K5w9GsPdHv1cH8L1iLR
+	https://copilot.microsoft.com/shares/AueiMViTaRHfaoVKvqD8i
+------
+Oracle: https://copilot.microsoft.com/shares/wsBVewqyXnJnxBLTCLbe
+	https://oracle-base.com/blog/2025/11/03/fedora-43-and-oracle/
+----	
+dnf install "perl(JSON::RPC::Legacy::Server::CGI)"
+-----
+How to install bugzilla in fedora 43? : https://copilot.microsoft.com/shares/CtAjJrWue5ceA2GeF9N9f
 
 
 
