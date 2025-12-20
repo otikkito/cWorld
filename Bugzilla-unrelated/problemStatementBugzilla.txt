@@ -1,3 +1,10 @@
+-----------
+How to search in cpan for a perl module? : https://copilot.microsoft.com/shares/W9StT2o7HASrzDP6c7zui
+----------
+
+
+
+
 * This is Bugzilla 5.0.6 on perl 5.42.0
 * Running on Linux 6.17.12-300.fc43.x86_64 #1 SMP PREEMPT_DYNAMIC Sat Dec 13 05:06:24 UTC 2025
 
