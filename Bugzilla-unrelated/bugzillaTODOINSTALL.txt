@@ -4,3 +4,14 @@ How to install bugzilla on Fedora.
 /usr/share/bugzilla/checksetup.pl
 
 https://bugzilla.readthedocs.io/en/latest/installing/linux.html
+
+https://bugzilla.readthedocs.io/en/latest/installing/linux.html#linux-config-database
+
+I have installed bugzilla on my local fedora server. How do I create a project and can you have more than one project?
+https://copilot.microsoft.com/shares/YBP3oumecY8xQgFkfNYfu
+
+Can you help me Set up email notifications for each project in bugzilla in fedora?
+https://copilot.microsoft.com/shares/rZKQqdmgKa2oy6m97g4hm
+
+How do I create a new bug on my bugzilla product and test email functionality?
+https://copilot.microsoft.com/shares/3CFhjdWnz8EzEpoJctGcL
