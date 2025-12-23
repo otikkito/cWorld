@@ -15,3 +15,17 @@ https://copilot.microsoft.com/shares/rZKQqdmgKa2oy6m97g4hm
 
 How do I create a new bug on my bugzilla product and test email functionality?
 https://copilot.microsoft.com/shares/3CFhjdWnz8EzEpoJctGcL
+
+what are some good bugzilla extensions for fedora linux 43? : 
+https://copilot.microsoft.com/shares/Wbww6mcurnwpytXWF8s6E
+
+https://www.bugzilla.org/contributing/developer
+
+TODO:
+1) Examine the Fedora bugzilla package
+2) Create a package on RHEL operating system for Bugzilla , while researching how to do this.
+
+
+https://copilot.microsoft.com/shares/DdLTVLewxwtTGcN9HfBDm
+
+
