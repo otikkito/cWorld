@@ -1,4 +1,12 @@
 -----------------------------------------------------------------------------------------------------------
+ 
+Nano cheat sheet: https://www.nano-editor.org/dist/latest/cheatsheet.html
+
+Vim cheat sheet: https://vimsheet.com/
+
+
+
+-----------------------------------------------------------------------------------------------------------
 
 C language standard: http://www.iso-9899.info/wiki/The_Standard
 
@@ -11,6 +19,7 @@ C programming Windows: https://docs.microsoft.com/en-us/cpp/c-language/c-languag
 Developers best practice: https://www.tutorialspoint.com/developers_best_practices/index.htm
 
 C/C++ learning youtube channel: https://www.youtube.com/@JacobSorber
+
 
 -----------------------------------------------------------------------------------------------------------
 
