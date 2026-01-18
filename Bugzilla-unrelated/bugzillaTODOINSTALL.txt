@@ -1,5 +1,14 @@
 How to install bugzilla on Fedora.
 
+
+
+
+----
+
+How to install the Bugzilla package and configure Bugzilla in Fedora 43 Linux?
+https://copilot.microsoft.com/shares/BctsdPAUoqvrWekYExAuV
+
+----
 [root@kitoshomeserver cWorld]# locate checksetup.pl
 /usr/share/bugzilla/checksetup.pl
 
