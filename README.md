@@ -1,4 +1,8 @@
 -----------------------------------------------------------------------------------------------------------
+
+Donations:  https://www.paypal.com/donate/?business=T84TGJBVD5WUN&no_recurring=0&item_name=Please+donate+to+keep+this+site+up+and+running.&currency_code=USD
+
+-----------------------------------------------------------------------------------------------------------
  
 Nano cheat sheet: https://www.nano-editor.org/dist/latest/cheatsheet.html
 
