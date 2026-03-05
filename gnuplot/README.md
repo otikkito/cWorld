@@ -19,13 +19,28 @@ TODO:
                     /
                    Z
 
+---------------Latex---------------
+
 -Practice using Latex and write a documentation stub: https://www.youtube.com/watch?v=FcVP3gGUtGI
+
+-https://www.overleaf.com/
+
+-https://www.tug.org/texlive/
+
+-https://docs.overleaf.com/getting-started/latex-tutorials
+
+-https://www.learnlatex.org/
+
+-https://www.writespace.app/
+
+
+---------------Latex---------------
 
 Projects and purposes:
 
 -Plot application statistics: memory, system calls, storage usage, network usage, ... over time
 
--Installing gnuplot on windows: https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/cygwin/part5/
+-Installing gnuplot on Windows: https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/cygwin/part5/
 
 -Gnuplot tutorial: http://lowrank.net/gnuplot/index-e.html
 
